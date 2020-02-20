@@ -46,11 +46,10 @@ let inputNumber = prompt("Insert number.");
 while (inputNumber > 0) {
   if (inputNumber % 2 === 0) {
     inputNumber = inputNumber / 2;
-    numberOfSteps++;
     } else {
     inputNumber = inputNumber - 1
-    numberOfSteps++;
     }
+  numberOfSteps++;
 }
 
 console.log(numberOfSteps);
