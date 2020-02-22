@@ -27,16 +27,16 @@
 
 let address = "1.1.1.1";
 let address2 = "255.100.50.0";
-let periodIndex = [];
-let output;
+let output = "";
 
-for (i = 0; i < address.length; i++) {
-  if (address.charAt(i) === ".") {
-    periodIndex.push(i);
+function defangIP(IPAddress) {
+  for (i = 0; i < IPAddress.length; i++) {
+    if (IPAddress.charAt(i) === ".") {
+      output = output + "[" + IPAddress.charAt(i) + "]";
+    } else {
+      output = output + IPAddress.charAt(i);
+    }
   }
-}
-
-for (i = 0; i < periodIndex.length; i++) {
-  output = address.substring(0, periodIndex[i]) + "[" + address.substring(periodIndex[i]);
   console.log(output);
+  output = "";
 }
