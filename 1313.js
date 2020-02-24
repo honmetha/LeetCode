@@ -28,9 +28,16 @@
  **********************************************************************/
 
 
-let nums = [1, 2, 3, 4];
-let output = [];
+// @param {number[]} nums
+// @return {number[]}
 
-for (i = 0; i < nums.length; i + 2) {
-  output = new Array(i).fill(nums[i + 1]);
-}
+var decompressRLElist = function(nums) {
+  let output = [];
+  let myArray = [];
+  for (i = 0; i < nums.length; i + 2) {
+    myArray.length = nums[i];
+    myArray.fill = nums[i + 1];
+    output = output.concat(myArray);
+  }
+  return output;
+};
