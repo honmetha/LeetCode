@@ -28,3 +28,9 @@
  **********************************************************************/
 
 
+let nums = [1, 2, 3, 4];
+let output = [];
+
+for (i = 0; i < nums.length; i + 2) {
+  output = new Array(i).fill(nums[i + 1]);
+}

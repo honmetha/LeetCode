@@ -39,17 +39,21 @@
  *  Answer
  **********************************************************************/
 
- 
-let numberOfSteps = 0;
-let inputNumber = prompt("Insert number.");
 
-while (inputNumber > 0) {
-  if (inputNumber % 2 === 0) {
-    inputNumber = inputNumber / 2;
-    } else {
-    inputNumber = inputNumber - 1
-    }
-  numberOfSteps++;
+// @param {number} num
+// @return {number}
+
+var numberOfSteps  = function(num) {
+  let numberOfSteps = 0;
+
+while (num > 0) {
+if (num % 2 === 0) {
+  num = num / 2;
+  } else {
+  num = num - 1
+  }
+numberOfSteps++;
 }
 
-console.log(numberOfSteps);
+return (numberOfSteps);
+};
