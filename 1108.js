@@ -25,18 +25,17 @@
  **********************************************************************/
 
 
-let address = "1.1.1.1";
-let address2 = "255.100.50.0";
-let output = "";
+// @param {string} address
+// @return {string}
 
-function defangIP(IPAddress) {
-  for (i = 0; i < IPAddress.length; i++) {
-    if (IPAddress.charAt(i) === ".") {
-      output = output + "[" + IPAddress.charAt(i) + "]";
+var defangIPaddr = function(address) {
+  let output = "";
+  for (i = 0; i < address.length; i++) {
+    if (address.charAt(i) === ".") {
+      output = output + "[" + address.charAt(i) + "]";
     } else {
-      output = output + IPAddress.charAt(i);
+      output = output + address.charAt(i);
     }
   }
-  console.log(output);
-  output = "";
-}
+  return output;
+};
