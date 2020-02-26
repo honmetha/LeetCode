@@ -33,11 +33,16 @@
 
 var decompressRLElist = function(nums) {
   let output = [];
-  let myArray = [];
-  for (i = 0; i < nums.length; i + 2) {
-    myArray.length = nums[i];
-    myArray.fill = nums[i + 1];
-    output = output.concat(myArray);
+  for (i = 0; i < nums.length; i += 2) {
+    output = output.concat(repeat(nums[i], nums[i + 1]))
   }
   return output;
 };
+
+function repeat(times, item) {
+	let rslt = [];
+	for(let i = 0; i < times; i++) {
+  	rslt.push(item)
+  }
+  return rslt;
+}
