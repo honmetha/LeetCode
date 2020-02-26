@@ -32,17 +32,19 @@
 // @return {number[]}
 
 var decompressRLElist = function(nums) {
-  let output = [];
-  for (i = 0; i < nums.length; i += 2) {
-    output = output.concat(repeat(nums[i], nums[i + 1]))
+  if (2 <= nums.length <= 100 && nums.length % 2 == 0) {
+    let output = [];
+    for (i = 0; i < nums.length; i += 2) {
+      output = output.concat(repeat(nums[i], nums[i + 1]))
+    }
+    return output;
   }
-  return output;
 };
 
 function repeat(times, item) {
-	let rslt = [];
+	let result = [];
 	for(let i = 0; i < times; i++) {
-  	rslt.push(item)
+  	result.push(item)
   }
-  return rslt;
+  return result;
 }
