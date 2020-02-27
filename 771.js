@@ -36,5 +36,13 @@
  * @return {number}
  */
 var numJewelsInStones = function(J, S) {
-    
+  let count = 0;
+  for (i = 0; i < J.length; i++) {
+    for (j = 0; j < S.length; j++) {
+      if (S[j].includes(J[i])) {
+        count += 1;
+      }
+    }
+  }
+  return count;
 };
