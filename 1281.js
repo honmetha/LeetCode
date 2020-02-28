@@ -34,7 +34,7 @@
 
 
 // @param {number} n
-// * @return {number}
+// @return {number}
 
 var subtractProductAndSum = function(n) {
   let arr = [];
