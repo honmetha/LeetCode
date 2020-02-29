@@ -47,5 +47,16 @@
 // @return {number}
 
 var balancedStringSplit = function(s) {
-    
+  let L = 0, R = 0, count = 0;
+  for (i = 0; i < s.length; i++) {
+    if (s[i] === "R") {
+      R++;
+    } else if (s[i] === "L") {
+      L++;
+    };
+    if (L === R) {
+      count++;
+    };
+  }
+  return count;
 };
