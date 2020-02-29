@@ -54,9 +54,26 @@ var balancedStringSplit = function(s) {
     } else if (s[i] === "L") {
       L++;
     };
-    if (L === R) {
+    console.log(`57 L = ${L} | R = ${R} | Count = ${count}`);
+    if (L !== 0 && L === R) {
       count++;
-    };
+      L = 0, R = 0;
+      console.log(`61 L = ${L} | R = ${R} | Count = ${count}`);
+    } else if (L > R && R !== 0) {
+      if (s[i] === "L") {
+        count++;
+        L = 1, R = 0;
+        console.log(`66 L = ${L} | R = ${R} | Count = ${count}`);
+      }
+    } else if (R > L && L !== 0) {
+      if (s[i] === "R") {
+        count++;
+        L = 0, R = 1;
+        console.log(`72 L = ${L} | R = ${R} | Count = ${count}`);
+      }
+    }
   }
+  L && R !== 0 ? count++: false;
+  console.log(`77 L = ${L} | R = ${R} | Count = ${count}`);
   return count;
 };
