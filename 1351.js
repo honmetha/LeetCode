@@ -44,5 +44,10 @@
 // @return {number}
 
 var countNegatives = function(grid) {
-  return ;
+  let output = [];
+  for (i = 0; i < grid.length; i++) {
+    const newArray = grid[i].filter(num => num < 0);
+    output = output.concat(newArray);
+  }
+  return output.length;
 };
