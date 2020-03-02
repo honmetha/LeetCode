@@ -49,5 +49,28 @@
 // @return {string}
 
 var freqAlphabets = function(s) {
-    
+  let arr = [], result, output = "";
+  for (i = 0; i < s.length; i++) {
+    if (s[i] === "1" || s[i] === "2") {
+      if (s[i + 2] === "#") {
+        arr.push(s[i] + s[i + 1]);
+        i += 2;
+      } else {
+        arr.push(s[i]);
+      }
+    } else {
+      arr.push(s[i]);
+    }
+  }
+  
+  let newArr = arr.map(function (num) { 
+    return parseInt(num, 10); 
+  });
+
+  result = newArr.map(num => (num + 9).toString(36));
+
+  for (i = 0; i < result.length; i++) {
+    output = output + result[i]
+  }
+  return output;
 };
