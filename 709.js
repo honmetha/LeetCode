@@ -28,5 +28,6 @@
 // @return {string}
 
 var toLowerCase = function(str) {
-    
+  let output = str.toLowerCase();
+  return output;
 };
