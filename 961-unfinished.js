@@ -37,5 +37,5 @@
 // @return {number}
 
 var repeatedNTimes = function(A) {
-    
+  console.log("Hello World");
 };
