@@ -49,26 +49,21 @@
 // @return {string}
 
 var freqAlphabets = function(s) {
-  let output = "";
+  let output = "", str;
   for (i = 0; i < s.length; i++) {
     if (s[i] === "1" || s[i] === "2") {
       if (s[i + 2] === "#") {
         let str = s[i] + s[i + 1];
         str = parseInt(str);
-        str = (str + 9).toString(36);
-        output += str;
+        output += (str + 9).toString(36);
         i += 2;
       } else {
-        let str;
         str = parseInt(s[i]);
-        str = (str + 9).toString(36);
-        output += str;
+        output += (str + 9).toString(36);
       }
     } else {
-      let str;
       str = parseInt(s[i]);
-      str = (str + 9).toString(36);
-      output += str;
+      output += (str + 9).toString(36);
     }
   }
   return output;
