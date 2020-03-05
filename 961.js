@@ -37,5 +37,15 @@
 // @return {number}
 
 var repeatedNTimes = function(A) {
-  console.log("Hello World");
+  for (i = 0; i < A.length; i++) {
+    let count = -1;
+    for (j = i; j < A.length; j++) {
+      if (A[i] === A[j]) {
+        count++;
+        if (count > 0) {
+          return A[i];
+        }
+      }
+    }
+  }
 };
