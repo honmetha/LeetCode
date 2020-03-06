@@ -53,5 +53,10 @@
 // @return {string}
 
 const removeOuterParentheses = function(S) {
-    
+  let count = 0, output = "";
+  for (item of S) {
+    item === "(" ? count++ : count--;
+    ((item === "(" && count === 1) || (item === ")" && count === 0)) ? null : output += item;
+  };
+  return output;
 };
