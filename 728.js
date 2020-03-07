@@ -29,14 +29,14 @@
 // @return {number[]}
 
 const selfDividingNumbers = function(left, right) {
-  let arr = [], checker = 0, output = [];
+  let arr = [], output = [];
   for (i = left; i < right; i++) {
     arr.push(i);
   }
   arr.push(right);
 
   for (item of arr) {
-    checker = 0;
+    let checker = 0;
     let digits = (""+item).split("");
     for (digit of digits) {
       if (item % digit === 0) {
