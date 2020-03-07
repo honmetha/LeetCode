@@ -35,6 +35,16 @@
 // @return {boolean}
 
 const uniqueOccurrences = function(arr) {
-  
-  return output;
+  let newArr = arr.filter((item, index) => arr.indexOf(item) === index);
+  let newArr2 = [];
+  for (digit of newArr) {
+    let counter = 0;
+    for (number of arr) {
+      if (digit === number) {
+        counter++
+      }
+    }
+    newArr2.push(counter);
+  }
+  return newArr2.length === new Set(newArr2).size;
 };
