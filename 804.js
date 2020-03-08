@@ -43,5 +43,16 @@
 // @return {number}
 
 const uniqueMorseRepresentations = function(words) {
-  return output;
+  let MorseCode = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..",
+  "--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."];
+  let arr1 = [];
+
+  for (word of words) {
+    let arr2 = [];
+    for (letter of word) {
+      arr2.push(MorseCode[letter.charCodeAt(0) - 97]);
+    }
+    arr1.push(arr2.join(""));
+  }
+  return new Set(arr1).size;
 };
