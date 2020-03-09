@@ -23,12 +23,10 @@
 
 const strongPasswordChecker = function(s) {
   let counter = 0;
-  let length = 0, lowercase = 0, uppercase = 0, repeat = 0, digit = 0;
+  let length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
 
-  if (s.length < 6) {
-    length += (6 - s.length);
-  } else if (s.length > 20) {
-    length -= (s.length - 20);
+  if (s.length < 6 || s.length > 20) {
+    length++;
   }
 
   /[A-Z]/.test(s) ? null : uppercase++;
@@ -45,6 +43,12 @@ const strongPasswordChecker = function(s) {
     }
   }
 
-  console.log(length, lowercase, uppercase, repeat, digit)
+  console.log(length, lowercase, uppercase, digit, repeat)
   return counter;
 };
+
+// Testcases
+// ""
+// "a"
+// "aaa"
+// "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
