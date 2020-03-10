@@ -41,5 +41,11 @@
 // @return {string}
 
 const generateTheString = function(n) {
+  let output = "";
+  if (n % 2 !== 0) {
+    output = "a".repeat(n);
+  } else {
+    output = "a".repeat(n - 1) + "b";
+  }
   return output;
 };
