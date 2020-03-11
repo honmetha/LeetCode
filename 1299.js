@@ -27,5 +27,30 @@
 // @return {number[]}
 
 const replaceElements = function(arr) {
+
+  let a = 0, b = null, output = arr;
+
+  for (i = 0; i < arr.length; i++) {
+    for (j = (i + 1); j < arr.length; j++) {
+      if (output[i] < output[j] && output[j] > a) {
+        a = output[j];
+        b = j;
+        // console.log(i, j, a, b,output);
+      }
+    }
+    if (b !== null) {
+      for (k = i; k < b; k++) {
+        output[k] = a;
+        // console.log(i, k, a, b, output);
+      }
+      output[b] = 0;
+      console.log(output);
+      i = i + (b - 2);
+      a = 0;
+      b = null;
+      // console.log(i, a, b, output);
+    }
+  }
+  output[output.length-1] = -1;
   return output;
 };
