@@ -31,6 +31,10 @@
 // @return {number[]}
 
 const sortedSquares = function(A) {
-  
+  let output =[];
+  for (item of A) {
+    output.push(item ** 2);
+  }
+  output = output.sort((a, b) => a - b);
   return output;
 };
