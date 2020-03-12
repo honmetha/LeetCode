@@ -45,7 +45,7 @@ const replaceElements = function(arr) {
       }
       output[b] = 0;
       console.log(output);
-      i = i + (b - 2);
+      i = i + (b - i - 1);
       a = 0;
       b = null;
       // console.log(i, a, b, output);
