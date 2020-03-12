@@ -26,10 +26,7 @@ const strongPasswordChecker = function(s) {
   let length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
 
   s.length > 20 ? counter += (s.length-20) : null;
-
-  if (s.length < 6) {
-    length++;
-  }
+  s.length < 6 ? counter += (6-s.length) : null;
 
   /[A-Z]/.test(s) ? null : uppercase++;
   /[a-z]/.test(s) ? null : lowercase++;
