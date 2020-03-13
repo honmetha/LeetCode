@@ -41,17 +41,14 @@
 const diStringMatch = function(S) {
   let output = [];
   let N = Array.from(Array(S.length + 1).keys());
-  console.log(N);
 
   for (item of S) {
     if (item === "I") {
       output.push(N[0]);
       N.shift();
-      console.log(N);
     } else {
       output.push(N[N.length - 1]);
       N.pop();
-      console.log(N);
     }
   }
   output.push(N[0]);
