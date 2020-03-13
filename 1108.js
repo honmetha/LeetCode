@@ -29,14 +29,12 @@
 // @param {string} address
 // @return {string}
 
-var defangIPaddr = function(address) {
+const defangIPaddr = (address) => {
   let output = "";
-  for (i = 0; i < address.length; i++) {
-    if (address.charAt(i) === ".") {
-      output = output + "[" + address.charAt(i) + "]";
-    } else {
-      output = output + address.charAt(i);
-    }
+
+  for (item of address) {
+    item === "." ? output += "[.]" : output += item;
   }
+  
   return output;
 };
