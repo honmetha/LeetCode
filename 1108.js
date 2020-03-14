@@ -38,3 +38,7 @@ const defangIPaddr = (address) => {
   
   return output;
 };
+
+
+
+const defangIPaddr = (address) => address.split('.').join('[.]');
