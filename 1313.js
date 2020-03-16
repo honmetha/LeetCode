@@ -61,9 +61,3 @@ const decompressRLElist = (nums) => {
 
   return output;
 }
-
-
-// Solution 3
-const decompressRLElist = (nums) => {
-  return result;
-}
