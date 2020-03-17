@@ -36,7 +36,8 @@ const decompressRLElist = (nums) => {
   let output = [];
 
   for (i = 0; i < nums.length; i += 2) {
-    for (j = 0; j < nums[i]; j++) {
+    while (nums[i] !== 0) {
+      nums[i]--;
       output.push(nums[i + 1]);
     }
   }
