@@ -43,3 +43,17 @@ const numJewelsInStones = (J, S) => {
   }
   return count;
 };
+
+
+// faster + less memory
+
+const numJewelsInStones = (J, S) => {
+  let count = 0;
+  for (let char of S) {
+      // J contains char
+      if (J.lastIndexOf(char) > -1) {
+          count++;
+      }
+  }
+  return count;
+};
