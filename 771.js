@@ -37,8 +37,10 @@
 const numJewelsInStones = (J, S) => {
   let count = 0;
   for (i = 0; i < J.length; i++) {
-    for (j = 0; j < S.length; j++) {
-      S[j].includes(J[i]) ? count++ : null;
+    let j = 0;
+    while (j !== S.length) {
+      J[i] === S[j] ? count++ : null;
+      j++;
     }
   }
   return count;
@@ -50,10 +52,17 @@ const numJewelsInStones = (J, S) => {
 const numJewelsInStones = (J, S) => {
   let count = 0;
   for (let char of S) {
-      // J contains char
-      if (J.lastIndexOf(char) > -1) {
-          count++;
-      }
+    // J contains char
+    if (J.lastIndexOf(char) > -1) {
+        count++;
+    }
   }
   return count;
+};
+
+var numJewelsInStones = function(J, S) {
+  let output = 0;
+  for (let stone of S){
+      if (J.includes(stone))output++;
+  } return output;
 };
