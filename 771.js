@@ -42,28 +42,5 @@ const numJewelsInStones = (J, S) => {
       J[i] === S[j] ? count++ : null;
       j++;
     }
-  }
-  return count;
-};
-
-
-// faster + less memory
-
-const numJewelsInStones = (J, S) => {
-  let count = 0;
-  for (let char of S) {
-    // console.log("char", char);
-    if (J.lastIndexOf(char) > -1) {
-      // console.log("J.lastIndexOf(char)", J.lastIndexOf(char));
-      count++;
-    }
-  }
-  return count;
-};
-
-var numJewelsInStones = function(J, S) {
-  let output = 0;
-  for (let stone of S){
-      if (J.includes(stone))output++;
-  } return output;
+  } return count;
 };
