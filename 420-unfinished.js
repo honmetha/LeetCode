@@ -32,22 +32,26 @@ const strongPasswordChecker = function(s) {
   /[a-z]/.test(s) ? null : lowercase++;
   /\d/.test(s) ? null : digit++;
 
-  for (i = 0; i < s.length; i++) {
-    if (s[i] === s[i + 1] && s[i] === s[i + 2]) {
-      repeat++;
-      i += 2;
-    }
-    if (i > 27) {
-      break;
-    }
-  }
+  // for (i = 0; i < s.length; i += 3) {
+  //   if (s[i] === s[i + 1] && s[i] === s[i + 2]) {
+  //     repeat++;
+  //   }
+  // }
 
-  console.log(length, lowercase, uppercase, digit, repeat)
+  console.log(`length = ${length}`);
+  console.log(`lowercase = ${lowercase}`);
+  console.log(`uppercase = ${uppercase}`);
+  console.log(`digit = ${digit}`);
+  // console.log(`repeat = ${repeat}`);
   return counter;
 };
 
+
 // Testcases
+
 // ""
 // "a"
 // "aaa"
 // "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+// "abc1234567890ABCaaaaaaaaaaaaaa"
+// "aA1aaAaaA1aaAaaAaaA1"
