@@ -52,9 +52,10 @@ const numJewelsInStones = (J, S) => {
 const numJewelsInStones = (J, S) => {
   let count = 0;
   for (let char of S) {
-    // J contains char
+    // console.log("char", char);
     if (J.lastIndexOf(char) > -1) {
-        count++;
+      // console.log("J.lastIndexOf(char)", J.lastIndexOf(char));
+      count++;
     }
   }
   return count;
