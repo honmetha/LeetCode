@@ -27,5 +27,13 @@
 // @return {number[][]}
 
 const diagonalSort = (mat) => {
+  for (i = 0; i < mat.length; i++) {
+    let array = [];
+    let j;
+    while (j !== 0) {
+      console.log(array);
+      j--;
+    }
+  }
   return output;
 };
