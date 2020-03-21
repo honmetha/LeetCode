@@ -36,19 +36,9 @@
 // @param {number} n
 // @return {number}
 
-var subtractProductAndSum = function(n) {
-  let arr = [];
-  let string = n.toString();
-  let sum = 0;
-  let mul = 1;
-  for (i = 0; i < string.length; i++) {
-    arr.push(+string.charAt(i));
-  };
-  for (i = 0; i < arr.length; i++) {
-    sum += arr[i]
-  };
-  for (i = 0; i < arr.length; i++) {
-    mul *= arr[i]
-  }
-  return mul - sum;
+const subtractProductAndSum = (n) => {
+  let arr = (""+n).split("");
+  const mul = arr.reduce((acc, num) => acc * Number(num), 1);
+  const add = arr.reduce((acc, num) => acc + Number(num), 0);
+  return mul - add;
 };
