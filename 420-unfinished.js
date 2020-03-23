@@ -61,6 +61,8 @@ const strongPasswordChecker = function(s) {
 // ""
 // "a"
 // "aaa"
+// "123"
 // "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
 // "abc1234567890ABCaaaaaaaaaaaaaa"
+// "123123123123123123abc123123123123123"
 // "aA1aaAaaA1aaAaaAaaA1"
