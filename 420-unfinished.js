@@ -38,6 +38,15 @@ const strongPasswordChecker = function(s) {
   //   }
   // }
 
+  if (length === 0) {
+    counter = lowercase + uppercase + digit;
+  } else if (length < 0) {
+    counter = Math.abs(length) + lowercase + uppercase + digit
+  } else if (length > 0) {
+    counter = lowercase + uppercase + digit;
+    length > counter ? counter = length : counter += length;
+  }
+
   console.log(`length = ${length}`);
   console.log(`lowercase = ${lowercase}`);
   console.log(`uppercase = ${uppercase}`);
