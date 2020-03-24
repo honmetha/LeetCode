@@ -46,7 +46,7 @@
 // @param {string} s
 // @return {number}
 
-var balancedStringSplit = function(s) {
+const balancedStringSplit = (s) => {
   let L = 0, R = 0, count = 0;
   for (i = 0; i < s.length; i++) {
     if (s[i] === "R") {
