@@ -46,19 +46,9 @@
 // @param {string} s
 // @return {number}
 
-const balancedStringSplit = (s) => {
-  let L = 0, R = 0, count = 0;
+const balancedStringSplit = (s, count = 0, results = 0) => {
   for (i = 0; i < s.length; i++) {
-    if (s[i] === "R") {
-      R++;
-    } else if (s[i] === "L") {
-      L++;
-    };
-    
-    if (L !== 0 && L === R) {
-      count++;
-      L = 0, R = 0;
-    }
-  }
-  return count;
+    s[i] === "R" ? count++ : count--;
+    count === 0 ? results++ : null;
+  } return results;
 };
