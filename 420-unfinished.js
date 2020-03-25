@@ -44,7 +44,7 @@ const strongPasswordChecker = function(s) {
     counter = Math.abs(length) + lowercase + uppercase + digit
   } else if (length > 0) {
     counter = lowercase + uppercase + digit;
-    length > counter ? counter = length : counter += length;
+    length > counter ? counter = length : null;
   }
 
   console.log(`length = ${length}`);
@@ -62,6 +62,8 @@ const strongPasswordChecker = function(s) {
 // "a"
 // "aaa"
 // "123"
+// "1212"
+// "12121"
 // "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
 // "abc1234567890ABCaaaaaaaaaaaaaa"
 // "123123123123123123abc123123123123123"
