@@ -44,15 +44,16 @@
 // @return {number}
 
 const countNegatives = (grid) => {
-  let arr = grid.flat().filter(num => num < 0);
-  return arr.length;
-};
-
-const countNegatives = (grid) => {
   let count = 0;
   for (i = 0; i < grid.length; i++) {
     let j = 0;
     while (j < grid[i].length) {
+      if (grid[i][0] < 0) {
+        count += grid[i].length;
+        break;
+      } else if (grid[i][grid.length-1] > 0) {
+        break;
+      }
       grid[i][j] < 0 ? count++ : null;
       j++;
     }
