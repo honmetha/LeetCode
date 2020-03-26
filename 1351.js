@@ -51,7 +51,7 @@ const countNegatives = (grid) => {
       if (grid[i][0] < 0) {
         count += grid[i].length;
         break;
-      } else if (grid[i][grid.length-1] > 0) {
+      } else if (grid[i][grid[i].length-1] > 0) {
         break;
       }
       grid[i][j] < 0 ? count++ : null;
