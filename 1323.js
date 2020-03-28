@@ -43,7 +43,7 @@
 // @param {number} num
 // @return {number}
 
-var maximum69Number  = function(num) {
+const maximum69Number  = (num) => {
   let output = "", atMost = 1;
   num = num.toString();
   for (i = 0; i < num.length; i++) {
@@ -57,3 +57,15 @@ var maximum69Number  = function(num) {
   output = Number(output);
   return output;
 };
+
+
+const maximum69Number  = (num) => {
+  num = num.toString();
+  for (i = 0; i < num.length; i++) {
+    num.charAt(i) === "6" ? num.charAt(i) = "9" : null;
+    break;
+  }
+  return Number(num);
+};
+
+const maximum69Number = num => parseInt(num.toString().replace('6', '9'))
