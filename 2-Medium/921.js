@@ -47,5 +47,9 @@
 // @return {number}
 
 const minAddToMakeValid = (S) => {
+  let count = 0;
+  for (i = 0; i < S.length; i++) {
+    (S[i] === "(" && S[i + 1] === ")") ? i++ : count++;
+  };
   return count;
 };
