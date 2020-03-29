@@ -47,9 +47,18 @@
 // @return {number}
 
 const minAddToMakeValid = (S) => {
-  let count = 0;
+  let arr = S.split("")
   for (i = 0; i < S.length; i++) {
-    (S[i] === "(" && S[i + 1] === ")") ? i++ : count++;
+    if (arr[i] === "(") {
+      for (j = i + 1; j < S.length; j++) {
+        if (arr[j] === ")") {
+          arr.splice(j, 1);
+          arr.splice(i, 1);
+          i--;
+          break;
+        }
+      }
+    }
   };
-  return count;
+  return arr.length;
 };
