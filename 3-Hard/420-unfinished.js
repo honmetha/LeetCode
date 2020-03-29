@@ -21,9 +21,8 @@
 // @param {string} s
 // @return {number}
 
-const strongPasswordChecker = function(s) {
-  let counter = 0;
-  let length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
+const strongPasswordChecker = (s) => {
+  let counter = 0, length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = {};
 
   s.length > 20 ? length -= (s.length-20) : null;
   s.length < 6 ? length += (6-s.length) : null;
@@ -32,11 +31,20 @@ const strongPasswordChecker = function(s) {
   /[a-z]/.test(s) ? null : lowercase++;
   /\d/.test(s) ? null : digit++;
 
-  // for (i = 0; i < s.length; i += 3) {
-  //   if (s[i] === s[i + 1] && s[i] === s[i + 2]) {
-  //     repeat++;
-  //   }
-  // }
+  for (i = 0; i < s.length; i += 0) {
+    let repeatCount = 1;
+    for (j = i + 1; j < s.length; j++) {
+      if (s[i] === s[j]) {
+        repeatCount++;
+      } else {
+        break;
+      }
+    }
+    if (repeatCount >= 3) {
+      repeat[s[i]] = repeatCount;
+    }
+    i += repeatCount;
+  }
 
   if (length === 0) {
     counter = lowercase + uppercase + digit;
@@ -51,7 +59,7 @@ const strongPasswordChecker = function(s) {
   console.log(`lowercase = ${lowercase}`);
   console.log(`uppercase = ${uppercase}`);
   console.log(`digit = ${digit}`);
-  // console.log(`repeat = ${repeat}`);
+  console.log("repeat", repeat);
   return counter;
 };
 
@@ -68,6 +76,9 @@ const strongPasswordChecker = function(s) {
 // "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
 // "abc1234567890ABCaaaaaaaaaaaaaa"
 // "123123123123123123abc123123123123123"
+// "12345678901234567890"
 // "aA1aaAaaA1aaAaaAaaA1"
 // "aaaaaaabbbbbbb12SSSSQWWWWWWW"
+// "aaaaaaabbbbbbbbbbbb12SSSSQWWWWWWW"
+// "aaaaaaabbbbbbb1234567SSSSQWWWWWWW"
 // "aaaaaaa1BBBBBBB"
