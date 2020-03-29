@@ -59,6 +59,7 @@ const strongPasswordChecker = function(s) {
 // Testcases
 
 // ""
+// " "
 // "a"
 // "aaa"
 // "123"
@@ -68,3 +69,5 @@ const strongPasswordChecker = function(s) {
 // "abc1234567890ABCaaaaaaaaaaaaaa"
 // "123123123123123123abc123123123123123"
 // "aA1aaAaaA1aaAaaAaaA1"
+// "aaaaaaabbbbbbb12SSSSQWWWWWWW"
+// "aaaaaaa1BBBBBBB"
