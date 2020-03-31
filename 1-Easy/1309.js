@@ -48,23 +48,18 @@
 // @param {string} s
 // @return {string}
 
-var freqAlphabets = function(s) {
-  let output = "", str;
+const freqAlphabets = (s) => {
+  let output = "";
   for (i = 0; i < s.length; i++) {
     if (s[i] === "1" || s[i] === "2") {
       if (s[i + 2] === "#") {
-        let str = s[i] + s[i + 1];
-        str = parseInt(str);
-        output += (str + 9).toString(36);
+        output += (parseInt(s[i] + s[i + 1]) + 9).toString(36);
         i += 2;
       } else {
-        str = parseInt(s[i]);
-        output += (str + 9).toString(36);
+        output += (parseInt(s[i]) + 9).toString(36);
       }
     } else {
-      str = parseInt(s[i]);
-      output += (str + 9).toString(36);
+      output += (parseInt(s[i]) + 9).toString(36);
     }
-  }
-  return output;
+  } return output;
 };
