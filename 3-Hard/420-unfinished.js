@@ -46,6 +46,9 @@ const strongPasswordChecker = (s) => {
     i += repeatCount;
   }
 
+  // example: repeat = {4: 4, 5: 5, 7: 7, 9: 9}
+  // Modulo
+
   if (length === 0) {
     counter = lowercase + uppercase + digit;
   } else if (length < 0) {
