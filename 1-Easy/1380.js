@@ -41,21 +41,27 @@
 // @return {number[]}
 
 const luckyNumbers  = (matrix) => {
-  let arrIndex = 0, allSum = 0;
+  let allMax = 0, luckyArray = 0, luckyNumber = 0;
+
   for (i = 0; i < matrix.length; i++) {
-    let sum = 0;
-    for (j = 0; j < matrix[i].length; j++) {
-      sum += matrix[i][j];
-    }
-    if (sum > allSum) {
-      allSum = sum;
-      arrIndex = i;
+    let sort = matrix[i].sort(function(a, b){return a-b});
+    let max = sort[matrix[i].length - 1];
+    if (allMax < max) {
+      allMax = max;
+      luckyArray = i;
+      luckyNumber = sort[0]
     }
   }
-  let max = matrix[arrIndex][0];
-  for (item of matrix[arrIndex]) {
-    max > item ? max = item : null;
+
+  let output = [luckyNumber];
+  for (k = 0; k < matrix.length; k++) {
+    if (k !== luckyArray) {
+      if (matrix[k][matrix[k].length - 1] > output[0]) {
+        output = [];
+        break;
+      }
+    }
   }
-  let output = [max];
+  
   return output;
 };
