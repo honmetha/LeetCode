@@ -40,27 +40,23 @@
 // @param {number[][]} matrix
 // @return {number[]}
 
-const luckyNumbers  = (matrix) => {
-  let allMax = 0, luckyArray = 0, luckyNumber = 0;
+const luckyNumbers = (matrix) => {
+  let min = 100001, luckyIndex = 0, isLucky = true, output = [];
 
   for (i = 0; i < matrix.length; i++) {
-    let sort = matrix[i].sort(function(a, b){return a-b});
-    let max = sort[matrix[i].length - 1];
-    if (allMax < max) {
-      allMax = max;
-      luckyArray = i;
-      luckyNumber = sort[0]
-    }
-  }
-
-  let output = [luckyNumber];
-  for (k = 0; k < matrix.length; k++) {
-    if (k !== luckyArray) {
-      if (matrix[k][matrix[k].length - 1] > output[0]) {
-        output = [];
-        break;
+    for (j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] < min) {
+        min = matrix[i][j];
+        luckyIndex = j;
       }
     }
+    
+    for (k = 0; k < matrix.length; k++) {
+      min >= matrix[k][luckyIndex] ? null : isLucky = false;
+    }
+    isLucky === true ? output.push(min) : null;
+    isLucky = true;
+    min = 100001;
   }
   
   return output;
