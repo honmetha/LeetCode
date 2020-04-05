@@ -27,15 +27,8 @@
 // @param {number[]} A
 // @return {number[]}
 
-var sortArrayByParity = function(A) {
-  let output = [];
-  for (i = 0; i < A.length; i++) {
-    if (A[i] % 2 !== 0) {
-      output.push(A[i]);
-    }
-    if (A[i] % 2 === 0) {
-      output.unshift(A[i]);
-    }
-  }
+const sortArrayByParity = (A) => {
+  let output = []
+  A.map(num => num % 2 === 0 ? output.unshift(num) : output.push(num));
   return output;
 };
