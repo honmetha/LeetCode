@@ -50,16 +50,12 @@
 
 const freqAlphabets = (s) => {
   let output = "";
-  for (i = 0; i < s.length; i++) {
-    if (s[i] === "1" || s[i] === "2") {
-      if (s[i + 2] === "#") {
-        output += (parseInt(s[i] + s[i + 1]) + 9).toString(36);
-        i += 2;
-      } else {
-        output += (parseInt(s[i]) + 9).toString(36);
-      }
+  for (i = s.length - 1; i >= 0; i--) {
+    if (s[i] === "#") {
+      output = (Number(s[i - 2] + s[i - 1]) + 9).toString(36) + output;
+      i -= 2;
     } else {
-      output += (parseInt(s[i]) + 9).toString(36);
+      output = (Number(s[i]) + 9).toString(36) + output;
     }
   } return output;
 };
