@@ -36,15 +36,11 @@
 // @param {number[]} A
 // @return {number}
 
-var repeatedNTimes = function(A) {
+const repeatedNTimes = (A) => {
   for (i = 0; i < A.length; i++) {
-    let count = -1;
-    for (j = i; j < A.length; j++) {
+    for (j = i + 1; j < A.length; j++) {
       if (A[i] === A[j]) {
-        count++;
-        if (count > 0) {
-          return A[i];
-        }
+        return A[i];
       }
     }
   }
