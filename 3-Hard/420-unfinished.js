@@ -22,7 +22,7 @@
 // @return {number}
 
 const strongPasswordChecker = (s) => {
-  let counter = 0, length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
+  let output = 0, length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
 
   // length
   s.length > 20 ? length -= (s.length-20) : null;
@@ -50,7 +50,7 @@ const strongPasswordChecker = (s) => {
     i += repeatCount;
   }
 
-  // logic
+  // conclusion
   let toRemove = 0
   if (length < 0) {
     toRemove = -length;
@@ -88,21 +88,29 @@ const strongPasswordChecker = (s) => {
   console.log("repeatArr", repeatArr)
   repeat = repeatArr.reduce((acc, num) => acc + (Math.floor(num / 3)), 0);
 
-  // if (length === 0) {
-  //   counter = lowercase + uppercase + digit;
-  // } else if (length < 0) {
-  //   counter = Math.abs(length) + lowercase + uppercase + digit
-  // } else if (length > 0) {
-  //   counter = lowercase + uppercase + digit;
-  //   length > counter ? counter = length : null;
-  // }
+  if (length === 0) {
+    if (repeat > lowercase + uppercase + digit) {
+      output = repeat;
+    } else {
+      output = lowercase + uppercase + digit;
+    }
+  } else if (length < 0) {
+    if (repeat > lowercase + uppercase + digit) {
+      output = Math.abs(length) + repeat;
+    } else {
+      output = Math.abs(length) + lowercase + uppercase + digit;
+    }
+  } else if (length > 0) {
+      output = lowercase + uppercase + digit;
+      length > output ? output = length : null;
+  }
 
   console.log(`length = ${length}`);
   console.log(`lowercase = ${lowercase}`);
   console.log(`uppercase = ${uppercase}`);
   console.log(`digit = ${digit}`);
   console.log("repeat", repeat);
-  return counter;
+  return output;
 };
 
 
@@ -115,6 +123,13 @@ const strongPasswordChecker = (s) => {
 // "123"
 // "1212"
 // "12121"
+// "aaaab"
+// "aaa1B"
+// "aaaabc"
+// "aaaaB4"
+// "aaaaBB"
+// "aaaabb"
+// "aaaaaaaaaaaaaaaaaaaaa"
 // "aaaaaaaaaaaaaaaaaaaaaaaaaaa"
 // "abc1234567890ABCaaaaaaaaaaaaaa"
 // "123123123123123123abc123123123123123"
