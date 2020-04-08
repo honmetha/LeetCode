@@ -22,15 +22,19 @@
 // @return {number}
 
 const strongPasswordChecker = (s) => {
-  let counter = 0, length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = {};
+  let counter = 0, length = 0, lowercase = 0, uppercase = 0, digit = 0, repeat = 0;
 
+  // length
   s.length > 20 ? length -= (s.length-20) : null;
   s.length < 6 ? length += (6-s.length) : null;
 
+  // lowercase, uppercase, digit
   /[A-Z]/.test(s) ? null : uppercase++;
   /[a-z]/.test(s) ? null : lowercase++;
   /\d/.test(s) ? null : digit++;
 
+  // repeat
+  let repeatArr = [];
   for (i = 0; i < s.length; i += 0) {
     let repeatCount = 1;
     for (j = i + 1; j < s.length; j++) {
@@ -41,22 +45,57 @@ const strongPasswordChecker = (s) => {
       }
     }
     if (repeatCount >= 3) {
-      repeat[s[i]] = repeatCount;
+      repeatArr.push(repeatCount);
     }
     i += repeatCount;
   }
 
-  // example: repeat = {4: 4, 5: 5, 7: 7, 9: 9}
-  // Modulo
-
-  if (length === 0) {
-    counter = lowercase + uppercase + digit;
-  } else if (length < 0) {
-    counter = Math.abs(length) + lowercase + uppercase + digit
-  } else if (length > 0) {
-    counter = lowercase + uppercase + digit;
-    length > counter ? counter = length : null;
+  // logic
+  let toRemove = 0
+  if (length < 0) {
+    toRemove = -length;
   }
+
+  while (toRemove !== 0) {
+    let loopCheck = toRemove;
+    console.log("toRemove", toRemove);
+    for (i = 0; i < repeatArr.length; i++) {
+      console.log("for loop -1")
+      if (repeatArr[i] % 3 === 0 && toRemove >= 1) {
+        repeatArr[i] -= 1;
+        toRemove -= 1;
+      }
+    }
+    for (i = 0; i < repeatArr.length; i++) {
+      console.log("for loop -2")
+      if (repeatArr[i] % 3 === 1 && toRemove >= 2) {
+        repeatArr[i] -= 2;
+        toRemove -= 2;
+      }
+    }
+    for (i = 0; i < repeatArr.length; i++) {
+      console.log("for loop -3")
+      if (repeatArr[i] % 3 === 2 && toRemove >= 3) {
+        repeatArr[i] -= 3;
+        toRemove -= 3;
+      }
+    }
+    if (loopCheck === toRemove) {
+      toRemove = 0;
+    }
+  }
+
+  console.log("repeatArr", repeatArr)
+  repeat = repeatArr.reduce((acc, num) => acc + (Math.floor(num / 3)), 0);
+
+  // if (length === 0) {
+  //   counter = lowercase + uppercase + digit;
+  // } else if (length < 0) {
+  //   counter = Math.abs(length) + lowercase + uppercase + digit
+  // } else if (length > 0) {
+  //   counter = lowercase + uppercase + digit;
+  //   length > counter ? counter = length : null;
+  // }
 
   console.log(`length = ${length}`);
   console.log(`lowercase = ${lowercase}`);
