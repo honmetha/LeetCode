@@ -58,23 +58,19 @@ const strongPasswordChecker = (s) => {
 
   while (toRemove !== 0) {
     let loopCheck = toRemove;
-    console.log("toRemove", toRemove);
     for (i = 0; i < repeatArr.length; i++) {
-      console.log("for loop -1")
       if (repeatArr[i] % 3 === 0 && toRemove >= 1) {
         repeatArr[i] -= 1;
         toRemove -= 1;
       }
     }
     for (i = 0; i < repeatArr.length; i++) {
-      console.log("for loop -2")
       if (repeatArr[i] % 3 === 1 && toRemove >= 2) {
         repeatArr[i] -= 2;
         toRemove -= 2;
       }
     }
     for (i = 0; i < repeatArr.length; i++) {
-      console.log("for loop -3")
       if (repeatArr[i] % 3 === 2 && toRemove >= 3) {
         repeatArr[i] -= 3;
         toRemove -= 3;
@@ -85,7 +81,6 @@ const strongPasswordChecker = (s) => {
     }
   }
 
-  console.log("repeatArr", repeatArr)
   repeat = repeatArr.reduce((acc, num) => acc + (Math.floor(num / 3)), 0);
 
   if (length === 0) {
@@ -105,11 +100,6 @@ const strongPasswordChecker = (s) => {
       length > output ? output = length : null;
   }
 
-  console.log(`length = ${length}`);
-  console.log(`lowercase = ${lowercase}`);
-  console.log(`uppercase = ${uppercase}`);
-  console.log(`digit = ${digit}`);
-  console.log("repeat", repeat);
   return output;
 };
 
