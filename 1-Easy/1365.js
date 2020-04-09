@@ -42,7 +42,7 @@
 // @param {number[]} nums
 // @return {number[]}
 
-var smallerNumbersThanCurrent = function(nums) {
+const smallerNumbersThanCurrent = (nums) => {
   let output = [];
   for (i = 0; i < nums.length; i++) {
     let counter = 0;
@@ -53,5 +53,19 @@ var smallerNumbersThanCurrent = function(nums) {
     }
     output.push(counter);
   }
+  return output;
+};
+
+
+
+const smallerNumbersThanCurrent = (nums) => {
+  let output = [];
+  nums.map(num => {
+    let counter = 0;
+    nums.map(num2 => {
+      num > num2 ? counter++ : null;
+    });
+    output.push(counter);
+  });
   return output;
 };
