@@ -43,29 +43,6 @@
 // @return {number[]}
 
 const smallerNumbersThanCurrent = (nums) => {
-  let output = [];
-  for (i = 0; i < nums.length; i++) {
-    let counter = 0;
-    for (j = 0; j < nums.length; j++) {
-      if (nums[i] > nums[j]) {
-        counter++
-      }
-    }
-    output.push(counter);
-  }
-  return output;
-};
-
-
-
-const smallerNumbersThanCurrent = (nums) => {
-  let output = [];
-  nums.map(num => {
-    let counter = 0;
-    nums.map(num2 => {
-      num > num2 ? counter++ : null;
-    });
-    output.push(counter);
-  });
-  return output;
+  let sortedArr = [...nums].sort((a, b) => a - b);
+  return nums.map(num => sortedArr.indexOf(num));
 };
