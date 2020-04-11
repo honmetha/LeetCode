@@ -46,3 +46,20 @@ const smallerNumbersThanCurrent = (nums) => {
   let sortedArr = [...nums].sort((a, b) => a - b);
   return nums.map(num => sortedArr.indexOf(num));
 };
+
+
+const smallerNumbersThanCurrent = (nums) =>  {
+  let length = nums.length;
+  let clone = [...nums].sort((a,b)=>a-b);
+  let letter = clone[0];
+  let hash = {};
+  hash[letter] = 0;
+  for (let i = 1; i < length; i++) {
+      let curLetter = clone[i];
+      if (letter !== curLetter) {
+          hash[curLetter] = i;
+      };
+      letter = curLetter;
+  };
+  return nums.map((a)=>hash[a]);
+};
