@@ -14,6 +14,7 @@ https://leetcode.com/
 | 804  | Unique Morse Code Words                                  | Easy       | JavaScript       |
 | 832  | Flipping an Image                                        | Easy       | JavaScript       |
 | 905  | Sort Array By Parity                                     | Easy       | JavaScript       |
+| 912  | Sort an Array                                            | Medium     | JavaScript       |
 | 921  | Minimum Add to Make Parentheses Valid                    | Medium     | JavaScript       |
 | 922  | Sort Array By Parity II                                  | Easy       | JavaScript       |
 | 942  | DI String Match                                          | Easy       | JavaScript       |
