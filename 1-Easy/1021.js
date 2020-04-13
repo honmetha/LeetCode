@@ -52,7 +52,7 @@
 // @param {string} S
 // @return {string}
 
-const removeOuterParentheses = function(S) {
+const removeOuterParentheses = (S) => {
   let count = 0, output = "";
   for (item of S) {
     item === "(" ? count++ : count--;
