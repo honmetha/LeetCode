@@ -4,6 +4,7 @@ https://leetcode.com/
 
 | #    | Title                                                    | Difficulty | Language         |
 | :--- | :------------------------------------------------------- | :--------- | :--------------- |
+| 260  | Single Number III                                        | Medium     | JavaScript       |
 | 344  | Reverse String                                           | Easy       | JavaScript       |
 | 420  | Strong Password Checker                                  | Hard       | JavaScript       |
 | 442  | Find All Duplicates in an Array                          | Medium     | JavaScript       |
