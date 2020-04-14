@@ -23,5 +23,19 @@
 // @return {number[]}
 
 const singleNumber = (nums) => {
-  return output;
+  let length = nums.length, count = 1, output = [];
+  for (i = 0; i < length; i++) {
+    for (j = 0; j < length; j++) {
+      if (i !== j) {
+        if (nums[i] === nums[j]) {
+          count--;
+          break;
+        }
+      }
+    }
+    count === 1 ? output.push(nums[i]): count++;
+    if (output.length === 2) {
+      return output
+    }
+  }
 };
