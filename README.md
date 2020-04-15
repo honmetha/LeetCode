@@ -1,6 +1,6 @@
 # LeetCode
 
-https://leetcode.com/
+https://leetcode.com/metha/
 
 | #    | Title                                                    | Difficulty | Language         |
 | :--- | :------------------------------------------------------- | :--------- | :--------------- |
