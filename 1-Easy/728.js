@@ -28,7 +28,7 @@
 // @param {number} right
 // @return {number[]}
 
-const selfDividingNumbers = function(left, right) {
+const selfDividingNumbers = (left, right) => {
   let arr = [], output = [];
   for (i = left; i < right; i++) {
     arr.push(i);
