@@ -47,5 +47,32 @@
 // @return {boolean}
 
 const canReach = (arr, start) => {
-  return output;
+  if (arr[start] === 0) return true;
+  
+  let x = [], y = [], count = arr.length;
+  
+  arr.map((num, i) => {
+    if (num === 0) x = [...x, i];
+  });
+
+  while (count !== 0) {
+    x.map(item => {
+      arr.map((num, i) => {
+        if (i !== item && (i + num === item || i - num === item)) {
+          y = [...y, i];
+        }
+      });
+    });
+
+    for (num of y) {
+      if (num === start) {
+        return true;
+      }
+    }
+    
+    x = [...y];
+    y = [];
+    count--;
+  }
+  return false;
 };
