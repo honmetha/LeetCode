@@ -25,9 +25,11 @@ https://leetcode.com/metha/
 | 1108 | Defanging an IP Address                                  | Easy       | JavaScript       |
 | 1207 | Unique Number of Occurrences                             | Easy       | JavaScript       |
 | 1221 | Split a String in Balanced Strings                       | Easy       | JavaScript       |
+| 1249 | Minimum Remove to Make Valid Parentheses                 | Medium     | JavaScript       |
 | 1281 | Subtract the Product and Sum of Digits of an Integer     | Easy       | JavaScript       |
 | 1295 | Find Numbers with Even Number of Digits                  | Easy       | JavaScript       |
 | 1299 | Replace Elements with Greatest Element on Right Side     | Easy       | JavaScript       |
+| 1306 | Jump Game III                                            | Medium     | JavaScript       |
 | 1309 | Decrypt String from Alphabet to Integer Mapping          | Easy       | JavaScript       |
 | 1313 | Decompress Run-Length Encoded List                       | Easy       | JavaScript       |
 | 1323 | Maximum 69 Number                                        | Easy       | JavaScript       |
