@@ -29,17 +29,13 @@
 // @return {number[]}
 
 const selfDividingNumbers = (left, right) => {
-  let loopNumber = right + 1, output = [];
-  for (i = left; i < loopNumber; i++) {
-    let checker = 0;
-    let numArr = i.toString().split("");
-    for (num of numArr) {
-      if (i % num === 0) {
-        checker++;
-        checker === numArr.length ? output.push(i) : null;
-      } else {
-        break;
-      }
+  let output = [];
+  for (i = left; i <= right; i++) {
+    let num = i.toString(), j = 0;
+    while (j < num.length) {
+      if (i % num[j] !== 0) break;
+      if (j === num.length - 1) output.push(i);
+      j++;
     }
   }
   return output;
