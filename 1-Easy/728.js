@@ -31,11 +31,10 @@
 const selfDividingNumbers = (left, right) => {
   let output = [];
   for (i = left; i <= right; i++) {
-    let num = i.toString(), j = 0;
-    while (j < num.length) {
+    let num = i.toString()
+    for (j = 0; j < num.length; j++) {
       if (i % num[j] !== 0) break;
       if (j === num.length - 1) output.push(i);
-      j++;
     }
   }
   return output;
