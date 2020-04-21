@@ -34,10 +34,10 @@
 // @param {number[]} arr
 // @return {boolean}
 
-const uniqueOccurrences = function(arr) {
-  let newArr = arr.filter((item, index) => arr.indexOf(item) === index);
+const uniqueOccurrences = (arr) => {
+  let filteredArr = arr.filter((item, i) => arr.indexOf(item) === i);
   let newArr2 = [];
-  for (digit of newArr) {
+  for (digit of filteredArr) {
     let counter = 0;
     for (number of arr) {
       if (digit === number) {
