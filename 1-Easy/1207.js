@@ -35,43 +35,21 @@
 // @return {boolean}
 
 const uniqueOccurrences = (arr) => {
-  let filteredArr = arr.filter((item, i) => arr.indexOf(item) === i);
-  let newArr2 = [];
-  for (digit of filteredArr) {
-    let counter = 0;
-    for (number of arr) {
-      if (digit === number) {
-        counter++
-      }
-    }
-    newArr2.push(counter);
+  const obj = {};
+  for (num of arr) {
+    obj[num] = (obj[num] || 0) + 1;
   }
-  return newArr2.length === new Set(newArr2).size;
+  return Object.keys(obj).length === new Set(Object.values(obj)).size;
 };
 
 
 
-// Just map each number to the number of its occurences, and put the values in a set. 
-// If two numbers have the same # of occurences, then the size would decrease since set's contain only unique values.
-const uniqueOccurrences = arr => {
-  const mapOccurrences = {};
-  for(let num of arr){
-      mapOccurrences[num] = (mapOccurrences[num] || 0) + 1;
-      console.log("mapOccurrences[num] =", mapOccurrences[num]);
-      console.log("mapOccurrences[num] || 0 =", mapOccurrences[num] || 0);
-  }
-  console.log(mapOccurrences);
-  return Object.keys(mapOccurrences).length === new Set(Object.values(mapOccurrences)).size
-};
-
-
-
-var uniqueOccurrences = function(arr) {
-  var map = {}, occurrences = {};
+const uniqueOccurrences = (arr) => {
+  let map = {}, occurrences = {};
   
   // First step: 
   // Loop and find each occurrences and store them against their values.
-  for (var i = 0; i < arr.length; ++ i) {
+  for (let i = 0; i < arr.length; ++ i) {
       if (map[arr[i]] === undefined) {
           map[arr[i]] = 0;
       }
@@ -82,7 +60,7 @@ var uniqueOccurrences = function(arr) {
   // Loop the stored map and store the occurrences in another map,
   // While storing check if any value is repeated, if repeated return `false`
   // Else `return true`
-  for (var num in map) {
+  for (let num in map) {
       if (map.hasOwnProperty(num)) {
           if (occurrences[map[num]] !== undefined) {
               return false;
