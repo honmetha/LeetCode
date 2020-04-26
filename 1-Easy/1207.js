@@ -41,32 +41,3 @@ const uniqueOccurrences = (arr) => {
   }
   return Object.keys(obj).length === new Set(Object.values(obj)).size;
 };
-
-
-
-const uniqueOccurrences = (arr) => {
-  let map = {}, occurrences = {};
-  
-  // First step: 
-  // Loop and find each occurrences and store them against their values.
-  for (let i = 0; i < arr.length; ++ i) {
-      if (map[arr[i]] === undefined) {
-          map[arr[i]] = 0;
-      }
-      ++ map[arr[i]];
-  }
-  
-  // Second step: 
-  // Loop the stored map and store the occurrences in another map,
-  // While storing check if any value is repeated, if repeated return `false`
-  // Else `return true`
-  for (let num in map) {
-      if (map.hasOwnProperty(num)) {
-          if (occurrences[map[num]] !== undefined) {
-              return false;
-          }
-          occurrences[map[num]] = true;
-      }
-  }
-  return true;
-};
