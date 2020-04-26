@@ -35,22 +35,14 @@
 // @param {string} moves
 // @return {boolean}
 
-const judgeCircle = function(moves) {
+const judgeCircle = (moves) => {
   let x = 0, y = 0;
   for (key of moves) {
     switch (key) {
-      case "U":
-        y++;
-        break;
-      case "D":
-        y--;
-        break;
-      case "L":
-        x--;
-        break;
-      case "R":
-        x++;
-        break;
+      case "U": y++; break;
+      case "D": y--; break;
+      case "L": x--; break;
+      case "R": x++; break;
     }
   }
   return (x === 0 && y === 0 ? true : false);
