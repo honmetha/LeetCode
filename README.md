@@ -14,6 +14,7 @@ https://leetcode.com/metha/
 | 771  | Jewels and Stones                                        | Easy       | JavaScript       |
 | 804  | Unique Morse Code Words                                  | Easy       | JavaScript       |
 | 832  | Flipping an Image                                        | Easy       | JavaScript       |
+| 841  | Keys and Rooms                                           | Medium     | JavaScript       |
 | 905  | Sort Array By Parity                                     | Easy       | JavaScript       |
 | 912  | Sort an Array                                            | Medium     | JavaScript       |
 | 921  | Minimum Add to Make Parentheses Valid                    | Medium     | JavaScript       |
