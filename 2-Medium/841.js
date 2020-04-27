@@ -43,5 +43,46 @@
 // @return {boolean}
 
 const canVisitAllRooms = (rooms) => {
-  return output;
+  let lockedRoom = [...Array(rooms.length).keys()].slice(1);
+  let keys = [...rooms[0]];
+
+  while (lockedRoom.length !== 0) {
+    let x = [...lockedRoom], y = [...keys];
+    lockedRoom = [], keys = [];
+
+    for (key of y) {
+      x.map(room => {
+        if (key === room) {
+          keys = [...keys, key];
+        } else {
+          lockedRoom = [...lockedRoom, room];
+        }
+      });
+    }
+
+    y = [...keys], keys = [];
+    for (key of y) {
+      keys = [...keys, rooms[key]];
+    }
+
+    console.log("x =", x);
+    console.log("lockedRoom =", lockedRoom);
+    console.log("keys =", keys);
+    break;
+  }
+
+  return lockedRoom.length === 0 ? true : false;
+};
+
+
+
+const canVisitAllRooms = (rooms) => {
+  let lockedRoom = [...Array(rooms.length).keys()].slice(1);
+  let keys = [...rooms[0]];
+
+  while (lockedRoom.length !== 0) {
+    
+  }
+
+  return lockedRoom.length === 0 ? true : false;
 };
