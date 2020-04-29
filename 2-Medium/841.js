@@ -43,52 +43,28 @@
 // @return {boolean}
 
 const canVisitAllRooms = (rooms) => {
-  let lockedRoom = [...Array(rooms.length).keys()].slice(1);
-  let keys = [...rooms[0]];
-
-  while (lockedRoom.length !== 0) {
-    let x = [...lockedRoom], y = [...keys];
-    lockedRoom = [], keys = [];
-
-    for (key of y) {
-      x.map(room => {
-        if (key === room) {
-          keys = [...keys, key];
-        } else {
-          lockedRoom = [...lockedRoom, room];
-        }
-      });
-    }
-
-    y = [...keys], keys = [];
-    for (key of y) {
-      keys = [...keys, rooms[key]];
-    }
-
-    console.log("x =", x);
-    console.log("lockedRoom =", lockedRoom);
-    console.log("keys =", keys);
-    break;
-  }
-
-  return lockedRoom.length === 0 ? true : false;
-};
-
-
-
-const canVisitAllRooms = (rooms) => {
-  let lockedRoom = [...Array(rooms.length).keys()].slice(1);
+  let lockedRooms = [...Array(rooms.length).keys()].slice(1);
   let keyBag = [...rooms[0]];
-  let man = [];
+  
+  while (lockedRooms.length !== 0) {
+    let man = [];
+    let totalLockedRooms = lockedRooms.length;
 
-  while (lockedRoom.length !== 0) {
-    // var array = [1,2,3,4]
-    // var item = 3
+    for (key of keyBag) {
+      let index = lockedRooms.indexOf(key);
+      if (index !== -1) {
+        lockedRooms.splice(index, 1);
+        man = [...man, key];
+      }
+    }
 
-    // var index = array.indexOf(item);
-    // if (index !== -1) array.splice(index, 1);
+    if (totalLockedRooms === lockedRooms.length) return false;
 
-    break;
+    keyBag = [];
+    
+    for (key of man) {
+      keyBag = [...keyBag, ...rooms[key]];
+    }
   }
 
   return true;
