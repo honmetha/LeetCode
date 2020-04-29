@@ -45,5 +45,5 @@ const judgeCircle = (moves) => {
       case "R": x++; break;
     }
   }
-  return (x === 0 && y === 0 ? true : false);
+  return (!x && !y ? true : false);
 };

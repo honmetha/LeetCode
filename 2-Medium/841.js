@@ -78,11 +78,18 @@ const canVisitAllRooms = (rooms) => {
 
 const canVisitAllRooms = (rooms) => {
   let lockedRoom = [...Array(rooms.length).keys()].slice(1);
-  let keys = [...rooms[0]];
+  let keyBag = [...rooms[0]];
+  let man = [];
 
   while (lockedRoom.length !== 0) {
-    
+    // var array = [1,2,3,4]
+    // var item = 3
+
+    // var index = array.indexOf(item);
+    // if (index !== -1) array.splice(index, 1);
+
+    break;
   }
 
-  return lockedRoom.length === 0 ? true : false;
+  return true;
 };
