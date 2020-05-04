@@ -29,7 +29,7 @@
 // @param {number[]} A
 // @return {number[]}
 
-const sortArrayByParityII = function(A) {
+const sortArrayByParityII = A => {
   let odd = [], even = [], output = [];
   for (item of A) {
     if (item % 2 !== 0) {
@@ -44,3 +44,70 @@ const sortArrayByParityII = function(A) {
   }
   return output;
 };
+
+
+
+// Javascript, beats 97% Time, beats 87% Space
+// https://leetcode.com/problems/sort-array-by-parity-ii/discuss/328767/Javascript-beats-97-Time-beats-87-Space
+var sortArrayByParityII = function(A) {
+  for(var i=0; i<A.length-1; i++){
+      if(i %2 ==0 && A[i]%2 !=0){
+          var k=i;
+          while(A[k]%2 !=0){
+              k++;
+          }
+          var tem=A[i];
+          A[i]=A[k];
+          A[k]=tem;
+      }else if(i%2 !=0 && A[i]%2 ==0){
+          var s=i;
+          while(A[s]%2 ==0){
+              s++;
+          }
+          var tem=A[i];
+          A[i]=A[s];
+          A[s]=tem;
+      }
+  }
+  return A;
+};
+
+
+
+// JavaScript Solution, 88 ms
+// Runtime: 88 ms, faster than 94.53% of JavaScript online submissions
+// Memory Usage: 38.8 MB, less than 54.55% of JavaScript online submissions
+// https://leetcode.com/problems/sort-array-by-parity-ii/discuss/508832/JavaScript-Solution-88-ms
+const sortArrayByParityII = a => {
+  let [e, o] = [0, 1];
+  while (e < a.length && o < a.length) {
+    if (1 === a[e] % 2 && 0 === a[o] % 2) {
+      [a[e], a[o]] = [a[o], a[e]];
+      [e, o] = [e + 2, o + 2];
+    } else {
+      if (0 === a[e] % 2) e += 2;
+      if (1 === a[o] % 2) o += 2;
+    }
+  }
+  return a;
+};
+
+
+
+// [JavaScript] One loop solution
+// https://leetcode.com/problems/sort-array-by-parity-ii/discuss/397526/JavaScript-One-loop-solution
+const sortArrayByParityII = arr => {
+  let res = []
+  let evenIndex = 0
+  let oddIndex = 1
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+          res[evenIndex] = arr[i]
+          evenIndex = evenIndex + 2
+      } else {
+          res[oddIndex] = arr[i]
+          oddIndex = oddIndex + 2
+      }
+  }
+  return res
+}
