@@ -30,42 +30,23 @@
 // @return {number[]}
 
 const sortArrayByParityII = A => {
-  let even = 0, odd = 1, output = [];
-  for (item of A) {
-    if (item % 2 === 0) {
-      output[even] = item;
-      even += 2
-    } else {
-      output[odd] = item;
-      odd += 2
-    }
-  }
-  return output;
-};
-
-
-
-// Javascript, beats 97% Time, beats 87% Space
-// https://leetcode.com/problems/sort-array-by-parity-ii/discuss/328767/Javascript-beats-97-Time-beats-87-Space
-const sortArrayByParityII = A => {
-  debugger;
   for(let i = 0; i < A.length - 1; i++){
     if(i % 2 === 0 && A[i] % 2 !== 0){
-      let k = i;
-      while (A[k] % 2 !== 0) {
-        k++;
+      let x = i;
+      while (A[x] % 2 !== 0) {
+        x++;
       }
-      let tem = A[i];
-      A[i] = A[k];
-      A[k] = tem;
+      let temporary = A[i];
+      A[i] = A[x];
+      A[x] = temporary;
     } else if (i % 2 !== 0 && A[i] % 2 === 0) {
-      let s = i;
-      while (A[s] % 2 === 0) {
-        s++;
+      let y = i;
+      while (A[y] % 2 === 0) {
+        y++;
       }
-      let tem = A[i];
-      A[i] = A[s];
-      A[s] = tem;
+      let temporary = A[i];
+      A[i] = A[y];
+      A[y] = temporary;
     }
   }
   return A;
