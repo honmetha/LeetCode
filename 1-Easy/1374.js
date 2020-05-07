@@ -40,12 +40,4 @@
 // @param {number} n
 // @return {string}
 
-const generateTheString = function(n) {
-  let output = "";
-  if (n % 2 !== 0) {
-    output = "a".repeat(n);
-  } else {
-    output = "a".repeat(n - 1) + "b";
-  }
-  return output;
-};
+const generateTheString = n => n % 2 !== 0 ? "a".repeat(n) : "a".repeat(n - 1) + "b";
