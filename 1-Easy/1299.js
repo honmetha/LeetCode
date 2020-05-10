@@ -26,7 +26,7 @@
 // @param {number[]} arr
 // @return {number[]}
 
-const replaceElements = function(arr) {
+const replaceElements = arr => {
 
   let a = 0, b = null, output = arr;
 
@@ -53,4 +53,48 @@ const replaceElements = function(arr) {
   }
   output[output.length-1] = -1;
   return output;
+};
+
+
+
+const replaceElements = arr => {
+  for (i = 0; i < arr.length; i++) {
+    if (i > 0) {
+      let x = i;
+      while (x >= 0) {
+        x--;
+        if (arr[i] <= arr[x]) {
+          break;
+        } else {
+          arr[x] = arr[i];
+          
+        }
+      }
+    }
+  }
+};
+
+
+
+const sortArrayByParityII = A => {
+  for(let i = 0; i < A.length - 1; i++){
+    if(i % 2 === 0 && A[i] % 2 !== 0){
+      let x = i;
+      while (A[x] % 2 !== 0) {
+        x++;
+      }
+      let temporary = A[i];
+      A[i] = A[x];
+      A[x] = temporary;
+    } else if (i % 2 !== 0 && A[i] % 2 === 0) {
+      let y = i;
+      while (A[y] % 2 === 0) {
+        y++;
+      }
+      let temporary = A[i];
+      A[i] = A[y];
+      A[y] = temporary;
+    }
+  }
+  return A;
 };
