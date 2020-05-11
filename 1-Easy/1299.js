@@ -27,28 +27,23 @@
 // @return {number[]}
 
 const replaceElements = arr => {
-
   let a = 0, b = null, output = arr;
-
   for (i = 0; i < arr.length; i++) {
     for (j = (i + 1); j < arr.length; j++) {
       if (output[i] < output[j] && output[j] > a) {
         a = output[j];
         b = j;
-        // console.log(i, j, a, b,output);
       }
     }
     if (b !== null) {
       for (k = i; k < b; k++) {
         output[k] = a;
-        // console.log(i, k, a, b, output);
       }
       output[b] = 0;
       console.log(output);
       i = i + (b - i - 1);
       a = 0;
       b = null;
-      // console.log(i, a, b, output);
     }
   }
   output[output.length-1] = -1;
@@ -57,44 +52,32 @@ const replaceElements = arr => {
 
 
 
+// JS faster than 99% less than 100%
+// https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/discuss/571234/JS-faster-than-99-less-than-100
 const replaceElements = arr => {
-  for (i = 0; i < arr.length; i++) {
-    if (i > 0) {
-      let x = i;
-      while (x >= 0) {
-        x--;
-        if (arr[i] <= arr[x]) {
-          break;
-        } else {
-          arr[x] = arr[i];
-          
-        }
-      }
+  let greatest = arr[arr.length - 1]
+  let temp;
+  for (let i = arr.length - 2; i >= 0; i--){
+    temp = arr[i]
+    arr[i] = greatest;  
+    if (temp > greatest){
+      greatest = temp
     }
   }
+  arr[arr.length - 1] = -1
+  return arr
 };
 
 
 
-const sortArrayByParityII = A => {
-  for(let i = 0; i < A.length - 1; i++){
-    if(i % 2 === 0 && A[i] % 2 !== 0){
-      let x = i;
-      while (A[x] % 2 !== 0) {
-        x++;
-      }
-      let temporary = A[i];
-      A[i] = A[x];
-      A[x] = temporary;
-    } else if (i % 2 !== 0 && A[i] % 2 === 0) {
-      let y = i;
-      while (A[y] % 2 === 0) {
-        y++;
-      }
-      let temporary = A[i];
-      A[i] = A[y];
-      A[y] = temporary;
-    }
+// Easy Javascript: Time O(N) Space O(1)
+// https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/discuss/463649/Easy-Javascript%3A-Time-O(N)-Space-O(1)
+const replaceElements = arr => {
+  let prev = -1;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    let cur = arr[i];
+    arr[i] = prev;
+    prev = Math.max(prev, cur);
   }
-  return A;
+  return arr;
 };
