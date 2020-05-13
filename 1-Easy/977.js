@@ -30,11 +30,34 @@
 // @param {number[]} A
 // @return {number[]}
 
-const sortedSquares = function(A) {
-  let output =[];
-  for (item of A) {
-    output.push(item ** 2);
+const sortedSquares = A => A.map(num => num ** 2).sort((a, b) => a - b);
+
+
+
+// JS solution with space = O(n) and time = O(n)
+// https://leetcode.com/problems/squares-of-a-sorted-array/discuss/619500/JS-solution-with-space-O(n)-and-time-O(n)
+var sortedSquares = function(A) {
+  let result = [];
+  let zeroIndex = A.length-1;
+  for(let i = 0; i < A.length; i++) {
+  if(A[i] >= 0) {
+  zeroIndex = i;
+  break;
   }
-  output = output.sort((a, b) => a - b);
-  return output;
-};
+  }
+  let i = zeroIndex-1, j = zeroIndex;
+  let x, y;
+  while(i >= 0 || j <= A.length-1) {
+  x = i >= 0 ? Math.pow(A[i], 2) : undefined;
+  y = j < A.length ? Math.pow(A[j], 2) : undefined;
+  if((!x)|| x > y) {
+  result.push(y);
+  j++;
+  } else if( !y || y === x || y > x) {
+  result.push(x);
+  i--;
+  }
+  }
+  
+  return result;
+  };
