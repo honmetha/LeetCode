@@ -37,7 +37,7 @@
 // @param {number[][]} A
 // @return {number[][]}
 
-const flipAndInvertImage = function(A) {
+const flipAndInvertImage = A => {
   let output = A;
 
   for (array of output) {
