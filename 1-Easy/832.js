@@ -40,19 +40,33 @@
 const flipAndInvertImage = A => {
   let output = A;
 
-  for (array of output) {
-    let x = parseInt(array.length / 2)
+  for (arr of output) {
+    let x = parseInt(arr.length / 2)
     for (i = 0 ; i < x; i++) {
-      let y = array[i];
-      array[i] = array[array.length - 1 - i];
-      array[array.length - 1 - i] = y;
+      let y = arr[i];
+      arr[i] = arr[arr.length - 1 - i];
+      arr[arr.length - 1 - i] = y;
     }
   }
 
-  for (array of output) {
-    for (i = 0; i < array.length; i++) {
-      array[i] === 0 ? array[i] = 1 : array[i] = 0;
+  for (arr of output) {
+    for (i = 0; i < arr.length; i++) {
+      arr[i] === 0 ? arr[i] = 1 : arr[i] = 0;
     }
   }
   return output;
+};
+
+
+
+const flipAndInvertImage = A => {
+  for (arr of A) {
+    let x = Math.round(arr.length / 2)
+    for (i = 0 ; i < x; i++) {
+      let y = arr[i] === 0 ? 1 : 0;
+      arr[i] = arr[arr.length - 1 - i] === 0 ? 1 : 0;
+      arr[arr.length - 1 - i] = y;
+    }
+  }
+  return A;
 };

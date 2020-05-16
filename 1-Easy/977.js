@@ -33,7 +33,7 @@
 // Solution 1
 const sortedSquares = A => A.map(num => num ** 2).sort((a, b) => a - b);
 
-// Solution 2
+// Solution 2 (faster)
 const sortedSquares = A => {
   let result = [];
   let zeroIndex = A.length - 1;
