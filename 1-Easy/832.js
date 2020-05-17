@@ -37,6 +37,11 @@
 // @param {number[][]} A
 // @return {number[][]}
 
+// One-Liners
+const flipAndInvertImage = A => A.map(arr => arr.reverse().map(num => num === 0 ? 1 : 0));
+
+
+
 const flipAndInvertImage = A => {
   let output = A;
 
