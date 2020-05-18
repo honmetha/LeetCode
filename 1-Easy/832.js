@@ -43,28 +43,6 @@ const flipAndInvertImage = A => A.map(arr => arr.reverse().map(num => num === 0 
 
 
 const flipAndInvertImage = A => {
-  let output = A;
-
-  for (arr of output) {
-    let x = parseInt(arr.length / 2)
-    for (i = 0 ; i < x; i++) {
-      let y = arr[i];
-      arr[i] = arr[arr.length - 1 - i];
-      arr[arr.length - 1 - i] = y;
-    }
-  }
-
-  for (arr of output) {
-    for (i = 0; i < arr.length; i++) {
-      arr[i] === 0 ? arr[i] = 1 : arr[i] = 0;
-    }
-  }
-  return output;
-};
-
-
-
-const flipAndInvertImage = A => {
   for (arr of A) {
     let x = Math.round(arr.length / 2)
     for (i = 0 ; i < x; i++) {
