@@ -40,8 +40,7 @@
 // One-Liners
 const flipAndInvertImage = A => A.map(arr => arr.reverse().map(num => num === 0 ? 1 : 0));
 
-
-
+// Faster
 const flipAndInvertImage = A => {
   for (arr of A) {
     let x = Math.round(arr.length / 2)
