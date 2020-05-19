@@ -38,7 +38,7 @@
 // @param {string} S
 // @return {number[]}
 
-const diStringMatch = function(S) {
+const diStringMatch = (S) => {
   let output = [];
   let N = Array.from(Array(S.length + 1).keys());
 
@@ -53,5 +53,15 @@ const diStringMatch = function(S) {
   }
   output.push(N[0]);
 
+  return output;
+};
+
+
+
+const diStringMatch = (S) => {
+  let output = [];
+  let N = Array.from(Array(S.length + 1).keys());
+  for (item of S) item === "I" ? output.push(N.shift()) : output.push(N.pop());
+  output.push(N[0]);
   return output;
 };
