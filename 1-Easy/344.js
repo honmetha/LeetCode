@@ -28,6 +28,31 @@
 // @param {character[]} s
 // @return {void} Do not return anything, modify s in-place instead.
 
-const reverseString = (s) => {
-  s.reverse();
+// One-Liner
+const reverseString = s => s.reverse();
+
+
+
+const reverseString = s => {
+  let x = Math.floor(s.length / 2)
+  for (i = 0; i < x; i++) {
+    let y = s[i];
+    s[i] = s[s.length - 1 - i];
+    s[s.length - 1 - i] = y;
+  }
+  return s;
+};
+
+
+
+// faster than 99% of JS
+// https://leetcode.com/problems/reverse-string/discuss/631020/faster-than-99-of-JS
+const reverseString = s => {
+  let start = 0, end = s.length - 1;
+  
+  while (start <= end) {
+      [s[start], s[end]] = [s[end], s[start]];
+      start++;
+      end--;
+  }
 };
