@@ -4,7 +4,7 @@ https://leetcode.com/metha/
 
 | #    | Runtime        | Memory  | Title                                                    | Difficulty | Language   |
 | :--- | :------------- | :------ | :------------------------------------------------------- | :--------- | :--------- |
-| 1    | 36ms (100%)    | 35.8 MB | Two Sum                                                  | Easy       | JavaScript |
+| 1    | 36 ms (100%)   | 35.8 MB | Two Sum                                                  | Easy       | JavaScript |
 | 260  |                |         | Single Number III                                        | Medium     | JavaScript |
 | 344  |                |         | Reverse String                                           | Easy       | JavaScript |
 | 420  |                |         | Strong Password Checker                                  | Hard       | JavaScript |
