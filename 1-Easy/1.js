@@ -34,3 +34,30 @@ const twoSum = (nums, target) => {
     }
   }
 };
+
+
+
+// Javascript 34ms RunTime, 33mb memory solution
+// https://leetcode.com/problems/two-sum/discuss/631552/Javascript-34ms-RunTime-33mb-memory-solution
+const twoSum = (nums, target) => {
+  const l = {};
+  for(var index = 0; index < nums.length; index++) {
+      if (l[target - nums[index]] !== undefined) return [l[target-nums[index]], index];
+      l[nums[index]] = index;
+  }
+};
+
+
+
+// JS faster than 99%
+// https://leetcode.com/problems/two-sum/discuss/634639/JS-faster-than-99
+const twoSum = (nums, target) => {
+  const obj = {};
+  const len = nums.length;
+  for (let i = 0; i < len ; i++) {
+    if (target - nums[i] in obj) {
+    return [obj[target - nums[i]], i];
+    }
+    obj[nums[i]]=i;
+  }
+};
