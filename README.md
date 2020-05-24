@@ -8,7 +8,7 @@ https://leetcode.com/metha/
 | 260  | Single Number III                                        | Medium     | JavaScript | 6.94%   |
 | 344  | Reverse String                                           | Easy       | JavaScript | 99.84%  |
 | 420  | Strong Password Checker                                  | Hard       | JavaScript | 84.38%  |
-| 442  | Find All Duplicates in an Array                          | Medium     | JavaScript | ??%     |
+| 442  | Find All Duplicates in an Array                          | Medium     | JavaScript |         |
 | 657  | Robot Return to Origin                                   | Easy       | JavaScript | 83.33%  |
 | 709  | To Lower Case                                            | Easy       | JavaScript | 99.24%  |
 | 728  | Self Dividing Numbers                                    | Easy       | JavaScript | 88.22%  |
@@ -31,7 +31,7 @@ https://leetcode.com/metha/
 | 1281 | Subtract the Product and Sum of Digits of an Integer     | Easy       | JavaScript | 93.88%  |
 | 1295 | Find Numbers with Even Number of Digits                  | Easy       | JavaScript | 77.34%  |
 | 1299 | Replace Elements with Greatest Element on Right Side     | Easy       | JavaScript | 95.40%  |
-| 1306 | Jump Game III                                            | Medium     | JavaScript | ??%     |
+| 1306 | Jump Game III                                            | Medium     | JavaScript |         |
 | 1309 | Decrypt String from Alphabet to Integer Mapping          | Easy       | JavaScript | 98.25%  |
 | 1313 | Decompress Run-Length Encoded List                       | Easy       | JavaScript | 83.96%  |
 | 1323 | Maximum 69 Number                                        | Easy       | JavaScript | 98.96%  |
