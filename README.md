@@ -16,6 +16,7 @@ https://leetcode.com/metha/
 | 804  | Unique Morse Code Words                                  | Easy       | JavaScript | 94.69%  |
 | 832  | Flipping an Image                                        | Easy       | JavaScript | 97.25%  |
 | 841  | Keys and Rooms                                           | Medium     | JavaScript | 22.08%  |
+| 852  | Peak Index in a Mountain Array                           | Easy       | JavaScript |         |
 | 905  | Sort Array By Parity                                     | Easy       | JavaScript | 99.92%  |
 | 912  | Sort an Array                                            | Medium     | JavaScript | 81.14%  |
 | 921  | Minimum Add to Make Parentheses Valid                    | Medium     | JavaScript | 18.84%  |
