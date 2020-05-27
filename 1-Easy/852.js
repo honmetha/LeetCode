@@ -43,3 +43,21 @@ const peakIndexInMountainArray = A => {
     }
   }
 };
+
+
+
+const peakIndexInMountainArray = A => {
+  let idx = Math.floor((A.length - 1) / 2);
+  if ((A.length - 1) / 2 === 0) {
+    return idx;
+  } else {
+    if (A[idx] > A[idx + 1]) {
+      return idx;
+    } else {
+      return idx + 1;
+    }
+  }
+};
+
+// test case
+// [24,69,100,99,79,78,67,36,26,19]
