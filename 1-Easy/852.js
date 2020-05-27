@@ -33,5 +33,13 @@
 // @return {number}
 
 const peakIndexInMountainArray = A => {
-  return output;
+  let max = 0, idx = 0;
+  for (i = 0; i < A.length; i++) {
+    if (max > A[i]) {
+      return idx;
+    } else {
+      max = A[i];
+      idx = i;
+    }
+  }
 };
