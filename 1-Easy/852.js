@@ -32,6 +32,11 @@
 // @param {number[]} A
 // @return {number}
 
+// One-Liner
+const peakIndexInMountainArray = A => A.indexOf(Math.max(...A));
+
+
+
 const peakIndexInMountainArray = A => {
   let max = 0, idx = 0;
   for (i = 0; i < A.length; i++) {
@@ -40,21 +45,6 @@ const peakIndexInMountainArray = A => {
     } else {
       max = A[i];
       idx = i;
-    }
-  }
-};
-
-
-
-const peakIndexInMountainArray = A => {
-  let idx = Math.floor((A.length - 1) / 2);
-  if ((A.length - 1) / 2 === 0) {
-    return idx;
-  } else {
-    if (A[idx] > A[idx + 1]) {
-      return idx;
-    } else {
-      return idx + 1;
     }
   }
 };
