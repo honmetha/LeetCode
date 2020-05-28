@@ -38,20 +38,6 @@ const peakIndexInMountainArray = A => A.indexOf(Math.max(...A));
 
 
 const peakIndexInMountainArray = A => {
-  let max = 0, idx = 0;
-  for (i = 0; i < A.length; i++) {
-    if (max > A[i]) {
-      return idx;
-    } else {
-      max = A[i];
-      idx = i;
-    }
-  }
-};
-
-
-
-const peakIndexInMountainArray = A => {
   let idx = 0;
   while (A[idx] < A[idx + 1]) {
     idx++;
