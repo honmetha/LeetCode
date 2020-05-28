@@ -49,5 +49,15 @@ const peakIndexInMountainArray = A => {
   }
 };
 
+
+
+const peakIndexInMountainArray = A => {
+  let idx = 0;
+  while (A[idx] < A[idx + 1]) {
+    idx++;
+  }
+  return idx;
+};
+
 // test case
 // [24,69,100,99,79,78,67,36,26,19]
