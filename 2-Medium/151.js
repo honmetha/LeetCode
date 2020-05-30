@@ -35,6 +35,4 @@
 // @param {string} s
 // @return {string}
 
-const reverseWords = s => {
-  return output;
-};
+const reverseWords = s => s.trimStart().trimEnd().replace(/  +/g, ' ').split(" ").reverse().join(" ");
