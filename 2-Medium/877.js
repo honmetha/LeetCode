@@ -44,3 +44,7 @@
 const stoneGame = piles => {
   return output;
 };
+
+// Test cases
+// [5,3,4,10,6,9,20,8]
+// [30,3,20,8]
