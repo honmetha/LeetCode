@@ -29,5 +29,24 @@
 // @return {number}
 
 const maxSumAfterPartitioning = (A, K) => {
-  return output;
+  let max = 0, count = 0, output = 0;
+  for (i = 0; i < K; i++) {
+    if (max < A[i]) max = A[i];
+    count++;
+  }
+  
+  output = (max * count) + A[K];
+  max = 0;
+  count = 0;
+
+  for (i = K + 1; i < A.length; i++) {
+    if (max < A[i]) max = A[i];
+    count++;
+  }
+
+  return output + (max * count);
 };
+
+// Test cases
+// A = [1,15,7,9,2,5,10], K = 3
+// A = [1,4,1,5,7,3,6,1,9,9,3], K = 4
