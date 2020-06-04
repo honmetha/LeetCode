@@ -35,7 +35,7 @@ https://leetcode.com/metha/
 | 1281 | Subtract the Product and Sum of Digits of an Integer     | Easy       | JavaScript | 93.88%  |
 | 1295 | Find Numbers with Even Number of Digits                  | Easy       | JavaScript | 77.34%  |
 | 1299 | Replace Elements with Greatest Element on Right Side     | Easy       | JavaScript | 95.40%  |
-| 1306 | Jump Game III                                            | Medium     | JavaScript |         |
+| 1306 | Jump Game III                                            | Medium     | JavaScript | 5.49%   |
 | 1309 | Decrypt String from Alphabet to Integer Mapping          | Easy       | JavaScript | 98.25%  |
 | 1313 | Decompress Run-Length Encoded List                       | Easy       | JavaScript | 83.96%  |
 | 1323 | Maximum 69 Number                                        | Easy       | JavaScript | 98.96%  |
