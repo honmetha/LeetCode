@@ -53,6 +53,9 @@ const maxSumAfterPartitioning = (A, K) => {
 // A = [10,4,1,9,7,3,6,1,2,2,3], K = 4
 
 const maxSumAfterPartitioning = (A, K) => {
-  let sum = 0;
+  // while() 1
+  // while() 2
+    // find max and loop
+  let sum = 0; // reduce() to sum array
   return sum;
 };
