@@ -51,3 +51,8 @@ const maxSumAfterPartitioning = (A, K) => {
 // A = [1,15,7,9,2,5,10], K = 3
 // A = [1,4,1,5,7,3,6,1,9,9,3], K = 4
 // A = [10,4,1,9,7,3,6,1,2,2,3], K = 4
+
+const maxSumAfterPartitioning = (A, K) => {
+  let sum = 0;
+  return sum;
+};
