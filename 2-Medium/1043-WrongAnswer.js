@@ -53,6 +53,9 @@ const maxSumAfterPartitioning = (A, K) => {
 // A = [10,4,1,9,7,3,6,1,2,2,3], K = 4
 
 const maxSumAfterPartitioning = (A, K) => {
-  let sort = A.sort((a, b) => b - a);
+  let maxIdx = 0;
+  while () {
+    let sort = A.sort((a, b) => b - a);
+  }
   return sort;
 };
