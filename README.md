@@ -18,7 +18,6 @@ https://leetcode.com/metha/
 | 832  | Flipping an Image                                        | Easy       | JavaScript | 97.25%  |
 | 841  | Keys and Rooms                                           | Medium     | JavaScript | 25.75%  |
 | 852  | Peak Index in a Mountain Array                           | Easy       | JavaScript | 35.84%  |
-| 877  | Stone Game                                               | Medium     | JavaScript |         |
 | 905  | Sort Array By Parity                                     | Easy       | JavaScript | 99.92%  |
 | 912  | Sort an Array                                            | Medium     | JavaScript | 81.14%  |
 | 921  | Minimum Add to Make Parentheses Valid                    | Medium     | JavaScript | 18.84%  |

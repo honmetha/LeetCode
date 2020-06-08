@@ -53,9 +53,28 @@ const maxSumAfterPartitioning = (A, K) => {
 // A = [10,4,1,9,7,3,6,1,2,2,3], K = 4
 
 const maxSumAfterPartitioning = (A, K) => {
-  let maxIdx = 0;
-  while () {
-    let sort = A.sort((a, b) => b - a);
-  }
-  return sort;
+  let maxIdx = 0, arr = [...A];
+  let sorted = arr.sort((a, b) => b - a);
+  sorted = [...new Set(sorted)];
+
+  // while (maxIdx < sorted.length - 1) {
+    let matchIdx = [];
+    A.map((number, idx) => {
+      number === sorted[maxIdx] ? matchIdx.push(idx) : null;
+    })
+
+    for (i = 0; i < matchIdx.length; i++) {
+      for (j = 0; j < K - 1; j++) {
+        if (A[matchIdx[i] + 1] >= A[matchIdx[i]]) {
+          
+        }
+      }
+    }
+
+  //   maxIdx++;
+  //   sorted = A.sort((a, b) => b - a);
+  //   sorted = [...new Set(sorted)];
+  // }
+
+  return matchIdx;
 };
