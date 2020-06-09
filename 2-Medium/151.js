@@ -36,3 +36,19 @@
 // @return {string}
 
 const reverseWords = s => s.trimStart().trimEnd().replace(/  +/g, ' ').split(" ").reverse().join(" ");
+
+
+
+// Javascript This is why Javascript kicks 'ash.  Understandable 1-liner. speed>75% & space>100%
+// https://leetcode.com/problems/reverse-words-in-a-string/discuss/632250/Javascript-This-is-why-Javascript-kicks-'ash.-Understandable-1-liner.-speedgreater75-and-spacegreater100
+var reverseWords = function(s) {
+  return s.trim().replace(/\s+/g, " ").split(' ').reverse().join(' ');
+ }
+
+
+
+// JavaScript one liner | Beats 94%
+// https://leetcode.com/problems/reverse-words-in-a-string/discuss/622328/JavaScript-one-liner-or-Beats-94
+var reverseWords = function(s) {
+  return s.replace(/ +(?= )/g,'').trim().split(" ").reverse().join(" ");
+};
