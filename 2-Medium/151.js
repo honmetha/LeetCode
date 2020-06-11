@@ -41,18 +41,16 @@ const reverseWords = s => s.trim().replace(/  +/g, ' ').split(" ").reverse().joi
 
 // JavaScript one liner | Beats 94%
 // https://leetcode.com/problems/reverse-words-in-a-string/discuss/622328/JavaScript-one-liner-or-Beats-94
-var reverseWords = function(s) {
-  return s.replace(/ +(?= )/g,'').trim().split(" ").reverse().join(" ");
-};
+const reverseWords = s => s.replace(/ +(?= )/g,'').trim().split(" ").reverse().join(" ");
 
 
 
 // Javascript solution 99% faster
 // https://leetcode.com/problems/reverse-words-in-a-string/discuss/579495/Javascript-solution-99-faster
-var reverseWords = function(s) {
-  var x = s.trim().split(" "), y =[]
-  for(i=0;i<x.length;i++){
-      if(x[i] !=="") y.push(x[i])
+const reverseWords = s => {
+  let x = s.trim().split(" "), y =[];
+  for (i = 0; i < x.length; i++) {
+    if (x[i] !== "") y.push(x[i]);
   }
  return y.reverse().join(" ");
 };
