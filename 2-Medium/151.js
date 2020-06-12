@@ -35,18 +35,10 @@
 // @param {string} s
 // @return {string}
 
+// One-Liner
 const reverseWords = s => s.trim().replace(/  +/g, ' ').split(" ").reverse().join(" ");
 
-
-
-// JavaScript one liner | Beats 94%
-// https://leetcode.com/problems/reverse-words-in-a-string/discuss/622328/JavaScript-one-liner-or-Beats-94
-const reverseWords = s => s.replace(/ +(?= )/g,'').trim().split(" ").reverse().join(" ");
-
-
-
-// Javascript solution 99% faster
-// https://leetcode.com/problems/reverse-words-in-a-string/discuss/579495/Javascript-solution-99-faster
+// Faster
 const reverseWords = s => {
   let x = s.trim().split(" "), y =[];
   for (i = 0; i < x.length; i++) {
