@@ -39,3 +39,12 @@ const singleNumber = (nums) => {
     }
   }
 };
+
+
+
+const singleNumber = (nums) => {
+  const previousValues = {};
+  for (i = 0; i < nums.length; i++) {
+    const currentNumber = previousValues[nums[i]];
+  }
+};

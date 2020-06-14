@@ -21,6 +21,7 @@
 // @param {number} target
 // @return {number[]}
 
+// Fast
 const twoSum = (nums, target) => {
   const previousValues = {}
   for (i = 0; i < nums.length; i++) {
@@ -35,29 +36,11 @@ const twoSum = (nums, target) => {
   }
 };
 
-
-
-// Javascript 34ms RunTime, 33mb memory solution
-// https://leetcode.com/problems/two-sum/discuss/631552/Javascript-34ms-RunTime-33mb-memory-solution
+// Lower memory usage
 const twoSum = (nums, target) => {
   const l = {};
-  for(var index = 0; index < nums.length; index++) {
-      if (l[target - nums[index]] !== undefined) return [l[target-nums[index]], index];
-      l[nums[index]] = index;
-  }
-};
-
-
-
-// JS faster than 99%
-// https://leetcode.com/problems/two-sum/discuss/634639/JS-faster-than-99
-const twoSum = (nums, target) => {
-  const obj = {};
-  const len = nums.length;
-  for (let i = 0; i < len ; i++) {
-    if (target - nums[i] in obj) {
-    return [obj[target - nums[i]], i];
-    }
-    obj[nums[i]]=i;
+  for (let index = 0; index < nums.length; index++) {
+    if (l[target - nums[index]] !== undefined) return [l[target-nums[index]], index];
+    l[nums[index]] = index;
   }
 };
