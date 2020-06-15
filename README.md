@@ -17,6 +17,7 @@ https://leetcode.com/metha/
 | 804  | Unique Morse Code Words                                  | Easy       | JavaScript | 94.69%  |
 | 832  | Flipping an Image                                        | Easy       | JavaScript | 97.25%  |
 | 841  | Keys and Rooms                                           | Medium     | JavaScript | 25.75%  |
+| 877  | Stone Game                                               | Medium     | JavaScript |         |
 | 852  | Peak Index in a Mountain Array                           | Easy       | JavaScript | 35.84%  |
 | 905  | Sort Array By Parity                                     | Easy       | JavaScript | 99.92%  |
 | 912  | Sort an Array                                            | Medium     | JavaScript | 81.14%  |
