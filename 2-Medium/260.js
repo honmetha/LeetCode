@@ -46,20 +46,20 @@ const singleNumber = (nums) => {
 // https://leetcode.com/problems/single-number-iii/discuss/591899/JS-oneliner-using-reduce-as-object
 // I believe complexity of this is O(n) for reduce iteration + O(n) for Object.keys iteration on result of reduce.
 // O(n) for space though :c
-const singleNumber = (nums) => Object.keys(nums.reduce((acc, n) => (acc[n] ? delete acc[n] : acc[n] = 1, acc) ,{}))
+const singleNumber = nums => Object.keys(nums.reduce((acc, n) => (acc[n] ? delete acc[n] : acc[n] = 1, acc) ,{}))
 
 
 
 // Javascript Solution but only faster than 38.98%
 // https://leetcode.com/problems/single-number-iii/discuss/686573/Javascript-Solution-but-only-faster-than-38.98
-let singleNumber = (arr) => {
+const singleNumber = (nums) => {
   const map = {};
-  for (let i = 0; i < arr.length; i++) {
-    if (map[arr[i]]) {
-      delete map[arr[i]];
+  for (let i = 0; i < nums.length; i++) {
+    if (map[nums[i]]) {
+      delete map[nums[i]];
       continue;
     }
-    map[arr[i]] = true;
+    map[nums[i]] = true;
   }
   return Object.keys(map).map(item => Number(item));
 };
@@ -68,9 +68,9 @@ let singleNumber = (arr) => {
 
 // JS Solution using Map: faster than 100%
 // https://leetcode.com/problems/single-number-iii/discuss/553308/JS-Solution-using-Map%3A-faster-than-100
-var singleNumber = function(nums) {
+const singleNumber = nums => {
   let m = new Map();
-  nums.forEach(x => (!m.has(x)) ? m.set(x, 1) : m.delete(x));
+  nums.forEach(x => (!m.has(x)) ? m.set(x, 1): m.delete(x));
   return Array.from(m.keys());
 };
 
@@ -80,10 +80,8 @@ var singleNumber = function(nums) {
 // https://leetcode.com/problems/single-number-iii/discuss/476086/Javascript-and-C%2B%2B-solutions
 let singleNumber = (A, seen = new Set()) => {
   for (let x of A)
-      if (seen.has(x))
-          seen.delete(x);
-      else
-          seen.add(x);
+    if (seen.has(x)) seen.delete(x);
+    else seen.add(x);
   return [...seen];
 };
 
@@ -91,20 +89,20 @@ let singleNumber = (A, seen = new Set()) => {
 
 // Javascript, beats 97%, two pass for get result
 // https://leetcode.com/problems/single-number-iii/discuss/327146/Javascript-beats-97-two-pass-for-get-result
-var singleNumber = function(nums) {
-  var diff=0;
-  for(var i=0; i<nums.length; i++){
-      diff^=nums[i];
+const singleNumber = nums => {
+  let diff = 0;
+  for (let i = 0; i < nums.length; i++) {
+    diff^=nums[i];
   }
   diff&=-diff;
-  var res1=0;
-  var res2=0;
-  for(var j=0; j<nums.length; j++){
-      if((nums[j]&diff) ==0){
-          res1^=nums[j];
-      }else{
-          res2^=nums[j];
-      }
+  let res1 = 0;
+  let res2 = 0;
+  for (let j = 0; j < nums.length; j++) {
+    if ((nums[j]&diff) == 0) {
+      res1^=nums[j];
+    } else {
+      res2^=nums[j];
+    }
   }
   return [res1, res2];
 };
