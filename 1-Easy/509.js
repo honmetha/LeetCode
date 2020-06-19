@@ -42,5 +42,7 @@
 // @return {number}
 
 const fib = N => {
-  return output;
+  let arr = [0, 1];
+  while (arr.length <= N) arr.push(arr[arr.length - 1] + arr[arr.length - 2])
+  return arr[N];
 };

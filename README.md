@@ -10,7 +10,7 @@ https://leetcode.com/metha/
 | 344  | Reverse String                                           | Easy       | JavaScript | 99.84%  |
 | 420  | Strong Password Checker                                  | Hard       | JavaScript | 84.38%  |
 | 442  | Find All Duplicates in an Array                          | Medium     | JavaScript |         |
-| 509  | Fibonacci Number                                         | Easy       | JavaScript |         |
+| 509  | Fibonacci Number                                         | Easy       | JavaScript | 67.67%  |
 | 657  | Robot Return to Origin                                   | Easy       | JavaScript | 83.33%  |
 | 709  | To Lower Case                                            | Easy       | JavaScript | 99.24%  |
 | 728  | Self Dividing Numbers                                    | Easy       | JavaScript | 88.22%  |
