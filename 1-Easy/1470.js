@@ -39,5 +39,12 @@
 // @return {number[]}
 
 const shuffle = (nums, n) => {
+  let output = [], x = 0, y = n, length = nums.length;
+
+  while (y < length) {
+    output.push(nums[x], nums[y]);
+    [x, y] = [x + 1, y + 1]
+  }
+
   return output;
 };
