@@ -58,5 +58,12 @@
 // @return {number}
 
 const isPrefixOfWord = (sentence, searchWord) => {
-  return output;
+  let newSentence = sentence.split(" "), i = 0;
+
+  while (i < newSentence.length) {
+    if (newSentence[i].indexOf(searchWord) === 0) return ++i;
+    i++;
+  }
+
+  return -1;
 };
