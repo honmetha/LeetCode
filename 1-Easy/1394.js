@@ -44,5 +44,15 @@
 // @return {number}
 
 const findLucky = arr => {
-  return output;
+  let LuckyInt = 0, count = 0, i = arr.length - 1
+  arr = arr.sort((a, b) => a - b);
+
+  while (i >= 0) {
+    if (LuckyInt !== arr[i]) [LuckyInt, count] = [arr[i], arr[i]];
+    if (LuckyInt === arr[i]) count--;
+    if (count === 0 && arr[i -1] !== LuckyInt) return LuckyInt;
+    i--;
+  }
+
+  return -1;
 };

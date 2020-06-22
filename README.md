@@ -45,6 +45,6 @@ https://leetcode.com/metha/
 | 1365 | How Many Numbers Are Smaller Than the Current Number         | Easy       | JavaScript | 98.62%  |
 | 1374 | Generate a String With Characters That Have Odd Counts       | Easy       | JavaScript | 94.32%  |
 | 1380 | Lucky Numbers in a Matrix                                    | Easy       | JavaScript | 99.22%  |
-| 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript |         |
+| 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript | 45.25%  |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       | JavaScript | 82.75%  |
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript | 48.10%  |
