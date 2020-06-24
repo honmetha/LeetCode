@@ -24,5 +24,29 @@
 // @return {string[]}
 
 const findWords = words => {
+  const firstRow = "qwertyuiop", secondRow = "asdfghjkl", thirdRow = "zxcvbnm";
+  let output = [];
+
+  words.map(word => {
+    let lowerCaseWord = word.toLowerCase(), targetRow, count = 0, i = 0;
+
+    while (i < lowerCaseWord.length) {
+      if (targetRow === undefined) {
+        if (firstRow.includes(lowerCaseWord[i])) targetRow = firstRow;
+        if (secondRow.includes(lowerCaseWord[i])) targetRow = secondRow;
+        if (thirdRow.includes(lowerCaseWord[i])) targetRow = thirdRow;
+        count++
+      } else {
+        if (targetRow.includes(lowerCaseWord[i])) {
+          count++
+        } else {
+          break;
+        }
+      }
+
+      if (count === lowerCaseWord.length) output.push(word);
+      i++;
+    }
+  })
   return output;
 };
