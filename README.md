@@ -12,7 +12,7 @@ https://leetcode.com/metha/
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
 | 500  | Keyboard Row                                                 | Easy       | JavaScript | 40.00%  |
 | 509  | Fibonacci Number                                             | Easy       | JavaScript | 67.67%  |
-| 520  | Detect Capital                                               | Easy       | JavaScript |         |
+| 520  | Detect Capital                                               | Easy       | JavaScript | 55.84%  |
 | 557  | Reverse Words in a String III                                | Easy       | JavaScript | 60.05%  |
 | 657  | Robot Return to Origin                                       | Easy       | JavaScript | 83.33%  |
 | 709  | To Lower Case                                                | Easy       | JavaScript | 99.24%  |
