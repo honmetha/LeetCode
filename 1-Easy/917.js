@@ -32,5 +32,15 @@
 // @return {string}
 
 const reverseOnlyLetters = S => {
-  return output;
+  let arr = S.split(''), start = 0, end = S.length - 1;
+
+  while (start < end) {
+    while (!/[a-zA-Z]/.test(arr[start])) start++;
+    while (!/[a-zA-Z]/.test(arr[end])) end--;
+    if (start < end) [arr[start], arr[end]] = [arr[end], arr[start]];
+    start++;
+    end--;
+  }
+
+  return arr.join('');
 };
