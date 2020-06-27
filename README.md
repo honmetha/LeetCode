@@ -7,6 +7,7 @@ https://leetcode.com/metha/
 | 1    | Two Sum                                                      | Easy       | JavaScript | 100.00% |
 | 151  | Reverse Words in a String                                    | Medium     | JavaScript |  91.43% |
 | 260  | Single Number III                                            | Medium     | JavaScript |   8.47% |
+| 292  | Nim Game                                                     | Easy       | JavaScript |         |
 | 344  | Reverse String                                               | Easy       | JavaScript |  99.84% |
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
