@@ -9,6 +9,7 @@ https://leetcode.com/metha/
 | 260  | Single Number III                                            | Medium     | JavaScript |   8.47% |
 | 292  | Nim Game                                                     | Easy       | JavaScript |  33.17% |
 | 344  | Reverse String                                               | Easy       | JavaScript |  99.84% |
+| 389  | Find the Difference                                          | Easy       | JavaScript |         |
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
 | 500  | Keyboard Row                                                 | Easy       | JavaScript |  40.00% |
