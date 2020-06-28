@@ -27,6 +27,27 @@
 // @param {string} t
 // @return {character}
 
+// Faster
 const findTheDifference = (s, t) => {
-  return output;
+  for (item of s) t = t.replace(item, "");
+  return t;
 };
+
+const findTheDifference = (s, t) => {
+  let newS = s.split('').sort();
+  let newT = t.split('').sort();
+  let i = 0;
+
+  while (i < t.length) {
+    if (newT[i] === newS[i]) {
+      i++
+    } else {
+      return newT[i]
+    }
+  }
+};
+
+// Test cases
+// "hello", "olhlel"
+// "yolo", "oylyo"
+// "leetcode", "ecodetelz"
