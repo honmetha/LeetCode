@@ -22,6 +22,4 @@
 // @param {number[]} nums
 // @return {number}
 
-const findMaxConsecutiveOnes = nums => {
-  return output;
-};
+const findMaxConsecutiveOnes = nums => nums.join('').split(0).reduce((acc, item) => item.length > acc ? acc = item.length: acc, 0);
