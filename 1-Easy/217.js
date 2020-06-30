@@ -27,5 +27,14 @@
 // @return {boolean}
 
 const containsDuplicate = nums => {
-  return nums;
+  const previousValues = {};
+  for (i = 0; i < nums.length; i++) {
+    const currentNumber = nums[i];
+    if (previousValues[currentNumber] != null) {
+      return true
+    } else {
+      previousValues[currentNumber] = 1;
+    }
+  }
+  return false;
 };
