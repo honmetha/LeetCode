@@ -21,6 +21,4 @@
 // @param {number[]} nums
 // @return {number}
 
-const majorityElement = nums => {
-  return nums;
-};
+const majorityElement = nums => nums.sort((a, b) => a - b)[Math.ceil(nums.length / 2) - 1];
