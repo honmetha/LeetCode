@@ -6,6 +6,7 @@ https://leetcode.com/metha/
 | :--- | :----------------------------------------------------------- | :--------- | :--------- | :------ |
 | 1    | Two Sum                                                      | Easy       | JavaScript | 100.00% |
 | 151  | Reverse Words in a String                                    | Medium     | JavaScript |  91.43% |
+| 169  | Majority Element                                             | Easy       | JavaScript |         |
 | 217  | Contains Duplicate                                           | Easy       | JavaScript |  25.87% |
 | 260  | Single Number III                                            | Medium     | JavaScript |   8.47% |
 | 292  | Nim Game                                                     | Easy       | JavaScript |  33.17% |
