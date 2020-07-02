@@ -9,7 +9,7 @@ https://leetcode.com/metha/
 | 169  | Majority Element                                             | Easy       | JavaScript |  21.32% |
 | 217  | Contains Duplicate                                           | Easy       | JavaScript |  25.87% |
 | 260  | Single Number III                                            | Medium     | JavaScript |   8.47% |
-| 283  | Move Zeroes                                                  | Easy       | JavaScript |         |
+| 283  | Move Zeroes                                                  | Easy       | JavaScript |  34.82% |
 | 292  | Nim Game                                                     | Easy       | JavaScript |  33.17% |
 | 344  | Reverse String                                               | Easy       | JavaScript |  99.84% |
 | 389  | Find the Difference                                          | Easy       | JavaScript |  32.68% |
