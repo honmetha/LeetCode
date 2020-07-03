@@ -42,6 +42,4 @@
 // @param {string} s
 // @return {number}
 
-const maxPower = s => {
-  return s;
-};
+const maxPower = s => s.match(/(.)\1*/g).reduce((acc, char) => char.length > acc ? acc = char.length : acc, 0);
