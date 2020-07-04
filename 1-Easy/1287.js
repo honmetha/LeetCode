@@ -25,5 +25,17 @@
 // @return {number}
 
 const findSpecialInteger = arr => {
-  return arr;
+  let i = count = 0, currentNumber = -1;
+  let length = arr.length, oneFourth =  arr.length * 0.25;
+
+  while (i < length) {
+    if (arr[i] !== currentNumber) {
+      count = 1;
+      currentNumber = arr[i];
+    } else {
+      count++;
+    }
+    if (count > oneFourth) return currentNumber;
+    i++
+  }
 };

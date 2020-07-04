@@ -44,7 +44,7 @@ https://leetcode.com/metha/
 | 1221 | Split a String in Balanced Strings                           | Easy       | JavaScript |  86.98% |
 | 1249 | Minimum Remove to Make Valid Parentheses                     | Medium     | JavaScript |  17.49% |
 | 1281 | Subtract the Product and Sum of Digits of an Integer         | Easy       | JavaScript |  93.88% |
-| 1287 | Element Appearing More Than 25% In Sorted Array              | Easy       | JavaScript |         |
+| 1287 | Element Appearing More Than 25% In Sorted Array              | Easy       | JavaScript |  39.17% |
 | 1295 | Find Numbers with Even Number of Digits                      | Easy       | JavaScript |  77.34% |
 | 1299 | Replace Elements with Greatest Element on Right Side         | Easy       | JavaScript |  95.40% |
 | 1306 | Jump Game III                                                | Medium     | JavaScript |   5.49% |
