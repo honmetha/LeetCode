@@ -38,5 +38,18 @@
 // @return {string[]}
 
 const fizzBuzz = n => {
-  return n;
+  let output = [];
+
+  for (i = 1; i < n + 1; i++) {
+    let num = "";
+    if (i % 3 === 0 || i % 5 === 0) {
+      if (i % 3 === 0) num += "Fizz";
+      if (i % 5 === 0) num += "Buzz";
+    } else {
+      num += i;
+    }
+    output.push(num);
+  }
+
+  return output;
 };
