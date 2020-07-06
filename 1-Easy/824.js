@@ -41,5 +41,5 @@
 // @return {string}
 
 const toGoatLatin = S => {
-  return S;
+  return S.split(' ').map((word, idx) => (/^[aeiou]$/.test(word[0].toLowerCase()) ? word : word = word.slice(1) + word[0]) + "ma" + "a".repeat(idx + 1)).join(' ');
 };

@@ -26,7 +26,7 @@ https://leetcode.com/metha/
 | 728  | Self Dividing Numbers                                        | Easy       | JavaScript |  88.22% |
 | 771  | Jewels and Stones                                            | Easy       | JavaScript |  93.87% |
 | 804  | Unique Morse Code Words                                      | Easy       | JavaScript |  94.69% |
-| 824  | Goat Latin                                                   | Easy       | JavaScript |         |
+| 824  | Goat Latin                                                   | Easy       | JavaScript |  68.34% |
 | 832  | Flipping an Image                                            | Easy       | JavaScript |  97.25% |
 | 841  | Keys and Rooms                                               | Medium     | JavaScript |  25.75% |
 | 877  | Stone Game                                                   | Medium     | JavaScript |         |
