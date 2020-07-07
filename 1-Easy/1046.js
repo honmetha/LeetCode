@@ -35,5 +35,15 @@
 // @return {number}
 
 const lastStoneWeight = stones => {
-  return stones;
+  while (stones.length > 1) {
+    stones.sort((a, b) => b - a);
+    
+    if (stones[0] > stones[1]) {
+      stones[0] = stones[0] - stones[1];
+      stones.splice(1, 1);
+    } else {
+      stones.splice(0, 2);
+    }
+  }
+  return stones[0] ? stones[0] : 0;
 };
