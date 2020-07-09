@@ -53,5 +53,35 @@
 // @return {boolean}
 
 const lemonadeChange = bills => {
-  return bills;
+  let fiveBills = 0, tenBills = 0
+
+  for (bill of bills) {
+    switch (bill) {
+      case 5:
+        fiveBills++;
+        break;
+      case 10:
+        if (fiveBills === 0) return false;
+        tenBills++;
+        fiveBills--;
+        break;
+      case 20:
+        if ((tenBills === 0 || fiveBills === 0) && (fiveBills < 3)) return false;
+        if (tenBills > 0 && fiveBills > 0) {
+          tenBills--;
+          fiveBills--;
+        } else {
+          fiveBills -= 3;
+        }
+        break;
+    }
+  }
+  return true;
 };
+
+// Test cases
+// [5,5,5,10,20]
+// [5,5,10]
+// [10,10]
+// [5,5,10,10,20]
+// [5,5,5,5,10,20,10]
