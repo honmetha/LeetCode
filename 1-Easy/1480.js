@@ -34,5 +34,6 @@
 // @return {number[]}
 
 const runningSum = nums => {
-  return nums;
+  let previousSum = 0;
+  return nums.map(num => previousSum += num);
 };
