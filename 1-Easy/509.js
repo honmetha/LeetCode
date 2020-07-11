@@ -41,8 +41,12 @@
 // @param {number} N
 // @return {number}
 
+// Faster
 const fib = N => {
   let arr = [0, 1];
-  while (arr.length <= N) arr.push(arr[arr.length - 1] + arr[arr.length - 2])
+  while (arr.length <= N) arr.push(arr[arr.length - 1] + arr[arr.length - 2]);
   return arr[N];
 };
+
+// One-Liner
+const fib = N => Math.round(Math.pow((Math.sqrt(5) + 1)/2, N) / Math.sqrt(5));
