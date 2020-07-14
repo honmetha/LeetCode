@@ -65,5 +65,5 @@ https://leetcode.com/metha/
 | 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript |  45.25% |
 | 1446 | Consecutive Characters                                       | Easy       | JavaScript |  18.29% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       | JavaScript |  82.75% |
-| 1470 | Shuffle the Array                                            | Easy       | JavaScript |  49.01% |
+| 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |
 | 1480 | Running Sum of 1d Array                                      | Easy       | JavaScript |  29.33% |
