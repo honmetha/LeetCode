@@ -55,5 +55,7 @@
 // @return {number[]}
 
 const createTargetArray = (nums, index) => {
-  return output;
+  let targetArray = [];
+  nums.map((num, i) => targetArray.splice(index[i] ,0 , num));
+  return targetArray;
 };
