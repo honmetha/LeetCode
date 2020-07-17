@@ -63,7 +63,7 @@ https://leetcode.com/metha/
 | 1374 | Generate a String With Characters That Have Odd Counts       | Easy       | JavaScript |  94.32% |
 | 1380 | Lucky Numbers in a Matrix                                    | Easy       | JavaScript |  99.22% |
 | 1389 | Create Target Array in the Given Order                       | Easy       | JavaScript |  84.14% |
-| 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript |  45.25% |
+| 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript |  77.82% |
 | 1446 | Consecutive Characters                                       | Easy       | JavaScript |  18.29% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       | JavaScript |  94.59% |
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |

@@ -56,3 +56,84 @@ const findLucky = arr => {
 
   return -1;
 };
+
+
+// Javascript solution 95.47% time and 100% memory efficient
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/622194/Javascript-solution-95.47-time-and-100-memory-efficient
+var findLucky = function(arr) {
+  let myMap= new Map()
+  let max = 0;
+  
+  //create a map to store frequency counts
+  for(let i of arr){
+      if(myMap.has(i)){
+          myMap.set(i, myMap.get(i)+1);
+      }else{
+          myMap.set(i,1);
+      }
+  }
+  
+  //loop through map to find lucky numbers and modify the max value
+  for(let [index, value] of myMap){
+      if(index == value){
+          max = Math.max(max,value)
+      }
+  }
+  
+  return max > 0 ? max : -1;
+};
+
+
+// JavaScript, hash map
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/554920/JavaScript-hash-map
+var findLucky = function(arr) {
+  const map = new Map();
+  for (x of arr) {
+      map.has(x) ? map.set(x, map.get(x) + 1) : map.set(x, 1);
+  }
+  return Math.max(...arr.filter(e => map.get(e) === e), -1);
+};
+
+
+// [JavaScript] O(n) time & O(1) space
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/555950/JavaScript-O(n)-time-and-O(1)-space
+function findLucky(arr) {
+  const offset = arr.length + 1;
+  for (const num of arr) {
+    const n = num % offset;
+    if (n > arr.length) {
+      continue;
+    }
+    arr[n - 1] += offset;
+  }
+  for (let n = arr.length; n >= 1; n--) {
+    const count = (arr[n - 1] / offset) | 0;
+    if (count === n) {
+      return n;
+    }
+  }
+  return -1;
+}
+
+
+// two kinds of javascript solution which beat 98%
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/623214/two-kinds-of-javascript-solution-which-beat-98
+// Runtime: 52 ms, faster than 95.47% of JavaScript online submissions for Find Lucky Integer in an Array.
+// Memory Usage: 34.7 MB, less than 100.00% of JavaScript online submissions for Find Lucky Integer in an Array.
+var findLucky = function(arr) {
+  const map = arr.reduce((map,e) => {
+      if (map[e]) {
+          map[e]++
+      } else {
+          map[e] = 1
+      }
+      return map
+  }, {})
+  let res = -1
+  for (let key in map) {
+      if (map[key] == key) {
+          res = key
+      }
+  }
+  return res
+};
