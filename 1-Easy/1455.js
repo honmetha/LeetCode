@@ -67,16 +67,13 @@ const isPrefixOfWord = (sentence, searchWord) => {
 };
 
 // RegEx Solution
-var isPrefixOfWord = function(sentence, searchWord) {
+const isPrefixOfWord = (sentence, searchWord) => {
   let prefix = new RegExp (`^${searchWord}`);
   let words = sentence.split(" ");
   for (let i = 0; i < words.length; i++) {
-      if (prefix.test(words[i])) {
-          return i + 1;
-      }
+    if (prefix.test(words[i])) {
+      return i + 1;
+    }
   }
   return -1;
 };
-
-// One-Liner
-const isPrefixOfWord = (sentence, searchWord, idx = sentence.split(' ').findIndex(word => word.startsWith(searchWord))) => idx === -1 ? -1 : idx + 1;
