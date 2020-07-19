@@ -84,6 +84,29 @@ const findLucky = arr => {
 };
 
 
+// two kinds of javascript solution which beat 98%
+// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/623214/two-kinds-of-javascript-solution-which-beat-98
+// Runtime: 52 ms, faster than 95.47% of JavaScript online submissions for Find Lucky Integer in an Array.
+// Memory Usage: 34.7 MB, less than 100.00% of JavaScript online submissions for Find Lucky Integer in an Array.
+const findLucky = arr => {
+  const map = arr.reduce((map,e) => {
+    if (map[e]) {
+      map[e]++;
+    } else {
+      map[e] = 1;
+    }
+    return map;
+  }, {})
+  let res = -1
+  for (let key in map) {
+    if (map[key] == key) {
+      res = key;
+    }
+  }
+  return res;
+};
+
+
 // JavaScript, hash map
 // https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/554920/JavaScript-hash-map
 const findLucky = arr => {
@@ -114,26 +137,3 @@ const findLucky = arr => {
   }
   return -1;
 }
-
-
-// two kinds of javascript solution which beat 98%
-// https://leetcode.com/problems/find-lucky-integer-in-an-array/discuss/623214/two-kinds-of-javascript-solution-which-beat-98
-// Runtime: 52 ms, faster than 95.47% of JavaScript online submissions for Find Lucky Integer in an Array.
-// Memory Usage: 34.7 MB, less than 100.00% of JavaScript online submissions for Find Lucky Integer in an Array.
-const findLucky = arr => {
-  const map = arr.reduce((map,e) => {
-    if (map[e]) {
-      map[e]++;
-    } else {
-      map[e] = 1;
-    }
-    return map;
-  }, {})
-  let res = -1
-  for (let key in map) {
-    if (map[key] == key) {
-      res = key;
-    }
-  }
-  return res;
-};
