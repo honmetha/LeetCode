@@ -21,7 +21,7 @@ https://leetcode.com/metha/
 | 500  | Keyboard Row                                                 | Easy       | JavaScript |  40.00% |
 | 509  | Fibonacci Number                                             | Easy       | JavaScript |  88.31% |
 | 520  | Detect Capital                                               | Easy       | JavaScript |  55.84% |
-| 557  | Reverse Words in a String III                                | Easy       | JavaScript |  75.91% |
+| 557  | Reverse Words in a String III                                | Easy       | JavaScript |  76.26% |
 | 657  | Robot Return to Origin                                       | Easy       | JavaScript |  83.33% |
 | 709  | To Lower Case                                                | Easy       | JavaScript |  99.24% |
 | 728  | Self Dividing Numbers                                        | Easy       | JavaScript |  88.22% |
