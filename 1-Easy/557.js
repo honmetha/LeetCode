@@ -20,7 +20,5 @@
 
 const reverseWords = s => s.split(' ').map(word => word.split('').reverse().join('')).join(' ');
 
-
-// One Line Javascript 100% on Memory and Space
-// https://leetcode.com/problems/reverse-words-in-a-string-iii/discuss/271713/One-Line-Javascript-100-on-Memory-and-Space
+// Alternative
 const reverseWords = (s) => s.split('').reverse().join('').split(' ').reverse().join(' ');
