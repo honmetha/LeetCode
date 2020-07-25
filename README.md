@@ -18,7 +18,7 @@ https://leetcode.com/metha/
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
 | 485  | Max Consecutive Ones                                         | Easy       | JavaScript |  37.25% |
-| 500  | Keyboard Row                                                 | Easy       | JavaScript |  40.00% |
+| 500  | Keyboard Row                                                 | Easy       | JavaScript |  66.54% |
 | 509  | Fibonacci Number                                             | Easy       | JavaScript |  88.31% |
 | 520  | Detect Capital                                               | Easy       | JavaScript |  55.84% |
 | 557  | Reverse Words in a String III                                | Easy       | JavaScript |  76.26% |

@@ -50,3 +50,25 @@ const findWords = words => {
   })
   return output;
 };
+
+// One-Liner
+const findWords = words => words.filter(word => !word.replace(/[qwertyuiop]/gi, '') || !word.replace(/[asdfghjkl]/gi, '') || !word.replace(/[zxcvbnm]/gi, ''));
+
+// One-Liner
+const findWords = words => words.filter(word => /\b[qwertyuiop]+\b/i.test(word) || /\b[asdfghjkl]+\b/i.test(word) || /\b[zxcvbnm]+\b/i.test(word));
+
+
+// [Javascript] Faster than 99.30%
+// https://leetcode.com/problems/keyboard-row/discuss/557475/Javascript-Faster-than-99.30
+const findWords = words => {
+  let top = 'qwertyuiop', mid = 'asdfghjkl', bottom = 'zxcvbnm', res = []
+  
+  for (let word of words)
+    if (checkRow(word, top) || checkRow(word, mid) || checkRow(word, bottom)) res.push(word);
+  
+  return res;
+};
+
+const checkRow = (word, row) =>
+  word === [...word].filter(ch => row.includes(ch.toLowerCase())).join('')
+    && word
