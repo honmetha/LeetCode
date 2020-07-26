@@ -40,3 +40,9 @@ const detectCapitalUse = word => {
   if (word === word[0].toUpperCase() + word.slice(1).toLowerCase()) return true;
   return false;
 };
+
+// One-Liner
+const detectCapitalUse = word => word === word.toUpperCase() || word === word.toLowerCase() || word === word[0].toUpperCase() + word.slice(1).toLowerCase() ? true : false;
+
+// Regex Solution
+const detectCapitalUse = word => /^[^a-z]*$/.test(word) || /^[a-z]*$/.test(word) || /^[A-Z]{1}[a-z]*$/.test(word);
