@@ -36,13 +36,15 @@
 
 const detectCapitalUse = word => {
   if (word === word.toUpperCase()) return true;
-  if (word === word.toLowerCase()) return true;
-  if (word === word[0].toUpperCase() + word.slice(1).toLowerCase()) return true;
+  if (word === word[0] + word.substr(1).toLowerCase()) return true;
   return false;
 };
 
 // One-Liner
-const detectCapitalUse = word => word === word.toUpperCase() || word === word.toLowerCase() || word === word[0].toUpperCase() + word.slice(1).toLowerCase() ? true : false;
+const detectCapitalUse = word => word === word.toUpperCase() || word === word[0] + word.substr(1).toLowerCase() ? true : false;
 
 // Regex Solution
 const detectCapitalUse = word => /^[^a-z]*$/.test(word) || /^[a-z]*$/.test(word) || /^[A-Z]{1}[a-z]*$/.test(word);
+
+// Regex Solution
+const detectCapitalUse = word => word.replace(/[a-z]/g,'') === '' || word.replace(/[A-Z]/g,'') === '' || word.replace(/^[A-Z][a-z]+/,'') === '';
