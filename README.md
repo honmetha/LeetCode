@@ -35,7 +35,7 @@ https://leetcode.com/metha/
 | 852  | Peak Index in a Mountain Array                               | Easy       | JavaScript |  35.84% |
 | 905  | Sort Array By Parity                                         | Easy       | JavaScript |  99.92% |
 | 912  | Sort an Array                                                | Medium     | JavaScript |  81.14% |
-| 917  | Reverse Only Letters                                         | Easy       | JavaScript |   6.60% |
+| 917  | Reverse Only Letters                                         | Easy       | JavaScript |  65.24% |
 | 921  | Minimum Add to Make Parentheses Valid                        | Medium     | JavaScript |  18.84% |
 | 922  | Sort Array By Parity II                                      | Easy       | JavaScript |  94.23% |
 | 942  | DI String Match                                              | Easy       | JavaScript |  91.79% |

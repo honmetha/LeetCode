@@ -44,3 +44,31 @@ const reverseOnlyLetters = S => {
 
   return arr.join('');
 };
+
+
+// JS, 2 lines, O(n)
+// https://leetcode.com/problems/reverse-only-letters/discuss/719886/JS-2-lines-O(n)
+const reverseOnlyLetters = s => {
+  const A = s.match(/[a-z]/gi);
+  return s.replace(/[a-z]/gi, () => A.pop());
+};
+
+
+// regexp javascript solution 52ms
+// https://leetcode.com/problems/reverse-only-letters/discuss/556817/regexp-javascript-solution-52ms
+// Runtime: 52 ms / Memory Usage: 34 MB
+const reverseOnlyLetters = S => {
+  let placeDash = [];
+  
+  for (let i = 0; i < S.length; i++) {
+    if (S[i].replace(/[^a-z]/ig,"") !== S[i]) placeDash.push(i);
+  }
+  
+  let updS = S.replace(/[^a-z]/ig,"").split('').reverse().join('');
+  
+  for (let i = 0; i < placeDash.length; i++) {
+    updS = updS.slice(0, placeDash[i]) + S[placeDash[i]] + updS.slice(placeDash[i]); 
+  }
+    
+  return updS;
+};
