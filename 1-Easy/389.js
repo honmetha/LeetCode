@@ -33,6 +33,7 @@ const findTheDifference = (s, t) => {
   return t;
 };
 
+
 const findTheDifference = (s, t) => {
   let newS = s.split('').sort();
   let newT = t.split('').sort();
@@ -44,6 +45,35 @@ const findTheDifference = (s, t) => {
     } else {
       return newT[i]
     }
+  }
+};
+
+
+// Simple JavaScript solution(faster than 100%, less memory than 100%)
+// https://leetcode.com/problems/find-the-difference/discuss/353826/Simple-JavaScript-solution(faster-than-100-less-memory-than-100)
+const findTheDifference = (s, t) => {
+  const dict = t.split('').reduce((acc ,cur) => {
+    acc[cur] ? acc[cur]++ : acc[cur] = 1
+    return acc
+  }, {})
+  s.split('').map(ch => dict[ch]--)
+  return Object.keys(dict).find(ch => dict[ch] > 0)
+}
+
+
+// JS Easy Solution using Map: 92%, 100%
+// https://leetcode.com/problems/find-the-difference/discuss/552338/JS-Easy-Solution-using-Map%3A-92-100
+const findTheDifference = (s, t) => {
+  let m = new Map();
+  s.split("").forEach(x => {
+    if (!m.has(x)) m.set(x, 1);
+    else m.set(x, m.get(x)+1);
+  });
+  for (let y of t) {
+    if (!m.has(y)) return y; // if added letter is not part of s
+    else m.set(y, m.get(y)-1);
+    
+    if (m.get(y) < 0) return y; // if added letter is part of s
   }
 };
 
