@@ -23,3 +23,8 @@
 // @return {number}
 
 const findMaxConsecutiveOnes = nums => nums.join('').split(0).reduce((acc, item) => item.length > acc ? acc = item.length: acc, 0);
+
+
+// One-liner JS Solution
+// https://leetcode.com/problems/max-consecutive-ones/discuss/543455/One-liner-JS-Solution
+const findMaxConsecutiveOnes = nums => Math.max(...nums.join("").split(0).map(x => x.length));
