@@ -22,9 +22,22 @@
 // @param {number[]} nums
 // @return {number}
 
+// Original
 const findMaxConsecutiveOnes = nums => nums.join('').split(0).reduce((acc, item) => item.length > acc ? acc = item.length: acc, 0);
 
-
-// One-liner JS Solution
-// https://leetcode.com/problems/max-consecutive-ones/discuss/543455/One-liner-JS-Solution
+// One-Liner
 const findMaxConsecutiveOnes = nums => Math.max(...nums.join("").split(0).map(x => x.length));
+
+// Faster
+const findMaxConsecutiveOnes = nums => {
+  let count = 0;
+  let maxLength = 0;
+  
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] === 1) count++;
+    if (nums[i + 1] !== 1 && count > maxLength) maxLength = count;
+    if (nums[i] === 0) count = 0;
+  }
+  
+  return maxLength;
+};

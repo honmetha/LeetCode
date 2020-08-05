@@ -17,7 +17,7 @@ https://leetcode.com/metha/
 | 412  | Fizz Buzz                                                    | Easy       | JavaScript |  17.17% |
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
-| 485  | Max Consecutive Ones                                         | Easy       | JavaScript |  65.64% |
+| 485  | Max Consecutive Ones                                         | Easy       | JavaScript |  93.21% |
 | 500  | Keyboard Row                                                 | Easy       | JavaScript |  66.54% |
 | 509  | Fibonacci Number                                             | Easy       | JavaScript |  88.31% |
 | 520  | Detect Capital                                               | Easy       | JavaScript |  92.11% |
