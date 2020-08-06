@@ -38,3 +38,6 @@ const containsDuplicate = nums => {
   }
   return false;
 };
+
+// One-Liner
+const containsDuplicate = nums => new Set(nums).size < nums.length;
