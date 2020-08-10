@@ -32,3 +32,20 @@ const moveZeroes = nums => {
     }
   }
 };
+
+// Alternative
+const moveZeroes = nums => {
+  let count = 0;
+
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] != 0) {
+      nums[count++] = nums[i];
+    }
+  }
+
+  while (count < nums.length) {
+    nums[count++] = 0;
+  }
+  
+  return nums;
+};
