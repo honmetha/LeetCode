@@ -39,17 +39,3 @@ const findSpecialInteger = arr => {
     i++
   }
 };
-
-
-// JavaScript 1-Line Regex Solution
-// https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/discuss/527661/JavaScript-1-Line-Regex-Solution
-// Runtime: 64 ms, faster than 52.15% of JavaScript online submissions
-// Memory Usage: 38.3 MB, less than 100.00% of JavaScript online submissions
-const findSpecialInteger = arr =>
-  Number(
-    ` ${arr.join('  ')} `
-      .match(
-        new RegExp(`( \\d+ )${'\\1'.repeat(Math.trunc(arr.length / 4))}`),
-      )[1]
-      .trim(),
-  );
