@@ -14,7 +14,7 @@ https://leetcode.com/metha/
 | 344  | Reverse String                                               | Easy       | JavaScript |  99.84% |
 | 387  | First Unique Character in a String                           | Easy       | JavaScript |   5.01% |
 | 389  | Find the Difference                                          | Easy       | JavaScript |  96.10% |
-| 412  | Fizz Buzz                                                    | Easy       | JavaScript |  79.87% |
+| 412  | Fizz Buzz                                                    | Easy       | JavaScript |  90.52% |
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |
 | 442  | Find All Duplicates in an Array                              | Medium     | JavaScript |         |
 | 485  | Max Consecutive Ones                                         | Easy       | JavaScript |  93.21% |
