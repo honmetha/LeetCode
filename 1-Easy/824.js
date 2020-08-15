@@ -40,6 +40,7 @@
 // @param {string} S
 // @return {string}
 
-const toGoatLatin = S => {
-  return S.split(' ').map((word, idx) => (/^[aeiou]$/.test(word[0].toLowerCase()) ? word : word = word.slice(1) + word[0]) + "ma" + "a".repeat(idx + 1)).join(' ');
-};
+const toGoatLatin = S => S.split(' ').map((word, idx) => (/^[aeiou]$/.test(word[0].toLowerCase()) ? word : word = word.slice(1) + word[0]) + "ma" + "a".repeat(idx + 1)).join(' ');
+
+// Alternative + Waiting to be tested
+const toGoatLatin = S => S.split(' ').map((word, idx) => (/^[aeiouAEIOU]$/.test(word[0]) ? word : word = word.slice(1) + word[0]) + "ma" + "a".repeat(idx + 1)).join(' ');
