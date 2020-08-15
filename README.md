@@ -43,7 +43,7 @@ https://leetcode.com/metha/
 | 977  | Squares of a Sorted Array                                    | Easy       | JavaScript |  98.15% |
 | 1021 | Remove Outermost Parentheses                                 | Easy       | JavaScript |  87.38% |
 | 1043 | Partition Array for Maximum Sum                              | Medium     | JavaScript |         |
-| 1046 | Last Stone Weight                                            | Easy       | JavaScript |  19.60% |
+| 1046 | Last Stone Weight                                            | Easy       | JavaScript |  48.16% |
 | 1108 | Defanging an IP Address                                      | Easy       | JavaScript |  89.88% |
 | 1207 | Unique Number of Occurrences                                 | Easy       | JavaScript |  97.32% |
 | 1221 | Split a String in Balanced Strings                           | Easy       | JavaScript |  86.98% |
