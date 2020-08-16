@@ -12,7 +12,7 @@ https://leetcode.com/metha/
 | 283  | Move Zeroes                                                  | Easy       | JavaScript |  97.84% |
 | 292  | Nim Game                                                     | Easy       | JavaScript |  93.54% |
 | 344  | Reverse String                                               | Easy       | JavaScript |  99.84% |
-| 387  | First Unique Character in a String                           | Easy       | JavaScript |   5.01% |
+| 387  | First Unique Character in a String                           | Easy       | JavaScript |  94.29% |
 | 389  | Find the Difference                                          | Easy       | JavaScript |  96.10% |
 | 412  | Fizz Buzz                                                    | Easy       | JavaScript |  90.52% |
 | 420  | Strong Password Checker                                      | Hard       | JavaScript |  84.38% |

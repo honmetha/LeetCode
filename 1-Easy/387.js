@@ -22,18 +22,6 @@
 // @param {string} s
 // @return {number}
 
-// Brute Force - Wrong Solution (Taking way too long runtime)
-const firstUniqChar = s => {
-  for (i = 0; i < s.length; i++) {
-    let count = 0;
-    for (j = 0; j < s.length; j++) {
-      if (s[i] === s[j]) count++;
-    }
-    if (count === 1) return i;
-  }
-  return -1;
-};
-
 // Correct solution but taking ages
 const firstUniqChar = s => {
   let newS = s;
@@ -49,6 +37,22 @@ const firstUniqChar = s => {
         newS = newS.slice(0, newS.indexOf(currentChar)) + newS.slice(newS.indexOf(currentChar) + 1)
       }
     }
+  }
+  return -1;
+};
+
+
+// JS Solution using Map(); Faster than 95%
+// https://leetcode.com/problems/first-unique-character-in-a-string/discuss/521229/JS-Solution-using-Map()-Faster-than-95
+const firstUniqChar = s => {
+  let m = new Map();
+  for (i = 0; i < s.length; i++) {
+    if (!m.has(s[i])) m.set(s[i], i);
+    else m.set(s[i], -1);
+  }
+  let indices = Array.from(m.values());
+  for (let index of indices) {
+    if (index >= 0) return index;
   }
   return -1;
 };
