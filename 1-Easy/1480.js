@@ -37,3 +37,19 @@ const runningSum = nums => {
   let previousSum = 0;
   return nums.map(num => previousSum += num);
 };
+
+
+// Javascript 1-line solution
+// https://leetcode.com/problems/running-sum-of-1d-array/discuss/769107/Javascript-1-line-solution
+const runningSum = nums => nums.reduce((prev,num,i) => [...prev, (prev[i-1] || 0) + num],[]);
+
+
+// Simple JavaScript Solution w/ Explanation, 98% time, 100% Memory
+// https://leetcode.com/problems/running-sum-of-1d-array/discuss/703938/Simple-JavaScript-Solution-w-Explanation-98-time-100-Memory
+const runningSum = nums => {
+  const ans = [nums[0]];
+  for (i = 0; i < nums.length - 1; i++) {
+    ans.push(ans[i] + nums[i + 1]);
+  }
+  return ans;
+};
