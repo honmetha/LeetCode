@@ -67,5 +67,5 @@ https://leetcode.com/metha/
 | 1446 | Consecutive Characters                                       | Easy       | JavaScript |  93.40% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       | JavaScript |  94.91% |
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |
-| 1480 | Running Sum of 1d Array                                      | Easy       | JavaScript |  82.69% |
+| 1480 | Running Sum of 1d Array                                      | Easy       | JavaScript |  83.24% |
 | 1528 | Shuffle String                                               | Easy       | JavaScript |         |
