@@ -48,5 +48,9 @@
 // @return {string}
 
 const restoreString = (s, indices) => {
-  return result;
+  const result = new Array(indices.length);
+  for (i = 0; i < s.length; i++) {
+    result[indices[i]] = s[i];
+  }
+  return result.join("");
 };
