@@ -64,7 +64,7 @@ https://leetcode.com/metha/
 | 1380 | Lucky Numbers in a Matrix                                    | Easy       | JavaScript |  99.22% |
 | 1389 | Create Target Array in the Given Order                       | Easy       | JavaScript |  84.14% |
 | 1394 | Find Lucky Integer in an Array                               | Easy       | JavaScript |  80.48% |
-| 1436 | Destination City                                             | Easy       | JavaScript |         |
+| 1436 | Destination City                                             | Easy       | JavaScript |  68.06% |
 | 1446 | Consecutive Characters                                       | Easy       | JavaScript |  93.40% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       | JavaScript |  94.91% |
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |

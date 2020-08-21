@@ -1,5 +1,7 @@
 // 1436. Destination City
 
+const { delete } = require("superagent");
+
 // You are given the array paths, where paths[i] = [cityAi, cityBi] means there exists a direct path going from cityAi to cityBi.
 // Return the destination city, that is, the city without any path outgoing to another city.
 
@@ -43,6 +45,18 @@
 // @param {string[][]} paths
 // @return {string}
 
-const destCity = (paths) => {
-  return result;
+const destCity = paths => {
+  let departure = {};
+  let arrival = {};
+
+  for (i = 0; i < paths.length; i++) {
+    !(arrival[paths[i][0]]) ? departure[paths[i][0]] = 1 : delete arrival[paths[i][0]];
+    !(departure[paths[i][1]]) ? arrival[paths[i][1]] = 1 : delete departure[paths[i][1]];
+  }
+
+  return Object.keys(arrival)[0];
 };
+
+// Test Cases
+// [["London","New York"],["Lima","Sao Paulo"],["New York","Lima"]]
+// [["B","C"],["D","B"],["C","A"]]
