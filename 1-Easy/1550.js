@@ -28,5 +28,10 @@
 // @return {boolean}
 
 const threeConsecutiveOdds = arr => {
-  return result;
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] % 2 === 1 ? count++ : count = 0;
+    if (count === 3) return true;
+  }
+  return false;
 };
