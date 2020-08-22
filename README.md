@@ -70,3 +70,4 @@ https://leetcode.com/metha/
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |
 | 1480 | Running Sum of 1d Array                                      | Easy       | JavaScript |  83.24% |
 | 1528 | Shuffle String                                               | Easy       | JavaScript |  47.36% |
+| 1550 | Three Consecutive Odds                                       | Easy       | JavaScript |         |
