@@ -41,6 +41,4 @@
 // @param {number[]} salary
 // @return {number}
 
-const average = salary => {
-  return result;
-};
+const average = salary => (salary.sort((a, b) => a - b).slice(1, salary.length - 1).reduce((acc, amount) => amount + acc, 0) / (salary.length - 2)).toFixed(5);
