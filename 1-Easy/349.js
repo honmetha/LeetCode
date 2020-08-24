@@ -25,5 +25,17 @@
 // @return {number[]}
 
 const intersection = (nums1, nums2) => {
-  return result;
+  let obj = {};
+  nums1 = Array.from(new Set(nums1));
+  nums2 = Array.from(new Set(nums2));
+
+  for (i = 0; i < nums1.length; i++) {
+    obj[nums1[i]] = 1;
+  }
+
+  for (j = 0; j < nums2.length; j) {
+    obj[nums2[j]] ? j++ : nums2.splice(j, 1);
+  }
+
+  return nums2;
 };
