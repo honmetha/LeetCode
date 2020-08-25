@@ -37,5 +37,12 @@
 // @return {string}
 
 const reformatDate = date => {
-  return result;
+  const month = {Jan: "01", Feb: "02", Mar: "03", Apr: "04", May: "05", Jun: "06", Jul: "07", Aug: "08", Sep: "09", Oct: "10", Nov: "11", Dec: "12"}
+  
+  const newDate = date.split(" ").reverse();
+  newDate[1] = month[newDate[1]];
+  newDate[2] = newDate[2].slice(0, -2);
+  if (newDate[2].length === 1) newDate[2] = 0 + newDate[2];
+
+  return newDate.join("-");
 };
