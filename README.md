@@ -71,5 +71,6 @@ https://leetcode.com/metha/
 | 1470 | Shuffle the Array                                            | Easy       | JavaScript |  94.43% |
 | 1480 | Running Sum of 1d Array                                      | Easy       | JavaScript |  83.24% |
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary      | Easy       | JavaScript |   7.50% |
+| 1507 | Reformat Date                                                | Easy       | JavaScript |         |
 | 1528 | Shuffle String                                               | Easy       | JavaScript |  47.36% |
 | 1550 | Three Consecutive Odds                                       | Easy       | JavaScript |  24.17% |
