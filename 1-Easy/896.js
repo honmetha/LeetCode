@@ -43,5 +43,14 @@
 // @return {boolean}
 
 const isMonotonic = A => {
-  return result;
+  let monotone = A[0] < A[A.length - 1] ? "increasing" : "decreasing";
+  if (A[0] === A[A.length - 1]) monotone = "";
+
+  for (i = 1; i < A.length; i++) {
+    if (A[i] === A[i - 1]) continue;
+    if (A[i] > A[i - 1] && monotone !== "increasing") return false;
+    if (A[i] < A[i - 1] && monotone !== "decreasing") return false;
+  }
+
+  return true;
 };

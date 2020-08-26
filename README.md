@@ -34,7 +34,7 @@ https://leetcode.com/metha/
 | 852  | Peak Index in a Mountain Array                               | Easy       | JavaScript |  35.84% |
 | 860  | Lemonade Change                                              | Easy       | JavaScript |  89.83% |
 | 877  | Stone Game                                                   | Medium     | JavaScript |         |
-| 896  | Monotonic Array                                              | Easy       | JavaScript |         |
+| 896  | Monotonic Array                                              | Easy       | JavaScript |  96.98% |
 | 905  | Sort Array By Parity                                         | Easy       | JavaScript |  99.92% |
 | 912  | Sort an Array                                                | Medium     | JavaScript |  81.14% |
 | 917  | Reverse Only Letters                                         | Easy       | JavaScript |  82.54% |
