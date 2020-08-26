@@ -31,9 +31,10 @@ https://leetcode.com/metha/
 | 824  | Goat Latin                                                   | Easy       | JavaScript |  91.54% |
 | 832  | Flipping an Image                                            | Easy       | JavaScript |  97.25% |
 | 841  | Keys and Rooms                                               | Medium     | JavaScript |  25.75% |
+| 852  | Peak Index in a Mountain Array                               | Easy       | JavaScript |  35.84% |
 | 860  | Lemonade Change                                              | Easy       | JavaScript |  89.83% |
 | 877  | Stone Game                                                   | Medium     | JavaScript |         |
-| 852  | Peak Index in a Mountain Array                               | Easy       | JavaScript |  35.84% |
+| 896  | Monotonic Array                                              | Easy       | JavaScript |         |
 | 905  | Sort Array By Parity                                         | Easy       | JavaScript |  99.92% |
 | 912  | Sort an Array                                                | Medium     | JavaScript |  81.14% |
 | 917  | Reverse Only Letters                                         | Easy       | JavaScript |  82.54% |
