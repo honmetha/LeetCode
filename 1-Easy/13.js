@@ -58,5 +58,13 @@
 // @return {number}
 
 const romanToInt = s => {
+  const symbol = {I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000}
+  let result = symbol[s[0]] || 0;
+
+  for (let i = 1; i < s.length; i++) {
+    result += symbol[s[i]];
+    if (symbol[s[i]] > symbol[s[i - 1]]) result -= (symbol[s[i - 1]] * 2);
+  }
+
   return result;
 };

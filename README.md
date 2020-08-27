@@ -5,7 +5,7 @@ https://leetcode.com/metha/
 | #    | Title                                                        | Difficulty | Runtime | Memory  |
 | :--- | :----------------------------------------------------------- | :--------- | :------ | :------ |
 | 1    | Two Sum                                                      | Easy       | 100.00% |         |
-| 13   | Roman to Integer                                             | Easy       |         |         |
+| 13   | Roman to Integer                                             | Easy       |  95.05% |  90.57% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
 | 217  | Contains Duplicate                                           | Easy       |  94.45% |         |
