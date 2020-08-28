@@ -28,5 +28,25 @@
 // @return {number}
 
 const maxProfit = prices => {
+  let min = 0, max = 0, result = 0;
+
+  for (i = prices.length - 1; i >= 0; i--) {
+    if (max === 0) {
+      if (prices[i - 1] >= prices[i]) continue;
+      max = prices[i];
+      min = prices[i - 1];  
+    } else {
+      if (max >= prices[i - 1]) {
+        if (prices[i - 1] < min) min = prices[i - 1];
+      } else {
+        if (max - min > result) result = max - min;
+        max = min = 0;
+      }
+    }
+  }
+
   return result;
 };
+
+// Test cases
+// [5,2,3,7,1,5,3,6,6,4]
