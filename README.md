@@ -22,7 +22,7 @@ https://leetcode.com/metha/
 | 442  | Find All Duplicates in an Array                              | Medium     |         |         |
 | 485  | Max Consecutive Ones                                         | Easy       |  93.21% |         |
 | 500  | Keyboard Row                                                 | Easy       |  66.54% |         |
-| 506  | Relative Ranks                                               | Easy       |         |         |
+| 506  | Relative Ranks                                               | Easy       |  97.65% |  40.00% |
 | 509  | Fibonacci Number                                             | Easy       |  88.31% |         |
 | 520  | Detect Capital                                               | Easy       |  92.11% |         |
 | 557  | Reverse Words in a String III                                | Easy       |  76.26% |         |
