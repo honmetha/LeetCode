@@ -2,6 +2,8 @@
 
 https://leetcode.com/metha/
 
+## JavaScript
+
 | #    | Title                                                        | Difficulty | Runtime | Memory  |
 | :--- | :----------------------------------------------------------- | :--------- | :------ | :------ |
 | 1    | Two Sum                                                      | Easy       | 100.00% |         |
