@@ -30,7 +30,7 @@ https://leetcode.com/metha/
 | 551  | Student Attendance Record I                                  | Easy       |  61.69% |  20.97% |
 | 557  | Reverse Words in a String III                                | Easy       |  76.26% |         |
 | 657  | Robot Return to Origin                                       | Easy       |  83.33% |         |
-| 674  | Longest Continuous Increasing Subsequence                    | Easy       |         |         |
+| 674  | Longest Continuous Increasing Subsequence                    | Easy       |  51.83% |  62.30% |
 | 709  | To Lower Case                                                | Easy       |  99.24% |         |
 | 728  | Self Dividing Numbers                                        | Easy       |  88.22% |         |
 | 771  | Jewels and Stones                                            | Easy       |  93.87% |         |
