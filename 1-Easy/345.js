@@ -23,5 +23,21 @@
 // @return {string}
 
 const reverseVowels = s => {
-  return result;
+  s = s.split("");
+
+  for (i = 0, j = s.length - 1; i < j; i++, j--) {
+    while (!/^[aeiou]/i.test(s[i]) && i < j) i++;
+    while (!/^[aeiou]/i.test(s[j]) && j > i) j--;
+    if (i < j) [s[i], s[j]] = [s[j], s[i]];
+  }
+
+  return s.join("");
 };
+
+// Test cases
+// "halloween"
+// "halloiween"
+// ""
+// " "
+// "abc"
+// "Micropalaeontology"
