@@ -39,5 +39,38 @@
 // @return {string}
 
 const mostCommonWord = (paragraph, banned) => {
-  return result;
+  const object = {};
+  paragraph = paragraph.toLowerCase().replace(/[.,'!?;]/g, " ").split(" ");
+
+  for (let i = 0; i < paragraph.length; i++) {
+    if (paragraph[i]) {
+      object[paragraph[i]] ? ++object[paragraph[i]] : object[paragraph[i]] = 1;
+    }
+  }
+
+  for (let i = 0; i < banned.length; i++) {
+    delete object[banned[i]];
+  }
+
+  let count = 0;
+  let answer = "";
+
+  for (word in object) {
+    if (object[word] > count) {
+      answer = word;
+      count = object[word]
+    }
+  }
+
+  return answer;
 };
+
+// Test cases
+// paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+// banned = ["hit"]
+
+// paragraph = "a, a, a, a, b,b,b,c, c"
+// banned = ["a"]
+
+// paragragh = "Bob. hIt, baLl"
+// banned = ["bob", "hit"]
