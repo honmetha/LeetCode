@@ -1,4 +1,6 @@
 // Test Cases
+// null
+// undefined
 // []
 // [ ]
 // [0]
