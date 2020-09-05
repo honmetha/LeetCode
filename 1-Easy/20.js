@@ -43,5 +43,28 @@
 // @return {boolean}
 
 const isValid = s => {
-  return result;
+  let obj = {"(": ")", "{": "}", "[": "]"}
+  let arr = [];
+
+  for (parenthesis of s) {
+    if (obj[parenthesis]) {
+      arr.push(parenthesis);
+    } else {
+      if (obj[arr[arr.length - 1]] !== parenthesis) return false;
+      arr.pop();
+    }
+  }
+
+  return arr.length === 0 ? true : false;
 };
+
+// Test cases
+// "{[()]}"
+// "[{]}"
+// "{[(){}[]]}"
+// "{[()()()]}"
+// "{{}}()[]"
+// "{{{[[[((()))]]]}}}"
+// "{}{[][]{}}{()()())()}"
+// "["
+// "}"
