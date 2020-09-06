@@ -87,4 +87,4 @@ https://leetcode.com/metha/
 | 1507 | Reformat Date                                                | Easy       |  91.80% |         |
 | 1528 | Shuffle String                                               | Easy       |  47.36% |         |
 | 1550 | Three Consecutive Odds                                       | Easy       |  24.17% |         |
-| 1556 | Thousand Separator                                           | Easy       |         |         |
+| 1556 | Thousand Separator                                           | Easy       |  92.35% |  23.21% |

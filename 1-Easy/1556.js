@@ -32,6 +32,25 @@
 // @param {number} n
 // @return {string}
 
+const thousandSeparator = n => (n + "").split("").reverse().map((num, i) => ((i + 1) % 3) === 1 && i !== 0 ? num + "." : num).reverse().join("");
+
+
 const thousandSeparator = n => {
-  return result;
+  let count = 0;
+  n = n + "";
+
+  for (i = n.length - 1; i >= 0; i--) {
+    count++;
+    if (count % 3 === 1 && count !== 1) n = n.slice(0, i + 1) + "." + n.slice(i + 1);
+  }
+
+  return n;
 };
+
+// Test cases
+// 123456789
+// 0
+// 10
+// 1234
+// 987
+// 982349872340193848
