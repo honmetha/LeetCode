@@ -10,6 +10,7 @@ https://leetcode.com/metha/
 | 13   | Roman to Integer                                             | Easy       |  95.05% |  90.57% |
 | 20   | Valid Parentheses                                            | Easy       |  74.12% |  48.88% |
 | 35   | Search Insert Position                                       | Easy       |  65.87% |   6.56% |
+| 58   | Length of Last Word                                          | Easy       |         |         |
 | 66   | Plus One                                                     | Easy       |  65.46% |  10.60% |
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  72.50% |  43.27% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
