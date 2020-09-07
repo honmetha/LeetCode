@@ -41,5 +41,22 @@
 // @return {string}
 
 const licenseKeyFormatting = (S, K) => {
-  return result;
+  S = S.replace(/[-]/g, "").toUpperCase();
+  let count = 0;
+
+  for (i = S.length - 1; i >= 0; i--) {
+    count++;
+    if (count % K === 0 && S[i - 1]) S = S.slice(0, i) + "-" + S.slice(i);
+  }
+
+  return S;
 };
+
+// Test cases
+// "5F3Z-2e-9-w", 4
+// "5F-2e-9s-w-ooi9-3k", 3
+// "j3", 4
+// "0-000-0000-00-0", 2
+// "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 2
+// "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 9
+// "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 4
