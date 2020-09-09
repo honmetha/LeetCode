@@ -36,5 +36,27 @@
 // @return {number}
 
 const rob = nums => {
-  return result;
+  if (nums.length === 0) return 0;
+  if (nums.length === 1) return nums[0];
+  
+  let arr = [];
+  arr[0] = nums[0];
+  arr[1] = Math.max(nums[0], nums[1]);
+
+  for (i = 2; i < nums.length; i++) {
+    arr[i] = Math.max(arr[i - 1], nums[i] + arr[i - 2]);
+  }
+
+  return arr[arr.length - 1];
 };
+
+// Test cases
+// []
+// [0]
+// [400]
+// [1,1]
+// [2,2,2,2]
+// [1,2,3,1]
+// [2,7,9,3,1]
+// [7,1,1,4]
+// [1,9,9,8,7,12,6,4,5,6,7,3,0,6,1,2,4,5,1,1,1,0,3,4,5,6,8,8,13,9,3,2]

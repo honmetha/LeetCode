@@ -15,7 +15,7 @@ https://leetcode.com/metha/
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  72.50% |  43.27% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
-| 198  | House Robber                                                 | Easy       |         |         |
+| 198  | House Robber                                                 | Easy       |  91.17% |  42.96% |
 | 217  | Contains Duplicate                                           | Easy       |  94.45% |         |
 | 260  | Single Number III                                            | Medium     |   8.47% |         |
 | 283  | Move Zeroes                                                  | Easy       |  97.84% |         |
