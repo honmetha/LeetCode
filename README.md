@@ -15,7 +15,7 @@ https://leetcode.com/metha/
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  72.50% |  43.27% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
-| 171  | Excel Sheet Column Number                                    | Easy       |         |         |
+| 171  | Excel Sheet Column Number                                    | Easy       |  99.88% |  74.01% |
 | 198  | House Robber                                                 | Easy       |  91.17% |  42.96% |
 | 217  | Contains Duplicate                                           | Easy       |  94.45% |         |
 | 260  | Single Number III                                            | Medium     |   8.47% |         |
