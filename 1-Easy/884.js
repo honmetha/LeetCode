@@ -36,5 +36,32 @@
 // @return {string[]}
 
 const uncommonFromSentences = (A, B) => {
+  let input = (A + " " + B).trim().replace(/  +/g, ' ');
+  if (!/^[a-z]/i.test(input)) return [];
+
+  input = input.split(" ");
+  let previousWord = {};
+  let result = []
+  
+  input.map(word => {
+    previousWord[word] ? previousWord[word]++ : previousWord[word] = 1;
+  })
+
+  for (word in previousWord) {
+    if (previousWord[word] === 1) result.push(word);
+  }
+
   return result;
 };
+
+// Test cases
+// "", ""
+// " ", " "
+// "   ", "     "
+// "apple apple", "banana"
+// "                                   banana   banana            ", " banana     "
+// "banana", "kiwi"
+// "this apple is sweet", "this apple is sour"
+// " this  apple is  sweet   ", "  this  apple    is     sour"
+// " this  apple is  sweet   ", "  that  oranges    are     sour"
+// "car safety systems have come a long way but he was out to prove they could be outsmarted", "pink ponies and purple giraffes roamed the field cotton candy grew from the ground as a chocolate river meandered off to the side what looked like stones in the pasture were actually rock candy everything in her dream seemed to be perfect except for the fact that she had no mouth"
