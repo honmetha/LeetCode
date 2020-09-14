@@ -47,10 +47,12 @@
 // @param {number[]} indices
 // @return {string}
 
+// Original
 const restoreString = (s, indices) => {
-  const result = new Array(indices.length);
-  for (i = 0; i < s.length; i++) {
-    result[indices[i]] = s[i];
-  }
+  const result = [];
+  for (i = 0; i < s.length; i++) result[indices[i]] = s[i];
   return result.join("");
 };
+
+// One-Liner
+const restoreString = (s, indices) => indices.reduce((result, currentValue, index) => result + s[indices.indexOf(index)], "");
