@@ -85,7 +85,7 @@ https://leetcode.com/metha/
 | 1380 | Lucky Numbers in a Matrix                                    | Easy       |  99.22% |         |
 | 1389 | Create Target Array in the Given Order                       | Easy       |  84.14% |         |
 | 1394 | Find Lucky Integer in an Array                               | Easy       |  80.48% |         |
-| 1436 | Destination City                                             | Easy       |  68.06% |         |
+| 1436 | Destination City                                             | Easy       |  73.93% |  13.69% |
 | 1446 | Consecutive Characters                                       | Easy       |  93.40% |         |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       |  94.91% |         |
 | 1470 | Shuffle the Array                                            | Easy       |  94.43% |         |

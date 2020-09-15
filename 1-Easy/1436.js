@@ -57,6 +57,29 @@ const destCity = paths => {
   return Object.keys(arrival)[0];
 };
 
+
+// Javascript - easy to understand and 93% faster
+// https://leetcode.com/problems/destination-city/discuss/738353/Javascript-easy-to-understand-and-93-faster
+const destCity = paths => {
+  const arrivals = paths.map(a => a[0]);
+  const destinations =  paths.map(a => a[1]);
+  
+  return destinations.filter(d => arrivals.indexOf(d) === -1).join('');
+};
+
+
+// JavaScript Solution 100% 100%
+// https://leetcode.com/problems/destination-city/discuss/610731/JavaScript-Solution-100-100
+const destCity = paths => {
+  const seen = new Set(paths.map(el => el[0]))
+  
+  for (let i of paths) {
+    if(!seen.has(i[1])) return i[1];
+  }
+  
+  return "";
+};
+
 // Test Cases
 // [["London","New York"],["Lima","Sao Paulo"],["New York","Lima"]]
 // [["B","C"],["D","B"],["C","A"]]
