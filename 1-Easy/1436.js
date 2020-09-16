@@ -1,7 +1,5 @@
 // 1436. Destination City
 
-const { delete } = require("superagent");
-
 // You are given the array paths, where paths[i] = [cityAi, cityBi] means there exists a direct path going from cityAi to cityBi.
 // Return the destination city, that is, the city without any path outgoing to another city.
 
@@ -45,39 +43,23 @@ const { delete } = require("superagent");
 // @param {string[][]} paths
 // @return {string}
 
+// Fast
 const destCity = paths => {
-  let departure = {};
-  let arrival = {};
+  const seen = new Set(paths.map(path => path[0]));
 
-  for (i = 0; i < paths.length; i++) {
-    !(arrival[paths[i][0]]) ? departure[paths[i][0]] = 1 : delete arrival[paths[i][0]];
-    !(departure[paths[i][1]]) ? arrival[paths[i][1]] = 1 : delete departure[paths[i][1]];
-  }
-
-  return Object.keys(arrival)[0];
-};
-
-
-// Javascript - easy to understand and 93% faster
-// https://leetcode.com/problems/destination-city/discuss/738353/Javascript-easy-to-understand-and-93-faster
-const destCity = paths => {
-  const arrivals = paths.map(a => a[0]);
-  const destinations =  paths.map(a => a[1]);
-  
-  return destinations.filter(d => arrivals.indexOf(d) === -1).join('');
-};
-
-
-// JavaScript Solution 100% 100%
-// https://leetcode.com/problems/destination-city/discuss/610731/JavaScript-Solution-100-100
-const destCity = paths => {
-  const seen = new Set(paths.map(el => el[0]))
-  
-  for (let i of paths) {
-    if(!seen.has(i[1])) return i[1];
+  for (let path of paths) {
+    if(!seen.has(path[1])) return path[1];
   }
   
   return "";
+};
+
+// Less memory
+const destCity = paths => {
+  const arrivals = paths.map(path => path[0]);
+  const destinations =  paths.map(path => path[1]);
+
+  return destinations.filter(destination => arrivals.indexOf(destination) === -1).join('');
 };
 
 // Test Cases
