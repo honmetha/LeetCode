@@ -93,5 +93,5 @@ https://leetcode.com/metha/
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary      | Easy       |   7.50% |         |
 | 1507 | Reformat Date                                                | Easy       |  91.80% |         |
 | 1528 | Shuffle String                                               | Easy       |  97.07% |  75.47% |
-| 1550 | Three Consecutive Odds                                       | Easy       |  24.17% |         |
+| 1550 | Three Consecutive Odds                                       | Easy       |  93.41% |  77.69% |
 | 1556 | Thousand Separator                                           | Easy       |  92.35% |  23.21% |

@@ -27,6 +27,7 @@
 // @param {number[]} arr
 // @return {boolean}
 
+// Faster & less memory
 const threeConsecutiveOdds = arr => {
   let count = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -35,3 +36,6 @@ const threeConsecutiveOdds = arr => {
   }
   return false;
 };
+
+// One-Liner
+const threeConsecutiveOdds = arr => arr.map(number => number % 2).join('').includes('111');
