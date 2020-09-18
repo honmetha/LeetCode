@@ -41,4 +41,8 @@
 // @param {number[]} salary
 // @return {number}
 
+// One-Liner
 const average = salary => (salary.sort((a, b) => a - b).slice(1, salary.length - 1).reduce((acc, amount) => amount + acc, 0) / (salary.length - 2)).toFixed(5);
+
+// Shorter
+const average = salary => salary.reduce((acc, amount) => acc + amount, 0 - Math.min(...salary) - Math.max(...salary),) / (salary.length - 2);

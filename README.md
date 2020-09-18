@@ -90,7 +90,7 @@ https://leetcode.com/metha/
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence | Easy       |  94.91% |         |
 | 1470 | Shuffle the Array                                            | Easy       |  94.43% |         |
 | 1480 | Running Sum of 1d Array                                      | Easy       |  83.24% |         |
-| 1491 | Average Salary Excluding the Minimum and Maximum Salary      | Easy       |   7.50% |         |
+| 1491 | Average Salary Excluding the Minimum and Maximum Salary      | Easy       |  91.47% |  82.00% |
 | 1507 | Reformat Date                                                | Easy       |  91.80% |         |
 | 1528 | Shuffle String                                               | Easy       |  97.07% |  75.47% |
 | 1550 | Three Consecutive Odds                                       | Easy       |  93.41% |  77.69% |
