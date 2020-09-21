@@ -91,7 +91,7 @@ https://leetcode.com/metha/
 | 1470 | Shuffle the Array                                            | Easy       |  94.43% |         |
 | 1480 | Running Sum of 1d Array                                      | Easy       |  83.24% |         |
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary      | Easy       |  91.47% |  82.00% |
-| 1507 | Reformat Date                                                | Easy       |  91.80% |         |
+| 1507 | Reformat Date                                                | Easy       |  95.83% |  72.68% |
 | 1528 | Shuffle String                                               | Easy       |  97.07% |  75.47% |
 | 1550 | Three Consecutive Odds                                       | Easy       |  93.41% |  77.69% |
 | 1556 | Thousand Separator                                           | Easy       |  92.35% |  23.21% |
