@@ -42,6 +42,7 @@
 // @param {number[]} A
 // @return {boolean}
 
+// Original
 const isMonotonic = A => {
   let monotone = A[0] < A[A.length - 1] ? "increasing" : "decreasing";
   if (A[0] === A[A.length - 1]) monotone = "";
@@ -54,3 +55,18 @@ const isMonotonic = A => {
 
   return true;
 };
+
+// Cleaner
+const isMonotonic = A => {
+  let increasing = true, decreasing = true;
+  
+  for (let i = 0; i < A.length - 1; i++) {
+    if (A[i] > A[i+1]) increasing = false;
+    if (A[i] < A[i+1]) decreasing = false;
+  }
+  
+  return increasing || decreasing 
+};
+
+// One-Liner
+const isMonotonic = A => A.every((value, index) => index === 0 || value <= A[index - 1]) || A.every((value, index) => index === 0 || value >= A[index - 1]);

@@ -53,7 +53,7 @@ https://leetcode.com/metha/
 | 860  | Lemonade Change                                              | Easy       |  89.83% |         |
 | 877  | Stone Game                                                   | Medium     |         |         |
 | 884  | Uncommon Words from Two Sentences                            | Easy       |  95.93% |  23.70% |
-| 896  | Monotonic Array                                              | Easy       |  96.98% |         |
+| 896  | Monotonic Array                                              | Easy       |  96.98% |  81.89% |
 | 905  | Sort Array By Parity                                         | Easy       |  99.92% |         |
 | 912  | Sort an Array                                                | Medium     |  81.14% |         |
 | 917  | Reverse Only Letters                                         | Easy       |  82.54% |         |
