@@ -61,8 +61,8 @@ const isMonotonic = A => {
   let increasing = true, decreasing = true;
   
   for (let i = 0; i < A.length - 1; i++) {
-    if (A[i] > A[i+1]) increasing = false;
-    if (A[i] < A[i+1]) decreasing = false;
+    if (A[i] > A[i + 1]) increasing = false;
+    if (A[i] < A[i + 1]) decreasing = false;
   }
   
   return increasing || decreasing 
