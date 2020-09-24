@@ -48,5 +48,25 @@ const maxProfit = prices => {
   return result;
 };
 
+
+// JavaScript reduce solution, faster than 99.31%, less than 93.71%
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/292608/JavaScript-reduce-solution-faster-than-99.31-less-than-93.71
+const maxProfit = (prices) => {
+  let diff = 0;
+  if (prices.length > 0) {
+    prices.reduce((acc, next) => {
+      if (next < acc) {
+        return next;
+      } else {
+        if (next - acc > diff) {
+          diff = next - acc;
+        }
+        return acc;
+      }
+    });
+  }
+  return diff;
+};
+
 // Test cases
 // [5,2,3,7,1,5,3,6,6,4]
