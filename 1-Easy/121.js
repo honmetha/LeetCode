@@ -27,6 +27,7 @@
 // @param {number[]} prices
 // @return {number}
 
+// Original
 const maxProfit = prices => {
   let min = 0, max = 0, result = 0;
 
@@ -48,9 +49,7 @@ const maxProfit = prices => {
   return result;
 };
 
-
-// JavaScript reduce solution, faster than 99.31%, less than 93.71%
-// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/292608/JavaScript-reduce-solution-faster-than-99.31-less-than-93.71
+// Alternative
 const maxProfit = (prices) => {
   let diff = 0;
   if (prices.length > 0) {
@@ -66,6 +65,17 @@ const maxProfit = (prices) => {
     });
   }
   return diff;
+};
+
+// Best solution
+var maxProfit = function(prices) {
+  var min = Number.MAX_SAFE_INTEGER; 
+  var max = 0;
+  for (var i = 0; i < prices.length; i++) {
+      min = Math.min(min, prices[i]);
+      max = Math.max(max, prices[i] - min);
+  }
+  return max;
 };
 
 // Test cases

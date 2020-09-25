@@ -12,7 +12,7 @@ https://leetcode.com/metha/
 | 35   | Search Insert Position                                       | Easy       |  65.87% |   6.56% |
 | 58   | Length of Last Word                                          | Easy       |  60.14% |   6.84% |
 | 66   | Plus One                                                     | Easy       |  65.46% |  10.60% |
-| 121  | Best Time to Buy and Sell Stock                              | Easy       |  72.50% |  43.27% |
+| 121  | Best Time to Buy and Sell Stock                              | Easy       |  95.22% |  57.09% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 168  | Excel Sheet Column Title                                     | Easy       |  89.06% |  17.32% |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
