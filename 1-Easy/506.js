@@ -22,6 +22,7 @@
 // @param {number[]} nums
 // @return {string[]}
 
+// Original
 const findRelativeRanks = nums => {
   const sortedNums = nums.concat().sort((a, b) => b - a);
   const obj = {};
@@ -35,6 +36,18 @@ const findRelativeRanks = nums => {
   }
 
   return nums.map(num => num = obj[num]);
+};
+
+// Cleaner
+const findRelativeRanks = nums => {
+  let ranks = nums.slice(0).sort((a, b) => b - a);
+  
+  return nums.map(num => {
+     if (num === ranks[0]) return 'Gold Medal';
+     else if (num === ranks[1]) return 'Silver Medal';
+     else if (num === ranks[2]) return 'Bronze Medal';
+     else return (ranks.indexOf(num) + 1).toString();
+  });
 };
 
 // Test cases
