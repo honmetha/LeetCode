@@ -40,3 +40,13 @@ const checkRecord = s => {
   
   return true;
 };
+
+
+// 1 line RegExp javascript solution 48ms
+// https://leetcode.com/problems/student-attendance-record-i/discuss/518209/1-line-RegExp-javascript-solution-48ms
+const checkRecord = s => !(s.replace(/A/g,"").length < s.length - 1 || s.replace(/LLL/g,"").length !== s.length);
+
+
+// JavaScript 1 line short solution without regex
+// https://leetcode.com/problems/student-attendance-record-i/discuss/346015/JavaScript-1-line-short-solution-without-regex
+const checkRecord = s => s.split("").filter(s => s == "A").length <= 1 && !s.includes("LLL");
