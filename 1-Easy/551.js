@@ -33,20 +33,29 @@ const checkRecord = s => {
   let countA = 0;
 
   for (i = 0; i < s.length; i++) {
-    if (s[i] === "A") countA++;
+    if (s[i] === "A" && ++countA > 1) return false;
     if (s[i] === "L" && s[i + 1] === "L" && s[i + 2] === "L") return false;
-    if (countA > 1) return false;
   }
   
   return true;
 };
 
 
-// 1 line RegExp javascript solution 48ms
-// https://leetcode.com/problems/student-attendance-record-i/discuss/518209/1-line-RegExp-javascript-solution-48ms
-const checkRecord = s => !(s.replace(/A/g,"").length < s.length - 1 || s.replace(/LLL/g,"").length !== s.length);
-
-
 // JavaScript 1 line short solution without regex
 // https://leetcode.com/problems/student-attendance-record-i/discuss/346015/JavaScript-1-line-short-solution-without-regex
 const checkRecord = s => s.split("").filter(s => s == "A").length <= 1 && !s.includes("LLL");
+
+
+// Intuitive Javascript Solution
+// https://leetcode.com/problems/student-attendance-record-i/discuss/101579/Intuitive-Javascript-Solution
+const checkRecord = s => !/^.*(A.*A|L{3,}).*$/.test(s);
+
+
+// A few short JavaScript solutions
+// https://leetcode.com/problems/student-attendance-record-i/discuss/101610/A-few-short-JavaScript-solutions
+const checkRecord = s => !/(A.*A|LLL)/.test(s);
+
+
+// Javascript Solution
+// https://leetcode.com/problems/student-attendance-record-i/discuss/101611/Javascript-Solution
+const checkRecord = s => s.split('A').length <= 2 && s.indexOf('LLL') === -1;
