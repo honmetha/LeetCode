@@ -37,7 +37,7 @@ https://leetcode.com/metha/
 | 506  | Relative Ranks                                               | Easy       |  97.65% |  40.00% |
 | 509  | Fibonacci Number                                             | Easy       |  88.31% |         |
 | 520  | Detect Capital                                               | Easy       |  92.11% |         |
-| 551  | Student Attendance Record I                                  | Easy       |  61.69% |  20.97% |
+| 551  | Student Attendance Record I                                  | Easy       |  83.07% |   6.52% |
 | 557  | Reverse Words in a String III                                | Easy       |  76.26% |         |
 | 657  | Robot Return to Origin                                       | Easy       |  83.33% |         |
 | 674  | Longest Continuous Increasing Subsequence                    | Easy       |  51.83% |  62.30% |

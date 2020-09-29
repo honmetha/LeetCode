@@ -29,6 +29,7 @@
 // @param {string} s
 // @return {boolean}
 
+// Original
 const checkRecord = s => {
   let countA = 0;
 
@@ -40,22 +41,8 @@ const checkRecord = s => {
   return true;
 };
 
-
-// JavaScript 1 line short solution without regex
-// https://leetcode.com/problems/student-attendance-record-i/discuss/346015/JavaScript-1-line-short-solution-without-regex
-const checkRecord = s => s.split("").filter(s => s == "A").length <= 1 && !s.includes("LLL");
-
-
-// Intuitive Javascript Solution
-// https://leetcode.com/problems/student-attendance-record-i/discuss/101579/Intuitive-Javascript-Solution
-const checkRecord = s => !/^.*(A.*A|L{3,}).*$/.test(s);
-
-
-// A few short JavaScript solutions
-// https://leetcode.com/problems/student-attendance-record-i/discuss/101610/A-few-short-JavaScript-solutions
-const checkRecord = s => !/(A.*A|LLL)/.test(s);
-
-
-// Javascript Solution
-// https://leetcode.com/problems/student-attendance-record-i/discuss/101611/Javascript-Solution
+// Fast & Easy to understand
 const checkRecord = s => s.split('A').length <= 2 && s.indexOf('LLL') === -1;
+
+// Alternative One-Liner
+const checkRecord = s => !/^.*(A.*A|L{3,}).*$/.test(s);
