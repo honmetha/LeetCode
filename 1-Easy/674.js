@@ -26,15 +26,12 @@
 // @return {number}
 
 const findLengthOfLCIS = nums => {
-  if (nums.length === 0) return 0;
-
-  let maxCount = 1;
+  let maxCount = 0;
   let count = 1;
 
   for (i = 0; i < nums.length; i++) {
-    if (nums[i + 1] > nums[i]) {
-      count++;
-    } else {
+    if (nums[i + 1] > nums[i]) count++;
+    else {
       if (count > maxCount) maxCount = count;
       count = 1;
     }
