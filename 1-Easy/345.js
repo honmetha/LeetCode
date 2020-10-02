@@ -22,6 +22,7 @@
 // @param {string} s
 // @return {string}
 
+// Original
 const reverseVowels = s => {
   s = s.split("");
 
@@ -32,6 +33,32 @@ const reverseVowels = s => {
   }
 
   return s.join("");
+};
+
+
+// JavaScript Solution
+// https://leetcode.com/problems/reverse-vowels-of-a-string/discuss/81356/JavaScript-Solution
+const reverseVowels = s => {
+  if (s === null || s.length === 0) return s;
+
+  let chars = s.split('');
+  let low = 0;
+  let high = s.length - 1;
+  let vowels = "aeiouAEIOU";
+  let tmp;
+
+  while (low < high) {
+    while (low < high && vowels.indexOf(chars[low]) === -1) low++;
+    while (low < high && vowels.indexOf(chars[high]) === -1) high--;
+      
+    tmp = chars[high];
+    chars[high] = chars[low];
+    chars[low] = tmp;
+    low++;
+    high--;
+  }
+  
+  return chars.join('');
 };
 
 // Test cases
