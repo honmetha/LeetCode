@@ -24,7 +24,7 @@ https://leetcode.com/metha/
 | 283  | Move Zeroes                                                  | Easy       |  97.84% |         |
 | 292  | Nim Game                                                     | Easy       |  93.54% |         |
 | 344  | Reverse String                                               | Easy       |  99.84% |         |
-| 345  | Reverse Vowels of a String                                   | Easy       |  97.82% |  23.36% |
+| 345  | Reverse Vowels of a String                                   | Easy       |  94.94% |  50.56% |
 | 349  | Intersection of Two Arrays                                   | Easy       |  97.19% |  42.73% |
 | 387  | First Unique Character in a String                           | Easy       |  94.27% |         |
 | 389  | Find the Difference                                          | Easy       |  96.10% |         |

@@ -35,9 +35,7 @@ const reverseVowels = s => {
   return s.join("");
 };
 
-
-// JavaScript Solution
-// https://leetcode.com/problems/reverse-vowels-of-a-string/discuss/81356/JavaScript-Solution
+// Less memory
 const reverseVowels = s => {
   if (s === null || s.length === 0) return s;
 
