@@ -38,6 +38,7 @@
 // @param {string[]} banned
 // @return {string}
 
+// Original
 const mostCommonWord = (paragraph, banned) => {
   const object = {};
   paragraph = paragraph.toLowerCase().replace(/[.,'!?;]/g, " ").split(" ");
