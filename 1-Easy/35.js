@@ -31,6 +31,7 @@
 // @param {number} target
 // @return {number}
 
+// Original
 const searchInsert = (nums, target) => {
   for (i = 0; i < nums.length; i++) {
     if (nums[i] === target || nums[i] > target) return i;
@@ -38,3 +39,13 @@ const searchInsert = (nums, target) => {
 
   return nums.length;
 };
+
+
+// Javascript solution (1 line) (92%)
+// https://leetcode.com/problems/search-insert-position/discuss/368160/Javascript-solution-(1-line)-(92)
+const searchInsert = (nums, target) => nums.includes(target) ? nums.indexOf(target) : nums.filter(elem => elem < target).length;
+
+
+// 1 line javascript
+// https://leetcode.com/problems/search-insert-position/discuss/276558/1-line-javascript
+const searchInsert = (nums, target) => nums.filter(x => x < target).length;
