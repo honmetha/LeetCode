@@ -40,8 +40,8 @@
 const plusOne = digits => {
   let index = digits.length - 1;
 
-  while (index >= 0 && ++digits[index] === 10) {
-    if (digits[0] === 10) {
+  while (index >= 0 && ++digits[index] > 9) {
+    if (digits[0] > 9) {
       digits[index] = 0;
       index--;
       digits.unshift(1);
@@ -54,9 +54,7 @@ const plusOne = digits => {
   return digits;
 };
 
-
-// Simple Direct JavaScript Solution
-// https://leetcode.com/problems/plus-one/discuss/24297/Simple-Direct-JavaScript-Solution
+// Cleaner
 const plusOne = digits => {
   for (let i = digits.length - 1; i >= 0; i--) {
     digits[i]++;
@@ -67,19 +65,6 @@ const plusOne = digits => {
   digits.unshift(1);
   return digits;
 };
-
-
-// Simple JavaScript Solution
-// https://leetcode.com/problems/plus-one/discuss/24353/Simple-JavaScript-Solution
-const plusOne = digits => {
-  for (let i = digits.length - 1; i >= 0; i--) {
-    if (++digits[i] > 9) digits[i] = 0;
-    else return digits;
-  }
-  digits.unshift(1);
-  return digits;
-};
-  
 
 // Test cases
 // [0]

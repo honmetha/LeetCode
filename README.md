@@ -11,7 +11,7 @@ https://leetcode.com/metha/
 | 20   | Valid Parentheses                                            | Easy       |  74.12% |  48.88% |
 | 35   | Search Insert Position                                       | Easy       |  94.07% |   7.86% |
 | 58   | Length of Last Word                                          | Easy       |  60.14% |   6.84% |
-| 66   | Plus One                                                     | Easy       |  65.46% |  10.60% |
+| 66   | Plus One                                                     | Easy       |  66.47% |  41.49% |
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  95.22% |  57.09% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 168  | Excel Sheet Column Title                                     | Easy       |  89.06% |  17.32% |
