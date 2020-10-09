@@ -42,6 +42,7 @@
 // @param {string} s
 // @return {boolean}
 
+// Original
 const isValid = s => {
   let obj = {"(": ")", "{": "}", "[": "]"}
   let arr = [];
