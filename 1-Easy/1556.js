@@ -32,9 +32,10 @@
 // @param {number} n
 // @return {string}
 
+// Original One-Liner
 const thousandSeparator = n => (n + "").split("").reverse().map((num, i) => ((i + 1) % 3) === 1 && i !== 0 ? num + "." : num).reverse().join("");
 
-
+// Faster
 const thousandSeparator = n => {
   let count = 0;
   n = n + "";
@@ -46,6 +47,17 @@ const thousandSeparator = n => {
 
   return n;
 };
+
+
+// JavaScript Array.reduce
+// https://leetcode.com/problems/thousand-separator/discuss/806406/JavaScript-Array.reduce
+const thousandSeparator = (n) => ('' + n).split('').reverse().reduce((acc, num) => acc.length % 4 == 3 ? num + '.' + acc : num + acc, '');
+
+
+// ⭐️  [ Javascript / Python3/ C++ ] 🚀  1-Liners
+// https://leetcode.com/problems/thousand-separator/discuss/805674/Javascript-Python3-C%2B%2B-1-Liners
+let thousandSeparator = n => n < 1000 ? String(n) : thousandSeparator(Math.floor(n / 1000)) + '.' + _.padStart(String(n % 1000), 3, 0);
+
 
 // Test cases
 // 123456789
