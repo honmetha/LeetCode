@@ -40,6 +40,7 @@
 // @param {number} K
 // @return {string}
 
+// Original
 const licenseKeyFormatting = (S, K) => {
   S = S.replace(/[-]/g, "").toUpperCase();
   let count = 0;
@@ -52,6 +53,51 @@ const licenseKeyFormatting = (S, K) => {
   return S;
 };
 
+
+// JavaScript straight forward Functional Programming solution
+// https://leetcode.com/problems/license-key-formatting/discuss/527733/JavaScript-straight-forward-Functional-Programming-solution
+const licenseKeyFormatting = (S, K) => {
+  const licenseArr = S.replace(/-/gi, '').toUpperCase().split('');
+  const firstGroupLen = !(licenseArr.length % K) ? K : licenseArr.length % K;
+  const firstGroup = licenseArr.slice(0, firstGroupLen).join('');
+  const constructNewLicense = (resStr, curr, index) => {
+    if (index < firstGroupLen) return resStr;
+    if ((index - firstGroupLen) % K === 0) resStr += '-';
+    resStr += curr; 
+    return resStr;
+  }
+  return licenseArr.reduce(constructNewLicense, firstGroup);
+};
+
+
+// Basic JavaScript Solution
+// https://leetcode.com/problems/license-key-formatting/discuss/353312/Basic-JavaScript-Solution
+const licenseKeyFormatting = (S, K) => {
+  const newStr = S.replace(/-/g, "").toUpperCase(), // Remove existing dashes and convert any lowercase letters to uppercase
+    arr = newStr.split(""); // Convert string to an array so we can manipulate it
+
+  for (let i = arr.length - 1 - K; i >= 0; i -= K) {
+    // Loop through array backwards and decrement by value of K
+    arr[i] = arr[i] + "-";
+  }
+
+  return arr.join("");
+};
+
+
+// JavaScript 6-liner. 89ms. Beats 100%
+// https://leetcode.com/problems/license-key-formatting/discuss/96491/JavaScript-6-liner.-89ms.-Beats-100
+const licenseKeyFormatting = (S, K) => {
+  const raw = S.replace(/-/g, '').toUpperCase();
+  let length = raw.length, chunks = [];
+  while (length > 0) {
+      chunks.push(raw.substring(length - K, length));
+      length -= K;
+  }
+  return chunks.reverse().join('-');
+};
+
+
 // Test cases
 // "5F3Z-2e-9-w", 4
 // "5F-2e-9s-w-ooi9-3k", 3
@@ -60,3 +106,4 @@ const licenseKeyFormatting = (S, K) => {
 // "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 2
 // "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 9
 // "0qwe1r2t3y4uio5p6asd7fghj8klzx9cvbn0m0", 4
+// "--a-a-a-a--", 2
