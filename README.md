@@ -31,7 +31,7 @@ https://leetcode.com/metha/
 | 412  | Fizz Buzz                                                    | Easy       |  90.52% |         |
 | 420  | Strong Password Checker                                      | Hard       |  84.38% |         |
 | 442  | Find All Duplicates in an Array                              | Medium     |         |         |
-| 482  | License Key Formatting                                       | Easy       |  96.07% |  38.96% |
+| 482  | License Key Formatting                                       | Easy       |  96.07% |  12.69% |
 | 485  | Max Consecutive Ones                                         | Easy       |  93.21% |         |
 | 500  | Keyboard Row                                                 | Easy       |  66.54% |         |
 | 506  | Relative Ranks                                               | Easy       |  97.65% |  40.00% |

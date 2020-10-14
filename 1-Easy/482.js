@@ -44,12 +44,10 @@
 const licenseKeyFormatting = (S, K) => {
   S = S.replace(/[-]/g, "").toUpperCase();
   let count = 0;
-
   for (i = S.length - 1; i >= 0; i--) {
     count++;
     if (count % K === 0 && S[i - 1]) S = S.slice(0, i) + "-" + S.slice(i);
   }
-
   return S;
 };
 
