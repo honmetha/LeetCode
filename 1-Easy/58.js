@@ -27,9 +27,7 @@ const lengthOfLastWord = s => /^[a-z]/i.test(s.replace(/ /g,"")) ? s.split(" ").
 // Simple One-Liner
 const lengthOfLastWord = s => s.trim().split(" ").pop().length;
 
-
-// JavaScript Solution O(n) Left-to-Right
-// https://leetcode.com/problems/length-of-last-word/discuss/509411/JavaScript-Solution-O(n)-Left-to-Right
+// Faster
 const lengthOfLastWord = s => {
   let length = 0,
   max = 0;
