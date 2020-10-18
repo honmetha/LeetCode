@@ -40,9 +40,7 @@ const rob = nums => {
   if (nums.length === 0) return 0;
   if (nums.length === 1) return nums[0];
   
-  let arr = [];
-  arr[0] = nums[0];
-  arr[1] = Math.max(nums[0], nums[1]);
+  let arr = [nums[0], Math.max(nums[0], nums[1])];
 
   for (i = 2; i < nums.length; i++) {
     arr[i] = Math.max(arr[i - 1], nums[i] + arr[i - 2]);
@@ -51,70 +49,8 @@ const rob = nums => {
   return arr[arr.length - 1];
 };
 
-
-// Cleaner than original solution
-const rob = nums => {
-  if(nums.length === 0) return 0;
-  if(nums.length === 1) return nums[0];
-  let totals = [nums[0], Math.max(nums[0], nums[1])];
-  for(let i = 2; i < nums.length; i ++){
-      totals[i] = Math.max(totals[i - 1], totals[i - 2] + nums[i]);
-  }
-  return totals[totals.length - 1];
-};
-
-
-// JavaScript One-liner
-// https://leetcode.com/problems/house-robber/discuss/662144/JavaScript-One-liner
-const rob = nums => nums.reduce((acc, cur) => [acc[1], Math.max(acc[1], acc[0] + cur)], [0, 0])[1];
-
-
-// [EASY TO READ] Javascript, O(n) time, O(1) space, Iterative
-// https://leetcode.com/problems/house-robber/discuss/282624/EASY-TO-READ-Javascript-O(n)-time-O(1)-space-Iterative
-var rob = function(nums) {
-  /*
-  Runtime: 56 ms, faster than 100.00% of JavaScript online submissions for House Robber.
-  Memory Usage: 33.8 MB, less than 25.89% of JavaScript online submissions for House Robber.
-  
-  O(n) time, O(1) space
-
-- Bottom up strategy
-- Iterative
-- Memoization
-
-Trick: At index [i], you only need to know the maximum profit at [i - 1] and [i - 2]. This is a slight variation on fibonacci.
-  */
-  
-  if (!nums.length) return 0;
-  if (nums.length === 1) return nums[0];
-  if (nums.length === 2) return Math.max(nums[0], nums[1]);
-  
-  let maxAtTwoBefore = nums[0];
-  let maxAtOneBefore = Math.max(nums[0], nums[1]);
-  
-  for (let i = 2; i < nums.length; i++) {
-      const maxAtCurrent = Math.max(nums[i] + maxAtTwoBefore, maxAtOneBefore);
-      
-      maxAtTwoBefore = maxAtOneBefore;
-      maxAtOneBefore = maxAtCurrent;
-  }
-  
-  return maxAtOneBefore;
-};
-
-
-// https://leetcode.com/problems/house-robber/discuss/491274/JavaScript-Solution
-const rob = nums => {
-  let memo = [];
-  memo[0] = 0;
-  memo[1] = nums[0];
-  
-  for (let i=1;i<nums.length;i++) {
-      memo[i+1] = Math.max(memo[i], memo[i-1] + nums[i]);
-  }
-  
-  return memo[nums.length];   
-}
+// One-Liner
+const rob = nums => nums.reduce((acc, num) => [acc[1], Math.max(acc[1], acc[0] + num)], [0, 0])[1];
 
 // Test cases
 // []
