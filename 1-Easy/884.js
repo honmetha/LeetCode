@@ -35,20 +35,21 @@
 // @param {string} B
 // @return {string[]}
 
+// Original
 const uncommonFromSentences = (A, B) => {
   let input = (A + " " + B).trim().replace(/  +/g, ' ');
   if (!/^[a-z]/i.test(input)) return [];
 
   input = input.split(" ");
-  let previousWord = {};
+  let previousWords = {};
   let result = []
   
   input.map(word => {
-    previousWord[word] ? previousWord[word]++ : previousWord[word] = 1;
+    previousWords[word] ? previousWords[word]++ : previousWords[word] = 1;
   })
 
-  for (word in previousWord) {
-    if (previousWord[word] === 1) result.push(word);
+  for (word in previousWords) {
+    if (previousWords[word] === 1) result.push(word);
   }
 
   return result;

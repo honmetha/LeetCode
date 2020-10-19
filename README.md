@@ -52,7 +52,7 @@ https://leetcode.com/metha/
 | 852  | Peak Index in a Mountain Array                               | Easy       |  35.84% |         |
 | 860  | Lemonade Change                                              | Easy       |  89.83% |         |
 | 877  | Stone Game                                                   | Medium     |         |         |
-| 884  | Uncommon Words from Two Sentences                            | Easy       |  95.93% |  23.70% |
+| 884  | Uncommon Words from Two Sentences                            | Easy       |  97.08% |  23.70% |
 | 896  | Monotonic Array                                              | Easy       |  96.98% |  81.89% |
 | 905  | Sort Array By Parity                                         | Easy       |  99.92% |         |
 | 912  | Sort an Array                                                | Medium     |  81.14% |         |
