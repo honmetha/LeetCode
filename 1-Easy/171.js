@@ -41,9 +41,6 @@
 
 // Original
 const titleToNumber = (s) => {
-  let result = 0;
-  let count = -1;
-
   const letters = {
     A: 1,
     B: 2,
@@ -73,48 +70,37 @@ const titleToNumber = (s) => {
     Z: 26,
   };
 
+  let result = 0;
+  let numberToPower = 0;
+
   for (i = s.length - 1; i >= 0; i--) {
-    count++;
-    if (count === 0) result += letters[s[i]];
-    else result += letters[s[i]] * 26 ** count;
-  }
+    result += letters[s[i]] * 26 ** numberToPower;
+    numberToPower++;
+  };
 
   return result;
 };
 
-
-// Intuitive Javascript Solution
-// https://leetcode.com/problems/excel-sheet-column-number/discuss/52096/Intuitive-Javascript-Solution
+// Alternative
 const titleToNumber = s => {
   const charCodeBase = 'A'.charCodeAt(0) - 1;
   const n = s.length;
   let number = 0;
 
-  /* 
-   * Think of it as base 26. For example,
-   * Column number of "AB" = 1 * 26^1 + 2 * 26^0
-   */
-
-  for (let i = 0; i < n; i++) number += (s.charCodeAt(i) - charCodeBase) * Math.pow(26, n-i-1);
+  for (let i = 0; i < n; i++) number += (s.charCodeAt(i) - charCodeBase) * Math.pow(26, n - i - 1);
   
   return number;
 };
 
-
-// Javascript - O(n)
-// https://leetcode.com/problems/excel-sheet-column-number/discuss/537403/Javascript-O(n)
+// Alternative 2
 const titleToNumber = s => {
   let columnNumber = 0;
-  for(let i = 0; i < s.length; i++){
-    // get the last ith character
+
+  for (let i = 0; i < s.length; i++) {
     let char = s[(s.length - 1) - i];
-    
-    // subtracting from 64 (not 65, ascii of A) to get the value directly 
-    // instead of ascii index
-    // ex: A = 1 (65 - 64 = 1)
     columnNumber += Math.pow(26, i) * (char.charCodeAt(0) - 64);
-      
   } 
+  
   return columnNumber;
 };
 
