@@ -55,6 +55,31 @@ const uncommonFromSentences = (A, B) => {
   return result;
 };
 
+// Alternative
+const uncommonFromSentences = (A, B) => {
+  let words = A.split(" ").concat(B.split(" "));
+  let counts = {};
+
+  for (let i = 0; i < words.length; i++) {
+    if (counts.hasOwnProperty(words[i]) === false) counts[words[i]] = 0;
+    counts[words[i]]++;
+  }
+
+  return words.filter((word) => counts[word] === 1);
+};
+
+// Alternative 2
+const uncommonFromSentences = (A, B) => {
+  let arr = A.split(" ").concat(B.split(" "));
+  let m = new Map();
+  
+  arr.forEach((word) => (m.has(word) ? m.set(word, -1) : m.set(word, 1)));
+
+  return Array.from(m.entries())
+    .filter((pair) => pair[1] > 0)
+    .map((pair) => pair[0]);
+};
+
 // Test cases
 // "", ""
 // " ", " "
