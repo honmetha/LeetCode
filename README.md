@@ -14,7 +14,7 @@ https://leetcode.com/metha/
 | 66   | Plus One                                                     | Easy       |  66.47% |  41.49% |
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  95.22% |  57.09% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
-| 168  | Excel Sheet Column Title                                     | Easy       |  89.06% |  17.32% |
+| 168  | Excel Sheet Column Title                                     | Easy       |  93.00% |  17.32% |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
 | 171  | Excel Sheet Column Number                                    | Easy       |  99.88% |  74.01% |
 | 198  | House Robber                                                 | Easy       |  91.17% |  42.96% |
