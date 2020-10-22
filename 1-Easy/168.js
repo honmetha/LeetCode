@@ -75,9 +75,7 @@ const convertToTitle = (n) => {
   return result;
 };
 
-
-// Javascript : 100% faster, easy to understand code
-// https://leetcode.com/problems/excel-sheet-column-title/discuss/354651/Javascript-%3A-100-faster-easy-to-understand-code
+// Cleaner
 const convertToTitle = n => {
   if (n < 27) return String.fromCharCode(n + 64);
   let s = '';
@@ -93,11 +91,7 @@ const convertToTitle = n => {
   return s;
 };
 
-
-// Javascript Solution 99.5% faster
-// Runtime: 40 ms, faster than 99.54% of JavaScript online submissions for Excel Sheet Column Title.
-// Memory Usage: 33.8 MB, less than 75.00% of JavaScript online submissions for Excel Sheet Column Title.
-// https://leetcode.com/problems/excel-sheet-column-title/discuss/453496/Javascript-Solution-99.5-faster
+// Faster
 const convertToTitle = n => {
   const charMap = {
     0: "Z",
@@ -133,15 +127,15 @@ const convertToTitle = n => {
   if (n <= 26) return charMap[n % 26]
   
   while (n > 0) {
-    let r = n % 26;
+    let temp = n % 26;
      
     n = Math.floor(n / 26);
     
-    if (r == 0) {
-      r = 0;
+    if (temp == 0) {
+      temp = 0;
       n = n - 1;
     }
-    title = charMap[r] + title;
+    title = charMap[temp] + title;
   }
   
   return title;
