@@ -39,7 +39,7 @@ const countPrimes = n => {
   return primeNumbers.length;
 };
 
-// Faster
+// Original
 const countPrimes = n => {
   let primeNumbers = Array.from(Array(n).keys());
   const lastPrime = primeNumbers[primeNumbers.length - 1];
@@ -60,6 +60,38 @@ const countPrimes = n => {
   }
 
   return count;
+};
+
+
+// 💡JavaScript Solution
+// https://leetcode.com/problems/count-primes/discuss/422235/JavaScript-Solution
+const countPrimes = n => {
+  let hash = new Array(n).fill(true);
+  hash[0] = false;
+  hash[1] = false;
+  for (let i=2; i * i < n; i++) {
+    if (hash[i]) {
+      for(let j = i * i; j < n ; j += i){ // p*(p+1)...
+        hash[j] = false;
+      }
+    }
+  }
+  return hash.filter((val)=>val).length;
+};
+
+
+// Javascript: Sieve of Eratosthenes
+// https://leetcode.com/problems/count-primes/discuss/490083/Javascript%3A-Sieve-of-Eratosthenes
+const countPrimes = n => {
+  const nums = [...Array(n).keys()].slice(2);
+  for (let i = 0; i <= Math.floor(Math.sqrt(n)); i++) {
+    if (nums[i]) {
+      for (let j = i + nums[i]; j <= n; j += nums[i]) {
+        nums[j] = undefined; // Sieve of Eratosthenes
+      }
+    }
+  }
+  return nums.filter(n => n).length;
 };
 
 // Test cases
