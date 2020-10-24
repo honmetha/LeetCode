@@ -62,35 +62,35 @@ const countPrimes = n => {
   return count;
 };
 
-
-// 💡JavaScript Solution
-// https://leetcode.com/problems/count-primes/discuss/422235/JavaScript-Solution
+// Faster
 const countPrimes = n => {
   let hash = new Array(n).fill(true);
   hash[0] = false;
   hash[1] = false;
-  for (let i=2; i * i < n; i++) {
+
+  for (let i = 2; i * i < n; i++) {
     if (hash[i]) {
-      for(let j = i * i; j < n ; j += i){ // p*(p+1)...
+      for(let j = i * i; j < n; j += i) {
         hash[j] = false;
       }
     }
   }
-  return hash.filter((val)=>val).length;
+
+  return hash.filter(val => val).length;
 };
 
-
-// Javascript: Sieve of Eratosthenes
-// https://leetcode.com/problems/count-primes/discuss/490083/Javascript%3A-Sieve-of-Eratosthenes
+// Alternative
 const countPrimes = n => {
   const nums = [...Array(n).keys()].slice(2);
+
   for (let i = 0; i <= Math.floor(Math.sqrt(n)); i++) {
     if (nums[i]) {
       for (let j = i + nums[i]; j <= n; j += nums[i]) {
-        nums[j] = undefined; // Sieve of Eratosthenes
+        nums[j] = undefined;
       }
     }
   }
+
   return nums.filter(n => n).length;
 };
 

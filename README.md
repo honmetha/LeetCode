@@ -18,7 +18,7 @@ https://leetcode.com/metha/
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
 | 171  | Excel Sheet Column Number                                    | Easy       |  99.88% |  74.01% |
 | 198  | House Robber                                                 | Easy       |  91.17% |  42.96% |
-| 204  | Count Primes                                                 | Easy       |  37.89% |  26.71% |
+| 204  | Count Primes                                                 | Easy       |  86.00% |   5.79% |
 | 217  | Contains Duplicate                                           | Easy       |  94.45% |         |
 | 260  | Single Number III                                            | Medium     |   8.47% |         |
 | 283  | Move Zeroes                                                  | Easy       |  97.84% |         |
