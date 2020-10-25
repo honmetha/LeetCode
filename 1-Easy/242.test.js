@@ -1,0 +1,1 @@
+const isAnagram = require("./242");
