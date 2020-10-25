@@ -39,6 +39,27 @@
 
 const isPalindrome = x => {
   if (x < 0) return false;
+  let newX = x;
+  let numbersArr = [];
+
+  for (let i = 10; newX > 0; i *= 10) {
+    let moduloNumber = newX % i;
+    while (moduloNumber > 9) moduloNumber /= 10;
+
+    numbersArr.push(moduloNumber);
+    newX -= newX % i;
+  };
+
+  let start = 0;
+  let end = numbersArr.length - 1;
+
+  while (start < end) {
+    if (numbersArr[start] !== numbersArr[end]) return false;
+    start++;
+    end--;
+  }
+
+  return true;
 };
 
 // Test cases

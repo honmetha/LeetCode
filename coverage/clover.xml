@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1603605902400" clover="3.2.0">
-  <project timestamp="1603605902400" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1" elements="6" coveredelements="5" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+<coverage generated="1603641119169" clover="3.2.0">
+  <project timestamp="1603641119169" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="22" coveredelements="22" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
     <file name="9.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/1-Easy/9.js">
-      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <line num="40" count="1" type="stmt"/>
-      <line num="41" count="11" type="cond" truecount="1" falsecount="1"/>
-      <line num="75" count="1" type="stmt"/>
+      <line num="41" count="29" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="18" type="stmt"/>
+      <line num="43" count="18" type="stmt"/>
+      <line num="45" count="18" type="stmt"/>
+      <line num="46" count="106" type="stmt"/>
+      <line num="47" count="349" type="stmt"/>
+      <line num="49" count="106" type="stmt"/>
+      <line num="50" count="106" type="stmt"/>
+      <line num="53" count="18" type="stmt"/>
+      <line num="54" count="18" type="stmt"/>
+      <line num="56" count="18" type="stmt"/>
+      <line num="57" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="28" type="stmt"/>
+      <line num="59" count="28" type="stmt"/>
+      <line num="62" count="10" type="stmt"/>
+      <line num="96" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
