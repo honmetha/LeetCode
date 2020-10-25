@@ -1,0 +1,23 @@
+{
+  "name": "LeetCode",
+  "version": "1.0.0",
+  "description": "https://leetcode.com/metha/",
+  "main": "TestCases.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honmetha/LeetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honmetha/LeetCode/issues"
+  },
+  "homepage": "https://github.com/honmetha/LeetCode#readme",
+  "devDependencies": {
+    "jest": "^26.6.1"
+  }
+}

@@ -71,3 +71,5 @@ const isPalindrome = x => {
 // 1234554321
 // 1234564321
 // 2147483647
+
+module.exports = isPalindrome;
