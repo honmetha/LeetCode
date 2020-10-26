@@ -29,7 +29,40 @@
 // @return {boolean}
 
 const isAnagram = (s, t) => {
+  const sLetters = {};
+
+  for (let letter of s) {
+    if (sLetters[letter]) sLetters[letter]++;
+    else sLetters[letter] = 1;
+  };
+
+  for (let letter of t) {
+    if (sLetters[letter] > 1) sLetters[letter]--;
+    else if (sLetters[letter] === 1) delete sLetters[letter];
+    else return false
+  };
+
+  for (let key in sLetters) return false;
+
   return true;
 };
+
+// Test cases
+// "", ""
+// "  ", " "
+// " ", " "
+// "anagram", "nagaram"
+// "rat", "car"
+// "hello", "hell"
+// "pot", "top"
+// "hippopotamus", "hippopotamus"
+// "hipopotamus", "hippopotamus"
+// "uncopyrightable", "ablecopyrightun"
+// "uncopyrightable", "uncopyright"
+// "aaaaaaaaa", "aaaaaaaaaa"
+// "aaaaaaaaaa", "aaaabaaaaa"
+// "aaaaaaaaaa", "aaaaaaaaaa"
+// "௸߶©", "௸߶©"
+// "୰൏༓༴", "୰༓༴"
 
 module.exports = isAnagram;
