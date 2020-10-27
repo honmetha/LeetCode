@@ -31,3 +31,8 @@ const isPalindrome = s => {
 };
 
 // Test cases
+// "A man, a plan, a canal: Panama"
+// "race a car"
+// "+-a@,bc: @cb;a"
+
+module.exports = isPalindrome;
