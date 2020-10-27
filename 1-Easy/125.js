@@ -27,12 +27,31 @@
 // @return {boolean}
 
 const isPalindrome = s => {
-  return s;
+  s = s.replace(/[^0-9a-z]/gi, '').toLowerCase();
+  const length = s.length
+
+  if (length % 2 === 0) return s.slice(0, length / 2) === s.slice(length / 2, length).split("").reverse().join("");
+  else return s.slice(0, Math.floor(length / 2)) === s.slice(Math.ceil(length / 2), length).split("").reverse().join("");
 };
 
 // Test cases
+// ""
+// "      "
+// "$$$)( :"
+// "$)( :!5"
+// "$$%X@#$)( :"
 // "A man, a plan, a canal: Panama"
 // "race a car"
+// "tac a cat"
+// "HeLLO WorlD"
+// "hellojune"
+// "nurses run"
+// "334433"
+// "12345654321"
+// "asdf8fdsa"
+// "ui23w23ert"
+// ":::He-;LLO,@Mo+oN::"
 // "+-a@,bc: @cb;a"
+// "ab_a"
 
 module.exports = isPalindrome;

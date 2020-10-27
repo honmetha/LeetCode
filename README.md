@@ -14,6 +14,7 @@ https://leetcode.com/metha/
 | 58   | Length of Last Word                                          | Easy       |  94.50% |  14.17% |
 | 66   | Plus One                                                     | Easy       |  66.47% |  41.49% |
 | 121  | Best Time to Buy and Sell Stock                              | Easy       |  95.22% |  57.09% |
+| 125  | Valid Palindrome                                             | Easy       |  29.87% |   7.22% |
 | 151  | Reverse Words in a String                                    | Medium     |  91.43% |         |
 | 168  | Excel Sheet Column Title                                     | Easy       |  93.00% |  17.32% |
 | 169  | Majority Element                                             | Easy       |  83.08% |         |
