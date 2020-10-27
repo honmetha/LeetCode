@@ -26,12 +26,29 @@
 // @param {string} s
 // @return {boolean}
 
+// Original
 const isPalindrome = s => {
   s = s.replace(/[^0-9a-z]/gi, '').toLowerCase();
   const length = s.length
 
   if (length % 2 === 0) return s.slice(0, length / 2) === s.slice(length / 2, length).split("").reverse().join("");
   else return s.slice(0, Math.floor(length / 2)) === s.slice(Math.ceil(length / 2), length).split("").reverse().join("");
+};
+
+// Original 2
+const isPalindrome = s => {
+  s = s.replace(/[^0-9a-z]/gi, '').toLowerCase().split("");
+
+  let start = 0;
+  let end = s.length - 1;
+
+  while (start < end) {
+    if (s[start] !== s[end]) return false;
+    start++;
+    end--;
+  }
+
+  return true;
 };
 
 // Test cases
