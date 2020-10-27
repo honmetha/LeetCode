@@ -23,4 +23,5 @@ test("test strings", () => {
 test("test unicode characters", () => {
   expect(isAnagram("௸߶©", "௸߶©")).toBeTruthy();
   expect(isAnagram("୰൏༓༴", "୰༓༴")).toBeFalsy();
+  expect(isAnagram("୰൏༓༴", "༴൏༓୰")).toBeTruthy();
 });

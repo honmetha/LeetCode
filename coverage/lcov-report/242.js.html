@@ -25,14 +25,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>16/16</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>12/12</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
@@ -124,7 +124,11 @@
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,23 +158,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">110x</span>
-<span class="cline-any cline-yes">75x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">16x</span>
-<span class="cline-any cline-yes">92x</span>
-<span class="cline-any cline-yes">62x</span>
-<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -221,24 +229,27 @@
 // @param {string} t
 // @return {boolean}
 &nbsp;
-const isAnagram = (s, t) =&gt; {
-  const sLetters = {};
+// Original
+// const isAnagram = (s, t) =&gt; {
+//   const sLetters = {};
 &nbsp;
-  for (let letter of s) {
-    if (sLetters[letter]) sLetters[letter]++;
-    else sLetters[letter] = 1;
-  };
+//   for (let letter of s) {
+//     if (sLetters[letter]) sLetters[letter]++;
+//     else sLetters[letter] = 1;
+//   };
 &nbsp;
-  for (let letter of t) {
-    if (sLetters[letter] &gt; 1) sLetters[letter]--;
-    else if (sLetters[letter] === 1) delete sLetters[letter];
-    else return false
-  };
+//   for (let letter of t) {
+//     if (sLetters[letter] &gt; 1) sLetters[letter]--;
+//     else if (sLetters[letter] === 1) delete sLetters[letter];
+//     else return false
+//   };
 &nbsp;
-  for (let key in sLetters) return false;
+//   for (let key in sLetters) return false;
 &nbsp;
-  return true;
-};
+//   return true;
+// };
+&nbsp;
+const isAnagram = (s, t) =&gt; s.split("").sort().join("") === t.split("").sort().join("");
 &nbsp;
 // Test cases
 // "", ""
@@ -257,6 +268,7 @@ const isAnagram = (s, t) =&gt; {
 // "aaaaaaaaaa", "aaaaaaaaaa"
 // "௸߶©", "௸߶©"
 // "୰൏༓༴", "୰༓༴"
+// "୰൏༓༴", "༴൏༓୰"
 &nbsp;
 module.exports = isAnagram;</pre></td></tr></table></pre>
 
@@ -265,7 +277,7 @@ module.exports = isAnagram;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Oct 26 2020 23:50:04 GMT+0700 (Indochina Time)
+                at Tue Oct 27 2020 20:55:57 GMT+0700 (Indochina Time)
             </div>
         </div>
         <script src="prettify.js"></script>

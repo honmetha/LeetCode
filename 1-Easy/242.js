@@ -28,6 +28,7 @@
 // @param {string} t
 // @return {boolean}
 
+// Original
 const isAnagram = (s, t) => {
   const sLetters = {};
 
@@ -47,6 +48,9 @@ const isAnagram = (s, t) => {
   return true;
 };
 
+// Original One-Liner
+const isAnagram = (s, t) => s.split("").sort().join("") === t.split("").sort().join("");
+
 // Test cases
 // "", ""
 // "  ", " "
@@ -64,5 +68,6 @@ const isAnagram = (s, t) => {
 // "aaaaaaaaaa", "aaaaaaaaaa"
 // "௸߶©", "௸߶©"
 // "୰൏༓༴", "୰༓༴"
+// "୰൏༓༴", "༴൏༓୰"
 
 module.exports = isAnagram;
