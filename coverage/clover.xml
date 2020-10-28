@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1603814057006" clover="3.2.0">
-  <project timestamp="1603814057006" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="13" coveredelements="13" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
-    <file name="125.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/1-Easy/125.js">
-      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="39" count="1" type="stmt"/>
-      <line num="40" count="18" type="stmt"/>
-      <line num="42" count="18" type="stmt"/>
-      <line num="43" count="18" type="stmt"/>
-      <line num="45" count="18" type="stmt"/>
-      <line num="46" count="41" type="cond" truecount="2" falsecount="0"/>
-      <line num="47" count="36" type="stmt"/>
-      <line num="48" count="36" type="stmt"/>
-      <line num="51" count="13" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+<coverage generated="1603882530636" clover="3.2.0">
+  <project timestamp="1603882530636" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="12" coveredelements="12" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+    <file name="49.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/49.js">
+      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="37" count="9" type="stmt"/>
+      <line num="38" count="96" type="stmt"/>
+      <line num="40" count="9" type="stmt"/>
+      <line num="41" count="48" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="33" type="stmt"/>
+      <line num="45" count="9" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
