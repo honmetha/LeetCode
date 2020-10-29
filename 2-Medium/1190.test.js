@@ -1,0 +1,1 @@
+const reverseParentheses = require('1190');

@@ -45,5 +45,18 @@ const reverseParentheses = s => {
 };
 
 // Test cases
+// ""
+// "()"
+// "()(((((((((((())))))))))))"
+// "t(b)((((((dfd(((((()))))yelp))))a))help)"
+// "halloween"
+// "h(()((abdsdsbs)))pp"
+// "(abcd)"
+// "(u(love)i)"
+// "(ed(et(oc))el)"
+// "a(bcdefghijkl(mno)p)q"
+// "a(bc(def)gh(i)jkl(mno)p)q"
+// "z(as()adw)h(f)(woei(wof)i)(jh(eow)f)"
+// "((wersdfw)asdfwe(a)d()(()((((a))))(abc)as())(fd)()()a()wer)"
 
 module.exports = reverseParentheses;
