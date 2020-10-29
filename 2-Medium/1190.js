@@ -41,6 +41,23 @@
 // @return {string}
 
 const reverseParentheses = s => {
+  while (s.includes("(")) {
+    let openBracketIndex, closeBracketIndex;
+
+    for (let i = 0; i < s.length; i++) {
+      if (s[i] === "(") openBracketIndex = i;
+      if (s[i] === ")") {
+        closeBracketIndex = i;
+        break;
+      };
+    };
+
+    let subStringS = s.substring(openBracketIndex, closeBracketIndex + 1);
+    s = s.split(subStringS);
+    subStringS = subStringS.split("").reverse().join("");
+    s = s.join(subStringS.substring(1, subStringS.length - 1));
+  };
+  
   return s;
 };
 
