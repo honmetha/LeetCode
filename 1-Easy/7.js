@@ -41,18 +41,12 @@ const reverse = x => {
   const isNegative = x < 0 ? true: false;
   if (isNegative) x = Math.abs(x);
 
-  x = (x + "").split("").reverse().join("");
+  x = Number((x + "").split("").reverse().join(""))
+  if (x > 2 ** 31) return 0;
   if (isNegative) x = -Math.abs(x);
 
   return x;
 };
-
-const reverse = x => {
-  const absReversed = Math.abs(x).toString().split('').reverse().join('');
-  if (absReversed > 2**31) return 0;
-  return absReversed * Math.sign(x);
-};
-
 
 // Test cases
 // -2147483647
