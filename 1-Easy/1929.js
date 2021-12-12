@@ -37,5 +37,10 @@ const getConcatenation = (nums) => {
 };
 
 // Test cases
+// [1]
+// [998]
+// [1,2,1]
+// [1,3,2,1]
+// [123,999,23,1,55,82,90,12,37]
 
 module.exports = getConcatenation;
