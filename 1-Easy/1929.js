@@ -32,9 +32,7 @@
 // @param {number[]} nums
 // @return {number[]}
 
-const getConcatenation = (nums) => {
-  return nums;
-};
+const getConcatenation = (nums) => [...nums, ...nums];
 
 // Test cases
 // [1]
