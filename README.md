@@ -101,3 +101,4 @@
 | 1528 | Shuffle String                                               | Easy       | 97.07%  | 75.47% |
 | 1550 | Three Consecutive Odds                                       | Easy       | 93.41%  | 77.69% |
 | 1556 | Thousand Separator                                           | Easy       | 92.35%  | 23.21% |
+| 1920 | Build Array from Permutation                                 | Easy       |         |        |
