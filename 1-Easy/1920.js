@@ -36,13 +36,12 @@
 // @param {number[]} nums
 // @return {number[]}
 
-const buildArray = (nums) => {
-  return nums;
-};
+const buildArray = (nums) => nums.map((num) => nums[num]);
 
 // Test cases
 // [0]
 // [0,2,1,5,3,4]
 // [5,0,1,2,3,4]
+// [9,5,10,11,0,6,1,2,7,3,4,8]
 
 module.exports = buildArray;

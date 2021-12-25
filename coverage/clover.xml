@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640191640697" clover="3.2.0">
-  <project timestamp="1640191640697" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+<coverage generated="1640417226888" clover="3.2.0">
+  <project timestamp="1640417226888" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
     <file name="1920.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/1-Easy/1920.js">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="37" count="1" type="stmt"/>
-      <line num="38" count="2" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="39" count="25" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
