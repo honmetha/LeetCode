@@ -40,8 +40,21 @@
 // @param {number[][]} accounts
 // @return {number}
 
-const maximumWealth = (accounts) =>
-  Math.max(...accounts.map((e) => e.reduce((a, b) => a + b, 0)));
+// const maximumWealth = (accounts) =>
+//   Math.max(...accounts.map((e) => e.reduce((a, b) => a + b, 0)));
+
+const maximumWealth = (accounts) => {
+  let result = 0;
+
+  for (let i = 0; i < accounts.length; i++) {
+    const sum = accounts[i].reduce((a, b) => a + b, 0);
+    if (sum > result) {
+      result = sum;
+    }
+  }
+
+  return result;
+};
 
 // Test cases
 // [[1]]
