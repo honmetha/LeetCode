@@ -1,0 +1,37 @@
+const intToRoman = require("./12");
+
+test("test integer to roman", () => {
+  expect(intToRoman(1)).toBe("I");
+  expect(intToRoman(3)).toBe("III");
+  expect(intToRoman(7)).toBe("VII");
+  expect(intToRoman(9)).toBe("IX");
+  expect(intToRoman(58)).toBe("LVIII");
+  expect(intToRoman(70)).toBe("LXX");
+  expect(intToRoman(100)).toBe("C");
+  expect(intToRoman(110)).toBe("CX");
+  expect(intToRoman(111)).toBe("CXI");
+  expect(intToRoman(499)).toBe("CDXCIX");
+  expect(intToRoman(500)).toBe("D");
+  expect(intToRoman(501)).toBe("DI");
+  expect(intToRoman(999)).toBe("CMXCIX");
+  expect(intToRoman(1000)).toBe("M");
+  expect(intToRoman(1008)).toBe("MVIII");
+  expect(intToRoman(1009)).toBe("MIX");
+  expect(intToRoman(1010)).toBe("MX");
+  expect(intToRoman(1994)).toBe("MCMXCIV");
+  expect(intToRoman(2000)).toBe("MM");
+  expect(intToRoman(2490)).toBe("MMCDXC");
+  expect(intToRoman(2500)).toBe("MMD");
+  expect(intToRoman(2597)).toBe("MMDXCVII");
+  expect(intToRoman(3989)).toBe("MMMCMLXXXIX");
+  expect(intToRoman(3990)).toBe("MMMCMXC");
+  expect(intToRoman(3991)).toBe("MMMCMXCI");
+  expect(intToRoman(3992)).toBe("MMMCMXCII");
+  expect(intToRoman(3993)).toBe("MMMCMXCIII");
+  expect(intToRoman(3994)).toBe("MMMCMXCIV");
+  expect(intToRoman(3995)).toBe("MMMCMXCV");
+  expect(intToRoman(3996)).toBe("MMMCMXCVI");
+  expect(intToRoman(3997)).toBe("MMMCMXCVII");
+  expect(intToRoman(3998)).toBe("MMMCMXCVIII");
+  expect(intToRoman(3999)).toBe("MMMCMXCIX");
+});

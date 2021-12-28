@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640631717404" clover="3.2.0">
-  <project timestamp="1640631717405" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="12" coveredelements="12" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
-    <file name="1672.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/1-Easy/1672.js">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <line num="46" count="1" type="stmt"/>
-      <line num="47" count="5" type="stmt"/>
-      <line num="49" count="5" type="stmt"/>
-      <line num="50" count="37" type="stmt"/>
-      <line num="51" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="52" count="7" type="stmt"/>
-      <line num="56" count="5" type="stmt"/>
-      <line num="66" count="1" type="stmt"/>
+<coverage generated="1640718645218" clover="3.2.0">
+  <project timestamp="1640718645218" name="All files">
+    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+    <file name="12.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/12.js">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="53" count="1" type="stmt"/>
+      <line num="54" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
