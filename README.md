@@ -12,6 +12,7 @@
 | 12   | Integer to Roman                                             | Medium     |         |        |
 | 13   | Roman to Integer                                             | Easy       | 95.05%  | 90.57% |
 | 20   | Valid Parentheses                                            | Easy       | 89.21%  | 48.88% |
+| 26   | Remove Duplicates from Sorted Array                          | Easy       |         |        |
 | 35   | Search Insert Position                                       | Easy       | 94.07%  | 7.86%  |
 | 49   | Group Anagrams                                               | Medium     | 32.67%  | 5.63%  |
 | 58   | Length of Last Word                                          | Easy       | 94.50%  | 14.17% |
