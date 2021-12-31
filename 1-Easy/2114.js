@@ -45,4 +45,8 @@ const mostWordsFound = (sentences) => {
   return sentences;
 };
 
+// Test cases
+// ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
+// ["please wait", "continue to fight", "continue to win"]
+
 module.exports = mostWordsFound;
