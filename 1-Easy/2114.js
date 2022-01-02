@@ -46,7 +46,13 @@ const mostWordsFound = (sentences) => {
 };
 
 // Test cases
+// ["alice"]
+// ["a", "abc", "ab a c"]
+// ["alice", "hello alice", "good morning alice"]
+// ["good morning alice", "hello alice", "alice"]
 // ["alice and bob love leetcode", "i think so too", "this is great thanks very much"]
 // ["please wait", "continue to fight", "continue to win"]
+// ["incomprehensibility", "my very photogenic mother died in a freak accident"]
+// ["antidisestablishmentarianism antidisestablishmentarianism", "rat cat dog", "bat mat hat vat"]
 
 module.exports = mostWordsFound;
