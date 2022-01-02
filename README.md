@@ -106,4 +106,4 @@
 | 1672 | Richest Customer Wealth                                      | Easy       | 50.86%  | 63.26% |
 | 1920 | Build Array from Permutation                                 | Easy       | 76.89%  | 97.10% |
 | 1929 | Concatenation of Array                                       | Easy       | 81.97%  | 38.49% |
-| 2114 | Maximum Number of Words Found in Sentences                   | Easy       |         |        |
+| 2114 | Maximum Number of Words Found in Sentences                   | Easy       | 5.24%   | 99.32% |

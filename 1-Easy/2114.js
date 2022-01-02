@@ -42,7 +42,16 @@
 // @return {number}
 
 const mostWordsFound = (sentences) => {
-  return sentences;
+  let mostNumberOfWords = 0;
+
+  sentences.forEach((words) => {
+    const numberOfWords = words.split(" ").length;
+    if (numberOfWords > mostNumberOfWords) {
+      mostNumberOfWords = numberOfWords;
+    }
+  });
+
+  return mostNumberOfWords;
 };
 
 // Test cases
