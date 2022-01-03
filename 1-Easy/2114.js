@@ -41,18 +41,25 @@
 // @param {string[]} sentences
 // @return {number}
 
-const mostWordsFound = (sentences) => {
-  let mostNumberOfWords = 0;
+// const mostWordsFound = (sentences) => {
+//   let mostNumberOfWords = 0;
 
-  sentences.forEach((words) => {
-    const numberOfWords = words.split(" ").length;
-    if (numberOfWords > mostNumberOfWords) {
-      mostNumberOfWords = numberOfWords;
-    }
-  });
+//   sentences.forEach((words) => {
+//     const numberOfWords = words.split(" ").length;
+//     if (numberOfWords > mostNumberOfWords) {
+//       mostNumberOfWords = numberOfWords;
+//     }
+//   });
 
-  return mostNumberOfWords;
-};
+//   return mostNumberOfWords;
+// };
+
+const mostWordsFound = (sentences) =>
+  sentences.reduce(
+    (acc, sentence) =>
+      sentence.split(" ").length > acc ? sentence.split(" ").length : acc,
+    0
+  );
 
 // Test cases
 // ["alice"]
