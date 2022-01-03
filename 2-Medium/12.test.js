@@ -11,8 +11,10 @@ test("test integer to roman", () => {
   expect(intToRoman(110)).toBe("CX");
   expect(intToRoman(111)).toBe("CXI");
   expect(intToRoman(499)).toBe("CDXCIX");
+  expect(intToRoman(456)).toBe("CDLVI");
   expect(intToRoman(500)).toBe("D");
   expect(intToRoman(501)).toBe("DI");
+  expect(intToRoman(567)).toBe("DLXVII");
   expect(intToRoman(999)).toBe("CMXCIX");
   expect(intToRoman(1000)).toBe("M");
   expect(intToRoman(1008)).toBe("MVIII");

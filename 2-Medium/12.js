@@ -51,7 +51,25 @@
 // @return {string}
 
 const intToRoman = (num) => {
-  return num;
+  const romanNums = ["I", "V", "X", "L", "C", "D", "M"];
+  const numArr = num.toString().split("").reverse();
+
+  for (let i = 0, j = 0; i < numArr.length; i++, j += 2) {
+    const currentNum = Number(numArr[i]);
+    if (currentNum === 0) numArr[i] = "";
+    else {
+      if (currentNum < 5) {
+        if (currentNum === 4) numArr[i] = romanNums[j] + romanNums[j + 1];
+        else numArr[i] = romanNums[j].repeat(numArr[i]);
+      } else {
+        if (currentNum === 5) numArr[i] = romanNums[j + 1];
+        else if (currentNum === 9) numArr[i] = romanNums[j] + romanNums[j + 2];
+        else numArr[i] = romanNums[j + 1] + romanNums[j].repeat(numArr[i] - 5);
+      }
+    }
+  }
+
+  return numArr.reverse().join("");
 };
 
 // Test cases
@@ -64,9 +82,11 @@ const intToRoman = (num) => {
 // 100
 // 110
 // 111
+// 456
 // 499
 // 500
 // 501
+// 567
 // 999
 // 1000
 // 1008
