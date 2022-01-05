@@ -29,4 +29,8 @@ const longestCommonPrefix = (strs) => {
   return strs;
 };
 
+// Test cases
+// ["flower","flow","flight"]
+// ["dog","racecar","car"]
+
 module.exports = longestCommonPrefix;
