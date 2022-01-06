@@ -37,4 +37,9 @@ const firstPalindrome = (words) => {
   return words;
 };
 
+// Test cases
+// ["abc","car","ada","racecar","cool"]
+// ["notapalindrome","racecar"]
+// ["def","ghi"]
+
 module.exports = firstPalindrome;
