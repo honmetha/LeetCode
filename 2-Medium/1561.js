@@ -48,4 +48,9 @@ const maxCoins = (piles) => {
   return piles;
 };
 
+// Test cases
+// [2,4,1,2,7,8]
+// [2,4,5]
+// [9,8,7,6,5,1,2,3,4]
+
 module.exports = maxCoins;
