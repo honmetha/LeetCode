@@ -3,6 +3,7 @@ const firstPalindrome = require("./1929");
 test("test first palindrome", () => {
   expect(firstPalindrome(["a"])).toBe("a");
   expect(firstPalindrome(["a", "b", "c"])).toBe("a");
+  expect(firstPalindrome(["cat", "bat", "rat"])).toBe("");
   expect(firstPalindrome(["gag", "pap", "sat"])).toBe("gag");
   expect(firstPalindrome(["bat", "cat", "dog", "nan"])).toBe("nan");
   expect(firstPalindrome(["abc", "car", "ada", "racecar", "cool"])).toBe("ada");

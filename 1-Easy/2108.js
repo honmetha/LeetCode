@@ -40,6 +40,7 @@ const firstPalindrome = (words) => {
 // Test cases
 // ["a"]
 // ["a", "b", "c"]
+// ["cat", "bat", "rat"]
 // ["gag", "pap", "sat"]
 // ["bat", "cat", "dog", "nan"]
 // ["abc","car","ada","racecar","cool"]
