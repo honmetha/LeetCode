@@ -38,8 +38,14 @@ const firstPalindrome = (words) => {
 };
 
 // Test cases
+// ["a"]
+// ["a", "b", "c"]
+// ["gag", "pap", "sat"]
+// ["bat", "cat", "dog", "nan"]
 // ["abc","car","ada","racecar","cool"]
 // ["notapalindrome","racecar"]
 // ["def","ghi"]
+// ["redivider", "cap", "refer"]
+// ["a", "radar", "b"]
 
 module.exports = firstPalindrome;
