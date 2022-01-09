@@ -44,7 +44,7 @@ const firstPalindrome = (words) => {
       if (word[start] !== word[end]) break;
       start++;
       end--;
-      if (start <= end) return word;
+      if (start >= end) return word;
     }
   }
 
@@ -53,6 +53,8 @@ const firstPalindrome = (words) => {
 
 // Test cases
 // ["a"]
+// ["aa"]
+// ["aaa"]
 // ["a", "b", "c"]
 // ["cat", "bat", "rat"]
 // ["gag", "pap", "sat"]
@@ -62,5 +64,6 @@ const firstPalindrome = (words) => {
 // ["def","ghi"]
 // ["redivider", "cap", "refer"]
 // ["a", "radar", "b"]
+// ["cqllrtyhw","swwisru","gpzmbders","wqibjuqvs","pp","usewxryy","ybqfuh","hqwwqftgyu","jggmatpk"]
 
 module.exports = firstPalindrome;
