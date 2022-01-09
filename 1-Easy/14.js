@@ -30,7 +30,19 @@ const longestCommonPrefix = (strs) => {
 };
 
 // Test cases
-// ["flower","flow","flight"]
-// ["dog","racecar","car"]
+// [""]
+// ["", ""]
+// ["", "ab"]
+// ["", "", ""]
+// ["hello"]
+// ["a", "ab", "bc"]
+// ["cat", "bat", "hat"]
+// ["flower", "flow", "flight"]
+// ["dog", "racecar", "car"]
+// ["antivirus", "antiviral", "anticipate", "antioxidant"]
+// ["aaaaa", "aaaaaa", "aaaaaaa", "aaaaaaaa"]
+// ["aaaaaaaa", "aaaaaaa", "aaaaaa", "aaaaa"]
+// ["aaa", "aaa", "aab", "aba"]
+// ["aaa", "aaa", "aaa", ""]
 
 module.exports = longestCommonPrefix;
