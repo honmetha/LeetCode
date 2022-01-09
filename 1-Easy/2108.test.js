@@ -1,4 +1,4 @@
-const firstPalindrome = require("./1929");
+const firstPalindrome = require("./2108");
 
 test("test first palindrome", () => {
   expect(firstPalindrome(["a"])).toBe("a");

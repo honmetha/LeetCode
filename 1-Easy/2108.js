@@ -34,7 +34,21 @@
 // @return {string}
 
 const firstPalindrome = (words) => {
-  return words;
+  for (const word of words) {
+    if (word.length === 1) return word;
+
+    let start = 0;
+    let end = word.length - 1;
+
+    while (start < end) {
+      if (word[start] !== word[end]) break;
+      start++;
+      end--;
+      if (start <= end) return word;
+    }
+  }
+
+  return "";
 };
 
 // Test cases
