@@ -26,7 +26,19 @@
 // @return {string}
 
 const longestCommonPrefix = (strs) => {
-  return strs;
+  if (strs.length === 1) return strs[0];
+
+  const firstWord = strs.shift();
+  let output = "";
+
+  for (let i = 0; i < firstWord.length; i++) {
+    for (const word of strs) {
+      if (firstWord[i] !== word[i]) return output;
+    }
+    output += firstWord[i];
+  }
+
+  return output;
 };
 
 // Test cases
