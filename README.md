@@ -104,7 +104,7 @@
 | 1528 | Shuffle String                                               | Easy       | 97.07%  | 75.47% |
 | 1550 | Three Consecutive Odds                                       | Easy       | 93.41%  | 77.69% |
 | 1556 | Thousand Separator                                           | Easy       | 92.35%  | 23.21% |
-| 1561 | Maximum Number of Coins You Can Get                          | Medium     |         |        |
+| 1561 | Maximum Number of Coins You Can Get                          | Medium     | 25.39%  | 89.23% |
 | 1672 | Richest Customer Wealth                                      | Easy       | 50.86%  | 63.26% |
 | 1920 | Build Array from Permutation                                 | Easy       | 76.89%  | 97.10% |
 | 1929 | Concatenation of Array                                       | Easy       | 81.97%  | 38.49% |

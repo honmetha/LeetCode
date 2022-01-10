@@ -45,7 +45,15 @@
 // @return {number}
 
 const maxCoins = (piles) => {
-  return piles;
+  let total = 0;
+  let sortedPiles = piles.sort((a, b) => b - a);
+
+  for (let i = 1; i < sortedPiles.length; i += 2) {
+    total += sortedPiles[i];
+    sortedPiles.pop();
+  }
+
+  return total;
 };
 
 // Test cases
