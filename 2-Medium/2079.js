@@ -62,4 +62,9 @@ const wateringPlants = (plants, capacity) => {
   return plants;
 };
 
+// Test cases
+// [2,2,3,3], 5
+// [1,1,1,4,2,3], 4
+// [7,7,7,7,7,7,7], 8
+
 module.exports = wateringPlants;
