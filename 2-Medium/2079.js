@@ -59,7 +59,21 @@
 // @return {number}
 
 const wateringPlants = (plants, capacity) => {
-  return plants;
+  let wateringCan = capacity;
+  let totalSteps = 0;
+
+  plants.unshift("💧");
+
+  for (let i = 0; i < plants.length - 1; i++) {
+    if (plants[i + 1] > wateringCan) {
+      totalSteps += i * 2;
+      wateringCan = capacity;
+    }
+    totalSteps += 1;
+    wateringCan -= plants[i + 1];
+  }
+
+  return totalSteps;
 };
 
 // Test cases
