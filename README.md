@@ -7,7 +7,7 @@
 | #    | Title                                                        | Difficulty | Runtime | Memory |
 | :--- | :----------------------------------------------------------- | :--------- | :------ | :----- |
 | 1    | Two Sum                                                      | Easy       | 100.00% |        |
-| 7    | Reverse Integer                                              | Easy       | 33.42%  | 16.71% |
+| 7    | Reverse Integer                                              | Medium     | 33.42%  | 16.71% |
 | 9    | Palindrome Number                                            | Easy       | 29.18%  | 5.08%  |
 | 12   | Integer to Roman                                             | Medium     | 6.45%   | 54.30% |
 | 13   | Roman to Integer                                             | Easy       | 95.05%  | 90.57% |
@@ -24,8 +24,8 @@
 | 168  | Excel Sheet Column Title                                     | Easy       | 93.00%  | 17.32% |
 | 169  | Majority Element                                             | Easy       | 83.08%  |        |
 | 171  | Excel Sheet Column Number                                    | Easy       | 99.88%  | 74.01% |
-| 198  | House Robber                                                 | Easy       | 91.17%  | 42.96% |
-| 204  | Count Primes                                                 | Easy       | 86.00%  | 5.79%  |
+| 198  | House Robber                                                 | Medium     | 91.17%  | 42.96% |
+| 204  | Count Primes                                                 | Medium     | 86.00%  | 5.79%  |
 | 217  | Contains Duplicate                                           | Easy       | 94.45%  |        |
 | 242  | Valid Anagram                                                | Easy       | 62.73%  | 15.65% |
 | 260  | Single Number III                                            | Medium     | 8.47%   |        |
