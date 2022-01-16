@@ -5,7 +5,6 @@
 
 // Follow up: Could you solve it without converting the integer to a string?
 
-
 // Example 1:
 // Input: x = 121
 // Output: true
@@ -24,20 +23,18 @@
 // Input: x = -101
 // Output: false
 
-
 // Constraints:
 // - -231 <= x <= 231 - 1
-
 
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {number} x
 // @return {boolean}
 
-const isPalindrome = x => {
+// Original
+const isPalindrome = (x) => {
   if (x < 0) return false;
   let newX = x;
   let numbersArr = [];
@@ -48,7 +45,7 @@ const isPalindrome = x => {
 
     numbersArr.push(moduloNumber);
     newX -= newX % i;
-  };
+  }
 
   let start = 0;
   let end = numbersArr.length - 1;
@@ -60,6 +57,38 @@ const isPalindrome = x => {
   }
 
   return true;
+};
+
+// Alternative
+const isPalindrome = (x) => {
+  const s = x.toString();
+  if (s.length === 1) {
+    return true;
+  }
+  const start = s[0];
+  const end = s[s.length - 1];
+  if (start !== end) {
+    return false;
+  }
+  if (s.length === 2) {
+    return true;
+  }
+  const subStr = s.substring(1, s.length - 1);
+  return isPalindrome(subStr);
+};
+
+// Alternative
+const isPalindrome = (x) => {
+  if (x < 0 || (x % 10 == 0 && x != 0)) {
+    return false;
+  }
+  let oldX = x,
+    rev = 0;
+  while (x != 0) {
+    rev = rev * 10 + (x % 10);
+    x = Math.floor(x / 10);
+  }
+  return rev === oldX;
 };
 
 // Test cases
