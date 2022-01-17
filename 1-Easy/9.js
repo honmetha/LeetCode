@@ -33,7 +33,7 @@
 // @param {number} x
 // @return {boolean}
 
-// Original
+// Original without converting the integer to a string
 const isPalindrome = (x) => {
   if (x < 0) return false;
   let newX = x;
@@ -61,24 +61,6 @@ const isPalindrome = (x) => {
 
 // Alternative
 const isPalindrome = (x) => {
-  const s = x.toString();
-  if (s.length === 1) {
-    return true;
-  }
-  const start = s[0];
-  const end = s[s.length - 1];
-  if (start !== end) {
-    return false;
-  }
-  if (s.length === 2) {
-    return true;
-  }
-  const subStr = s.substring(1, s.length - 1);
-  return isPalindrome(subStr);
-};
-
-// Alternative
-const isPalindrome = (x) => {
   if (x < 0 || (x % 10 == 0 && x != 0)) {
     return false;
   }
@@ -89,15 +71,6 @@ const isPalindrome = (x) => {
     x = Math.floor(x / 10);
   }
   return rev === oldX;
-};
-
-// Simple
-const isPalindrome = (x) => {
-  const s = String(x).split("");
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] !== s[s.length - i - 1]) return false;
-  }
-  return true;
 };
 
 // Test cases
