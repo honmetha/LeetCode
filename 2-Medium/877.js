@@ -37,45 +37,8 @@
 // @param {number[]} piles
 // @return {boolean}
 
-const stoneGame = (piles) => {
-  let Alex = 0,
-    Lee = 0,
-    count = 0;
-
-  while (piles.length !== 0) {
-    let begin = 0,
-      end = piles.length - 1,
-      difference1 = 0,
-      difference2 = 0;
-
-    difference1 =
-      piles[begin + 1] > piles[end]
-        ? piles[begin] - piles[begin + 1]
-        : piles[begin] - piles[end];
-    difference2 =
-      piles[begin] > piles[end - 1]
-        ? piles[end] - piles[begin]
-        : piles[end] - piles[end - 1];
-
-    console.log("difference1", difference1);
-    console.log("difference2", difference2);
-
-    if (count % 2 === 0) {
-      Alex =
-        difference1 > difference2 ? Alex + piles.shift() : Alex + piles.pop();
-    } else {
-      Lee = difference1 > difference2 ? Lee + piles.shift() : Lee + piles.pop();
-    }
-
-    console.log("piles", piles);
-    console.log("Alex", Alex);
-    console.log("Lee", Lee);
-
-    count++;
-  }
-
-  return Alex > Lee ? true : false;
-};
+// O(1)
+const stoneGame = (piles) => true;
 
 // Test cases
 // [5,3,4,10,6,9,20,8]

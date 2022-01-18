@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1642437576603" clover="3.2.0">
-  <project timestamp="1642437576603" name="All files">
-    <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="4" coveredelements="4" complexity="0" loc="3" ncloc="3" packages="1" files="1" classes="1"/>
+<coverage generated="1642522764576" clover="3.2.0">
+  <project timestamp="1642522764576" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="3" coveredelements="3" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
     <file name="877.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/877.js">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="40" count="1" type="stmt"/>
-      <line num="78" count="7" type="stmt"/>
-      <line num="90" count="1" type="stmt"/>
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="40" count="7" type="stmt"/>
+      <line num="51" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
