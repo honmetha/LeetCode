@@ -2,7 +2,6 @@
 
 // Given two strings s and t, write a function to determine if t is an anagram of s.
 
-
 // Example 1:
 // Input: s = "anagram", t = "nagaram"
 // Output: true
@@ -11,18 +10,15 @@
 // Input: s = "rat", t = "car"
 // Output: false
 
-
 // Note:
 // You may assume the string contains only lowercase alphabets.
 
 // Follow up:
 // What if the inputs contain unicode characters? How would you adapt your solution to such case?
 
-
 /***********************************************************************
  *  Solution
  **********************************************************************/
-
 
 // @param {string} s
 // @param {string} t
@@ -35,13 +31,13 @@ const isAnagram = (s, t) => {
   for (let letter of s) {
     if (sLetters[letter]) sLetters[letter]++;
     else sLetters[letter] = 1;
-  };
+  }
 
   for (let letter of t) {
     if (sLetters[letter] > 1) sLetters[letter]--;
     else if (sLetters[letter] === 1) delete sLetters[letter];
-    else return false
-  };
+    else return false;
+  }
 
   for (let key in sLetters) return false;
 
@@ -49,7 +45,23 @@ const isAnagram = (s, t) => {
 };
 
 // Original One-Liner
-const isAnagram = (s, t) => s.split("").sort().join("") === t.split("").sort().join("");
+const isAnagram = (s, t) =>
+  s.split("").sort().join("") === t.split("").sort().join("");
+
+// Alternative
+const isAnagram = (s, t) => {
+  if (s.length != t.length) {
+    return false;
+  }
+
+  const h = new Array(26).fill(0);
+
+  for (let i = 0; i < s.length; i++) {
+    h[s.charCodeAt(i) - 97]++;
+    h[t.charCodeAt(i) - 97]--;
+  }
+  return h.every((n) => n === 0);
+};
 
 // Test cases
 // "", ""
