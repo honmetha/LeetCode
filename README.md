@@ -27,7 +27,7 @@
 | 198  | House Robber                                                 | Medium     | 91.17%  | 42.96% |
 | 204  | Count Primes                                                 | Medium     | 86.00%  | 5.79%  |
 | 217  | Contains Duplicate                                           | Easy       | 94.45%  |        |
-| 242  | Valid Anagram                                                | Easy       | 62.73%  | 15.65% |
+| 242  | Valid Anagram                                                | Easy       | 98.39%  | 92.03% |
 | 260  | Single Number III                                            | Medium     | 8.47%   |        |
 | 283  | Move Zeroes                                                  | Easy       | 97.84%  |        |
 | 292  | Nim Game                                                     | Easy       | 93.54%  |        |
