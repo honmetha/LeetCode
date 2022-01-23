@@ -24,31 +24,27 @@
 // @param {string} t
 // @return {boolean}
 
-// Original
 const isAnagram = (s, t) => {
-  const sLetters = {};
+  if (s.length !== t.length) return false;
 
+  const counts = {};
   for (let letter of s) {
-    if (sLetters[letter]) sLetters[letter]++;
-    else sLetters[letter] = 1;
+    counts[letter] = (counts[letter] || 0) + 1;
   }
 
   for (let letter of t) {
-    if (sLetters[letter] > 1) sLetters[letter]--;
-    else if (sLetters[letter] === 1) delete sLetters[letter];
-    else return false;
+    if (!counts[letter]) return false;
+    counts[letter]--;
   }
-
-  for (let key in sLetters) return false;
 
   return true;
 };
 
-// Original One-Liner
+// One-Liner
 const isAnagram = (s, t) =>
   s.split("").sort().join("") === t.split("").sort().join("");
 
-// Alternative
+// Faster
 const isAnagram = (s, t) => {
   if (s.length != t.length) {
     return false;
@@ -61,23 +57,6 @@ const isAnagram = (s, t) => {
     h[t.charCodeAt(i) - 97]--;
   }
   return h.every((n) => n === 0);
-};
-
-// Alternative
-const isAnagram = (s, t) => {
-  if (t.length !== s.length) return false;
-
-  const counts = {};
-  for (let c of s) {
-    counts[c] = (counts[c] || 0) + 1;
-  }
-
-  for (let c of t) {
-    if (!counts[c]) return false;
-    counts[c]--;
-  }
-
-  return true;
 };
 
 // Test cases
