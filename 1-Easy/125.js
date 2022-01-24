@@ -47,12 +47,9 @@ const isPalindrome = (s) => {
     );
 };
 
-// Original 2
+// Alternative
 const isPalindrome = (s) => {
-  s = s
-    .replace(/[^0-9a-z]/gi, "")
-    .toLowerCase()
-    .split("");
+  s = s.replace(/[^0-9a-z]/gi, "").toLowerCase();
 
   let start = 0;
   let end = s.length - 1;
@@ -71,23 +68,6 @@ const isPalindrome = (s) => {
   s = s.toLowerCase().replace(/[^a-z0-9]/gi, "");
   for (let i = 0, j = s.length - 1; i <= j; i++, j--) {
     if (s.charAt(i) !== s.charAt(j)) return false;
-  }
-  return true;
-};
-
-// Alternative
-const isPalindrome = (s) => {
-  // turn string to lowercase and use regex to remove non-alphanumeric
-  s = s.toLowerCase();
-  s = s.replace(/[^A-Za-z0-9]/g, "");
-
-  let start = 0;
-  let end = s.length - 1;
-
-  while (start < end) {
-    if (s[start] !== s[end]) return false;
-    start++;
-    end--;
   }
   return true;
 };
