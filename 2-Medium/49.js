@@ -5,7 +5,6 @@
 // An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
 // typically using all the original letters exactly once.
 
-
 // Example 1:
 // Input: strs = ["eat","tea","tan","ate","nat","bat"]
 // Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
@@ -18,24 +17,21 @@
 // Input: strs = ["a"]
 // Output: [["a"]]
 
-
 // Constraints:
 // - 1 <= strs.length <= 104
 // - 0 <= strs[i].length <= 100
 // - strs[i] consists of lower-case English letters.
 
-
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {string[]} strs
 // @return {string[][]}
 
-const groupAnagrams = strs => {
+const groupAnagrams = (strs) => {
   const anagramGroups = {};
-  const sortWord = word => word.split("").sort().join("");
+  const sortWord = (word) => word.split("").sort().join("");
 
   for (let word of strs) {
     if (anagramGroups[sortWord(word)]) anagramGroups[sortWord(word)].push(word);
@@ -43,6 +39,16 @@ const groupAnagrams = strs => {
   }
 
   return Object.values(anagramGroups);
+};
+
+// Similar
+const groupAnagrams = (strs) => {
+  let obj = {};
+  for (let str of strs) {
+    let letters = str.split("").sort().join("");
+    obj[letters] ? obj[letters].push(str) : (obj[letters] = [str]);
+  }
+  return Object.values(obj);
 };
 
 // Test cases
