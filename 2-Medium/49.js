@@ -31,24 +31,28 @@
 
 const groupAnagrams = (strs) => {
   const anagramGroups = {};
-  const sortWord = (word) => word.split("").sort().join("");
-
   for (let word of strs) {
-    if (anagramGroups[sortWord(word)]) anagramGroups[sortWord(word)].push(word);
-    else anagramGroups[sortWord(word)] = [word];
+    const sortedWord = word.split("").sort().join("");
+    if (anagramGroups[sortedWord]) anagramGroups[sortedWord].push(word);
+    else anagramGroups[sortedWord] = [word];
   }
-
   return Object.values(anagramGroups);
 };
 
-// Similar
+// Faster
 const groupAnagrams = (strs) => {
-  let obj = {};
-  for (let str of strs) {
-    let letters = str.split("").sort().join("");
-    obj[letters] ? obj[letters].push(str) : (obj[letters] = [str]);
-  }
-  return Object.values(obj);
+  const map = {};
+  const primes = [
+    2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,
+    73, 79, 83, 89, 97, 101,
+  ];
+  strs.forEach((str) => {
+    let prod = str
+      .split("")
+      .reduce((r, c) => r * primes[c.charCodeAt() - 97], 1);
+    map[prod] ? map[prod].push(str) : (map[prod] = [str]);
+  });
+  return Object.values(map);
 };
 
 // Test cases
