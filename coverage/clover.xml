@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643215783245" clover="3.2.0">
-  <project timestamp="1643215783245" name="All files">
-    <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="11" coveredelements="11" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+<coverage generated="1643217385486" clover="3.2.0">
+  <project timestamp="1643217385486" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="14" coveredelements="14" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
     <file name="49.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/49.js">
-      <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="33" count="9" type="stmt"/>
-      <line num="35" count="9" type="stmt"/>
-      <line num="36" count="48" type="stmt"/>
-      <line num="38" count="48" type="cond" truecount="2" falsecount="0"/>
-      <line num="39" count="33" type="stmt"/>
-      <line num="42" count="9" type="stmt"/>
-      <line num="72" count="1" type="stmt"/>
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <line num="44" count="1" type="stmt"/>
+      <line num="45" count="8" type="stmt"/>
+      <line num="46" count="8" type="stmt"/>
+      <line num="50" count="8" type="stmt"/>
+      <line num="51" count="42" type="stmt"/>
+      <line num="53" count="144" type="stmt"/>
+      <line num="54" count="42" type="cond" truecount="2" falsecount="0"/>
+      <line num="56" count="8" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

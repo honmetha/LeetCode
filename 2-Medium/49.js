@@ -29,6 +29,7 @@
 // @param {string[]} strs
 // @return {string[][]}
 
+// Original
 const groupAnagrams = (strs) => {
   const anagramGroups = {};
   for (let word of strs) {
@@ -49,7 +50,7 @@ const groupAnagrams = (strs) => {
   strs.forEach((str) => {
     let prod = str
       .split("")
-      .reduce((r, c) => r * primes[c.charCodeAt() - 97], 1);
+      .reduce((acc, letter) => acc * primes[letter.charCodeAt() - 97], 1);
     map[prod] ? map[prod].push(str) : (map[prod] = [str]);
   });
   return Object.values(map);
