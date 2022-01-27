@@ -1,11 +1,10 @@
 // 1190. Reverse Substrings Between Each Pair of Parentheses
 
-// You are given a string s that consists of lower case English letters and brackets. 
+// You are given a string s that consists of lower case English letters and brackets.
 
 // Reverse the strings in each pair of matching parentheses, starting from the innermost one.
 
 // Your result should not contain any brackets.
-
 
 // Example 1:
 // Input: s = "(abcd)"
@@ -25,22 +24,20 @@
 // Input: s = "a(bcdefghijkl(mno)p)q"
 // Output: "apmnolkjihgfedcbq"
 
-
 // Constraints:
 // - 0 <= s.length <= 2000
 // - s only contains lower case English characters and parentheses.
 // - It's guaranteed that all parentheses are balanced.
 
-
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {string} s
 // @return {string}
 
-const reverseParentheses = s => {
+// Original
+const reverseParentheses = (s) => {
   while (s.includes("(")) {
     let openBracketIndex, closeBracketIndex;
 
@@ -49,15 +46,49 @@ const reverseParentheses = s => {
       if (s[i] === ")") {
         closeBracketIndex = i;
         break;
-      };
-    };
+      }
+    }
 
     let subStringS = s.substring(openBracketIndex, closeBracketIndex + 1);
     s = s.split(subStringS);
     subStringS = subStringS.split("").reverse().join("");
     s = s.join(subStringS.substring(1, subStringS.length - 1));
-  };
-  
+  }
+
+  return s;
+};
+
+// Alternative
+const reverseParentheses = (s) => {
+  const stack = [];
+  for (let char of s) {
+    if (char !== ")") {
+      stack.push(char);
+      continue;
+    }
+    let c = stack.pop();
+    let queue = [];
+    while (c !== "(") {
+      queue.push(c);
+      c = stack.pop();
+    }
+    while (queue.length) {
+      stack.push(queue.shift());
+    }
+  }
+  return stack.join("");
+};
+
+// Alternative
+const reverseParentheses = (s) => {
+  while (s.includes("(")) {
+    // Check if s has parentheses;
+    s = s.replace(/\([^\(\)]+\)|\(\)/g, (match) => {
+      // If parentheses are detected, remove them and reverse all of the content inside
+      return match.slice(1, -1).split("").reverse().join("");
+    });
+  }
+
   return s;
 };
 
