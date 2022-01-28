@@ -36,7 +36,7 @@
 // @param {string} s
 // @return {string}
 
-// Original
+// Original (Runtime faster than 100%)
 const reverseParentheses = (s) => {
   while (s.includes("(")) {
     let openBracketIndex, closeBracketIndex;
@@ -53,6 +53,19 @@ const reverseParentheses = (s) => {
     s = s.split(subStringS);
     subStringS = subStringS.split("").reverse().join("");
     s = s.join(subStringS.substring(1, subStringS.length - 1));
+  }
+
+  return s;
+};
+
+// Less Code
+const reverseParentheses = (s) => {
+  while (s.includes("(")) {
+    // Check if s has parentheses;
+    s = s.replace(/\([^\(\)]+\)|\(\)/g, (match) => {
+      // If parentheses are detected, remove them and reverse all of the content inside
+      return match.slice(1, -1).split("").reverse().join("");
+    });
   }
 
   return s;
@@ -77,19 +90,6 @@ const reverseParentheses = (s) => {
     }
   }
   return stack.join("");
-};
-
-// Alternative
-const reverseParentheses = (s) => {
-  while (s.includes("(")) {
-    // Check if s has parentheses;
-    s = s.replace(/\([^\(\)]+\)|\(\)/g, (match) => {
-      // If parentheses are detected, remove them and reverse all of the content inside
-      return match.slice(1, -1).split("").reverse().join("");
-    });
-  }
-
-  return s;
 };
 
 // Test cases
