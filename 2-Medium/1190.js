@@ -58,6 +58,21 @@ const reverseParentheses = (s) => {
   return s;
 };
 
+// Alternative
+const reverseParentheses = (s) => {
+  while (s.includes("(")) {
+    const openBracketIndex = s.lastIndexOf("(");
+    const closeBracketIndex = s.indexOf(")");
+
+    let subStringS = s.substring(openBracketIndex, closeBracketIndex + 1);
+    s = s.split(subStringS);
+    subStringS = subStringS.split("").reverse().join("");
+    s = s.join(subStringS.substring(1, subStringS.length - 1));
+  }
+
+  return s;
+};
+
 // Less Code
 const reverseParentheses = (s) => {
   while (s.includes("(")) {
