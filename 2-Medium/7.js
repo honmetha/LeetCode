@@ -7,7 +7,6 @@
 // signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your
 // function returns 0 when the reversed integer overflows.
 
-
 // Example 1:
 // Input: x = 123
 // Output: 321
@@ -24,24 +23,22 @@
 // Input: x = 0
 // Output: 0
 
-
 // Constraints:
 // - -231 <= x <= 231 - 1
-
 
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {number} x
 // @return {number}
 
-const reverse = x => {
-  const isNegative = x < 0 ? true: false;
+// Original
+const reverse = (x) => {
+  const isNegative = x < 0 ? true : false;
   if (isNegative) x = Math.abs(x);
 
-  x = Number((x + "").split("").reverse().join(""))
+  x = Number((x + "").split("").reverse().join(""));
   if (x > 2 ** 31) return 0;
   if (isNegative) x = -Math.abs(x);
 

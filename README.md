@@ -7,7 +7,7 @@
 | #    | Title                                                        | Difficulty | Runtime | Memory |
 | :--- | :----------------------------------------------------------- | :--------- | :------ | :----- |
 | 1    | Two Sum                                                      | Easy       | 100.00% |        |
-| 7    | Reverse Integer                                              | Medium     | 33.42%  | 16.71% |
+| 7    | Reverse Integer                                              | Medium     | 96.51%  | 16.71% |
 | 9    | Palindrome Number                                            | Easy       | 94.18%  | 87.93% |
 | 12   | Integer to Roman                                             | Medium     | 6.45%   | 54.30% |
 | 13   | Roman to Integer                                             | Easy       | 95.05%  | 90.57% |
