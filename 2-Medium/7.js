@@ -35,7 +35,7 @@
 
 // Original
 const reverse = (x) => {
-  const isNegative = x < 0 ? true : false;
+  const isNegative = x < 0;
   if (isNegative) x = Math.abs(x);
 
   x = Number((x + "").split("").reverse().join(""));
@@ -45,7 +45,7 @@ const reverse = (x) => {
   return x;
 };
 
-// Alternative
+// Shorter
 const reverse = (x) => {
   const absReversed = Math.abs(x).toString().split("").reverse().join("");
   if (absReversed > 2 ** 31) return 0;
@@ -56,15 +56,15 @@ const reverse = (x) => {
 const reverse = (x) => {
   const isNegative = x < 0;
   x = Math.abs(x);
-  let ret = 0;
+  let result = 0;
   while (x > 0) {
     const num = x % 10;
     x = Math.floor(x / 10);
-    ret *= 10;
-    ret += num;
+    result *= 10;
+    result += num;
   }
-  if (ret > Math.pow(2, 31)) return 0;
-  return isNegative ? ret * -1 : ret;
+  if (result > Math.pow(2, 31)) return 0;
+  return isNegative ? result * -1 : result;
 };
 
 // Test cases
