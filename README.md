@@ -107,7 +107,7 @@
 | 1561 | Maximum Number of Coins You Can Get                          | Medium     | 25.39%  | 89.23% |
 | 1672 | Richest Customer Wealth                                      | Easy       | 50.86%  | 63.26% |
 | 1920 | Build Array from Permutation                                 | Easy       | 100.00% | 97.10% |
-| 1929 | Concatenation of Array                                       | Easy       | 81.97%  | 38.49% |
+| 1929 | Concatenation of Array                                       | Easy       | 97.80%  | 38.49% |
 | 2079 | Watering Plants                                              | Medium     | 93.62%  | 8.99%  |
 | 2108 | Find First Palindromic String in the Array                   | Easy       | 90.13%  | 82.63% |
 | 2114 | Maximum Number of Words Found in Sentences                   | Easy       | 15.02%  | 34.78% |
