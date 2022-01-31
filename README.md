@@ -105,7 +105,7 @@
 | 1550 | Three Consecutive Odds                                       | Easy       | 93.41%  | 77.69% |
 | 1556 | Thousand Separator                                           | Easy       | 92.35%  | 23.21% |
 | 1561 | Maximum Number of Coins You Can Get                          | Medium     | 25.39%  | 89.23% |
-| 1672 | Richest Customer Wealth                                      | Easy       | 50.86%  | 63.26% |
+| 1672 | Richest Customer Wealth                                      | Easy       | 99.69%  | 63.26% |
 | 1920 | Build Array from Permutation                                 | Easy       | 100.00% | 97.10% |
 | 1929 | Concatenation of Array                                       | Easy       | 97.80%  | 38.49% |
 | 2079 | Watering Plants                                              | Medium     | 93.62%  | 8.99%  |
