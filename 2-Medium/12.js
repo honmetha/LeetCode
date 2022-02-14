@@ -92,11 +92,11 @@ const intToRoman = (num) => {
   };
 
   let finalStr = "";
-  for (s in symbolToValue) {
-    const v = symbolToValue[s];
-    while (num >= v) {
-      num -= v;
-      finalStr += s;
+  for (symbol in symbolToValue) {
+    const value = symbolToValue[symbol];
+    while (num >= value) {
+      num -= value;
+      finalStr += symbol;
     }
   }
   return finalStr;
