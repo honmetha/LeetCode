@@ -110,4 +110,4 @@
 | 1929 | Concatenation of Array                                       | Easy       | 97.80%  | 38.49% |
 | 2079 | Watering Plants                                              | Medium     | 93.62%  | 8.99%  |
 | 2108 | Find First Palindromic String in the Array                   | Easy       | 90.13%  | 82.63% |
-| 2114 | Maximum Number of Words Found in Sentences                   | Easy       | 15.02%  | 34.78% |
+| 2114 | Maximum Number of Words Found in Sentences                   | Easy       | 94.95%  | 34.78% |
