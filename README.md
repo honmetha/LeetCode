@@ -11,7 +11,7 @@
 | 9    | Palindrome Number                                            | Easy       | 94.18%  | 87.93% |
 | 12   | Integer to Roman                                             | Medium     | 97.25%  | 54.30% |
 | 13   | Roman to Integer                                             | Easy       | 95.05%  | 90.57% |
-| 14   | Longest Common Prefix                                        | Easy       | 46.99%  | 14.57% |
+| 14   | Longest Common Prefix                                        | Easy       | 98.79%  | 30.06% |
 | 20   | Valid Parentheses                                            | Easy       | 89.21%  | 48.88% |
 | 26   | Remove Duplicates from Sorted Array                          | Easy       |         |        |
 | 35   | Search Insert Position                                       | Easy       | 94.07%  | 7.86%  |
