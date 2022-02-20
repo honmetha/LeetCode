@@ -44,6 +44,7 @@
 // @param {number[]} piles
 // @return {number}
 
+// Original
 const maxCoins = (piles) => {
   let total = 0;
   let sortedPiles = piles.sort((a, b) => b - a);
@@ -54,6 +55,31 @@ const maxCoins = (piles) => {
   }
 
   return total;
+};
+
+// Alternative
+const maxCoins = (piles) => {
+  const start = piles.length / 3;
+  piles.sort((a, b) => a - b);
+  let res = 0;
+  for (let i = start; i < piles.length; i += 2) res += piles[i];
+  return res;
+};
+
+// Alternative
+const maxCoins = (piles) => {
+  if (piles.length < 3 || piles.length % 3 != 0) return 0;
+
+  piles.sort((a, b) => b - a);
+  let myCoins = 0;
+
+  while (piles.length > 0) {
+    piles.shift();
+    myCoins += piles.shift();
+    piles.pop();
+  }
+
+  return myCoins;
 };
 
 // Test cases
