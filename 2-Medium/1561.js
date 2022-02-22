@@ -68,18 +68,17 @@ const maxCoins = (piles) => {
 
 // Alternative
 const maxCoins = (piles) => {
-  if (piles.length < 3 || piles.length % 3 != 0) return 0;
-
   piles.sort((a, b) => b - a);
-  let myCoins = 0;
-
-  while (piles.length > 0) {
-    piles.shift();
-    myCoins += piles.shift();
-    piles.pop();
+  let coins = 0;
+  let p1 = 0,
+    p2 = piles.length - 1;
+  while (p1 < p2) {
+    coins += piles[p1 + 1];
+    p2--;
+    p1 += 2;
   }
 
-  return myCoins;
+  return coins;
 };
 
 // Test cases
