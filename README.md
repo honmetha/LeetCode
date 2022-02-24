@@ -108,6 +108,6 @@
 | 1672 | Richest Customer Wealth                                      | Easy       | 99.69%  | 63.26% |
 | 1920 | Build Array from Permutation                                 | Easy       | 100.00% | 97.10% |
 | 1929 | Concatenation of Array                                       | Easy       | 97.80%  | 38.49% |
-| 2079 | Watering Plants                                              | Medium     | 93.62%  | 8.99%  |
+| 2079 | Watering Plants                                              | Medium     | 92.77%  | 45.78% |
 | 2108 | Find First Palindromic String in the Array                   | Easy       | 90.13%  | 82.63% |
 | 2114 | Maximum Number of Words Found in Sentences                   | Easy       | 94.95%  | 34.78% |
