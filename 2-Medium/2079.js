@@ -58,6 +58,7 @@
 // @param {number} capacity
 // @return {number}
 
+// Original
 const wateringPlants = (plants, capacity) => {
   let wateringCan = capacity;
   let totalSteps = 0;
@@ -74,6 +75,35 @@ const wateringPlants = (plants, capacity) => {
   }
 
   return totalSteps;
+};
+
+// Faster
+const wateringPlants = (plants, capacity) => {
+  let steps = 0,
+    cur = capacity;
+  for (let i = 0; i < plants.length; i++) {
+    if (cur < plants[i]) {
+      steps += i * 2;
+      cur = capacity;
+    }
+    cur -= plants[i];
+  }
+  return steps + plants.length;
+};
+
+// Alternative
+const wateringPlants = (plants, capacity) => {
+  let stepCount = 0;
+  let waterLeft = capacity;
+  plants.forEach((plant, idx) => {
+    stepCount++;
+    waterLeft -= plant;
+    if (waterLeft < plants[idx + 1]) {
+      waterLeft = capacity;
+      stepCount += (idx + 1) * 2;
+    }
+  });
+  return stepCount;
 };
 
 // Test cases
