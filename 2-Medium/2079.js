@@ -91,21 +91,6 @@ const wateringPlants = (plants, capacity) => {
   return steps + plants.length;
 };
 
-// Alternative
-const wateringPlants = (plants, capacity) => {
-  let stepCount = 0;
-  let waterLeft = capacity;
-  plants.forEach((plant, idx) => {
-    stepCount++;
-    waterLeft -= plant;
-    if (waterLeft < plants[idx + 1]) {
-      waterLeft = capacity;
-      stepCount += (idx + 1) * 2;
-    }
-  });
-  return stepCount;
-};
-
 // Test cases
 // [5], 5
 // [5], 10
