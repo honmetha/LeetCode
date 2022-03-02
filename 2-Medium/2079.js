@@ -79,16 +79,16 @@ const wateringPlants = (plants, capacity) => {
 
 // Faster
 const wateringPlants = (plants, capacity) => {
-  let steps = 0,
-    cur = capacity;
+  let stepCount = 0;
+  let waterLeft = capacity;
   for (let i = 0; i < plants.length; i++) {
-    if (cur < plants[i]) {
-      steps += i * 2;
-      cur = capacity;
+    if (waterLeft < plants[i]) {
+      stepCount += i * 2;
+      waterLeft = capacity;
     }
-    cur -= plants[i];
+    waterLeft -= plants[i];
   }
-  return steps + plants.length;
+  return stepCount + plants.length;
 };
 
 // Test cases
