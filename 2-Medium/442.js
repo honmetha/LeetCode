@@ -31,6 +31,7 @@
 // @param {number[]} nums
 // @return {number[]}
 
+// Original
 const findDuplicates = (nums) => {
   const previousValues = {};
   const result = [];
@@ -44,6 +45,32 @@ const findDuplicates = (nums) => {
   }
 
   return result;
+};
+
+// Set Solution
+const findDuplicates = (nums) => {
+  const numbers = new Set();
+  const output = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    if (!numbers.has(nums[i])) {
+      numbers.add(nums[i]);
+    } else {
+      output.push(nums[i]);
+    }
+  }
+  return output;
+};
+
+// Map Solution
+const findDuplicates = (nums) => {
+  let m = new Map(),
+    res = [];
+  nums.forEach((x) => {
+    if (!m.has(x)) m.set(x, 1);
+    else res.push(x);
+  });
+  return res;
 };
 
 // Test cases
