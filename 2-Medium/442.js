@@ -64,13 +64,17 @@ const findDuplicates = (nums) => {
 
 // Map Solution
 const findDuplicates = (nums) => {
-  let m = new Map(),
-    res = [];
-  nums.forEach((x) => {
-    if (!m.has(x)) m.set(x, 1);
-    else res.push(x);
+  let map = new Map();
+  let output = [];
+
+  nums.forEach((num) => {
+    if (!map.has(num)) {
+      map.set(num, 1);
+    } else {
+      output.push(num);
+    }
   });
-  return res;
+  return output;
 };
 
 // Test cases
