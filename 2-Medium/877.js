@@ -42,6 +42,24 @@
 // O(1)
 const stoneGame = (piles) => true;
 
+// Alternative
+const stoneGame = (piles) => {
+  piles.sort((a, b) => b - a);
+
+  let alice = 0;
+  let bob = 0;
+
+  while (piles.length > 0) {
+    alice += piles.shift();
+
+    if (piles.length > 0) {
+      bob += piles.shift();
+    }
+  }
+
+  return alice > bob;
+};
+
 // Test cases
 // [5,3,4,10,6,9,20,8]
 // [30,3,20,8]
