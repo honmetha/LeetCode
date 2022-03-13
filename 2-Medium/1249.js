@@ -40,6 +40,7 @@
 // @param {string} s
 // @return {string}
 
+// Original
 const minRemoveToMakeValid = (s) => {
   let count = 0;
   (output = ""), (output2 = "");
@@ -78,5 +79,9 @@ const minRemoveToMakeValid = (s) => {
 // "a)b(c)d"
 // "))(("
 // "(a(b(c)d)"
+// "())(())("
+// ")))((()))()()())))((("
+// "h()()e)ll)(()o(wo))rl)(d"
+// "a(a(a()a)a)aa)()"
 
 module.exports = minRemoveToMakeValid;
