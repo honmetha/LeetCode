@@ -40,7 +40,7 @@
 // @param {string} s
 // @return {string}
 
-// Original
+// First Attempt
 const minRemoveToMakeValid = (s) => {
   let count = 0;
   (output = ""), (output2 = "");
@@ -72,6 +72,30 @@ const minRemoveToMakeValid = (s) => {
   }
 
   return output;
+};
+
+// Second Attempt
+const minRemoveToMakeValid = (s) => {
+  let openBracketIndex = [];
+  s = s.split("");
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === ")") {
+      if (openBracketIndex.length === 0) {
+        s[i] = "";
+      } else {
+        openBracketIndex.pop();
+      }
+    } else if (s[i] === "(") {
+      openBracketIndex.push(i);
+    }
+  }
+
+  for (let i = 0; i < openBracketIndex.length; i++) {
+    s[openBracketIndex[i]] = "";
+  }
+
+  return s.join("");
 };
 
 // Test cases
