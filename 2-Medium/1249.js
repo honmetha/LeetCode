@@ -40,25 +40,25 @@
 // @param {string} s
 // @return {string}
 
-// My Attempt
+// My attempt + community modification
 const minRemoveToMakeValid = (s) => {
-  let openBracketIndex = [];
+  let openBracketIndices = [];
   s = s.split("");
 
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === ")") {
-      if (openBracketIndex.length === 0) {
-        s[i] = "";
+    if (s[i] === "(") {
+      openBracketIndices.push(i);
+    } else if (s[i] === ")") {
+      if (openBracketIndices.length) {
+        openBracketIndices.pop();
       } else {
-        openBracketIndex.pop();
+        s[i] = "";
       }
-    } else if (s[i] === "(") {
-      openBracketIndex.push(i);
     }
   }
 
-  for (let i = 0; i < openBracketIndex.length; i++) {
-    s[openBracketIndex[i]] = "";
+  for (let index of openBracketIndices) {
+    s[index] = "";
   }
 
   return s.join("");
