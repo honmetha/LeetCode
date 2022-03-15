@@ -40,41 +40,7 @@
 // @param {string} s
 // @return {string}
 
-// First Attempt
-const minRemoveToMakeValid = (s) => {
-  let count = 0;
-  (output = ""), (output2 = "");
-
-  for (item of s) {
-    if (item === ")" && count === 0) {
-      continue;
-    } else if (item === "(") {
-      count++;
-    } else if (item === ")") {
-      count--;
-    }
-    output += item;
-  }
-
-  if (count > 0) {
-    count = 0;
-    for (i = output.length - 1; i >= 0; i--) {
-      if (output[i] === "(" && count === 0) {
-        continue;
-      } else if (output[i] === ")") {
-        count++;
-      } else if (output[i] === "(") {
-        count--;
-      }
-      output2 = output[i] + output2;
-    }
-    return output2;
-  }
-
-  return output;
-};
-
-// Second Attempt
+// My Attempt
 const minRemoveToMakeValid = (s) => {
   let openBracketIndex = [];
   s = s.split("");
