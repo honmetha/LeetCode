@@ -131,7 +131,12 @@
 <a name='L72'></a><a href='#L72'>72</a>
 <a name='L73'></a><a href='#L73'>73</a>
 <a name='L74'></a><a href='#L74'>74</a>
-<a name='L75'></a><a href='#L75'>75</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -170,34 +175,39 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">14x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -207,36 +217,37 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// 841. Keys and Rooms
 &nbsp;
-// There are N rooms and you start in room 0.  Each room has a distinct number in 0, 1, 2, ...,
-// N-1, and each room may have some keys to access the next room.
+// There are n rooms labeled from 0 to n - 1 and all the rooms are locked except for room 0.
+// Your goal is to visit all the rooms. However, you cannot enter a locked room without having its key.
 &nbsp;
-// Formally, each room i has a list of keys rooms[i], and each key rooms[i][j] is an integer
-// in [0, 1,..., N-1] where N = rooms.length.  A key rooms[i][j] = v opens the room with number v.
+// When you visit a room, you may find a set of distinct keys in it. Each key has a number on it,
+// denoting which room it unlocks, and you can take all of them with you to unlock the other rooms.
 &nbsp;
-// Initially, all the rooms start locked (except for room 0).
-&nbsp;
-// You can walk back and forth between rooms freely.
-&nbsp;
-// Return true if and only if you can enter every room.
+// Given an array rooms where rooms[i] is the set of keys that you can obtain if you visited room i,
+// return true if you can visit all the rooms, or false otherwise.
 &nbsp;
 // Example 1:
-// Input: [[1],[2],[3],[]]
+// Input: rooms = [[1],[2],[3],[]]
 // Output: true
 // Explanation:
-// We start in room 0, and pick up key 1.
-// We then go to room 1, and pick up key 2.
-// We then go to room 2, and pick up key 3.
-// We then go to room 3.  Since we were able to go to every room, we return true.
+// We visit room 0 and pick up key 1.
+// We then visit room 1 and pick up key 2.
+// We then visit room 2 and pick up key 3.
+// We then visit room 3.
+// Since we were able to visit every room, we return true.
 &nbsp;
 // Example 2:
-// Input: [[1,3],[3,0,1],[2],[0]]
+// Input: rooms = [[1,3],[3,0,1],[2],[0]]
 // Output: false
-// Explanation: We can't enter the room with number 2.
+// Explanation: We can not enter room number 2 since the only key that unlocks it is in that room.
 &nbsp;
-// Note:
-// 1 &lt;= rooms.length &lt;= 1000
+// Constraints:
+// n == rooms.length
+// 2 &lt;= n &lt;= 1000
 // 0 &lt;= rooms[i].length &lt;= 1000
-// The number of keys in all rooms combined is at most 3000.
+// 1 &lt;= sum(rooms[i].length) &lt;= 3000
+// 0 &lt;= rooms[i][j] &lt; n
+// All the values of rooms[i] are unique.
 &nbsp;
 /***********************************************************************
  *  Solution
@@ -245,7 +256,7 @@
 // @param {number[][]} rooms
 // @return {boolean}
 &nbsp;
-// First attempt
+// My attempt
 const canVisitAllRooms = (rooms) =&gt; {
   let lockedRooms = [...Array(rooms.length).keys()].slice(1);
   let keyBag = [...rooms[0]];
@@ -277,6 +288,10 @@ const canVisitAllRooms = (rooms) =&gt; {
 // Test cases
 // [[1],[2],[3],[]]
 // [[1,3],[3,0,1],[2],[0]]
+// [[],[1]]
+// [[],[1],[2],[3]]
+// [[1,2,3,4],[],[],[],[]]
+// [[5],[2],[3],[4],[1,2,3,4],[1]]
 &nbsp;
 module.exports = canVisitAllRooms;
 &nbsp;</pre></td></tr></table></pre>
@@ -286,7 +301,7 @@ module.exports = canVisitAllRooms;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 16 2022 23:15:31 GMT+0700 (Indochina Time)
+                at Fri Mar 18 2022 00:06:01 GMT+0700 (Indochina Time)
             </div>
         </div>
         <script src="prettify.js"></script>
