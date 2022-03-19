@@ -39,7 +39,7 @@
 // @param {number[][]} rooms
 // @return {boolean}
 
-// My attempt
+// First attempt
 const canVisitAllRooms = (rooms) => {
   let lockedRooms = [...Array(rooms.length).keys()].slice(1);
   let keyBag = [...rooms[0]];
@@ -68,11 +68,30 @@ const canVisitAllRooms = (rooms) => {
   return true;
 };
 
+// Second attempt
+const canVisitAllRooms = (rooms) => {
+  const keyCollection = new Set([0]);
+  const keyPouch = [...rooms[0]];
+
+  while (keyPouch.length) {
+    const currentKey = keyPouch.shift();
+    if (!keyCollection.has(currentKey)) {
+      keyCollection.add(currentKey);
+      keyPouch.push(...rooms[currentKey]);
+    }
+    if (keyCollection.size === rooms.length) return true;
+  }
+
+  return false;
+};
+
 // Test cases
 // [[1],[2],[3],[]]
 // [[1,3],[3,0,1],[2],[0]]
 // [[],[1]]
 // [[],[1],[2],[3]]
+// [[1],[1],[3],[]]
+// [[1],[2],[3],[4],[],[5]]
 // [[1,2,3,4],[],[],[],[]]
 // [[5],[2],[3],[4],[1,2,3,4],[1]]
 

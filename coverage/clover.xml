@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647536761702" clover="3.2.0">
-  <project timestamp="1647536761702" name="All files">
-    <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="22" coveredelements="22" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+<coverage generated="1647712845609" clover="3.2.0">
+  <project timestamp="1647712845609" name="All files">
+    <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="18" coveredelements="18" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="841.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/841.js">
-      <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="44" count="6" type="stmt"/>
-      <line num="45" count="6" type="stmt"/>
-      <line num="47" count="6" type="stmt"/>
-      <line num="48" count="13" type="stmt"/>
-      <line num="49" count="13" type="stmt"/>
-      <line num="51" count="13" type="stmt"/>
-      <line num="52" count="18" type="stmt"/>
-      <line num="53" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="54" count="14" type="stmt"/>
-      <line num="55" count="14" type="stmt"/>
-      <line num="59" count="13" type="cond" truecount="2" falsecount="0"/>
-      <line num="61" count="10" type="stmt"/>
-      <line num="63" count="10" type="stmt"/>
-      <line num="64" count="14" type="stmt"/>
-      <line num="68" count="3" type="stmt"/>
-      <line num="79" count="1" type="stmt"/>
+      <metrics statements="13" coveredstatements="13" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="72" count="1" type="stmt"/>
+      <line num="73" count="8" type="stmt"/>
+      <line num="74" count="8" type="stmt"/>
+      <line num="75" count="8" type="stmt"/>
+      <line num="77" count="8" type="stmt"/>
+      <line num="78" count="24" type="stmt"/>
+      <line num="79" count="24" type="stmt"/>
+      <line num="80" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="81" count="19" type="stmt"/>
+      <line num="82" count="19" type="stmt"/>
+      <line num="84" count="24" type="cond" truecount="2" falsecount="0"/>
+      <line num="87" count="5" type="stmt"/>
+      <line num="100" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

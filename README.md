@@ -56,7 +56,7 @@
 | 819  | Most Common Word                                             | Easy       | 92.63%  | 43.00% |
 | 824  | Goat Latin                                                   | Easy       | 91.54%  |        |
 | 832  | Flipping an Image                                            | Easy       | 97.25%  |        |
-| 841  | Keys and Rooms                                               | Medium     | 25.75%  |        |
+| 841  | Keys and Rooms                                               | Medium     | 71.05%  | 80.96% |
 | 852  | Peak Index in a Mountain Array                               | Easy       | 35.84%  |        |
 | 860  | Lemonade Change                                              | Easy       | 89.83%  |        |
 | 877  | Stone Game                                                   | Medium     | 98.04%  | 53.92% |
