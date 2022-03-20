@@ -85,6 +85,38 @@ const canVisitAllRooms = (rooms) => {
   return false;
 };
 
+// Similar from community
+const canVisitAllRooms = (rooms) => {
+  const uniqueKeys = new Set([0]);
+  const availableKeys = [0];
+
+  while (availableKeys.length) {
+    let currentKey = availableKeys.pop();
+    rooms[currentKey].forEach((key) => {
+      if (!uniqueKeys.has(key)) {
+        uniqueKeys.add(key);
+        availableKeys.push(key);
+      }
+    });
+  }
+
+  return uniqueKeys.size === rooms.length;
+};
+
+// DFS (Depth-First Search)
+const canVisitAllRooms = (rooms) => {
+  const roomSet = new Set();
+  const dfs = (room = 0) => {
+    if (roomSet.has(room)) return;
+    else roomSet.add(room);
+    for (let nextRoom of rooms[room]) {
+      dfs(nextRoom);
+    }
+    return roomSet.size === rooms.length;
+  };
+  return dfs();
+};
+
 // Test cases
 // [[1],[2],[3],[]]
 // [[1,3],[3,0,1],[2],[0]]
