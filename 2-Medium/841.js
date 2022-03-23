@@ -70,34 +70,15 @@ const canVisitAllRooms = (rooms) => {
 
 // Second attempt
 const canVisitAllRooms = (rooms) => {
-  const keyCollection = new Set([0]);
-  const keyPouch = [...rooms[0]];
-
-  while (keyPouch.length) {
-    const currentKey = keyPouch.shift();
-    if (!keyCollection.has(currentKey)) {
-      keyCollection.add(currentKey);
-      keyPouch.push(...rooms[currentKey]);
-    }
-    if (keyCollection.size === rooms.length) return true;
-  }
-
-  return false;
-};
-
-// Similar from community
-const canVisitAllRooms = (rooms) => {
   const uniqueKeys = new Set([0]);
-  const availableKeys = [0];
+  const availableKeys = [...rooms[0]];
 
   while (availableKeys.length) {
-    let currentKey = availableKeys.pop();
-    rooms[currentKey].forEach((key) => {
-      if (!uniqueKeys.has(key)) {
-        uniqueKeys.add(key);
-        availableKeys.push(key);
-      }
-    });
+    const currentKey = availableKeys.pop();
+    if (!uniqueKeys.has(currentKey)) {
+      uniqueKeys.add(currentKey);
+      availableKeys.push(...rooms[currentKey]);
+    }
   }
 
   return uniqueKeys.size === rooms.length;
