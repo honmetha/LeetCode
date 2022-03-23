@@ -39,36 +39,7 @@
 // @param {number[][]} rooms
 // @return {boolean}
 
-// First attempt
-const canVisitAllRooms = (rooms) => {
-  let lockedRooms = [...Array(rooms.length).keys()].slice(1);
-  let keyBag = [...rooms[0]];
-
-  while (lockedRooms.length !== 0) {
-    let man = [];
-    let totalLockedRooms = lockedRooms.length;
-
-    for (key of keyBag) {
-      let index = lockedRooms.indexOf(key);
-      if (index !== -1) {
-        lockedRooms.splice(index, 1);
-        man = [...man, key];
-      }
-    }
-
-    if (totalLockedRooms === lockedRooms.length) return false;
-
-    keyBag = [];
-
-    for (key of man) {
-      keyBag = [...keyBag, ...rooms[key]];
-    }
-  }
-
-  return true;
-};
-
-// Second attempt
+// My attempt + community
 const canVisitAllRooms = (rooms) => {
   const uniqueKeys = new Set([0]);
   const availableKeys = [...rooms[0]];
