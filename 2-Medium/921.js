@@ -1,53 +1,39 @@
 // 921. Minimum Add to Make Parentheses Valid
 
-// Given a string S of '(' and ')' parentheses, we add the minimum number of parentheses
-// ( '(' or ')', and in any positions ) so that the resulting parentheses string is valid.
+// A parentheses string is valid if and only if:
+// - It is the empty string,
+// - It can be written as AB (A concatenated with B), where A and B are valid strings, or
+// - It can be written as (A), where A is a valid string.
 
-// Formally, a parentheses string is valid if and only if:
+// You are given a parentheses string s. In one move, you can insert a parenthesis at any position
+// of the string.
+// - For example, if s = "()))", you can insert an opening parenthesis to be "(()))" or a
+// closing parenthesis to be "())))".
 
-// It is the empty string, or
-// It can be written as AB (A concatenated with B), where A and B are valid strings, or
-// It can be written as (A), where A is a valid string.
-// Given a parentheses string, return the minimum number of parentheses we must add to make the resulting string valid.
-
+// Return the minimum number of moves required to make s valid.
 
 // Example 1:
-
-// Input: "())"
+// Input: s = "())"
 // Output: 1
 
 // Example 2:
-
-// Input: "((("
+// Input: s = "((("
 // Output: 3
 
-// Example 3:
-
-// Input: "()"
-// Output: 0
-
-// Example 4:
-
-// Input: "()))(("
-// Output: 4
-
-
-// Note:
-
-// S.length <= 1000
-// S only consists of '(' and ')' characters.
-
+// Constraints:
+// - 1 <= s.length <= 1000
+// - s[i] is either '(' or ')'.
 
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {string} S
 // @return {number}
 
+// My attempt
 const minAddToMakeValid = (S) => {
-  let arr = S.split("")
+  let arr = S.split("");
   for (i = 0; i < S.length; i++) {
     if (arr[i] === "(") {
       for (j = i + 1; j < S.length; j++) {
@@ -59,6 +45,14 @@ const minAddToMakeValid = (S) => {
         }
       }
     }
-  };
+  }
   return arr.length;
 };
+
+// Test cases
+// "())"
+// "((("
+// "()"
+// "()))(("
+
+module.exports = minAddToMakeValid;
