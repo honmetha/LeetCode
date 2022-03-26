@@ -33,20 +33,20 @@
 
 // My attempt
 const minAddToMakeValid = (S) => {
-  let arr = S.split("");
+  let openBracketCount = 0;
+  let closeBracketCount = 0;
+
   for (i = 0; i < S.length; i++) {
-    if (arr[i] === "(") {
-      for (j = i + 1; j < S.length; j++) {
-        if (arr[j] === ")") {
-          arr.splice(j, 1);
-          arr.splice(i, 1);
-          i--;
-          break;
-        }
-      }
+    if (S[i] === "(") {
+      openBracketCount++;
+    } else if (S[i] === ")" && !openBracketCount) {
+      closeBracketCount++;
+    } else {
+      openBracketCount--;
     }
   }
-  return arr.length;
+
+  return openBracketCount + closeBracketCount;
 };
 
 // Test cases
@@ -54,5 +54,9 @@ const minAddToMakeValid = (S) => {
 // "((("
 // "()"
 // "()))(("
+// "))))()()(((("
+// "))()))(("
+// "))((()(("
+// "(()()())"
 
 module.exports = minAddToMakeValid;

@@ -65,7 +65,7 @@
 | 905  | Sort Array By Parity                                         | Easy       | 99.92%  |        |
 | 912  | Sort an Array                                                | Medium     | 81.14%  |        |
 | 917  | Reverse Only Letters                                         | Easy       | 82.54%  |        |
-| 921  | Minimum Add to Make Parentheses Valid                        | Medium     | 55.03%  | 5.54%  |
+| 921  | Minimum Add to Make Parentheses Valid                        | Medium     | 82.67%  | 44.24% |
 | 922  | Sort Array By Parity II                                      | Easy       | 94.23%  |        |
 | 942  | DI String Match                                              | Easy       | 91.79%  |        |
 | 961  | N-Repeated Element in Size 2N Array                          | Easy       | 91.43%  |        |
