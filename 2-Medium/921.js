@@ -49,6 +49,43 @@ const minAddToMakeValid = (S) => {
   return openBracketCount + closeBracketCount;
 };
 
+// Alternative
+const minAddToMakeValid = (S) => {
+  let open = 0,
+    close = 0;
+
+  for (let c of S) {
+    if (c === "(") open++;
+    else if (!open) close++;
+    else open--;
+  }
+  return open + close;
+};
+
+// Alternative
+const minAddToMakeValid = (S) => {
+  let ans = 0,
+    bal = 0;
+  for (let i = 0; i < S.length; i++) {
+    bal += S[i] == "(" ? 1 : -1;
+    if (bal == -1) {
+      ans++;
+      bal++;
+    }
+  }
+  return ans + bal;
+};
+
+// Alternative
+const minAddToMakeValid = (S) => {
+  const stack = [];
+  for (let s of S) {
+    if (s === ")" && stack[stack.length - 1] === "(") stack.pop();
+    else stack.push(s);
+  }
+  return stack.length;
+};
+
 // Test cases
 // "())"
 // "((("
