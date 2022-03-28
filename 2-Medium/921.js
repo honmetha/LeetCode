@@ -31,38 +31,20 @@
 // @param {string} S
 // @return {number}
 
-// My attempt
+// My attempt + community
 const minAddToMakeValid = (S) => {
-  let openBracketCount = 0;
-  let closeBracketCount = 0;
+  let open = 0;
+  let close = 0;
 
-  for (i = 0; i < S.length; i++) {
-    if (S[i] === "(") {
-      openBracketCount++;
-    } else if (S[i] === ")" && !openBracketCount) {
-      closeBracketCount++;
-    } else {
-      openBracketCount--;
-    }
-  }
-
-  return openBracketCount + closeBracketCount;
-};
-
-// Alternative
-const minAddToMakeValid = (S) => {
-  let open = 0,
-    close = 0;
-
-  for (let c of S) {
-    if (c === "(") open++;
+  for (let s of S) {
+    if (s === "(") open++;
     else if (!open) close++;
     else open--;
   }
   return open + close;
 };
 
-// Alternative
+// Alternative 1
 const minAddToMakeValid = (S) => {
   let ans = 0,
     bal = 0;
@@ -76,7 +58,7 @@ const minAddToMakeValid = (S) => {
   return ans + bal;
 };
 
-// Alternative
+// Alternative 2
 const minAddToMakeValid = (S) => {
   const stack = [];
   for (let s of S) {
