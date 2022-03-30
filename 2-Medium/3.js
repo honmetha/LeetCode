@@ -34,4 +34,18 @@ const lengthOfLongestSubstring = (s) => {
   return s;
 };
 
+// Test cases
+// ""
+// "abcabcbb"
+// "bbbbb"
+// "pwwkew"
+// "ababab"
+// "abcabccba"
+// "cbaabc"
+// "cbaabcd"
+// "qwertyuiop"
+// "qwertyq"
+// "qwertyqwerty"
+// "qwertyqasd"
+
 module.exports = lengthOfLongestSubstring;
