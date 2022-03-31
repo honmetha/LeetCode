@@ -31,7 +31,18 @@
 
 // My attempt
 const lengthOfLongestSubstring = (s) => {
-  return s;
+  let count = 0;
+  let substr = "";
+
+  for (let char of s) {
+    const charIndexInSubstr = substr.indexOf(char);
+
+    if (charIndexInSubstr === -1) substr += char;
+    else substr = substr.slice(charIndexInSubstr + 1) + char;
+
+    if (substr.length > count) count = substr.length;
+  }
+  return count;
 };
 
 // Test cases

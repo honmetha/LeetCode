@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648311572839" clover="3.2.0">
-  <project timestamp="1648311572839" name="All files">
-    <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="18" coveredelements="18" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
-    <file name="921.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/921.js">
-      <metrics statements="11" coveredstatements="11" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="53" count="1" type="stmt"/>
-      <line num="54" count="8" type="stmt"/>
-      <line num="55" count="8" type="stmt"/>
-      <line num="57" count="8" type="stmt"/>
-      <line num="58" count="50" type="cond" truecount="2" falsecount="0"/>
-      <line num="59" count="26" type="stmt"/>
-      <line num="60" count="24" type="cond" truecount="4" falsecount="0"/>
-      <line num="61" count="13" type="stmt"/>
-      <line num="63" count="11" type="stmt"/>
-      <line num="67" count="8" type="stmt"/>
-      <line num="80" count="1" type="stmt"/>
+<coverage generated="1648573266610" clover="3.2.0">
+  <project timestamp="1648573266610" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="3.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/3.js">
+      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="13" type="stmt"/>
+      <line num="35" count="13" type="stmt"/>
+      <line num="37" count="13" type="stmt"/>
+      <line num="38" count="103" type="stmt"/>
+      <line num="40" count="103" type="cond" truecount="2" falsecount="0"/>
+      <line num="41" count="37" type="stmt"/>
+      <line num="43" count="103" type="cond" truecount="2" falsecount="0"/>
+      <line num="45" count="13" type="stmt"/>
+      <line num="62" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
