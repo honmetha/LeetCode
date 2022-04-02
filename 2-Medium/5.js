@@ -26,4 +26,22 @@ const longestPalindrome = (s) => {
   return s;
 };
 
+// Test cases
+// "babad"
+// "cbbd"
+// "a"
+// "ab"
+// "aba"
+// "ccc"
+// "9119"
+// "9bba9"
+// "audie123"
+// "abacca"
+// "abaccaoiwieinjjni21"
+// "12abbaxxilliyy"
+// "abcdefedcba"
+// "abcdggdbct"
+// "bbbbbbb"
+// "acacac"
+
 module.exports = longestPalindrome;
