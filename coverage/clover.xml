@@ -1,19 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648573266610" clover="3.2.0">
-  <project timestamp="1648573266610" name="All files">
-    <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="15" coveredelements="15" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
-    <file name="3.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/3.js">
-      <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="34" count="13" type="stmt"/>
-      <line num="35" count="13" type="stmt"/>
-      <line num="37" count="13" type="stmt"/>
-      <line num="38" count="103" type="stmt"/>
-      <line num="40" count="103" type="cond" truecount="2" falsecount="0"/>
-      <line num="41" count="37" type="stmt"/>
-      <line num="43" count="103" type="cond" truecount="2" falsecount="0"/>
-      <line num="45" count="13" type="stmt"/>
-      <line num="62" count="1" type="stmt"/>
+<coverage generated="1648923790111" clover="3.2.0">
+  <project timestamp="1648923790111" name="All files">
+    <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="31" coveredelements="31" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
+    <file name="5.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/5.js">
+      <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="16" type="stmt"/>
+      <line num="28" count="16" type="stmt"/>
+      <line num="29" count="108" type="stmt"/>
+      <line num="30" count="108" type="stmt"/>
+      <line num="31" count="108" type="stmt"/>
+      <line num="32" count="588" type="stmt"/>
+      <line num="33" count="588" type="stmt"/>
+      <line num="34" count="588" type="stmt"/>
+      <line num="35" count="588" type="stmt"/>
+      <line num="36" count="588" type="stmt"/>
+      <line num="37" count="522" type="stmt"/>
+      <line num="38" count="522" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="419" type="stmt"/>
+      <line num="40" count="419" type="stmt"/>
+      <line num="42" count="103" type="stmt"/>
+      <line num="43" count="103" type="stmt"/>
+      <line num="45" count="588" type="cond" truecount="2" falsecount="0"/>
+      <line num="46" count="169" type="stmt"/>
+      <line num="47" count="169" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="23" type="stmt"/>
+      <line num="50" count="588" type="stmt"/>
+      <line num="53" count="16" type="stmt"/>
+      <line num="74" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

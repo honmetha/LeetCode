@@ -23,7 +23,31 @@
 // @return {string}
 
 const longestPalindrome = (s) => {
-  return s;
+  let longest = "";
+
+  for (let i = 0; i < s.length; i++) {
+    let lastIndex = s.length - 1;
+    while (i <= lastIndex) {
+      let start = i;
+      let end = lastIndex;
+      let isPalindrome = true;
+      while (start < end) {
+        if (s[start] !== s[end]) {
+          isPalindrome = false;
+          break;
+        }
+        start++;
+        end--;
+      }
+      if (isPalindrome) {
+        let palindromeString = s.substring(i, lastIndex + 1);
+        if (longest.length < palindromeString.length)
+          longest = palindromeString;
+      }
+      lastIndex--;
+    }
+  }
+  return longest;
 };
 
 // Test cases
