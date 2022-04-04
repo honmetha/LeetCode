@@ -90,6 +90,7 @@
 | 1323 | Maximum 69 Number                                            | Easy       | 98.96%  |        |
 | 1329 | Sort the Matrix Diagonally                                   | Medium     | 30.11%  |        |
 | 1342 | Number of Steps to Reduce a Number to Zero                   | Easy       | 94.81%  |        |
+| 1347 | Minimum Number of Steps to Make Two Strings Anagram          | Medium     |         |        |
 | 1351 | Count Negative Numbers in a Sorted Matrix                    | Easy       | 92.62%  |        |
 | 1365 | How Many Numbers Are Smaller Than the Current Number         | Easy       | 98.62%  |        |
 | 1374 | Generate a String With Characters That Have Odd Counts       | Easy       | 94.32%  |        |
