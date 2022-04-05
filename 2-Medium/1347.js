@@ -40,4 +40,20 @@ const minSteps = (s, t) => {
   return [s, t];
 };
 
+// Test cases
+// "bab", "aba"
+// "leetcode", "practice"
+// "anagram", "mangaar"
+// "qwertyuiop", "asdfghjklz"
+// "aaaaa", "aaaaa"
+// "aaaaa", "ababa"
+// "aaaaa", "bbbbb"
+// "ababa", "babab"
+// "dog", "cat"
+// "rabbit", "rappid"
+// "create", "etaerc"
+// "beeeet", "ebetee"
+// "abcda", "adsfg"
+// "abcde", "asdaf"
+
 module.exports = minSteps;
