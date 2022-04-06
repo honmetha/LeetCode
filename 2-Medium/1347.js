@@ -36,8 +36,11 @@
 // @param {string} t
 // @return {number}
 
+// My attempt
 const minSteps = (s, t) => {
-  return [s, t];
+  let newS = s;
+  for (let char of t) newS = newS.replace(char, "");
+  return newS.length;
 };
 
 // Test cases
