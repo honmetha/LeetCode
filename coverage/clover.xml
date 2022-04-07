@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648923790111" clover="3.2.0">
-  <project timestamp="1648923790111" name="All files">
-    <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1" elements="31" coveredelements="31" complexity="0" loc="24" ncloc="24" packages="1" files="1" classes="1"/>
-    <file name="5.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/5.js">
-      <metrics statements="24" coveredstatements="24" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="26" count="16" type="stmt"/>
-      <line num="28" count="16" type="stmt"/>
-      <line num="29" count="108" type="stmt"/>
-      <line num="30" count="108" type="stmt"/>
-      <line num="31" count="108" type="stmt"/>
-      <line num="32" count="588" type="stmt"/>
-      <line num="33" count="588" type="stmt"/>
-      <line num="34" count="588" type="stmt"/>
-      <line num="35" count="588" type="stmt"/>
-      <line num="36" count="588" type="stmt"/>
-      <line num="37" count="522" type="stmt"/>
-      <line num="38" count="522" type="cond" truecount="2" falsecount="0"/>
-      <line num="39" count="419" type="stmt"/>
-      <line num="40" count="419" type="stmt"/>
-      <line num="42" count="103" type="stmt"/>
-      <line num="43" count="103" type="stmt"/>
-      <line num="45" count="588" type="cond" truecount="2" falsecount="0"/>
-      <line num="46" count="169" type="stmt"/>
-      <line num="47" count="169" type="cond" truecount="2" falsecount="0"/>
-      <line num="48" count="23" type="stmt"/>
-      <line num="50" count="588" type="stmt"/>
-      <line num="53" count="16" type="stmt"/>
-      <line num="74" count="1" type="stmt"/>
+<coverage generated="1649095778997" clover="3.2.0">
+  <project timestamp="1649095778997" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="16" coveredelements="16" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
+    <file name="1347.js" path="/Users/hon/Desktop/CodeCamp4/LeetCode/2-Medium/1347.js">
+      <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="49" count="14" type="stmt"/>
+      <line num="50" count="14" type="stmt"/>
+      <line num="52" count="14" type="stmt"/>
+      <line num="53" count="79" type="cond" truecount="2" falsecount="0"/>
+      <line num="54" count="26" type="stmt"/>
+      <line num="56" count="14" type="stmt"/>
+      <line num="57" count="79" type="cond" truecount="2" falsecount="0"/>
+      <line num="58" count="43" type="stmt"/>
+      <line num="60" count="14" type="stmt"/>
+      <line num="79" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

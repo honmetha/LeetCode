@@ -36,11 +36,27 @@
 // @param {string} t
 // @return {number}
 
-// My attempt
+// First attempt
 const minSteps = (s, t) => {
   let newS = s;
   for (let char of t) newS = newS.replace(char, "");
   return newS.length;
+};
+
+// Second attempt
+const minSteps = (s, t) => {
+  let sChars = {};
+  let count = 0;
+
+  for (let char of s) {
+    if (!sChars[char]) sChars[char] = 1;
+    else sChars[char]++;
+  }
+  for (let char of t) {
+    if (!sChars[char]) count++;
+    else sChars[char]--;
+  }
+  return count;
 };
 
 // Test cases
