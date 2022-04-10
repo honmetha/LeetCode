@@ -30,7 +30,43 @@
 // @return {string[]}
 
 const letterCombinations = (digits) => {
-  return digits;
+  const telephoneButtons = {
+    2: "abc",
+    3: "def",
+    4: "ghi",
+    5: "jkl",
+    6: "mno",
+    7: "pqrs",
+    8: "tuv",
+    9: "wxyz",
+  };
+
+  let combinations = [];
+  let indexToLoop = digits
+    .split("")
+    .map((digit) => telephoneButtons[digit].length - 1);
+  let index = indexToLoop.length - 1;
+
+  while (indexToLoop.length && indexToLoop[0] > -1) {
+    let combination = "";
+    for (let i = 0; i < indexToLoop.length; i++) {
+      combination += telephoneButtons[digits[i]][indexToLoop[i]];
+    }
+    combinations.push(combination);
+
+    indexToLoop[index]--;
+    while (indexToLoop[index] < 0) {
+      index--;
+      indexToLoop[index]--;
+      if (indexToLoop[index] > -1) {
+        for (let i = index + 1; i < indexToLoop.length; i++) {
+          indexToLoop[i] = telephoneButtons[digits[i]].length - 1;
+        }
+        index = indexToLoop.length - 1;
+      }
+    }
+  }
+  return combinations;
 };
 
 // Test cases
