@@ -33,4 +33,16 @@ const letterCombinations = (digits) => {
   return digits;
 };
 
+// Test cases
+// ""
+// "2"
+// "23"
+// "69"
+// "88"
+// "246"
+// "472"
+// "789"
+// "939"
+// "2568"
+
 module.exports = letterCombinations;
