@@ -38,4 +38,16 @@ const findAndReplacePattern = (words, pattern) => {
   return [words, pattern];
 };
 
+// Test cases
+// ["abc","deq","mee","aqq","dkd","ccc"], "abb"
+// ["a","b","c"], "a"
+// ["jj","kk","bb","io","pa","bv","qz","hh"], "bb"
+// ["jj","kk","bb","io","pa","bv","qz","hh"], "op"
+// ["one"], "two"
+// ["abc","ggg","mee","aqq","zzz","pap"], "kkk"
+// ["mnbm","kajk","kkkk","akak","pokp","poop", "popp"], "pqkp"
+// ["qwert","fjfjf","popap","akvkv","ooooo","paozp"], "kakak"
+// ["qwqwqws", "oioioip", "popopop", "nvghnvt", "lkkllki", "asadadg"], "rtrtrty"
+// ["qwerewq", "zxcvbnm", "asdfghj", "plokijh", "plokpli", "ppppppp"], "mnkhjgo"
+
 module.exports = findAndReplacePattern;
