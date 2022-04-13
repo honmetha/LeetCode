@@ -64,7 +64,7 @@
 | 860  | Lemonade Change                                              | Easy       | 89.83%  |        |
 | 877  | Stone Game                                                   | Medium     | 98.04%  | 53.92% |
 | 884  | Uncommon Words from Two Sentences                            | Easy       | 97.08%  | 23.70% |
-| 890  | Find and Replace Pattern                                     | Medium     |         |        |
+| 890  | Find and Replace Pattern                                     | Medium     | 99.22%  | 54.26% |
 | 896  | Monotonic Array                                              | Easy       | 96.98%  | 81.89% |
 | 905  | Sort Array By Parity                                         | Easy       | 99.92%  |        |
 | 912  | Sort an Array                                                | Medium     | 81.14%  |        |

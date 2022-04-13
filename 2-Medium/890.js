@@ -35,7 +35,36 @@
 // @return {string[]}
 
 const findAndReplacePattern = (words, pattern) => {
-  return [words, pattern];
+  let map = {};
+  let pat = "";
+  let output = [];
+
+  for (let i = 0; i < pattern.length; i++) {
+    const char = pattern[i];
+    if (map[char] === undefined) {
+      map[char] = i;
+      pat += i;
+    } else {
+      pat += map[char];
+    }
+  }
+
+  for (let word of words) {
+    let wordMap = {};
+    let wordPat = "";
+    for (let i = 0; i < word.length; i++) {
+      const char = word[i];
+      if (wordMap[char] === undefined) {
+        wordMap[char] = i;
+        wordPat += i;
+      } else {
+        wordPat += wordMap[char];
+      }
+    }
+    if (pat === wordPat) output.push(word);
+  }
+
+  return output;
 };
 
 // Test cases
