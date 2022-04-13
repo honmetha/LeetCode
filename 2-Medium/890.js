@@ -34,36 +34,31 @@
 // @param {string} pattern
 // @return {string[]}
 
+const charMapping = (map, word, wordPattern) => {
+  for (let i = 0; i < word.length; i++) {
+    const char = word[i];
+    if (map[char] === undefined) {
+      map[char] = i;
+      wordPattern += i;
+    } else {
+      wordPattern += map[char];
+    }
+  }
+};
+
 const findAndReplacePattern = (words, pattern) => {
   let map = {};
   let pat = "";
   let output = [];
 
-  for (let i = 0; i < pattern.length; i++) {
-    const char = pattern[i];
-    if (map[char] === undefined) {
-      map[char] = i;
-      pat += i;
-    } else {
-      pat += map[char];
-    }
-  }
+  charMapping(map, pattern, pat);
 
   for (let word of words) {
     let wordMap = {};
     let wordPat = "";
-    for (let i = 0; i < word.length; i++) {
-      const char = word[i];
-      if (wordMap[char] === undefined) {
-        wordMap[char] = i;
-        wordPat += i;
-      } else {
-        wordPat += wordMap[char];
-      }
-    }
+    charMapping(wordMap, word, wordPat);
     if (pat === wordPat) output.push(word);
   }
-
   return output;
 };
 
