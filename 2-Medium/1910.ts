@@ -38,6 +38,7 @@
  **********************************************************************/
 
 const removeOccurrences = (s: string, part: string): string => {
+  while (s.includes(part)) s = s.replace(part, "");
   return s;
 };
 
@@ -54,4 +55,4 @@ const removeOccurrences = (s: string, part: string): string => {
 // "kkkjjjkkklll", "j"
 // "dcoadotdtodododogo", "do"
 
-module.exports = removeOccurrences;
+export default removeOccurrences;

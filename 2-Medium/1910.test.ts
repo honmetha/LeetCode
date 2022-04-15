@@ -1,4 +1,4 @@
-const removeOccurrences = require("./1910");
+import removeOccurrences from "./1910";
 
 test("test remove occurrences", () => {
   expect(removeOccurrences("daabcbaabcbc", "abc")).toBe("dab");
