@@ -41,4 +41,17 @@ const removeOccurrences = (s: string, part: string): string => {
   return s;
 };
 
+// Test cases
+// "daabcbaabcbc", "abc"
+// "axxxxyyyyb", "xy"
+// "a", "a"
+// "abbaabbabb", "bb"
+// "bbbbbbb", "bb"
+// "bbabbbabb", "bb"
+// "abcbcaacbabcaabccc", "abc"
+// "abckabcbcabc", "abc"
+// "kkkjjjkkklll", "kk"
+// "kkkjjjkkklll", "j"
+// "dcoadotdtodododogo", "do"
+
 module.exports = removeOccurrences;
