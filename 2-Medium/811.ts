@@ -38,4 +38,8 @@ const subdomainVisits = (cpdomains: string[]): string[] => {
   return cpdomains;
 };
 
-module.exports = subdomainVisits;
+// Test cases
+// ["9001 discuss.leetcode.com"]
+// ["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]
+
+export default subdomainVisits;
