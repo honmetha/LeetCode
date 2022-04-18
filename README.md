@@ -56,7 +56,7 @@
 | 728  | Self Dividing Numbers                                        | Easy       | 88.22%  |        |
 | 771  | Jewels and Stones                                            | Easy       | 93.87%  |        |
 | 804  | Unique Morse Code Words                                      | Easy       | 94.69%  |        |
-| 811  | Subdomain Visit Count                                        | Medium     |         |        |
+| 811  | Subdomain Visit Count                                        | Medium     | 91.30%  | 30.43% |
 | 819  | Most Common Word                                             | Easy       | 92.63%  | 43.00% |
 | 824  | Goat Latin                                                   | Easy       | 91.54%  |        |
 | 832  | Flipping an Image                                            | Easy       | 97.25%  |        |

@@ -35,7 +35,19 @@
  **********************************************************************/
 
 const subdomainVisits = (cpdomains: string[]): string[] => {
-  return cpdomains;
+  let map = {};
+
+  for (let cpdomain of cpdomains) {
+    const times: number = Number(cpdomain.split(" ")[0]);
+    let domainsArr: string[] = cpdomain.split(" ")[1].split(".");
+
+    for (let i = 0; i < domainsArr.length; i++) {
+      const domains: string = domainsArr.slice(i).join(".");
+      if (!map[domains]) map[domains] = times;
+      else map[domains] += times;
+    }
+  }
+  return Object.entries(map).map(([key, value]) => `${value} ${key}`);
 };
 
 // Test cases
