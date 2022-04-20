@@ -45,4 +45,10 @@ const numOfPairs = (nums: string[], target: string): number => {
   return 0;
 };
 
-module.exports = numOfPairs;
+// Test cases
+// ["777","7","77","77"], "7777"
+// ["123","4","12","34"], "1234"
+// ["1","1","1"], "11"
+// ["9","8","7"], "20"
+
+export default numOfPairs;
