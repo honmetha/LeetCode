@@ -42,7 +42,24 @@
  **********************************************************************/
 
 const numOfPairs = (nums: string[], target: string): number => {
-  return 0;
+  let map: { [key: string]: number } = {};
+  let count: number = 0;
+
+  for (let num of nums) {
+    let numsToSearch: string[] = [];
+
+    if (target.startsWith(num)) numsToSearch.push(target.slice(num.length));
+    if (target.endsWith(num))
+      numsToSearch.push(target.slice(0, -Math.abs(num.length)));
+
+    for (let numToSearch of numsToSearch) {
+      if (map[numToSearch]) count += map[numToSearch];
+    }
+
+    if (!map[num]) map[num] = 1;
+    else map[num]++;
+  }
+  return count;
 };
 
 // Test cases
