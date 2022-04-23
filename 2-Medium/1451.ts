@@ -42,4 +42,9 @@ const arrangeWords = (text: string): string => {
   return text;
 };
 
+// Test cases
+// "Leetcode is cool"
+// "Keep calm and code on"
+// "To be or not to be"
+
 export default arrangeWords;
