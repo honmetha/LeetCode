@@ -39,7 +39,12 @@
  **********************************************************************/
 
 const arrangeWords = (text: string): string => {
-  return text;
+  const sortedLength: string = text
+    .toLowerCase()
+    .split(" ")
+    .sort((a, b) => a.length - b.length)
+    .join(" ");
+  return sortedLength.charAt(0).toUpperCase() + sortedLength.slice(1);
 };
 
 // Test cases

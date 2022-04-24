@@ -102,7 +102,7 @@
 | 1394 | Find Lucky Integer in an Array                                | Easy       | 80.48%  |         |
 | 1436 | Destination City                                              | Easy       | 96.64%  | 63.50%  |
 | 1446 | Consecutive Characters                                        | Easy       | 93.40%  |         |
-| 1451 | Rearrange Words in a Sentence                                 | Medium     |         |         |
+| 1451 | Rearrange Words in a Sentence                                 | Medium     | 80.00%  | 100.00% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence  | Easy       | 94.91%  |         |
 | 1470 | Shuffle the Array                                             | Easy       | 94.43%  |         |
 | 1480 | Running Sum of 1d Array                                       | Easy       | 83.24%  |         |
