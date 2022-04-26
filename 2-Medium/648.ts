@@ -37,4 +37,9 @@ const replaceWords = (dictionary: string[], sentence: string): string => {
   return sentence;
 };
 
+// Test cases
+// ["cat","bat","rat"], "the cattle was rattled by the battery"
+// ["a","b","c"], "aadsfasf absbs bbab cadsfafs"
+// ["cat","bat","rat", "ratt"], "the cattle was rattled by the battery"
+
 export default replaceWords;
