@@ -34,7 +34,16 @@
  **********************************************************************/
 
 const replaceWords = (dictionary: string[], sentence: string): string => {
-  return sentence;
+  let sentenceArr: string[] = sentence.split(" ");
+
+  for (let i = 0; i < sentenceArr.length; i++) {
+    for (let successor of dictionary) {
+      if (sentenceArr[i].startsWith(successor)) {
+        sentenceArr[i] = successor;
+      }
+    }
+  }
+  return sentenceArr.join(" ");
 };
 
 // Test cases
