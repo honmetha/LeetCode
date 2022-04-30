@@ -26,4 +26,11 @@ const checkInclusion = (s1: string, s2: string): boolean => {
   return true;
 };
 
+// Test cases
+// "ab", "eidbaooo"
+// "ab", "eidboaoo"
+// "adc", "dcda"
+// "hello", "ooolleoooleh"
+// "hello", "eoooleh"
+
 export default checkInclusion;
