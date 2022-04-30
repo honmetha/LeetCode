@@ -50,6 +50,7 @@
 | 520  | Detect Capital                                                | Easy       | 92.11%  |         |
 | 551  | Student Attendance Record I                                   | Easy       | 83.07%  | 6.52%   |
 | 557  | Reverse Words in a String III                                 | Easy       | 76.26%  |         |
+| 567  | Permutation in String                                         | Medium     |         |         |
 | 648  | Replace Words                                                 | Medium     | 93.33%  | 86.67%  |
 | 657  | Robot Return to Origin                                        | Easy       | 83.33%  |         |
 | 674  | Longest Continuous Increasing Subsequence                     | Easy       | 51.83%  | 62.30%  |
