@@ -36,4 +36,9 @@ const frequencySort = (s: string): string => {
   return s;
 };
 
+// Test cases
+// "tree"
+// "cccaaa"
+// "Aabb"
+
 export default frequencySort;
