@@ -33,7 +33,15 @@
  **********************************************************************/
 
 const frequencySort = (s: string): string => {
-  return s;
+  let charMap: { [key: string]: number } = {};
+  for (let char of s) {
+    if (!charMap[char]) charMap[char] = 1;
+    else charMap[char]++;
+  }
+  return Object.keys(charMap)
+    .map((key) => key.repeat(charMap[key]))
+    .sort((a, b) => b.length - a.length)
+    .join("");
 };
 
 // Test cases

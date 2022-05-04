@@ -42,7 +42,7 @@
 | 412  | Fizz Buzz                                                     | Easy       | 90.52%  |         |
 | 420  | Strong Password Checker                                       | Hard       | 84.38%  |         |
 | 442  | Find All Duplicates in an Array                               | Medium     | 77.66%  | 26.38%  |
-| 451  | Sort Characters By Frequency                                  | Medium     |         |         |
+| 451  | Sort Characters By Frequency                                  | Medium     | 97.33%  | 86.67%  |
 | 482  | License Key Formatting                                        | Easy       | 96.07%  | 12.69%  |
 | 485  | Max Consecutive Ones                                          | Easy       | 93.21%  |         |
 | 500  | Keyboard Row                                                  | Easy       | 66.54%  |         |
