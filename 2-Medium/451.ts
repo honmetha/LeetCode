@@ -32,6 +32,7 @@
  *  Solution
  **********************************************************************/
 
+// Fast
 const frequencySort = (s: string): string => {
   let charMap: { [key: string]: number } = {};
   for (let char of s) {
@@ -43,6 +44,16 @@ const frequencySort = (s: string): string => {
     .sort((a, b) => b.length - a.length)
     .join("");
 };
+
+// One-Liner
+const frequencySort = (s: string): string =>
+  s
+    .split("")
+    .sort()
+    .join("")
+    .match(/(.)\1*/g)
+    .sort((a, b) => b.length - a.length)
+    .join("");
 
 // Test cases
 // "tree"
