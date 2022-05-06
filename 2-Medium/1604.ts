@@ -45,4 +45,9 @@ const alertNames = (keyName: string[], keyTime: string[]): string[] => {
   return keyName;
 };
 
+// Test cases
+// ["daniel","daniel","daniel","luis","luis","luis","luis"], ["10:00","10:40","11:00","09:00","11:00","13:00","15:00"]
+// ["alice","alice","alice","bob","bob","bob","bob"], ["12:01","12:00","18:00","21:00","21:20","21:30","23:00"]
+// ["ken","ryu","ken","ryu","ken","ryu","ken"], ["00:00","00:02","01:20","23:58","23:45","23:33","00:40"]
+
 export default alertNames;
