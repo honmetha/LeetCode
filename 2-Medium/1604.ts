@@ -42,7 +42,29 @@
  **********************************************************************/
 
 const alertNames = (keyName: string[], keyTime: string[]): string[] => {
-  return keyName;
+  let keyCardEntries: { [key: string]: string[] } = {};
+  let output: string[] = [];
+
+  for (let i = 0; i < keyName.length; i++) {
+    if (!keyCardEntries[keyName[i]]) keyCardEntries[keyName[i]] = [keyTime[i]];
+    else keyCardEntries[keyName[i]].push(keyTime[i]);
+  }
+  for (const name in keyCardEntries) {
+    keyCardEntries[name].sort();
+    for (let i = 0; i < keyCardEntries[name].length - 2; i++) {
+      const [hour, minute] = keyCardEntries[name][i].split(":");
+      const hourPlusOne: string = ("0" + (Number(hour) + 1)).slice(-2);
+      const timeRange: string = `${hourPlusOne}:${minute}`;
+      if (
+        timeRange >= keyCardEntries[name][i + 1] &&
+        timeRange >= keyCardEntries[name][i + 2]
+      ) {
+        output.push(name);
+        break;
+      }
+    }
+  }
+  return output.sort();
 };
 
 // Test cases
