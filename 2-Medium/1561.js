@@ -47,37 +47,37 @@
 // Original
 const maxCoins = (piles) => {
   let total = 0;
-  let sortedPiles = piles.sort((a, b) => b - a);
+  piles.sort((a, b) => b - a);
 
-  for (let i = 1; i < sortedPiles.length; i += 2) {
-    total += sortedPiles[i];
-    sortedPiles.pop();
+  for (let i = 1; i < piles.length; i += 2) {
+    total += piles[i];
+    piles.pop();
   }
-
   return total;
 };
 
-// Alternative
+// Faster
 const maxCoins = (piles) => {
   const start = piles.length / 3;
+  let total = 0;
   piles.sort((a, b) => a - b);
-  let res = 0;
-  for (let i = start; i < piles.length; i += 2) res += piles[i];
-  return res;
+
+  for (let i = start; i < piles.length; i += 2) total += piles[i];
+  return total;
 };
 
 // Alternative
 const maxCoins = (piles) => {
   piles.sort((a, b) => b - a);
   let coins = 0;
-  let p1 = 0,
-    p2 = piles.length - 1;
-  while (p1 < p2) {
-    coins += piles[p1 + 1];
-    p2--;
-    p1 += 2;
-  }
+  let start = 0,
+    end = piles.length - 1;
 
+  while (start < end) {
+    coins += piles[start + 1];
+    end--;
+    start += 2;
+  }
   return coins;
 };
 
