@@ -39,4 +39,10 @@ const printVertically = (s: string): string[] => {
   return [s];
 };
 
+// Test cases
+// "HOW ARE YOU"
+// "TO BE OR NOT TO BE"
+// "CONTEST IS COMING"
+// "CONTEST"
+
 export default printVertically;
