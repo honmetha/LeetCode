@@ -94,7 +94,7 @@
 | 1309 | Decrypt String from Alphabet to Integer Mapping                    | Easy       | 98.25%  |         |
 | 1313 | Decompress Run-Length Encoded List                                 | Easy       | 83.96%  |         |
 | 1323 | Maximum 69 Number                                                  | Easy       | 98.96%  |         |
-| 1324 | Print Words Vertically                                             | Medium     |         |         |
+| 1324 | Print Words Vertically                                             | Medium     | 100.00% | 100.00% |
 | 1329 | Sort the Matrix Diagonally                                         | Medium     | 30.11%  |         |
 | 1342 | Number of Steps to Reduce a Number to Zero                         | Easy       | 94.81%  |         |
 | 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |

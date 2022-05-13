@@ -36,7 +36,23 @@
  **********************************************************************/
 
 const printVertically = (s: string): string[] => {
-  return [s];
+  let output: string[] = [];
+  const sArray: string[] = s.split(" ");
+  const longestWordLength: number = sArray.reduce(
+    (acc, word) => (word.length > acc ? word.length : acc),
+    0
+  );
+
+  for (let i = 0; i < longestWordLength; i++) {
+    let verticallyWord: string = "";
+    for (let word of sArray) {
+      if (word[i] !== undefined) verticallyWord += word[i];
+      else verticallyWord += " ";
+    }
+    verticallyWord = verticallyWord.trimEnd();
+    output.push(verticallyWord);
+  }
+  return output;
 };
 
 // Test cases
