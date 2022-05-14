@@ -86,6 +86,7 @@
 | 1207 | Unique Number of Occurrences                                       | Easy       | 97.32%  |         |
 | 1221 | Split a String in Balanced Strings                                 | Easy       | 86.98%  |         |
 | 1249 | Minimum Remove to Make Valid Parentheses                           | Medium     | 99.22%  | 64.46%  |
+| 1268 | Search Suggestions System                                          | Medium     |         |         |
 | 1281 | Subtract the Product and Sum of Digits of an Integer               | Easy       | 93.88%  |         |
 | 1287 | Element Appearing More Than 25% In Sorted Array                    | Easy       | 88.35%  |         |
 | 1295 | Find Numbers with Even Number of Digits                            | Easy       | 77.34%  |         |
