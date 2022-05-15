@@ -54,4 +54,9 @@ const suggestedProducts = (
   return [products];
 };
 
+// Test cases
+// ["mobile","mouse","moneypot","monitor","mousepad"], "mouse"
+// ["havana"], "havana"
+// ["bags","baggage","banner","box","cloths"], "bags"
+
 export default suggestedProducts;
