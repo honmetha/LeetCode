@@ -51,7 +51,19 @@ const suggestedProducts = (
   products: string[],
   searchWord: string
 ): string[][] => {
-  return [products];
+  let suggestLists: string[][] = [];
+
+  products.sort();
+  for (let i = 1; i <= searchWord.length; i++) {
+    const searchKey: string = searchWord.substring(0, i);
+    let suggestList: string[] = [];
+    for (let product of products) {
+      if (product.startsWith(searchKey)) suggestList.push(product);
+      if (suggestList.length === 3) break;
+    }
+    suggestLists.push(suggestList);
+  }
+  return suggestLists;
 };
 
 // Test cases
