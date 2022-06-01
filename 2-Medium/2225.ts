@@ -42,7 +42,23 @@
  **********************************************************************/
 
 const findWinners = (matches: number[][]): number[][] => {
-  return matches;
+  let playersWithLosingNumber: { [key: string]: number } = {};
+  let answerList: number[][] = [[], []];
+
+  for (let match of matches) {
+    const [winner, loser] = match;
+    if (!playersWithLosingNumber[winner]) playersWithLosingNumber[winner] = 0;
+    if (!playersWithLosingNumber[loser]) playersWithLosingNumber[loser] = 1;
+    else playersWithLosingNumber[loser]++;
+  }
+  for (let player in playersWithLosingNumber) {
+    if (playersWithLosingNumber[player] === 0)
+      answerList[0].push(Number(player));
+    if (playersWithLosingNumber[player] === 1)
+      answerList[1].push(Number(player));
+  }
+  answerList.forEach((list) => list.sort((a, b) => a - b));
+  return answerList;
 };
 
 // Test cases
