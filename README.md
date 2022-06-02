@@ -79,6 +79,7 @@
 | 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.43%  |         |
 | 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  |         |
 | 1021 | Remove Outermost Parentheses                                       | Easy       | 87.38%  |         |
+| 1023 | Camelcase Matching                                                 | Medium     |         |         |
 | 1043 | Partition Array for Maximum Sum                                    | Medium     |         |         |
 | 1046 | Last Stone Weight                                                  | Easy       | 89.32%  |         |
 | 1108 | Defanging an IP Address                                            | Easy       | 89.88%  |         |
