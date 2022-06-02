@@ -41,4 +41,12 @@ const camelMatch = (queries: string[], pattern: string): boolean[] => {
   return [true];
 };
 
+// Test cases
+// ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FB"
+// ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBa"
+// ["FooBar","FooBarTest","FootBall","FrameBuffer","ForceFeedBack"], "FoBaT"
+// ["CompetitiveProgramming","CounterPick","ControlPanel"], "CooP"
+// ["CompetitiveProgramming","CounterPicka","ControlPanel","CocoPicker","CocoPiano","CompanyPark","CocoPickerKing"], "CooPa"
+// ["mifeqvzphnrv","mieqxvrvhnrv","mhieqovhnryv","mieqekvhnrpv","miueqrvfhnrv","mieqpvhzntrv","gmimeqvphnrv","mieqvhqyunrv"], "mieqvhnrv"
+
 export default camelMatch;
