@@ -38,7 +38,26 @@
  **********************************************************************/
 
 const camelMatch = (queries: string[], pattern: string): boolean[] => {
-  return [true];
+  let matches: boolean[] = [];
+  let patternChars: string[] = pattern.split("");
+
+  for (let query of queries) {
+    if (pattern.match(/\p{Lu}/gu)?.length !== query.match(/\p{Lu}/gu)?.length) {
+      matches.push(false);
+    } else {
+      let match: boolean = true;
+      for (let char of patternChars) {
+        const charIndex = query.indexOf(char);
+        if (charIndex === -1) {
+          match = false;
+          break;
+        }
+        query = query.slice(charIndex + 1);
+      }
+      matches.push(match);
+    }
+  }
+  return matches;
 };
 
 // Test cases
