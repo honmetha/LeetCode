@@ -106,8 +106,8 @@ const sortArray = (nums) => {
 
     const pivotValue = nums[start];
     let smaller = start;
-    for (var i = start + 1; i <= end; i++) {
-      var bigger = i;
+    for (let i = start + 1; i <= end; i++) {
+      const bigger = i;
       if (nums[bigger] < pivotValue) {
         smaller++;
         const smallerValue = nums[bigger];
