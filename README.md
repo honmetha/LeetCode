@@ -7,7 +7,7 @@
 | #    | Title                                                              | Difficulty | Runtime | Memory  |
 | :--- | :----------------------------------------------------------------- | :--------- | :------ | :------ |
 | 1    | Two Sum                                                            | Easy       | 100.00% | 45.69%  |
-| 3    | Longest Substring Without Repeating Characters                     | Medium     | 99.14%  | 64.79%  |
+| 3    | Longest Substring Without Repeating Characters                     | Medium     | 99.14%  | 75.96%  |
 | 5    | longestPalindrome                                                  | Medium     | 7.31%   | 49.70%  |
 | 7    | Reverse Integer                                                    | Medium     | 96.51%  | 16.71%  |
 | 9    | Palindrome Number                                                  | Easy       | 94.18%  | 87.93%  |

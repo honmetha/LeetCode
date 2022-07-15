@@ -31,7 +31,7 @@
 
 // My attempt
 const lengthOfLongestSubstring = (s) => {
-  let count = 0;
+  let longest = 0;
   let substr = "";
 
   for (let char of s) {
@@ -40,26 +40,8 @@ const lengthOfLongestSubstring = (s) => {
     if (charIndexInSubstr === -1) substr += char;
     else substr = substr.slice(charIndexInSubstr + 1) + char;
 
-    if (substr.length > count) count = substr.length;
+    if (substr.length > longest) longest = substr.length;
   }
-  return count;
-};
-
-// Alternative
-const lengthOfLongestSubstring = (s) => {
-  const scanner = [];
-  let longest = 0;
-
-  for (const char of s) {
-    const possibleIndex = scanner.indexOf(char);
-
-    if (possibleIndex !== -1) {
-      scanner.splice(0, possibleIndex + 1);
-    }
-    scanner.push(char);
-    longest = Math.max(longest, scanner.length);
-  }
-
   return longest;
 };
 
