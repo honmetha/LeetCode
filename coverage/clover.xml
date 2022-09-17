@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663428590009" clover="3.2.0">
-  <project timestamp="1663428590009" name="All files">
-    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="4" coveredelements="4" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+<coverage generated="1663433046779" clover="3.2.0">
+  <project timestamp="1663433046779" name="All files">
+    <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2" elements="15" coveredelements="15" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="912.js" path="/Users/hon/Desktop/Repositories/LeetCode/2-Medium/912.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="25" count="215" type="stmt"/>
+      <metrics statements="11" coveredstatements="11" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="46" count="6" type="stmt"/>
+      <line num="47" count="235" type="stmt"/>
+      <line num="48" count="235" type="stmt"/>
+      <line num="49" count="235" type="stmt"/>
+      <line num="52" count="6" type="stmt"/>
+      <line num="53" count="72" type="stmt"/>
+      <line num="54" count="607" type="cond" truecount="2" falsecount="0"/>
+      <line num="55" count="235" type="stmt"/>
+      <line num="59" count="6" type="stmt"/>
       <line num="138" count="1" type="stmt"/>
     </file>
   </project>
