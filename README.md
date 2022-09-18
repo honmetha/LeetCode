@@ -71,7 +71,7 @@
 | 890  | Find and Replace Pattern                                           | Medium     | 99.22%  | 54.26%  |
 | 896  | Monotonic Array                                                    | Easy       | 96.98%  | 81.89%  |
 | 905  | Sort Array By Parity                                               | Easy       | 99.92%  |         |
-| 912  | Sort an Array                                                      | Medium     | 81.14%  |         |
+| 912  | Sort an Array                                                      | Medium     | 81.14%  | 43.69%  |
 | 917  | Reverse Only Letters                                               | Easy       | 82.54%  |         |
 | 921  | Minimum Add to Make Parentheses Valid                              | Medium     | 82.67%  | 44.24%  |
 | 922  | Sort Array By Parity II                                            | Easy       | 94.23%  |         |
