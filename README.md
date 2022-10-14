@@ -81,7 +81,7 @@
 | 1021 | Remove Outermost Parentheses                                       | Easy       | 87.38%  |         |
 | 1023 | Camelcase Matching                                                 | Medium     | 100.00% | 100.00% |
 | 1043 | Partition Array for Maximum Sum                                    | Medium     |         |         |
-| 1046 | Last Stone Weight                                                  | Easy       | 89.32%  |         |
+| 1046 | Last Stone Weight                                                  | Easy       | 89.32%  | 33.76%  |
 | 1108 | Defanging an IP Address                                            | Easy       | 89.88%  |         |
 | 1190 | Reverse Substrings Between Each Pair of Parentheses                | Medium     | 100.00% | 22.37%  |
 | 1207 | Unique Number of Occurrences                                       | Easy       | 97.32%  |         |
