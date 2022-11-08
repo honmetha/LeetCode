@@ -41,8 +41,9 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const findWinners = (matches: number[][]): number[][] => {
-  let playersWithLosingNumber: { [key: string]: number } = {};
+  let playersWithLosingNumber: {[key: string]: number} = {};
   let answerList: number[][] = [[], []];
 
   for (let match of matches) {
@@ -59,6 +60,42 @@ const findWinners = (matches: number[][]): number[][] => {
   }
   answerList.forEach((list) => list.sort((a, b) => a - b));
   return answerList;
+};
+
+// Alternative 1
+const findWinners = (matches: number[][]): number[][] => {
+  let looser = {};
+  let allPlayer = {};
+  for (let i = 0; i < matches.length; i++) {
+    if (looser[matches[i][1]]) looser[matches[i][1]]++;
+    else looser[matches[i][1]] = 1;
+
+    if (!allPlayer[matches[i][0]]) allPlayer[matches[i][0]] = 1;
+    if (!allPlayer[matches[i][1]]) allPlayer[matches[i][1]] = 1;
+  }
+
+  const first = [],
+    second = [];
+  for (let key in allPlayer) {
+    if (!looser[key]) first.push(key);
+    if (looser[key] == 1) second.push(key);
+  }
+  return [first, second];
+};
+
+// Alternative 2
+const findWinners = (matches: number[][]): number[][] => {
+  let lost = {};
+  for (let [winner, loser] of matches) {
+    lost[winner] = lost[winner] || 0;
+    lost[loser] = (lost[loser] || 0) + 1;
+  }
+  let res = [[], []];
+  for (let player in lost) {
+    if (lost[player] === 0) res[0].push(+player);
+    else if (lost[player] === 1) res[1].push(+player);
+  }
+  return res;
 };
 
 // Test cases
