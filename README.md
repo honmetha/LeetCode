@@ -127,4 +127,4 @@
 | 2079 | Watering Plants                                                    | Medium     | 92.77%  | 45.78%  |
 | 2108 | Find First Palindromic String in the Array                         | Easy       | 90.13%  | 82.63%  |
 | 2114 | Maximum Number of Words Found in Sentences                         | Easy       | 94.95%  | 34.78%  |
-| 2225 | Find Players With Zero or One Losses                               | Medium     | 66.67%  | 65.71%  |
+| 2225 | Find Players With Zero or One Losses                               | Medium     | 88.46%  | 94.23%  |
