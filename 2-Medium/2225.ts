@@ -41,61 +41,20 @@
  *  Solution
  **********************************************************************/
 
-// My attempt
+// My attempt + community
 const findWinners = (matches: number[][]): number[][] => {
-  let playersWithLosingNumber: {[key: string]: number} = {};
-  let answerList: number[][] = [[], []];
+  let lost: {[key: string]: number} = {};
+  let list: number[][] = [[], []];
 
-  for (let match of matches) {
-    const [winner, loser] = match;
-    if (!playersWithLosingNumber[winner]) playersWithLosingNumber[winner] = 0;
-    if (!playersWithLosingNumber[loser]) playersWithLosingNumber[loser] = 1;
-    else playersWithLosingNumber[loser]++;
-  }
-  for (let player in playersWithLosingNumber) {
-    if (playersWithLosingNumber[player] === 0)
-      answerList[0].push(Number(player));
-    if (playersWithLosingNumber[player] === 1)
-      answerList[1].push(Number(player));
-  }
-  answerList.forEach((list) => list.sort((a, b) => a - b));
-  return answerList;
-};
-
-// Alternative 1
-const findWinners = (matches: number[][]): number[][] => {
-  let looser = {};
-  let allPlayer = {};
-  for (let i = 0; i < matches.length; i++) {
-    if (looser[matches[i][1]]) looser[matches[i][1]]++;
-    else looser[matches[i][1]] = 1;
-
-    if (!allPlayer[matches[i][0]]) allPlayer[matches[i][0]] = 1;
-    if (!allPlayer[matches[i][1]]) allPlayer[matches[i][1]] = 1;
-  }
-
-  const first = [],
-    second = [];
-  for (let key in allPlayer) {
-    if (!looser[key]) first.push(key);
-    if (looser[key] == 1) second.push(key);
-  }
-  return [first, second];
-};
-
-// Alternative 2
-const findWinners = (matches: number[][]): number[][] => {
-  let lost = {};
   for (let [winner, loser] of matches) {
     lost[winner] = lost[winner] || 0;
     lost[loser] = (lost[loser] || 0) + 1;
   }
-  let res = [[], []];
   for (let player in lost) {
-    if (lost[player] === 0) res[0].push(+player);
-    else if (lost[player] === 1) res[1].push(+player);
+    if (lost[player] === 0) list[0].push(+player);
+    else if (lost[player] === 1) list[1].push(+player);
   }
-  return res;
+  return list;
 };
 
 // Test cases
