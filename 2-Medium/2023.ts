@@ -41,8 +41,9 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const numOfPairs = (nums: string[], target: string): number => {
-  let map: { [key: string]: number } = {};
+  let map: {[key: string]: number} = {};
   let count: number = 0;
 
   for (let num of nums) {
@@ -60,6 +61,37 @@ const numOfPairs = (nums: string[], target: string): number => {
     else map[num]++;
   }
   return count;
+};
+
+// Alternative 1
+const numOfPairs = (nums, target) => {
+  let count = 0;
+  let x = 0;
+  while (x < nums.length) {
+    for (let y = 0; y < nums.length; y++) {
+      if (nums[x] + nums[y] == target) {
+        count += 1;
+        if (x == y) {
+          count -= 1;
+        }
+      }
+    }
+    x++;
+  }
+  return count;
+};
+
+// Alternative 2
+const numOfPairs = (nums, target) => {
+  let n = nums.length,
+    res = 0;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (i == j) continue;
+      if (nums[i] + nums[j] == target) res++;
+    }
+  }
+  return res;
 };
 
 // Test cases
