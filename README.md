@@ -123,7 +123,7 @@
 | 1910 | Remove All Occurrences of a Substring                              | Medium     | 81.82%  | 45.45%  |
 | 1920 | Build Array from Permutation                                       | Easy       | 100.00% | 97.10%  |
 | 1929 | Concatenation of Array                                             | Easy       | 97.80%  | 38.49%  |
-| 2023 | Number of Pairs of Strings With Concatenation Equal to Target      | Medium     | 85.71%  | 100.00% |
+| 2023 | Number of Pairs of Strings With Concatenation Equal to Target      | Medium     | 94.12%  | 100.00% |
 | 2079 | Watering Plants                                                    | Medium     | 92.77%  | 45.78%  |
 | 2108 | Find First Palindromic String in the Array                         | Easy       | 90.13%  | 82.63%  |
 | 2114 | Maximum Number of Words Found in Sentences                         | Easy       | 94.95%  | 34.78%  |
