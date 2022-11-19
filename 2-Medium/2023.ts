@@ -64,9 +64,9 @@ const numOfPairs = (nums: string[], target: string): number => {
 };
 
 // Alternative 1
-const numOfPairs = (nums, target) => {
-  let count = 0;
-  let x = 0;
+const numOfPairs = (nums: string[], target: string): number => {
+  let count: number = 0;
+  let x: number = 0;
   while (x < nums.length) {
     for (let y = 0; y < nums.length; y++) {
       if (nums[x] + nums[y] == target) {
@@ -82,9 +82,9 @@ const numOfPairs = (nums, target) => {
 };
 
 // Alternative 2
-const numOfPairs = (nums, target) => {
-  let n = nums.length,
-    res = 0;
+const numOfPairs = (nums: string[], target: string): number => {
+  let n: number = nums.length,
+    res: number = 0;
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       if (i == j) continue;
