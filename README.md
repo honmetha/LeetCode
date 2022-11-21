@@ -120,7 +120,7 @@
 | 1561 | Maximum Number of Coins You Can Get                                | Medium     | 79.00%  | 91.00%  |
 | 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 77.78%  | 11.11%  |
 | 1672 | Richest Customer Wealth                                            | Easy       | 99.69%  | 63.26%  |
-| 1910 | Remove All Occurrences of a Substring                              | Medium     | 81.82%  | 45.45%  |
+| 1910 | Remove All Occurrences of a Substring                              | Medium     | 81.82%  | 80.00%  |
 | 1920 | Build Array from Permutation                                       | Easy       | 100.00% | 97.10%  |
 | 1929 | Concatenation of Array                                             | Easy       | 97.80%  | 38.49%  |
 | 2023 | Number of Pairs of Strings With Concatenation Equal to Target      | Medium     | 94.12%  | 100.00% |
