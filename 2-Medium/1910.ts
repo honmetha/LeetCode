@@ -37,10 +37,15 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const removeOccurrences = (s: string, part: string): string => {
   while (s.includes(part)) s = s.replace(part, "");
   return s;
 };
+
+// One-liner
+const removeOccurrences = (s: string, part: string): string =>
+  s.includes(part) ? removeOccurrences(s.replace(part, ""), part) : s;
 
 // Test cases
 // "daabcbaabcbc", "abc"
