@@ -41,8 +41,9 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const alertNames = (keyName: string[], keyTime: string[]): string[] => {
-  let keyCardEntries: { [key: string]: string[] } = {};
+  let keyCardEntries: {[key: string]: string[]} = {};
   let output: string[] = [];
 
   for (let i = 0; i < keyName.length; i++) {
@@ -66,6 +67,80 @@ const alertNames = (keyName: string[], keyTime: string[]): string[] => {
   }
   return output.sort();
 };
+
+// Alternative 1
+const alertNames = (keyName, keyTime) => {
+  const ht = new Map();
+  const names = [];
+
+  // first map all times to it's corresponding name
+  keyName.forEach((name, i) => {
+    let arr = ht.get(name);
+    if (!arr) {
+      arr = [];
+      ht.set(name, arr);
+    }
+
+    const [h, m] = keyTime[i].split(":");
+
+    // convert hours to minutes to avoid any floating point bs
+    arr.push(h * 60 + +m);
+  });
+
+  return (
+    [...ht.keys()]
+      // then filter for only people who have 3 times in 1 hour
+      .filter((name, i) =>
+        ht
+          .get(name)
+          .sort((a, b) => a - b)
+          .some((time, i, times) => time - times[i - 2] <= 60)
+      )
+      // lastly, sort!
+      .sort()
+  );
+};
+
+// Alternative 2
+const ONE_HOUR = 60;
+
+function alertNames(keyName: string[], keyTime: string[]): string[] {
+  const setAlerts = new Set<string>();
+  const nameToType = new Map<string, number[]>();
+
+  keyName.forEach((key, index) => {
+    if (!nameToType.has(key)) {
+      nameToType.set(key, []);
+    }
+
+    nameToType
+      .get(key)
+      .push(
+        keyTime[index]
+          .split(":")
+          .reduce((acc, cur) => acc * 60 + Number(cur), 0)
+      );
+  });
+
+  for (const [name, logs] of nameToType) {
+    if (logs.length < 2) {
+      continue;
+    }
+
+    logs.sort((a, b) => a - b);
+
+    for (let i = 2; i < logs.length; i++) {
+      const log = logs[i];
+
+      if (log - logs[i - 2] <= ONE_HOUR) {
+        setAlerts.add(name);
+        break;
+      }
+    }
+  }
+
+  return [...setAlerts].sort();
+}
 
 // Test cases
 // ["daniel","daniel","daniel","luis","luis","luis","luis"], ["10:00","10:40","11:00","09:00","11:00","13:00","15:00"]
