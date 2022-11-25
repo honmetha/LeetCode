@@ -101,47 +101,6 @@ const alertNames = (keyName, keyTime) => {
   );
 };
 
-// Alternative 2
-const ONE_HOUR = 60;
-
-function alertNames(keyName: string[], keyTime: string[]): string[] {
-  const setAlerts = new Set<string>();
-  const nameToType = new Map<string, number[]>();
-
-  keyName.forEach((key, index) => {
-    if (!nameToType.has(key)) {
-      nameToType.set(key, []);
-    }
-
-    nameToType
-      .get(key)
-      .push(
-        keyTime[index]
-          .split(":")
-          .reduce((acc, cur) => acc * 60 + Number(cur), 0)
-      );
-  });
-
-  for (const [name, logs] of nameToType) {
-    if (logs.length < 2) {
-      continue;
-    }
-
-    logs.sort((a, b) => a - b);
-
-    for (let i = 2; i < logs.length; i++) {
-      const log = logs[i];
-
-      if (log - logs[i - 2] <= ONE_HOUR) {
-        setAlerts.add(name);
-        break;
-      }
-    }
-  }
-
-  return [...setAlerts].sort();
-}
-
 // Test cases
 // ["daniel","daniel","daniel","luis","luis","luis","luis"], ["10:00","10:40","11:00","09:00","11:00","13:00","15:00"]
 // ["alice","alice","alice","bob","bob","bob","bob"], ["12:01","12:00","18:00","21:00","21:20","21:30","23:00"]
