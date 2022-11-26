@@ -105,7 +105,7 @@
 | 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 94.32%  |         |
 | 1380 | Lucky Numbers in a Matrix                                          | Easy       | 99.22%  |         |
 | 1389 | Create Target Array in the Given Order                             | Easy       | 84.14%  |         |
-| 1394 | Find Lucky Integer in an Array                                     | Easy       | 80.48%  |         |
+| 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
 | 1446 | Consecutive Characters                                             | Easy       | 93.40%  |         |
 | 1451 | Rearrange Words in a Sentence                                      | Medium     | 80.00%  | 100.00% |
