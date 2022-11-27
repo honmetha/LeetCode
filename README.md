@@ -117,7 +117,7 @@
 | 1528 | Shuffle String                                                     | Easy       | 97.07%  | 75.47%  |
 | 1550 | Three Consecutive Odds                                             | Easy       | 93.41%  | 77.69%  |
 | 1556 | Thousand Separator                                                 | Easy       | 92.35%  | 23.21%  |
-| 1561 | Maximum Number of Coins You Can Get                                | Medium     | 79.00%  | 91.00%  |
+| 1561 | Maximum Number of Coins You Can Get                                | Medium     | 89.17%  | 20.00%  |
 | 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 90.91%  | 27.27%  |
 | 1672 | Richest Customer Wealth                                            | Easy       | 99.69%  | 63.26%  |
 | 1910 | Remove All Occurrences of a Substring                              | Medium     | 83.33%  | 100.00% |
