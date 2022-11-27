@@ -33,6 +33,7 @@
 // @param {string[]} words
 // @return {string}
 
+// My attempt
 const firstPalindrome = (words) => {
   for (const word of words) {
     if (word.length === 1) return word;
@@ -50,6 +51,18 @@ const firstPalindrome = (words) => {
 
   return "";
 };
+
+// Simple
+const firstPalindrome = (words) => {
+  for (const word of words) {
+    if (word === word.split("").reverse().join("")) return word;
+  }
+  return "";
+};
+
+// One-liner
+const firstPalindrome = (words) =>
+  words.find((word) => word === [...word].reverse().join("")) ?? "";
 
 // Test cases
 // ["a"]
