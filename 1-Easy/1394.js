@@ -5,7 +5,6 @@
 // Return a lucky integer in the array. If there are multiple lucky integers
 // return the largest of them. If there is no lucky integer return -1.
 
-
 // Example 1:
 // Input: arr = [2,2,3,4]
 // Output: 2
@@ -29,22 +28,22 @@
 // Input: arr = [7,7,7,7,7,7,7]
 // Output: 7
 
-
 // Constraints:
 // 1 <= arr.length <= 500
 // 1 <= arr[i] <= 500
-
 
 /***********************************************************************
  *  Solution
  **********************************************************************/
 
-
 // @param {number[]} arr
 // @return {number}
 
-const findLucky = arr => {
-  let LuckyInt = 0, count = 0, i = arr.length - 1
+// My attempt
+const findLucky = (arr) => {
+  let LuckyInt = 0,
+    count = 0,
+    i = arr.length - 1;
   arr = arr.sort((a, b) => a - b);
 
   while (i >= 0) {
@@ -57,52 +56,28 @@ const findLucky = arr => {
   return -1;
 };
 
-// Hash Map
-const findLucky = arr => {
-  const map = new Map();
-  for (item of arr) {
-    map.has(item) ? map.set(item, map.get(item) + 1) : map.set(item, 1);
-  }
-  return Math.max(...arr.filter(item => map.get(item) === item), -1);
-};
-
 // Fast
-const findLucky = arr => {
-  const map = arr.reduce((map,e) => {
+const findLucky = (arr) => {
+  const map = arr.reduce((map, e) => {
     if (map[e]) {
       map[e]++;
     } else {
       map[e] = 1;
     }
     return map;
-  }, {})
-  let res = -1
+  }, {});
+  let res = -1;
   for (key in map) {
     if (map[key] == key) res = key;
   }
   return res;
 };
 
-// Fast
-const findLucky = arr => {
-  let myMap = new Map();
-  let max = 0;
-  
-  //create a map to store frequency counts
-  for (i of arr) {
-    if (myMap.has(i)) {
-      myMap.set(i, myMap.get(i)+1);
-    } else {
-      myMap.set(i,1);
-    }
+// Hash Map
+const findLucky = (arr) => {
+  const map = new Map();
+  for (item of arr) {
+    map.has(item) ? map.set(item, map.get(item) + 1) : map.set(item, 1);
   }
-  
-  //loop through map to find lucky numbers and modify the max value
-  for (let [index, value] of myMap) {
-    if (index == value) {
-      max = Math.max(max,value);
-    }
-  }
-  
-  return max > 0 ? max : -1;
+  return Math.max(...arr.filter((item) => map.get(item) === item), -1);
 };
