@@ -52,14 +52,6 @@ const firstPalindrome = (words) => {
   return "";
 };
 
-// Simple
-const firstPalindrome = (words) => {
-  for (const word of words) {
-    if (word === word.split("").reverse().join("")) return word;
-  }
-  return "";
-};
-
 // One-liner
 const firstPalindrome = (words) =>
   words.find((word) => word === [...word].reverse().join("")) ?? "";
