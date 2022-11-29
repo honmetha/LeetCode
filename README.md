@@ -64,7 +64,7 @@
 | 824  | Goat Latin                                                         | Easy       | 91.54%  |         |
 | 832  | Flipping an Image                                                  | Easy       | 97.25%  |         |
 | 841  | Keys and Rooms                                                     | Medium     | 96.84%  | 81.55%  |
-| 852  | Peak Index in a Mountain Array                                     | Easy       | 35.84%  |         |
+| 852  | Peak Index in a Mountain Array                                     | Easy       | 49.07%  | 9.47%   |
 | 860  | Lemonade Change                                                    | Easy       | 89.83%  |         |
 | 877  | Stone Game                                                         | Medium     | 98.04%  | 53.92%  |
 | 884  | Uncommon Words from Two Sentences                                  | Easy       | 97.08%  | 23.70%  |
@@ -120,6 +120,7 @@
 | 1561 | Maximum Number of Coins You Can Get                                | Medium     | 89.17%  | 20.00%  |
 | 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 90.91%  | 27.27%  |
 | 1672 | Richest Customer Wealth                                            | Easy       | 99.69%  | 63.26%  |
+| ---- | -                                                                  | -          | -       | -       |
 | 1910 | Remove All Occurrences of a Substring                              | Medium     | 83.33%  | 100.00% |
 | 1920 | Build Array from Permutation                                       | Easy       | 100.00% | 97.10%  |
 | 1929 | Concatenation of Array                                             | Easy       | 97.80%  | 38.49%  |
