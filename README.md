@@ -7,8 +7,8 @@
 | #    | Title                                                              | Difficulty | Runtime | Memory  |
 | :--- | :----------------------------------------------------------------- | :--------- | :------ | :------ |
 | 1    | Two Sum                                                            | Easy       | 100.00% | 45.69%  |
-| ---- | -                                                                  | -          | -       | -       |
 | 3    | Longest Substring Without Repeating Characters                     | Medium     | 99.14%  | 75.96%  |
+| ---- | -                                                                  | -          | -       | -       |
 | 5    | Longest Palindromic Substring                                      | Medium     | 7.31%   | 49.70%  |
 | 7    | Reverse Integer                                                    | Medium     | 96.51%  | 16.71%  |
 | 9    | Palindrome Number                                                  | Easy       | 94.18%  | 87.93%  |
@@ -119,8 +119,8 @@
 | 1550 | Three Consecutive Odds                                             | Easy       | 93.41%  | 77.69%  |
 | 1556 | Thousand Separator                                                 | Easy       | 92.35%  | 23.21%  |
 | 1561 | Maximum Number of Coins You Can Get                                | Medium     | 89.17%  | 20.00%  |
-| 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 90.91%  | 27.27%  |
 | ---- | -                                                                  | -          | -       | -       |
+| 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 90.91%  | 27.27%  |
 | 1672 | Richest Customer Wealth                                            | Easy       | 99.69%  | 63.26%  |
 | 1910 | Remove All Occurrences of a Substring                              | Medium     | 83.33%  | 100.00% |
 | 1920 | Build Array from Permutation                                       | Easy       | 100.00% | 97.10%  |
