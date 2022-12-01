@@ -108,7 +108,7 @@
 | 1389 | Create Target Array in the Given Order                             | Easy       | 87.78%  | 85.56%  |
 | 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
-| 1446 | Consecutive Characters                                             | Easy       | 93.40%  |         |
+| 1446 | Consecutive Characters                                             | Easy       | 93.40%  | 41.90%  |
 | 1451 | Rearrange Words in a Sentence                                      | Medium     | 80.00%  | 100.00% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  |         |
 | 1470 | Shuffle the Array                                                  | Easy       | 94.43%  | 73.26%  |
