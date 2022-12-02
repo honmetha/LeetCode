@@ -110,7 +110,7 @@
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
 | 1446 | Consecutive Characters                                             | Easy       | 93.40%  | 41.90%  |
 | 1451 | Rearrange Words in a Sentence                                      | Medium     | 80.00%  | 100.00% |
-| 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  |         |
+| 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  | 67.11%  |
 | 1470 | Shuffle the Array                                                  | Easy       | 94.43%  | 73.26%  |
 | 1480 | Running Sum of 1d Array                                            | Easy       | 83.24%  | 79.10%  |
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary            | Easy       | 91.47%  | 82.00%  |

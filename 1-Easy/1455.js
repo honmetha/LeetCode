@@ -10,7 +10,6 @@
 
 // A prefix of a string S is any leading contiguous substring of S.
 
-
 // Example 1:
 
 // Input: sentence = "i love eating burger", searchWord = "burg"
@@ -39,7 +38,6 @@
 // Input: sentence = "hello from the other side", searchWord = "they"
 // Output: -1
 
-
 // Constraints:
 
 // 1 <= sentence.length <= 100
@@ -47,18 +45,18 @@
 // sentence consists of lowercase English letters and spaces.
 // searchWord consists of lowercase English letters.
 
-
 /***********************************************************************
  *  Solution
  **********************************************************************/
-
 
 // @param {string} sentence
 // @param {string} searchWord
 // @return {number}
 
+// My attempt
 const isPrefixOfWord = (sentence, searchWord) => {
-  let newSentence = sentence.split(" "), i = 0;
+  let newSentence = sentence.split(" "),
+    i = 0;
   while (i < newSentence.length) {
     if (newSentence[i].indexOf(searchWord) === 0) return ++i;
     i++;
@@ -68,7 +66,7 @@ const isPrefixOfWord = (sentence, searchWord) => {
 
 // RegEx Solution
 const isPrefixOfWord = (sentence, searchWord) => {
-  let prefix = new RegExp (`^${searchWord}`);
+  let prefix = new RegExp(`^${searchWord}`);
   let words = sentence.split(" ");
   for (let i = 0; i < words.length; i++) {
     if (prefix.test(words[i])) {
