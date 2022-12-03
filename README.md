@@ -110,7 +110,8 @@
 | 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
 | 1446 | Consecutive Characters                                             | Easy       | 93.40%  | 41.90%  |
-| 1451 | Rearrange Words in a Sentence                                      | Medium     | 80.00%  | 100.00% |
+| 1451 | Rearrange Words in a Sentence                                      | Medium     | 85.71%  | 100.00% |
+| ---- | -                                                                  | -          | -       | -       |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  | 67.11%  |
 | 1470 | Shuffle the Array                                                  | Easy       | 94.43%  | 73.26%  |
 | 1480 | Running Sum of 1d Array                                            | Easy       | 83.24%  | 79.10%  |
@@ -120,7 +121,6 @@
 | 1550 | Three Consecutive Odds                                             | Easy       | 93.41%  | 77.69%  |
 | 1556 | Thousand Separator                                                 | Easy       | 92.35%  | 23.21%  |
 | 1561 | Maximum Number of Coins You Can Get                                | Medium     | 89.17%  | 20.00%  |
-| ---- | -                                                                  | -          | -       | -       |
 | 1604 | Alert Using Same Key-Card Three or More Times in a One Hour Period | Medium     | 90.91%  | 27.27%  |
 | 1672 | Richest Customer Wealth                                            | Easy       | 99.69%  | 63.26%  |
 | 1910 | Remove All Occurrences of a Substring                              | Medium     | 83.33%  | 100.00% |
