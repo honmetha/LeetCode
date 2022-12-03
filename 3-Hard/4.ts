@@ -30,3 +30,9 @@
 const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
   return 2.0;
 };
+
+// Test cases
+// [1,3], [2]
+// [1,2], [3,4]
+
+export default findMedianSortedArrays;
