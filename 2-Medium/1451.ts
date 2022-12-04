@@ -38,6 +38,7 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const arrangeWords = (text: string): string => {
   const sortedLength: string = text
     .toLowerCase()
@@ -46,6 +47,25 @@ const arrangeWords = (text: string): string => {
     .join(" ");
   return sortedLength.charAt(0).toUpperCase() + sortedLength.slice(1);
 };
+
+// Alternative 1
+const arrangeWords = (text) => {
+  let s = text
+    .toLowerCase()
+    .split(" ")
+    .sort((a, b) => a.length - b.length)
+    .join(" ");
+  return s[0].toUpperCase() + s.slice(1);
+};
+
+// One-Liner
+const arrangeWords = (s) =>
+  s
+    .toLowerCase()
+    .split(" ")
+    .sort((a, b) => a.length - b.length)
+    .map((w, i) => (i ? w : w.replace(/^\w/, (w) => w.toUpperCase())))
+    .join(" ");
 
 // Test cases
 // "Leetcode is cool"
