@@ -114,7 +114,7 @@
 | ---- | -                                                                  | -          | -       | -       |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  | 67.11%  |
 | 1470 | Shuffle the Array                                                  | Easy       | 94.43%  | 73.26%  |
-| 1480 | Running Sum of 1d Array                                            | Easy       | 83.24%  | 79.10%  |
+| 1480 | Running Sum of 1d Array                                            | Easy       | 93.24%  | 78.96%  |
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary            | Easy       | 91.47%  | 82.00%  |
 | 1507 | Reformat Date                                                      | Easy       | 95.83%  | 72.68%  |
 | 1528 | Shuffle String                                                     | Easy       | 97.07%  | 75.47%  |
