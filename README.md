@@ -9,7 +9,7 @@
 | 1    | Two Sum                                                            | Easy       | 100.00% | 45.69%  |
 | 3    | Longest Substring Without Repeating Characters                     | Medium     | 99.14%  | 75.96%  |
 | ---- | -                                                                  | -          | -       | -       |
-| 4    | Median of Two Sorted Arrays                                        | Hard       |         |         |
+| 4    | Median of Two Sorted Arrays                                        | Hard       | 93.40%  | 64.59%  |
 | 5    | Longest Palindromic Substring                                      | Medium     | 7.31%   | 49.70%  |
 | 7    | Reverse Integer                                                    | Medium     | 96.51%  | 16.71%  |
 | 9    | Palindrome Number                                                  | Easy       | 94.18%  | 87.93%  |

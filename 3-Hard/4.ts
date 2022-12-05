@@ -27,8 +27,16 @@
  *  Solution
  **********************************************************************/
 
+// My attempt
 const findMedianSortedArrays = (nums1: number[], nums2: number[]): number => {
-  return 2.0;
+  const sortedArr: number[] = [...nums1, ...nums2].sort((a, b) => a - b);
+  const length: number = sortedArr.length;
+  const midIndex: number = Math.floor(length / 2);
+
+  if (length % 2 !== 0) return sortedArr[midIndex];
+
+  const midIndex2: number = midIndex - 1;
+  return (sortedArr[midIndex] + sortedArr[midIndex2]) / 2;
 };
 
 // Test cases
