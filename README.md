@@ -104,7 +104,7 @@
 | 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |
 | 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  |         |
 | 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  |         |
-| 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 94.32%  |         |
+| 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 99.50%  | 96.99%  |
 | 1380 | Lucky Numbers in a Matrix                                          | Easy       | 99.22%  |         |
 | 1389 | Create Target Array in the Given Order                             | Easy       | 87.78%  | 85.56%  |
 | 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
