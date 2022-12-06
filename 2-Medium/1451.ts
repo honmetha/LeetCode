@@ -45,17 +45,7 @@ const arrangeWords = (text: string): string => {
     .split(" ")
     .sort((a, b) => a.length - b.length)
     .join(" ");
-  return sortedLength.charAt(0).toUpperCase() + sortedLength.slice(1);
-};
-
-// Alternative 1
-const arrangeWords = (text) => {
-  let s = text
-    .toLowerCase()
-    .split(" ")
-    .sort((a, b) => a.length - b.length)
-    .join(" ");
-  return s[0].toUpperCase() + s.slice(1);
+  return sortedLength[0].toUpperCase() + sortedLength.slice(1);
 };
 
 // One-Liner
