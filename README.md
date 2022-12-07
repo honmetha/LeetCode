@@ -102,7 +102,7 @@
 | 1329 | Sort the Matrix Diagonally                                         | Medium     | 30.97%  | 79.65%  |
 | 1342 | Number of Steps to Reduce a Number to Zero                         | Easy       | 94.81%  |         |
 | 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |
-| 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  |         |
+| 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  | 76.95%  |
 | 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  | 80.31%  |
 | 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 99.50%  | 96.99%  |
 | 1380 | Lucky Numbers in a Matrix                                          | Easy       | 99.22%  | 73.71%  |
