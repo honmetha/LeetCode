@@ -103,14 +103,14 @@
 | 1342 | Number of Steps to Reduce a Number to Zero                         | Easy       | 94.81%  |         |
 | 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |
 | 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  |         |
-| 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  |         |
+| 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  | 80.31%  |
 | 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 99.50%  | 96.99%  |
 | 1380 | Lucky Numbers in a Matrix                                          | Easy       | 99.22%  | 73.71%  |
 | 1389 | Create Target Array in the Given Order                             | Easy       | 87.78%  | 85.56%  |
+| ---- | -                                                                  | -          | -       | -       |
 | 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
 | 1446 | Consecutive Characters                                             | Easy       | 93.40%  | 41.90%  |
-| ---- | -                                                                  | -          | -       | -       |
 | 1451 | Rearrange Words in a Sentence                                      | Medium     | 85.71%  | 100.00% |
 | 1455 | Check If a Word Occurs As a Prefix of Any Word in a Sentence       | Easy       | 94.91%  | 67.11%  |
 | 1470 | Shuffle the Array                                                  | Easy       | 94.43%  | 73.26%  |
