@@ -20,6 +20,7 @@
 | 20   | Valid Parentheses                                                  | Easy       | 89.21%  | 48.88%  |
 | 26   | Remove Duplicates from Sorted Array                                | Easy       |         |         |
 | 35   | Search Insert Position                                             | Easy       | 94.07%  | 7.86%   |
+| 46   | Permutations                                                       | Medium     |         |         |
 | 49   | Group Anagrams                                                     | Medium     | 98.23%  | 91.23%  |
 | 58   | Length of Last Word                                                | Easy       | 94.50%  | 14.17%  |
 | 66   | Plus One                                                           | Easy       | 66.47%  | 41.49%  |
