@@ -29,4 +29,9 @@ const permute = (nums: number[]): number[][] => {
   return [[1, 2, 3, 4]];
 };
 
+// Test cases
+// [1,2,3]
+// [0,1]
+// [1]
+
 export default permute;
