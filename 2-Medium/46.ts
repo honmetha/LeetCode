@@ -26,7 +26,45 @@
 
 // My attempt
 const permute = (nums: number[]): number[][] => {
-  return [[1, 2, 3, 4]];
+  if (nums.length < 2) return [nums];
+
+  let output: number[][] = [];
+  let LengthList: number[] = [0, 1, 2, 6, 24, 120, 720];
+  let pointer: number = nums.length;
+
+  const outputLength = LengthList[pointer];
+  pointer--;
+  const previousLength = LengthList[pointer];
+  const initialLoop = outputLength / previousLength;
+  for (let i = 0; i < initialLoop; i++) {
+    output = output.concat(
+      Array.from({length: previousLength}, () => [nums[i]])
+    );
+  }
+
+  while (pointer > 0) {
+    let index = 0;
+    let count = 0;
+    pointer--;
+    let limit = LengthList[pointer];
+
+    for (let i = 0; i < output.length; i++) {
+      while (output[i].includes(nums[index])) {
+        index++;
+        if (index > nums.length - 1) index = 0;
+      }
+
+      output[i].push(nums[index]);
+      count++;
+      if (count >= limit) {
+        index++;
+        if (index > nums.length - 1) index = 0;
+        count = 0;
+      }
+    }
+  }
+
+  return output;
 };
 
 // Test cases
