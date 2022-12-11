@@ -98,16 +98,16 @@
 | 1306 | Jump Game III                                                      | Medium     | 5.49%   |         |
 | 1309 | Decrypt String from Alphabet to Integer Mapping                    | Easy       | 98.25%  |         |
 | 1313 | Decompress Run-Length Encoded List                                 | Easy       | 83.96%  |         |
-| 1323 | Maximum 69 Number                                                  | Easy       | 98.96%  |         |
+| 1323 | Maximum 69 Number                                                  | Easy       | 98.96%  | 66.62%  |
 | 1324 | Print Words Vertically                                             | Medium     | 100.00% | 100.00% |
 | 1329 | Sort the Matrix Diagonally                                         | Medium     | 30.97%  | 79.65%  |
 | 1342 | Number of Steps to Reduce a Number to Zero                         | Easy       | 94.81%  | 22.92%  |
 | 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |
+| ---- | -                                                                  | -          | -       | -       |
 | 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  | 76.95%  |
 | 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  | 80.31%  |
 | 1374 | Generate a String With Characters That Have Odd Counts             | Easy       | 99.50%  | 96.99%  |
 | 1380 | Lucky Numbers in a Matrix                                          | Easy       | 99.22%  | 73.71%  |
-| ---- | -                                                                  | -          | -       | -       |
 | 1389 | Create Target Array in the Given Order                             | Easy       | 90.70%  | 98.50%  |
 | 1394 | Find Lucky Integer in an Array                                     | Easy       | 99.79%  | 96.63%  |
 | 1436 | Destination City                                                   | Easy       | 96.64%  | 63.50%  |
