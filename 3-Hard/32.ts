@@ -29,3 +29,10 @@
 const longestValidParentheses = (s: string): number => {
   return 0;
 };
+
+// Test cases
+// "(()"
+// ")()())"
+// ""
+
+export default longestValidParentheses;
