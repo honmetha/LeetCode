@@ -34,5 +34,12 @@ const longestValidParentheses = (s: string): number => {
 // "(()"
 // ")()())"
 // ""
+// ")()()()("
+// ")(()()()((("
+// "()))(()())("
+// "()()()"
+// ")()()()"
+// "()()())"
+// "((()()))))()"
 
 export default longestValidParentheses;

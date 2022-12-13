@@ -4,4 +4,11 @@ test("test longest valid parentheses", () => {
   expect(longestValidParentheses("(()")).toBe(2);
   expect(longestValidParentheses(")()())")).toBe(4);
   expect(longestValidParentheses("")).toBe(0);
+  expect(longestValidParentheses(")()()()(")).toBe(6);
+  expect(longestValidParentheses(")(()()()(((")).toBe(6);
+  expect(longestValidParentheses("()))(()())(")).toBe(6);
+  expect(longestValidParentheses("()()()")).toBe(6);
+  expect(longestValidParentheses(")()()()")).toBe(6);
+  expect(longestValidParentheses("()()())")).toBe(6);
+  expect(longestValidParentheses("((()()))))()")).toBe(8);
 });
