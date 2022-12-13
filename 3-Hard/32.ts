@@ -27,7 +27,40 @@
 
 // My attempt
 const longestValidParentheses = (s: string): number => {
-  return 0;
+  let validations: boolean[] = Array.from({length: s.length});
+  let opens: number[] = [];
+
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "(") {
+      opens.push(i);
+    } else {
+      if (opens.length > 0) {
+        const openIndex = opens.pop();
+        validations[openIndex] = true;
+        validations[i] = true;
+      } else {
+        validations[i] = false;
+      }
+    }
+  }
+
+  for (let i = 0; i < opens.length; i++) {
+    const falseIndex = opens[i];
+    validations[falseIndex] = false;
+  }
+
+  let max: number = 0;
+  let count: number = 0;
+  for (let i = 0; i < validations.length; i++) {
+    if (validations[i]) {
+      count++;
+      if (count > max) max = count;
+    } else {
+      count = 0;
+    }
+  }
+
+  return max;
 };
 
 // Test cases

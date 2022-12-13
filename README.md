@@ -19,7 +19,7 @@
 | 17   | Letter Combinations of a Phone Number                              | Medium     | 96.21%  | 61.14%  |
 | 20   | Valid Parentheses                                                  | Easy       | 89.21%  | 48.88%  |
 | 26   | Remove Duplicates from Sorted Array                                | Easy       |         |         |
-| 32   | Longest Valid Parentheses                                          | Hard       |         |         |
+| 32   | Longest Valid Parentheses                                          | Hard       | 67.60%  | 39.44%  |
 | 35   | Search Insert Position                                             | Easy       | 94.07%  | 7.86%   |
 | 46   | Permutations                                                       | Medium     | 22.73%  | 35.39%  |
 | 49   | Group Anagrams                                                     | Medium     | 98.23%  | 91.23%  |
