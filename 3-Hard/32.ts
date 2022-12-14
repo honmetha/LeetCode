@@ -38,15 +38,8 @@ const longestValidParentheses = (s: string): number => {
         const openIndex = opens.pop();
         validations[openIndex] = true;
         validations[i] = true;
-      } else {
-        validations[i] = false;
       }
     }
-  }
-
-  for (let i = 0; i < opens.length; i++) {
-    const falseIndex = opens[i];
-    validations[falseIndex] = false;
   }
 
   let max: number = 0;
