@@ -97,7 +97,7 @@
 | 1295 | Find Numbers with Even Number of Digits                            | Easy       | 77.34%  |         |
 | 1299 | Replace Elements with Greatest Element on Right Side               | Easy       | 95.40%  |         |
 | 1306 | Jump Game III                                                      | Medium     | 5.49%   |         |
-| 1309 | Decrypt String from Alphabet to Integer Mapping                    | Easy       | 98.25%  |         |
+| 1309 | Decrypt String from Alphabet to Integer Mapping                    | Easy       | 98.60%  | 95.80%  |
 | 1313 | Decompress Run-Length Encoded List                                 | Easy       | 97.11%  | 60.30%  |
 | 1323 | Maximum 69 Number                                                  | Easy       | 98.96%  | 66.62%  |
 | 1324 | Print Words Vertically                                             | Medium     | 100.00% | 100.00% |
