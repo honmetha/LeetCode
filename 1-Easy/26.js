@@ -60,5 +60,7 @@ const removeDuplicates = (nums) => {
 // Test cases
 // [1,1,2]
 // [0,0,1,1,1,2,2,3,3,4]
+// [0,1,2,3,4]
+// [0,1,1,1,2,3,3,4,5,5,5]
 
 module.exports = removeDuplicates;
