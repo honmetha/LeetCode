@@ -54,7 +54,20 @@
 // @return {number}
 
 const removeDuplicates = (nums) => {
-  return nums;
+  let swapIndex = 1;
+  let currentNum = nums[0];
+
+  for (let i = 1; i < nums.length; i++) {
+    if (currentNum !== nums[i]) {
+      currentNum = nums[i];
+      const temp = nums[swapIndex];
+      nums[swapIndex] = nums[i];
+      nums[i] = temp;
+      swapIndex++;
+    }
+  }
+
+  while (nums.length > swapIndex) nums.pop();
 };
 
 // Test cases

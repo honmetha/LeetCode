@@ -18,7 +18,7 @@
 | 14   | Longest Common Prefix                                              | Easy       | 98.79%  | 30.06%  |
 | 17   | Letter Combinations of a Phone Number                              | Medium     | 96.21%  | 61.14%  |
 | 20   | Valid Parentheses                                                  | Easy       | 89.21%  | 48.88%  |
-| 26   | Remove Duplicates from Sorted Array                                | Easy       |         |         |
+| 26   | Remove Duplicates from Sorted Array                                | Easy       | 61.89%  | 29.23%  |
 | 32   | Longest Valid Parentheses                                          | Hard       | 67.60%  | 39.44%  |
 | 35   | Search Insert Position                                             | Easy       | 94.07%  | 7.86%   |
 | 42   | Trapping Rain Water                                                | Hard       |         |         |
