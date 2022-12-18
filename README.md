@@ -21,7 +21,7 @@
 | 26   | Remove Duplicates from Sorted Array                                | Easy       | 61.89%  | 29.23%  |
 | 32   | Longest Valid Parentheses                                          | Hard       | 67.60%  | 39.44%  |
 | 35   | Search Insert Position                                             | Easy       | 94.07%  | 7.86%   |
-| 42   | Trapping Rain Water                                                | Hard       |         |         |
+| 42   | Trapping Rain Water                                                | Hard       | 5.20%   | 12.40%  |
 | 46   | Permutations                                                       | Medium     | 22.73%  | 35.39%  |
 | 49   | Group Anagrams                                                     | Medium     | 98.23%  | 91.23%  |
 | 58   | Length of Last Word                                                | Easy       | 94.50%  | 14.17%  |

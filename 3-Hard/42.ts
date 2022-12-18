@@ -25,7 +25,54 @@
 
 // My attempt
 const trap = (height: number[]): number => {
-  return 0;
+  let total = 0;
+  let trapHeight = [...height];
+
+  while (trapHeight[0] === 0 || trapHeight[trapHeight.length - 1] === 0) {
+    if (trapHeight[0] === 0) trapHeight.shift();
+    if (trapHeight[trapHeight.length - 1] === 0) trapHeight.pop();
+  }
+
+  if (trapHeight.length <= 2) return total;
+
+  let max: number[] = [];
+  let secondMax: number[] = [];
+  const minLength = 2;
+
+  while (trapHeight.length > minLength) {
+    if (trapHeight[0] > trapHeight[1]) {
+      max = [trapHeight[0], 0];
+      secondMax = [trapHeight[1], 1];
+    } else {
+      max = [trapHeight[1], 1];
+      secondMax = [trapHeight[0], 0];
+    }
+
+    for (let i = 2; i < trapHeight.length; i++) {
+      if (trapHeight[i] > max[0]) {
+        secondMax = [...max];
+        max = [trapHeight[i], i];
+      } else if (trapHeight[i] > secondMax[0]) {
+        secondMax = [trapHeight[i], i];
+      }
+    }
+
+    let subArr: number[];
+    const [, maxIdx] = max;
+    const [secondMaxNum, secondMaxIdx] = secondMax;
+
+    subArr =
+      maxIdx > secondMaxIdx
+        ? trapHeight.splice(secondMaxIdx + 1, maxIdx - secondMaxIdx)
+        : trapHeight.splice(maxIdx, secondMaxIdx - maxIdx);
+
+    for (let j = 0; j < subArr.length; j++) {
+      if (subArr[j] > secondMaxNum) continue;
+      total += secondMaxNum - subArr[j];
+    }
+  }
+
+  return total;
 };
 
 // Test cases
