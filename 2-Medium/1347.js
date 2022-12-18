@@ -59,6 +59,41 @@ const minSteps = (s, t) => {
   return count;
 };
 
+// Alternative 1
+const minSteps = (s, t) => {
+  /*  create a hashMap for s iterate throgh t 
+      and check how many letters are missing
+  O(N) - time
+  O(1) - space, since there are only 26 letters in the alphabet
+  */
+  let hashMap = {};
+  for (let letter of s) {
+    if (hashMap[letter]) hashMap[letter]++;
+    else hashMap[letter] = 1;
+  }
+  let changes = 0;
+  for (let letter of t) {
+    if (hashMap[letter]) hashMap[letter]--;
+    else changes++;
+  }
+  return changes;
+};
+
+// Alternative 2
+const minSteps = (s, t) => {
+  const BASE = 97;
+  const count = new Int32Array(26);
+  for (let i = 0; i < s.length; ++i) {
+    ++count[s.charCodeAt(i) - BASE];
+    --count[t.charCodeAt(i) - BASE];
+  }
+  let step = 0;
+  for (let i = 0; i < 26; ++i) {
+    count[i] > 0 && (step += count[i]);
+  }
+  return step;
+};
+
 // Test cases
 // "bab", "aba"
 // "leetcode", "practice"
