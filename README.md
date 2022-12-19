@@ -104,7 +104,7 @@
 | 1324 | Print Words Vertically                                             | Medium     | 100.00% | 100.00% |
 | 1329 | Sort the Matrix Diagonally                                         | Medium     | 30.97%  | 79.65%  |
 | 1342 | Number of Steps to Reduce a Number to Zero                         | Easy       | 94.81%  | 22.92%  |
-| 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 43.17%  | 55.35%  |
+| 1347 | Minimum Number of Steps to Make Two Strings Anagram                | Medium     | 71.57%  | 56.35%  |
 | ---- | -                                                                  | -          | -       | -       |
 | 1351 | Count Negative Numbers in a Sorted Matrix                          | Easy       | 92.62%  | 76.95%  |
 | 1365 | How Many Numbers Are Smaller Than the Current Number               | Easy       | 98.62%  | 80.31%  |
