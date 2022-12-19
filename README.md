@@ -96,7 +96,7 @@
 | 1281 | Subtract the Product and Sum of Digits of an Integer               | Easy       | 93.88%  |         |
 | 1287 | Element Appearing More Than 25% In Sorted Array                    | Easy       | 88.35%  |         |
 | 1295 | Find Numbers with Even Number of Digits                            | Easy       | 77.34%  |         |
-| 1299 | Replace Elements with Greatest Element on Right Side               | Easy       | 95.40%  |         |
+| 1299 | Replace Elements with Greatest Element on Right Side               | Easy       | 95.40%  | 37.20%  |
 | 1306 | Jump Game III                                                      | Medium     | 5.49%   |         |
 | 1309 | Decrypt String from Alphabet to Integer Mapping                    | Easy       | 98.60%  | 95.80%  |
 | 1313 | Decompress Run-Length Encoded List                                 | Easy       | 97.11%  | 60.30%  |
