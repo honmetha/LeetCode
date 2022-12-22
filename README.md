@@ -94,7 +94,7 @@
 | 1249 | Minimum Remove to Make Valid Parentheses                           | Medium     | 99.22%  | 64.46%  |
 | 1268 | Search Suggestions System                                          | Medium     | 87.32%  | 97.18%  |
 | 1281 | Subtract the Product and Sum of Digits of an Integer               | Easy       | 94.16%  | 50.68%  |
-| 1287 | Element Appearing More Than 25% In Sorted Array                    | Easy       | 88.35%  |         |
+| 1287 | Element Appearing More Than 25% In Sorted Array                    | Easy       | 88.35%  | 88.67%  |
 | 1295 | Find Numbers with Even Number of Digits                            | Easy       | 89.30%  | 77.66%  |
 | 1299 | Replace Elements with Greatest Element on Right Side               | Easy       | 95.40%  | 37.20%  |
 | 1306 | Jump Game III                                                      | Medium     | 5.49%   |         |
