@@ -90,7 +90,7 @@
 | 1108 | Defanging an IP Address                                            | Easy       | 89.88%  | 81.31%  |
 | 1190 | Reverse Substrings Between Each Pair of Parentheses                | Medium     | 100.00% | 22.37%  |
 | 1207 | Unique Number of Occurrences                                       | Easy       | 97.32%  |         |
-| 1221 | Split a String in Balanced Strings                                 | Easy       | 86.98%  |         |
+| 1221 | Split a String in Balanced Strings                                 | Easy       | 86.98%  | 60.63%  |
 | 1249 | Minimum Remove to Make Valid Parentheses                           | Medium     | 99.22%  | 64.46%  |
 | 1268 | Search Suggestions System                                          | Medium     | 87.32%  | 97.18%  |
 | 1281 | Subtract the Product and Sum of Digits of an Integer               | Easy       | 94.16%  | 50.68%  |
