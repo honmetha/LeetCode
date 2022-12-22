@@ -80,8 +80,8 @@
 | 917  | Reverse Only Letters                                               | Easy       | 82.54%  |         |
 | 921  | Minimum Add to Make Parentheses Valid                              | Medium     | 82.67%  | 44.24%  |
 | 922  | Sort Array By Parity II                                            | Easy       | 94.23%  |         |
-| 942  | DI String Match                                                    | Easy       | 91.79%  |         |
-| 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.43%  |         |
+| 942  | DI String Match                                                    | Easy       | 92.38%  | 96.86%  |
+| 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.61%  | 66.78%  |
 | 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  | 47.49%  |
 | 1021 | Remove Outermost Parentheses                                       | Easy       | 99.28%  | 38.99%  |
 | 1023 | Camelcase Matching                                                 | Medium     | 100.00% | 100.00% |
