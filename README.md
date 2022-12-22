@@ -82,7 +82,7 @@
 | 922  | Sort Array By Parity II                                            | Easy       | 94.23%  |         |
 | 942  | DI String Match                                                    | Easy       | 91.79%  |         |
 | 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.43%  |         |
-| 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  |         |
+| 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  | 47.49%  |
 | 1021 | Remove Outermost Parentheses                                       | Easy       | 99.28%  | 38.99%  |
 | 1023 | Camelcase Matching                                                 | Medium     | 100.00% | 100.00% |
 | 1043 | Partition Array for Maximum Sum                                    | Medium     |         |         |
