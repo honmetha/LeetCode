@@ -83,7 +83,7 @@
 | 942  | DI String Match                                                    | Easy       | 91.79%  |         |
 | 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.43%  |         |
 | 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  |         |
-| 1021 | Remove Outermost Parentheses                                       | Easy       | 87.38%  |         |
+| 1021 | Remove Outermost Parentheses                                       | Easy       | 99.28%  | 38.99%  |
 | 1023 | Camelcase Matching                                                 | Medium     | 100.00% | 100.00% |
 | 1043 | Partition Array for Maximum Sum                                    | Medium     |         |         |
 | 1046 | Last Stone Weight                                                  | Easy       | 89.32%  | 33.76%  |
