@@ -37,12 +37,12 @@
 | 217  | Contains Duplicate                                                 | Easy       | 94.45%  |         |
 | 242  | Valid Anagram                                                      | Easy       | 98.39%  | 92.03%  |
 | 260  | Single Number III                                                  | Medium     | 8.47%   |         |
-| 283  | Move Zeroes                                                        | Easy       | 97.84%  |         |
-| 292  | Nim Game                                                           | Easy       | 93.54%  |         |
+| 283  | Move Zeroes                                                        | Easy       | 97.84%  | 60.64%  |
+| 292  | Nim Game                                                           | Easy       | 98.30%  | 87.20%  |
 | 344  | Reverse String                                                     | Easy       | 99.84%  |         |
 | 345  | Reverse Vowels of a String                                         | Easy       | 94.94%  | 50.56%  |
 | 349  | Intersection of Two Arrays                                         | Easy       | 97.19%  | 42.73%  |
-| 387  | First Unique Character in a String                                 | Easy       | 94.27%  |         |
+| 387  | First Unique Character in a String                                 | Easy       | 96.34%  | 79.44%  |
 | 389  | Find the Difference                                                | Easy       | 96.10%  |         |
 | 412  | Fizz Buzz                                                          | Easy       | 90.52%  |         |
 | 420  | Strong Password Checker                                            | Hard       | 84.38%  |         |
