@@ -26,7 +26,22 @@
  *  Solution
  **********************************************************************/
 
-const sortColors = (nums: number[]): void => {};
+const sortColors = (nums: number[]): void => {
+  let colors = [0, 0, 0];
+
+  for (const num of nums) {
+    colors[num]++;
+  }
+
+  nums.splice(0, nums.length);
+
+  const [red, white, blue] = colors;
+  nums.push(
+    ...Array(red).fill(0),
+    ...Array(white).fill(1),
+    ...Array(blue).fill(2)
+  );
+};
 
 // Test cases
 // [2,0,2,1,1,0]
