@@ -29,9 +29,9 @@
 | 75   | Sort Colors                                                        | Medium     | 72.32%  | 25.30%  |
 | 121  | Best Time to Buy and Sell Stock                                    | Easy       | 95.22%  | 57.09%  |
 | 125  | Valid Palindrome                                                   | Easy       | 68.05%  | 95.85%  |
-| 151  | Reverse Words in a String                                          | Medium     | 91.43%  |         |
+| 151  | Reverse Words in a String                                          | Medium     | 96.25%  | 30.41%  |
 | 168  | Excel Sheet Column Title                                           | Easy       | 93.00%  | 17.32%  |
-| 169  | Majority Element                                                   | Easy       | 83.08%  |         |
+| 169  | Majority Element                                                   | Easy       | 88.60%  | 41.11%  |
 | 171  | Excel Sheet Column Number                                          | Easy       | 99.88%  | 74.01%  |
 | 198  | House Robber                                                       | Medium     | 91.17%  | 42.96%  |
 | 204  | Count Primes                                                       | Medium     | 86.00%  | 5.79%   |
