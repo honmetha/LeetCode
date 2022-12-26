@@ -40,17 +40,17 @@
 | 260  | Single Number III                                                  | Medium     | 8.47%   |         |
 | 283  | Move Zeroes                                                        | Easy       | 97.84%  | 60.64%  |
 | 292  | Nim Game                                                           | Easy       | 98.30%  | 87.20%  |
-| 344  | Reverse String                                                     | Easy       | 99.84%  |         |
+| 344  | Reverse String                                                     | Easy       | 99.84%  | 79.30%  |
 | 345  | Reverse Vowels of a String                                         | Easy       | 94.94%  | 50.56%  |
 | 349  | Intersection of Two Arrays                                         | Easy       | 97.19%  | 42.73%  |
 | 387  | First Unique Character in a String                                 | Easy       | 96.34%  | 79.44%  |
-| 389  | Find the Difference                                                | Easy       | 96.10%  |         |
-| 412  | Fizz Buzz                                                          | Easy       | 90.52%  |         |
+| 389  | Find the Difference                                                | Easy       | 96.10%  | 88.80%  |
+| 412  | Fizz Buzz                                                          | Easy       | 96.75%  | 46.90%  |
 | 420  | Strong Password Checker                                            | Hard       | 84.38%  |         |
 | 442  | Find All Duplicates in an Array                                    | Medium     | 77.66%  | 26.38%  |
 | 451  | Sort Characters By Frequency                                       | Medium     | 97.33%  | 86.67%  |
 | 482  | License Key Formatting                                             | Easy       | 96.07%  | 12.69%  |
-| 485  | Max Consecutive Ones                                               | Easy       | 93.21%  |         |
+| 485  | Max Consecutive Ones                                               | Easy       | 95.21%  | 36.86%  |
 | 500  | Keyboard Row                                                       | Easy       | 66.54%  |         |
 | 506  | Relative Ranks                                                     | Easy       | 97.65%  | 40.00%  |
 | 509  | Fibonacci Number                                                   | Easy       | 88.31%  |         |
