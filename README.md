@@ -62,10 +62,10 @@
 | 648  | Replace Words                                                      | Medium     | 93.33%  | 86.67%  |
 | 657  | Robot Return to Origin                                             | Easy       | 83.33%  |         |
 | 674  | Longest Continuous Increasing Subsequence                          | Easy       | 51.83%  | 62.30%  |
-| 709  | To Lower Case                                                      | Easy       | 99.24%  |         |
+| 709  | To Lower Case                                                      | Easy       | 99.24%  | 64.90%  |
 | 728  | Self Dividing Numbers                                              | Easy       | 88.22%  |         |
-| 771  | Jewels and Stones                                                  | Easy       | 93.87%  |         |
-| 804  | Unique Morse Code Words                                            | Easy       | 94.69%  |         |
+| 771  | Jewels and Stones                                                  | Easy       | 93.87%  | 69.98%  |
+| 804  | Unique Morse Code Words                                            | Easy       | 94.69%  | 60.91%  |
 | 811  | Subdomain Visit Count                                              | Medium     | 91.30%  | 30.43%  |
 | 819  | Most Common Word                                                   | Easy       | 92.63%  | 43.00%  |
 | 824  | Goat Latin                                                         | Easy       | 91.54%  |         |
@@ -77,7 +77,7 @@
 | 884  | Uncommon Words from Two Sentences                                  | Easy       | 97.08%  | 23.70%  |
 | 890  | Find and Replace Pattern                                           | Medium     | 99.22%  | 54.26%  |
 | 896  | Monotonic Array                                                    | Easy       | 96.98%  | 81.89%  |
-| 905  | Sort Array By Parity                                               | Easy       | 99.92%  |         |
+| 905  | Sort Array By Parity                                               | Easy       | 99.92%  | 54.90%  |
 | 912  | Sort an Array                                                      | Medium     | 81.14%  | 43.69%  |
 | 917  | Reverse Only Letters                                               | Easy       | 82.54%  |         |
 | 921  | Minimum Add to Make Parentheses Valid                              | Medium     | 82.67%  | 44.24%  |
