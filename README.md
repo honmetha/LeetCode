@@ -54,13 +54,13 @@
 | 485  | Max Consecutive Ones                                               | Easy       | 95.21%  | 36.86%  |
 | 500  | Keyboard Row                                                       | Easy       | 66.54%  |         |
 | 506  | Relative Ranks                                                     | Easy       | 97.65%  | 40.00%  |
-| 509  | Fibonacci Number                                                   | Easy       | 88.31%  |         |
-| 520  | Detect Capital                                                     | Easy       | 92.11%  |         |
+| 509  | Fibonacci Number                                                   | Easy       | 88.31%  | 96.27%  |
+| 520  | Detect Capital                                                     | Easy       | 92.11%  | 98.99%  |
 | 551  | Student Attendance Record I                                        | Easy       | 83.07%  | 6.52%   |
 | 557  | Reverse Words in a String III                                      | Easy       | 96.37%  | 64.70%  |
 | 567  | Permutation in String                                              | Medium     | 5.34%   | 32.89%  |
 | 648  | Replace Words                                                      | Medium     | 93.33%  | 86.67%  |
-| 657  | Robot Return to Origin                                             | Easy       | 83.33%  |         |
+| 657  | Robot Return to Origin                                             | Easy       | 86.16%  | 88.36%  |
 | 674  | Longest Continuous Increasing Subsequence                          | Easy       | 51.83%  | 62.30%  |
 | 709  | To Lower Case                                                      | Easy       | 99.24%  | 64.90%  |
 | 728  | Self Dividing Numbers                                              | Easy       | 88.22%  |         |
