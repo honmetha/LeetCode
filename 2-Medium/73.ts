@@ -27,7 +27,26 @@
  *  Solution
  **********************************************************************/
 
-const setZeroes = (matrix: number[][]): void => {};
+const setZeroes = (matrix: number[][]): void => {
+  const column = new Set<number>();
+
+  for (let i = 0; i < matrix.length; i++) {
+    let hasZero = false;
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] === 0) {
+        hasZero = true;
+        column.add(j);
+      }
+    }
+    if (hasZero) matrix[i] = Array(matrix[i].length).fill(0);
+  }
+
+  for (let row of matrix) {
+    for (let index of Array.from(column.values())) {
+      row[index] = 0;
+    }
+  }
+};
 
 // Test cases
 // [[1,1,1],[1,0,1],[1,1,1]]
