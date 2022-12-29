@@ -26,7 +26,7 @@
 | 49   | Group Anagrams                                                     | Medium     | 98.23%  | 91.23%  |
 | 58   | Length of Last Word                                                | Easy       | 94.50%  | 14.17%  |
 | 66   | Plus One                                                           | Easy       | 66.47%  | 41.49%  |
-| 73   | Set Matrix Zeroes                                                  | Medium     | 76.19%  | 25.00%  |
+| 73   | Set Matrix Zeroes                                                  | Medium     | 93.45%  | 46.43%  |
 | 75   | Sort Colors                                                        | Medium     | 72.32%  | 25.30%  |
 | 121  | Best Time to Buy and Sell Stock                                    | Easy       | 95.22%  | 57.09%  |
 | 125  | Valid Palindrome                                                   | Easy       | 68.05%  | 95.85%  |
