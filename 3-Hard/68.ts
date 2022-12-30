@@ -63,3 +63,11 @@
 const fullJustify = (words: string[], maxWidth: number): string[] => {
   return [""];
 };
+
+// Test cases
+// ["This", "is", "an", "example", "of", "text", "justification."], 16
+// ["What","must","be","acknowledgment","shall","be"], 16
+// ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"], 20
+// ["ask","not","what","your","country","can","do","for","you","ask","what","you","can","do","for","your","country"], 16
+
+export default fullJustify;
