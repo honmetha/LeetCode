@@ -61,7 +61,51 @@
  **********************************************************************/
 
 const fullJustify = (words: string[], maxWidth: number): string[] => {
-  return [""];
+  let count = 0;
+  let output = [];
+  let subArray = [];
+
+  for (let i = 0; i < words.length; i++) {
+    if (count !== 0) {
+      subArray.push(" ");
+      count++;
+    }
+
+    subArray.push(words[i]);
+    count += words[i].length;
+
+    const spaceLength = 1;
+    if (count + spaceLength + (words[i + 1]?.length || 0) > maxWidth) {
+      const short = maxWidth - count;
+
+      if (subArray.length !== 1) {
+        const gaps = Math.floor(subArray.length / 2);
+        let spaces = Array.from({length: gaps}).fill(
+          " ".repeat(Math.floor(short / gaps))
+        );
+
+        let remainder = short % gaps;
+        for (let j = 0; j < remainder; j++) {
+          spaces[j] += " ";
+        }
+
+        let k = 0;
+        for (let l = 1; l < subArray.length; l += 2) {
+          subArray[l] += spaces[k];
+          k++;
+        }
+      } else {
+        subArray.push(" ".repeat(short));
+      }
+
+      count = 0;
+      output.push(subArray.join(""));
+      subArray = [];
+    }
+  }
+  if (count !== 0)
+    output.push(subArray.join("") + " ".repeat(maxWidth - count));
+  return output;
 };
 
 // Test cases
