@@ -48,7 +48,7 @@
 | 387  | First Unique Character in a String                                 | Easy       | 96.34%  | 79.44%  |
 | 389  | Find the Difference                                                | Easy       | 96.10%  | 88.80%  |
 | 412  | Fizz Buzz                                                          | Easy       | 96.75%  | 46.90%  |
-| 420  | Strong Password Checker                                            | Hard       | 84.38%  |         |
+| 420  | Strong Password Checker                                            | Hard       | 84.38%  | 95.83%  |
 | 442  | Find All Duplicates in an Array                                    | Medium     | 77.66%  | 26.38%  |
 | 451  | Sort Characters By Frequency                                       | Medium     | 97.33%  | 86.67%  |
 | 482  | License Key Formatting                                             | Easy       | 96.07%  | 12.69%  |
@@ -70,10 +70,10 @@
 | 811  | Subdomain Visit Count                                              | Medium     | 91.30%  | 30.43%  |
 | 819  | Most Common Word                                                   | Easy       | 92.63%  | 43.00%  |
 | 824  | Goat Latin                                                         | Easy       | 91.54%  | 98.79%  |
-| 832  | Flipping an Image                                                  | Easy       | 97.25%  |         |
+| 832  | Flipping an Image                                                  | Easy       | 97.25%  | 69.49%  |
 | 841  | Keys and Rooms                                                     | Medium     | 96.84%  | 81.55%  |
 | 852  | Peak Index in a Mountain Array                                     | Easy       | 49.07%  | 9.47%   |
-| 860  | Lemonade Change                                                    | Easy       | 89.83%  |         |
+| 860  | Lemonade Change                                                    | Easy       | 89.83%  | 59.57%  |
 | 877  | Stone Game                                                         | Medium     | 98.04%  | 53.92%  |
 | 884  | Uncommon Words from Two Sentences                                  | Easy       | 97.08%  | 23.70%  |
 | 890  | Find and Replace Pattern                                           | Medium     | 99.22%  | 54.26%  |
