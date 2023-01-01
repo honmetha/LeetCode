@@ -37,7 +37,7 @@
 | 171  | Excel Sheet Column Number                                          | Easy       | 99.88%  | 74.01%  |
 | 198  | House Robber                                                       | Medium     | 91.17%  | 42.96%  |
 | 204  | Count Primes                                                       | Medium     | 86.00%  | 5.79%   |
-| 217  | Contains Duplicate                                                 | Easy       | 94.45%  |         |
+| 217  | Contains Duplicate                                                 | Easy       | 96.31%  | 25.40%  |
 | 242  | Valid Anagram                                                      | Easy       | 98.39%  | 92.03%  |
 | 260  | Single Number III                                                  | Medium     | 8.47%   |         |
 | 283  | Move Zeroes                                                        | Easy       | 97.84%  | 60.64%  |
@@ -64,12 +64,12 @@
 | 657  | Robot Return to Origin                                             | Easy       | 86.16%  | 88.36%  |
 | 674  | Longest Continuous Increasing Subsequence                          | Easy       | 51.83%  | 62.30%  |
 | 709  | To Lower Case                                                      | Easy       | 99.24%  | 64.90%  |
-| 728  | Self Dividing Numbers                                              | Easy       | 88.22%  |         |
+| 728  | Self Dividing Numbers                                              | Easy       | 97.49%  | 93.97%  |
 | 771  | Jewels and Stones                                                  | Easy       | 93.87%  | 69.98%  |
 | 804  | Unique Morse Code Words                                            | Easy       | 94.69%  | 60.91%  |
 | 811  | Subdomain Visit Count                                              | Medium     | 91.30%  | 30.43%  |
 | 819  | Most Common Word                                                   | Easy       | 92.63%  | 43.00%  |
-| 824  | Goat Latin                                                         | Easy       | 91.54%  |         |
+| 824  | Goat Latin                                                         | Easy       | 91.54%  | 98.79%  |
 | 832  | Flipping an Image                                                  | Easy       | 97.25%  |         |
 | 841  | Keys and Rooms                                                     | Medium     | 96.84%  | 81.55%  |
 | 852  | Peak Index in a Mountain Array                                     | Easy       | 49.07%  | 9.47%   |
