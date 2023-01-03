@@ -28,6 +28,7 @@
 | 66   | Plus One                                                           | Easy       | 66.47%  | 41.49%  |
 | 68   | Text Justification                                                 | Hard       | 84.62%  | 70.51%  |
 | 73   | Set Matrix Zeroes                                                  | Medium     | 93.45%  | 46.43%  |
+| 74   | Search a 2D Matrix                                                 | Medium     |         |         |
 | 75   | Sort Colors                                                        | Medium     | 72.32%  | 25.30%  |
 | 121  | Best Time to Buy and Sell Stock                                    | Easy       | 95.22%  | 57.09%  |
 | 125  | Valid Palindrome                                                   | Easy       | 68.05%  | 95.85%  |
