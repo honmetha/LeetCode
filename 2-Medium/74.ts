@@ -25,7 +25,23 @@
  **********************************************************************/
 
 const searchMatrix = (matrix: number[][], target: number): boolean => {
-  return true;
+  let targetArr: number;
+
+  for (let i = 0; i < matrix.length; i++) {
+    if (target >= matrix[i][0]) {
+      targetArr = i;
+    } else {
+      break;
+    }
+  }
+
+  if (targetArr !== undefined) {
+    for (const num of matrix[targetArr]) {
+      if (target === num) return true;
+    }
+  }
+
+  return false;
 };
 
 // Test cases
