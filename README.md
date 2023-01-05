@@ -30,7 +30,7 @@
 | 73   | Set Matrix Zeroes                                                  | Medium     | 93.45%  | 46.43%  |
 | 74   | Search a 2D Matrix                                                 | Medium     | 78.21%  | 27.56%  |
 | 75   | Sort Colors                                                        | Medium     | 72.32%  | 25.30%  |
-| 78   | Subsets                                                            | Medium     |         |         |
+| 78   | Subsets                                                            | Medium     | 84.46%  | 94.42%  |
 | 121  | Best Time to Buy and Sell Stock                                    | Easy       | 95.22%  | 57.09%  |
 | 125  | Valid Palindrome                                                   | Easy       | 68.05%  | 95.85%  |
 | 151  | Reverse Words in a String                                          | Medium     | 96.25%  | 30.41%  |

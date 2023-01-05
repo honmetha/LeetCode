@@ -22,13 +22,41 @@
  **********************************************************************/
 
 const subsets = (nums: number[]): number[][] => {
-  return [[]];
+  let output = [[]];
+  let initialStart = [];
+  let end = [];
+
+  while (end[0] !== 0) {
+    initialStart.push(initialStart.length);
+    end.unshift(nums.length - 1 - end.length);
+
+    let start = [...initialStart];
+    let currentIndex = initialStart.length - 1;
+
+    while (start[0] <= end[0]) {
+      let subset = [];
+      for (let i = 0; i < start.length; i++) {
+        subset.push(nums[start[i]]);
+      }
+      output.push(subset);
+
+      start[currentIndex]++;
+      while (start[currentIndex] > end[currentIndex]) {
+        currentIndex--;
+        start[currentIndex]++;
+      }
+      while (currentIndex < start.length - 1) {
+        currentIndex++;
+        start[currentIndex] = start[currentIndex - 1] + 1;
+      }
+    }
+  }
+
+  return output;
 };
 
 // Test cases
 // [1,2,3]
 // [0]
-// [3,4,5,6,7]
-// [-5,6,4,3,2,9,8,-1,-4]
 
 export default subsets;
