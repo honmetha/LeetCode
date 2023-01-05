@@ -24,3 +24,11 @@
 const subsets = (nums: number[]): number[][] => {
   return [[]];
 };
+
+// Test cases
+// [1,2,3]
+// [0]
+// [3,4,5,6,7]
+// [-5,6,4,3,2,9,8,-1,-4]
+
+export default subsets;
