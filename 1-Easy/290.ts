@@ -32,3 +32,10 @@
 const wordPattern = (pattern: string, s: string): boolean => {
   return true;
 };
+
+// Test cases
+// "abba", "dog cat cat dog"
+// "abba", "dog cat cat fish"
+// "aaaa", "dog cat cat dog"
+
+export default wordPattern;
