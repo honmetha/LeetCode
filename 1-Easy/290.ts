@@ -30,7 +30,29 @@
  **********************************************************************/
 
 const wordPattern = (pattern: string, s: string): boolean => {
-  return true;
+  if (pattern.length !== s.split(" ").length) return false;
+
+  let pMap = {};
+  let sMap = {};
+  let newP = pattern.split("");
+  let newS = s.split(" ");
+
+  for (let i = 0; i < newS.length; i++) {
+    if (!pMap[pattern[i]]) {
+      pMap[pattern[i]] = i + "";
+      newP[i] = i + "";
+    } else {
+      newP[i] = pMap[pattern[i]];
+    }
+    if (!sMap[newS[i]]) {
+      sMap[newS[i]] = i + "";
+      newS[i] = i + "";
+    } else {
+      newS[i] = sMap[newS[i]];
+    }
+  }
+
+  return newP.join("") === newS.join("");
 };
 
 // Test cases

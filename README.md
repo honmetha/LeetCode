@@ -43,7 +43,7 @@
 | 242  | Valid Anagram                                                      | Easy       | 98.39%  | 92.03%  |
 | 260  | Single Number III                                                  | Medium     | 8.47%   |         |
 | 283  | Move Zeroes                                                        | Easy       | 97.84%  | 60.64%  |
-| 290  | Word Pattern                                                       | Easy       |         |         |
+| 290  | Word Pattern                                                       | Easy       | 72.40%  | 99.81%  |
 | 292  | Nim Game                                                           | Easy       | 98.30%  | 87.20%  |
 | 344  | Reverse String                                                     | Easy       | 99.84%  | 79.30%  |
 | 345  | Reverse Vowels of a String                                         | Easy       | 94.94%  | 50.56%  |

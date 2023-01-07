@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1672948779744" clover="3.2.0">
-  <project timestamp="1672948779744" name="All files">
-    <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="24" coveredelements="24" complexity="0" loc="23" ncloc="23" packages="1" files="1" classes="1"/>
-    <file name="78.ts" path="/Users/hon/Desktop/Repositories/LeetCode/2-Medium/78.ts">
-      <metrics statements="23" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="24" count="1" type="stmt"/>
-      <line num="25" count="2" type="stmt"/>
-      <line num="26" count="2" type="stmt"/>
-      <line num="27" count="2" type="stmt"/>
-      <line num="29" count="2" type="stmt"/>
-      <line num="30" count="4" type="stmt"/>
-      <line num="31" count="4" type="stmt"/>
-      <line num="33" count="4" type="stmt"/>
-      <line num="34" count="4" type="stmt"/>
-      <line num="36" count="4" type="stmt"/>
-      <line num="37" count="8" type="stmt"/>
-      <line num="38" count="8" type="stmt"/>
-      <line num="39" count="13" type="stmt"/>
-      <line num="41" count="8" type="stmt"/>
-      <line num="43" count="8" type="stmt"/>
-      <line num="44" count="8" type="stmt"/>
-      <line num="45" count="8" type="stmt"/>
-      <line num="46" count="8" type="stmt"/>
-      <line num="48" count="8" type="stmt"/>
-      <line num="49" count="8" type="stmt"/>
-      <line num="50" count="8" type="stmt"/>
-      <line num="55" count="2" type="stmt"/>
-      <line num="62" count="1" type="stmt"/>
+<coverage generated="1673112109189" clover="3.2.0">
+  <project timestamp="1673112109189" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1" elements="23" coveredelements="22" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
+    <file name="290.ts" path="/Users/hon/Desktop/Repositories/LeetCode/1-Easy/290.ts">
+      <metrics statements="17" coveredstatements="17" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="3" type="cond" truecount="0" falsecount="1"/>
+      <line num="35" count="3" type="stmt"/>
+      <line num="36" count="3" type="stmt"/>
+      <line num="37" count="3" type="stmt"/>
+      <line num="38" count="3" type="stmt"/>
+      <line num="40" count="3" type="stmt"/>
+      <line num="41" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="5" type="stmt"/>
+      <line num="43" count="5" type="stmt"/>
+      <line num="45" count="7" type="stmt"/>
+      <line num="47" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="7" type="stmt"/>
+      <line num="49" count="7" type="stmt"/>
+      <line num="51" count="5" type="stmt"/>
+      <line num="55" count="3" type="stmt"/>
+      <line num="63" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
