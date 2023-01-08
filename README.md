@@ -85,7 +85,7 @@
 | 912  | Sort an Array                                                      | Medium     | 81.14%  | 43.69%  |
 | 917  | Reverse Only Letters                                               | Easy       | 82.54%  |         |
 | 921  | Minimum Add to Make Parentheses Valid                              | Medium     | 82.67%  | 44.24%  |
-| 922  | Sort Array By Parity II                                            | Easy       | 94.23%  |         |
+| 922  | Sort Array By Parity II                                            | Easy       | 94.23%  | 77.87%  |
 | 942  | DI String Match                                                    | Easy       | 92.38%  | 96.86%  |
 | 961  | N-Repeated Element in Size 2N Array                                | Easy       | 91.61%  | 66.78%  |
 | 977  | Squares of a Sorted Array                                          | Easy       | 98.15%  | 47.49%  |
@@ -95,7 +95,7 @@
 | 1046 | Last Stone Weight                                                  | Easy       | 89.32%  | 33.76%  |
 | 1108 | Defanging an IP Address                                            | Easy       | 89.88%  | 81.31%  |
 | 1190 | Reverse Substrings Between Each Pair of Parentheses                | Medium     | 100.00% | 22.37%  |
-| 1207 | Unique Number of Occurrences                                       | Easy       | 97.32%  |         |
+| 1207 | Unique Number of Occurrences                                       | Easy       | 97.32%  | 20.61%  |
 | 1221 | Split a String in Balanced Strings                                 | Easy       | 86.98%  | 60.63%  |
 | 1249 | Minimum Remove to Make Valid Parentheses                           | Medium     | 99.22%  | 64.46%  |
 | 1268 | Search Suggestions System                                          | Medium     | 87.32%  | 97.18%  |
