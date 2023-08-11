@@ -26,7 +26,17 @@
 // 0 <= celsius <= 1000
 
 /***********************************************************************
- *  Solution
+ * Solution
  **********************************************************************/
 
-const convertTemperature = (celsius) => {};
+// My attempt
+class Solution {
+    public double[] convertTemperature(double celsius) {
+
+    }
+}
+
+// Test cases
+// 36.50
+// 122.11
+// 60.99
