@@ -32,7 +32,10 @@
 // My attempt
 class Solution {
     public double[] convertTemperature(double celsius) {
-
+        double kelvin = celsius + 273.15;
+        double fahrenheit = celsius * 1.80 + 32.00;
+        double[] output = { kelvin, fahrenheit };
+        return output;
     }
 }
 
@@ -40,3 +43,5 @@ class Solution {
 // 36.50
 // 122.11
 // 60.99
+// 0
+// 0.55
