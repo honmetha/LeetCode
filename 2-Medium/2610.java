@@ -35,11 +35,45 @@
  **********************************************************************/
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class Solution {
     public List<List<Integer>> findMatrix(int[] nums) {
+        Arrays.sort(nums);
+
+        int mostDuplicates = 0;
+        int count = 0;
+        int currentNumber = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (currentNumber != nums[i]) {
+                currentNumber = nums[i];
+                count = 1;
+            } else {
+                count++;
+            }
+            if (mostDuplicates < count)
+                mostDuplicates = count;
+        }
+
         List<List<Integer>> output = new ArrayList();
+
+        for (int i = 0; i < mostDuplicates; i++) {
+            output.add(new ArrayList());
+        }
+
+        int indexToAddNum = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (i != 0 && nums[i] == nums[i - 1]) {
+                indexToAddNum++;
+            } else {
+                indexToAddNum = 0;
+            }
+            output.get(indexToAddNum).add(nums[i]);
+        }
+
         return output;
     }
 }
