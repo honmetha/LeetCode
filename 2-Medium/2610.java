@@ -38,11 +38,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// My attempt
 class Solution {
     public List<List<Integer>> findMatrix(int[] nums) {
         Arrays.sort(nums);
 
-        List<List<Integer>> output = new ArrayList();
+        List<List<Integer>> output = new ArrayList<>();
         int indexToAddNum = 0;
 
         for (int i = 0; i < nums.length; i++) {
@@ -53,11 +54,25 @@ class Solution {
             }
 
             if (output.size() == indexToAddNum)
-                output.add(new ArrayList());
+                output.add(new ArrayList<>());
 
             output.get(indexToAddNum).add(nums[i]);
         }
 
+        return output;
+    }
+}
+
+// Better solution
+class Solution2 {
+    public List<List<Integer>> findMatrix(int[] nums) {
+        ArrayList<List<Integer>> output = new ArrayList<>();
+        int length = nums.length, count[] = new int[length + 1];
+        for (int num : nums) {
+            if (output.size() < ++count[num])
+                output.add(new ArrayList<>());
+            output.get(count[num] - 1).add(num);
+        }
         return output;
     }
 }
