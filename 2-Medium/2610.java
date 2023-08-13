@@ -42,27 +42,7 @@ class Solution {
     public List<List<Integer>> findMatrix(int[] nums) {
         Arrays.sort(nums);
 
-        int mostDuplicates = 0;
-        int count = 0;
-        int currentNumber = 0;
-
-        for (int i = 0; i < nums.length; i++) {
-            if (currentNumber != nums[i]) {
-                currentNumber = nums[i];
-                count = 1;
-            } else {
-                count++;
-            }
-            if (mostDuplicates < count)
-                mostDuplicates = count;
-        }
-
         List<List<Integer>> output = new ArrayList();
-
-        for (int i = 0; i < mostDuplicates; i++) {
-            output.add(new ArrayList());
-        }
-
         int indexToAddNum = 0;
 
         for (int i = 0; i < nums.length; i++) {
@@ -71,6 +51,10 @@ class Solution {
             } else {
                 indexToAddNum = 0;
             }
+
+            if (output.size() == indexToAddNum)
+                output.add(new ArrayList());
+
             output.get(indexToAddNum).add(nums[i]);
         }
 
@@ -80,8 +64,8 @@ class Solution {
 
 // Test cases
 // [1,3,4,1,2,3,1]
-// [1,2,3,4]
 // [2,1,1]
+// [1,2,3,4]
 // [4,4,4,4]
 // [1]
 // [2,2,2,3,3]
