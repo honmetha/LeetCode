@@ -37,9 +37,8 @@
  **********************************************************************/
 
 // My attempt
-const sortTheStudents = (score: number[][], k: number): number[][] => {
-  return score;
-};
+const sortTheStudents = (score: number[][], k: number): number[][] =>
+  score.sort((a, b) => b[k] - a[k]);
 
 // Test cases
 // [[10,6,9,1],[7,5,11,2],[4,8,3,15]], 2
