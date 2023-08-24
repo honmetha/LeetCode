@@ -142,5 +142,5 @@
 | 2114 | Maximum Number of Words Found in Sentences                         | Easy       | 94.95%  | 34.78%  |
 | 2225 | Find Players With Zero or One Losses                               | Medium     | 88.89%  | 94.23%  |
 | 2469 | Convert the Temperature                                            | Easy       | 100.00% | 65.89%  |
-| 2545 | Sort the Students by Their Kth Score                               | Medium     | 78.05%  | 87.80%  |
+| 2545 | Sort the Students by Their Kth Score                               | Medium     | 95.12%  | 87.80%  |
 | 2610 | Convert an Array Into a 2D Array With Conditions                   | Medium     | 100.00% | 99.23%  |
