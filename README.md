@@ -126,7 +126,7 @@
 | 1480 | Running Sum of 1d Array                                            | Easy       | 93.24%  | 78.96%  |
 | 1491 | Average Salary Excluding the Minimum and Maximum Salary            | Easy       | 91.47%  | 82.00%  |
 | 1507 | Reformat Date                                                      | Easy       | 95.83%  | 72.68%  |
-| 1512 | Number of Good Pairs                                               | Easy       |         |         |
+| 1512 | Number of Good Pairs                                               | Easy       | 84.77%  | 94.95%  |
 | 1528 | Shuffle String                                                     | Easy       | 97.07%  | 75.47%  |
 | 1550 | Three Consecutive Odds                                             | Easy       | 93.41%  | 77.69%  |
 | 1556 | Thousand Separator                                                 | Easy       | 92.35%  | 23.21%  |
